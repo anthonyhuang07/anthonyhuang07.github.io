@@ -7,52 +7,79 @@
         <link rel="icon" type="image/x-icon" href="https://i.imgur.com/YNfQKw6.jpg">
         <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
         <style>
-            .navbar{
-                background-color: #1f2227;
-                padding: 1px;
-                margin: -8px;
-                text-align:center;
-            }
             #main{
                 font-size: 30px;
                 font-family:'Comfortaa', Helvetica, sans-serif;
-                color: #000000;
                 text-decoration: none;
                 text-align:center;
                 margin-top:20px;
                 margin-bottom:0px;
                 color: #ff8800;
             }
-            .navbar ul{
+
+            body{
+                background-color: #3d4248; 
+            }
+
+            .navbar{
+                background-color: #1f2227;
+                padding: 1px;
+                margin: -8px;
+                text-align:center;
+            } .navbar ul{
                 list-style-type: none;
                 display: inline-block;
                 padding-right: 2%;
-            }
-            .navbar li{
+            } .navbar li{
                 float:left;
-            }
-            .navbar a{
+            } .navbar a{
                 font-family:'Comfortaa', Helvetica, sans-serif;
                 font-size:20px;
                 color: #ff8800;
                 padding: 10px;
             }
-            body{
-                background-color: #3d4248; 
-            }
-            .main h1{
+
+            .main{
+                color: #ffffff;
+            } .main h1{
                 font-family:'Comfortaa', Helvetica, sans-serif;
                 padding-top: 30px;
                 padding-left: 30px;
                 font-size:35px;
-            }
-            .main p{
+            } .main p{
                 font-family: BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
                 font-size: 20px;
                 padding-left: 30px;
+                width: 75%;
+            } .main a{
+                color: #c0e8ff;
+            } .main img{
+                padding-left: 30px;
             }
-            .main{
-                color: #ffffff;
+
+            .footer{
+                background-color: #1f2227;
+                position: fixed;
+                bottom: 0;
+                left: 0;    
+                width: 100%;
+                color: #ff8800;
+            } .footer ul{
+                list-style-type: none;
+                display: inline-block;
+                padding-right: 2%;
+            } .footer li{
+                float:left;
+            } .footer a{
+                font-family:'Comfortaa', Helvetica, sans-serif;
+                font-size:20px;
+                color: #ff8800;
+                padding: 10px;
+            } .footer p{
+                font-size: 20px;
+                font-family:'Comfortaa', Helvetica, sans-serif;
+                float: right;
+                padding-right: 2%;
             }
         </style>
     </head>
@@ -68,10 +95,18 @@
         </div>
         <div class="main">
             <h1>Hello!</h1>
-            <p>The home page. Now scram, I have nothing to show here.</p>
+            <p>Welcome to anthonyhuang07/FHDHGNGN's website! Here, I will post my <a href = "projects.html">Personal Projects</a>, and possibly other things in the future. Check my <a href = "about.html">About Me</a> page for info about me, and feel free to <a href="contact.html">Contact</a> me any time!</p>
+            <img src="https://i.imgur.com/Dn8p2Xq.gif" alt="blob dancing gif"/><br>
+            <p><a href="nocss.html">View this page without CSS!</a></p>
         </div>
         <div class="footer">
-            
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "projects.html">Projects</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+            <p>MIT License Copyright (c) 2022 Anthony Huang</p>
         </div>
     </body>
 </html>
