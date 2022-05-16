@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FHDHGNGN - Blog</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/YNfQKw6.jpg">
+        <link rel="stylesheet" href="cssjs/main.css">
+        <style>
+            @import url("cssjs/main.css");
+            .main img{
+                padding-left: 30px;
+                padding-bottom: 30px;
+            }
+
+            .footer{
+                background-color: #1f2227;
+                bottom: 10;
+                left: 0;    
+                width: 100%;
+                color: #ff8800;
+                position:absolute;
+            }
+
+            .collapsible {
+                background-color: rgb(46, 46, 50);
+                color: white;
+                cursor: pointer;
+                padding: 10px;
+                width: 25%;
+                border: none;
+                font-family:'Comfortaa', Helvetica, sans-serif;
+                width: 75%;
+                margin-left: 30px;
+                color: white;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            } .collapsible:hover {
+                background-color: rgb(69, 69, 75);
+            } .collapsible:after {
+                content: '\02795';
+                font-size: 13px;
+                color: white;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease-out;
+                background-color: #4a5056; 
+                margin-left: 30px;
+                width: 75%;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            
+            .active{
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .active:after {
+                content: "\2796"; /* Unicode character for "minus" sign (-) */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <p id="main">anthonyhuang07.github.io</p>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "projects.html">Projects</a></li>
+                <li><a href = "blog.html">Blog</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>My Blog!</h1>
+            <p>Welcome to my Blog! On interesting days, I will be adding a section for one day, listing the events that have happened every month. I'll also be using this page to share some interesting stuff I found. I will also be linking archives for blogs every month and year that pass by.</p>
+            <button class="collapsible">May 16, 2022</button>
+            <div class="content">
+                <p>This is the first post of the page. I actually have some things to say too! <br><br>
+                    Yesterday night was literally hell. It was like 26 degrees outside (felt like 30) and I couldn't sleep. (I had my window open, we didn't have AC on because I think the vents weren't cleaned) Luckily, the weather report said it was going to rain for 40 minutes, and I was so relieved. So I waited, and it was time. Guess what? IT DIDN'T EVEN RAIN. I ended up with 6 hours of sleep which is a new low this year.<br><br>
+                    Anyways, I went to school, we had an annoying geography test that I definitely failed on, and we started the movies unit in French.<br><br>
+                    Break passed, played Geometry Dash, nothing special, and as I'm writing this in Math class, I wanted to get an image from my Saved Images folder. Guess what? NOTHING. LITERALLY NOTHING. EVERYTHING WAS GONE! There wasn't anything in my Recycle Bin either. I'm pretty sure my drive suffered data loss after I installed Linux. RIP<br><br>
+                    I didn't really have any important images there, but they were super awesome and cool, and cool looking timelines in Premiere, 1st in Kahoot, donations, all that stuff. But it was all gone, and I am sad.<br><br>
+                    However, the good news is that our math test got pushed to Wednesday, and that's fun. Yay??<br><br>
+                    Just got my Unit 3 math test back, and I got 100, 86, 86 and 52 (💀) However it wasn't that bad, its overall 81 and my math overall OVERALL mark went from 85 to 86! GGs!!!!
+                </p>
+            </div>
+            <br>
+            <img src="https://i.imgur.com/ZQL3Eq6.png" alt="iphone destruction" width="150px"/><br>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "projects.html">Projects</a></li>
+                <li><a href = "blog.html">Blog</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+            <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io"> This Website is Open Source. Copyright (c) 2022 Anthony Huang</a></p>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+    </body>
+</html>
