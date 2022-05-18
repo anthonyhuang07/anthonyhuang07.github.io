@@ -6,24 +6,25 @@
     margin-top:20px;
     margin-bottom:0px;
     color: #ff8800;
+    transform: rotate(0.5deg);
 }
 
 body{
     background-color: #3d4248; 
 }
 
-.navbar{
+header{
     background-color: #1f2227;
     padding: 1px;
     margin: -8px;
     text-align:center;
-} .navbar ul{
+} header ul{
     list-style-type: none;
     display: inline-block;
     padding-right: 2%;
-} .navbar li{
+} header li{
     float:left;
-} .navbar a{
+} header a{
     font-family:'Comfortaa', Helvetica, sans-serif;
     font-size:20px;
     color: #ff8800;
