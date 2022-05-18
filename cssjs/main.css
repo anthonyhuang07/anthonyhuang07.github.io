@@ -55,23 +55,30 @@ body{
     padding-left: 30px;
 }
 
-.footer ul{
+footer ul{
     list-style-type: none;
     display: inline-block;
     padding-right: 2%;
-} .footer li{
+} footer li{
     float:left;
-} .footer a{
+} footer a{
     font-family:'Comfortaa', Helvetica, sans-serif;
     font-size:20px;
     color: #ff8800;
     padding: 10px;
     transition: background-color .5s;
-} .footer p{
+} footer p{
     font-size: 20px;
     font-family:'Comfortaa', Helvetica, sans-serif;
     float: right;
     padding-right: 2%;
+} footer {
+    background-color: #1f2227;
+    bottom: 10;
+    left: 0;    
+    width: 100%;
+    color: #ff8800;
+    position:absolute;
 }
 
 .projects{
