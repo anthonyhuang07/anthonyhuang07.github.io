@@ -72,7 +72,7 @@
             <h1>404</h1>
             <p><strong>PIRACY DETECTED</strong></p>
       
-            <p>
+            <p id="yourmom">
               You have attemped to pirate a copyrighted website. Once you're ready, please click the screen, and you will be prompted with a message and connected to local authorities via an emergency Wi-Fi connection bruteforce.
             </p>
       
@@ -104,7 +104,8 @@
         </div>
         <script>
             document.body.addEventListener('click', function(event) {
-                alert("You are going to be connected to a secured call between you and the local authorities. Leaving could mean a serious arrest warrant.");
+                alert("You will now be starting the process. Note: you may leave before the connection tone starts. If you leave the site after the connection tone starts, you will get a Criminal Record and your information tracked by GitHub Pages via Bruteforce SSH on your IP Address.");
+                document.getElementById('yourmom').innerHTML = "The process has started. You have 25 seconds until the connection tone starts."
                 var audio = new Audio('piracy2.mp3');
                 audio.play();
                 audio.loop();
