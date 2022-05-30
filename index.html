@@ -68,6 +68,12 @@
             </ul>
             <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io"> This Website is Open Source. Copyright (c) 2022 Anthony Huang</a></p>
         </footer>
-        <script src="cssjs/funny.js"></script>
+        <script src="cssjs/funny.js">
+            let current = new Date();
+                document.getElementById("title").innerHTML = `Hello! Today is ${current.toLocaleDateString()}.`;
+                document.querySelector('#blob').addEventListener('click', function() {
+                    alert('The blob is minding his own business. Leave him alone.');
+            });
+        </script>
     </body>
 </html>
