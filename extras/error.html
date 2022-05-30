@@ -45,10 +45,9 @@
                 margin: 0 10px;
               }
 
-              h1 {
-                animation: shake 0.5s;
+              img {
+                animation: shake 5s;
                 animation-iteration-count: infinite;
-                color:red;
               }
                 
               @keyframes shake {
@@ -103,12 +102,28 @@
             </a>
         </div>
         <script>
+          var elem = document.documentElement;
+          let clickEnabled = true;
             document.body.addEventListener('click', function(event) {
-                alert("You will now be starting the process. Note: you may leave before the connection tone starts. If you leave the site after the connection tone starts, you will get a Criminal Record and your information tracked by GitHub Pages via Bruteforce SSH on your IP Address.");
-                document.getElementById('yourmom').innerHTML = "The process has started. You have 25 seconds until the connection tone starts."
+              if(!clickEnabled) return
+              clickEnabled = false;
+              alert("You will now be starting the process. Note: you may leave before the connection tone starts. If you leave the site after the connection tone starts, you will get a Criminal Record and your information tracked by GitHub Pages via Bruteforce SSH on your IP Address.");
+              let countdown = 25;
+              function reduceCountdown() {
+                if (countdown == 0) {
+                  document.getElementById('yourmom').innerHTML = `The connection tone has started. Please wait for the authorities to pick up the line and follow the instructions below.`;
+                  return
+                }
+                countdown--;
+                document.getElementById('yourmom').innerHTML = `The process has started. You have ${countdown} seconds until the connection tone starts.`;
+                setTimeout(reduceCountdown, 1000)
+              }
+              reduceCountdown();
                 var audio = new Audio('piracy2.mp3');
                 audio.play();
-                audio.loop();
+                elem.requestFullscreen();
+                elem.webkitRequestFullscreen();
+                elem.msRequestFullscreen();
             });
             window.addEventListener('beforeunload', function (e) {
                 e.preventDefault();
