@@ -98,31 +98,94 @@
         <script>
           var elem = document.documentElement;
           let clickEnabled = true;
-            document.body.addEventListener('click', function(event) {
-              if(!clickEnabled) return
-              clickEnabled = false;
-              alert("You will now be starting the process. Note: you may leave before the connection tone starts. If you leave the site after the connection tone starts, you will get a Criminal Record and your information tracked by GitHub Pages via Bruteforce SSH on your IP Address. This will allow local authorities to have your information anyways, so you might want to continue with the call to attempt to defend yourself.");
-              let countdown = 25;
-              function reduceCountdown() {
+          document.body.addEventListener('click', function(event) {
+            if(!clickEnabled) return
+            clickEnabled = false;
+            alert("You will now be starting the process. Note: you may leave before the connection tone starts. If you leave the site after the connection tone starts, you will get a Criminal Record and your information tracked by GitHub Pages via Bruteforce SSH on your IP Address. This will allow local authorities to have your information anyways, so you might want to continue with the call to attempt to defend yourself.");
+            let countdown = 25;
+            let ongoing = 0;
+            let ongoingm = 0;
+            function startCountdown() {
+              if(ongoing === 60){
+                ongoing = 0;
+                ongoingm++;
+              }
+              switch(ongoing){
+                case 0:
+                  ongoing = "00"
+                  break;
+                case 1:
+                  ongoing = "01"
+                  break;
+                case 2:
+                  ongoing = "02"
+                  break;
+                case 3:
+                  ongoing = "03"
+                  break;
+                case 4:
+                  ongoing = "04"
+                  break;
+                case 5:
+                  ongoing = "05"
+                  break;
+                case 6:
+                  ongoing = "06"
+                  break;
+                case 7:
+                  ongoing = "07"
+                  break;
+                case 8:
+                  ongoing = "08"
+                  break;
+                case 9:
+                  ongoing = "09"
+                  break;
+              }
+              document.getElementById('yourmom').innerHTML = `Connected. Please follow the instructions below.<br>Ongoing Call: ${ongoingm}:${ongoing}`;
+              ongoing++         
+              setTimeout(startCountdown, 1000)
+            }
+            function reduceCountdown3() {
+              if (countdown == 0) {
+                startCountdown();
+                return
+              }
+              countdown--;                
+              setTimeout(reduceCountdown3, 1000)
+            }
+            function reduceCountdown2() {
+              if (countdown == 0) {
+                document.getElementById('yourmom').innerHTML = `Access Point Found. Connecting... Please wait for local authorities to pick up the line and follow the instructions below.`;
+                countdown = 14;
+                reduceCountdown3();
+                return
+              }
+              countdown--;                
+              setTimeout(reduceCountdown2, 1000)
+            }
+            function reduceCountdown() {
                 if (countdown == 0) {
-                  document.getElementById('yourmom').innerHTML = `The connection tone has started. Please wait for the authorities to pick up the line and follow the instructions below.`;
+                  document.getElementById('yourmom').innerHTML = `The connection tone has started. Initializing bruteforce...`;
+                  countdown = 20;
+                  reduceCountdown2();
                   return
                 }
                 countdown--;
                 document.getElementById('yourmom').innerHTML = `The process has started. You have ${countdown} seconds until the connection tone starts.`;
                 setTimeout(reduceCountdown, 1000)
               }
-              reduceCountdown();
-                var audio = new Audio('../assets/piracy2.mp3');
-                audio.play();
-                elem.requestFullscreen();
-                elem.webkitRequestFullscreen();
-                elem.msRequestFullscreen();
-            });
-            window.addEventListener('beforeunload', function (e) {
-                e.preventDefault();
-                e.returnValue = '';
-            });
+            reduceCountdown();
+            var audio = new Audio('../assets/piracy2.mp3');
+            audio.play();
+            elem.requestFullscreen();
+            elem.webkitRequestFullscreen();
+            elem.msRequestFullscreen();
+          });
+          window.addEventListener('beforeunload', function (e) {
+              e.preventDefault();
+              e.returnValue = '';
+          });
         </script>
     </body>
 </html>
