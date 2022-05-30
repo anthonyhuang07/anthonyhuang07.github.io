@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="cssjs/main.css">
         <style>
             @import url("cssjs/main.css");
+
             .main img{
                 padding-left: 30px;
             }
@@ -29,14 +30,12 @@
 
             @media screen and (max-width: 1450px) {
                 footer{
-                    background-color: #1f2227;
-                    bottom: 0;
-                    left: 0;    
+                    display: block;
+                    background-color: #1f2227;  
                     width: 100%;
                     color: #ff8800;
-                    position: static;    
-                    padding: 7px;
-                    margin: -7px
+                    position: absolute;    
+                    bottom: 0;
                 }
             }
         </style>
@@ -68,7 +67,7 @@
             </ul>
             <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io"> This Website is Open Source. Copyright (c) 2022 Anthony Huang</a></p>
         </footer>
-        <script src="cssjs/funny.js">
+        <script>
             let current = new Date();
                 document.getElementById("title").innerHTML = `Hello! Today is ${current.toLocaleDateString()}.`;
                 document.querySelector('#blob').addEventListener('click', function() {

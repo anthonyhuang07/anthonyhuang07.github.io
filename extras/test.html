@@ -14,18 +14,29 @@
         <link rel="stylesheet" href="../cssjs/main.css">
         <style>
             @import url("../cssjs/main.css");
-            
+
             .main img{
                 padding-left: 30px;
             }
 
             footer {
                 background-color: #1f2227;
-                position:absolute; 
-                bottom: 0;
+                bottom: -19.4em;
+                left: 0;    
                 width: 100%;
                 color: #ff8800;
-                clear: both;
+                position:absolute;
+            }
+
+            @media screen and (max-width: 1450px) {
+                footer{
+                    display: block;
+                    background-color: #1f2227;  
+                    width: 100%;
+                    color: #ff8800;
+                    position: absolute;    
+                    bottom: -10em;
+                }
             }
 
             button{
@@ -44,17 +55,6 @@
                 color: rgb(241, 17, 17);
             } header a:hover, footer a:hover{
                 color: rgb(83, 0, 0);
-            }
-
-            @media screen and (max-width: 1450px) {
-                footer{
-                    background-color: #1f2227;
-                    bottom: 0;
-                    left: 0;    
-                    width: 100%;
-                    color: #ff8800;
-                    position:absolute;
-                }
             }
         </style>
     </head>
