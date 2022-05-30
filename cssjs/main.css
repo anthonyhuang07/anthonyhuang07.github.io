@@ -14,7 +14,7 @@ body{
     text-align:center;
     margin-top:20px;
     margin-bottom:0px;
-    color: #ff8800;
+    color: #FF7700;
     transform: rotate(0.5deg);
 }
 
@@ -36,7 +36,7 @@ header{
 } header a{
     font-family:'Comfortaa', Helvetica, sans-serif;
     font-size:20px;
-    color: #ff8800;
+    color: #FF7700;
     padding: 10px;
     transition: background-color .5s;
 }
@@ -74,7 +74,7 @@ footer ul{
 } footer a{
     font-family:'Comfortaa', Helvetica, sans-serif;
     font-size:20px;
-    color: #ff8800;
+    color: #FF7700;
     padding: 10px;
     transition: background-color .5s;
 } footer p{
@@ -87,7 +87,7 @@ footer ul{
     bottom: 10;
     left: 0;    
     width: 100%;
-    color: #ff8800;
+    color: #FF7700;
     position:absolute;
 }
 
