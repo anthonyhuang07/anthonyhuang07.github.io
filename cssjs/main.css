@@ -2,11 +2,6 @@ html {
     position: relative;
 }
 
-body{
-    margin-bottom: 3em;
-}
-
-
 #main{
     font-size: 30px;
     font-family:'Comfortaa', Helvetica, sans-serif;
@@ -19,7 +14,8 @@ body{
 }
 
 body{
-    background-image: linear-gradient(to right, #363d43, #353c42);
+    background-image: linear-gradient(to right, #363d43, #33393e);
+    margin-bottom: 3.75%;
 }
 
 header{
@@ -37,6 +33,7 @@ header{
     font-family:'Comfortaa', Helvetica, sans-serif;
     font-size:20px;
     color: #FF7700;
+    text-decoration: none;
     padding: 10px;
     transition: background-color .5s;
 }
@@ -55,6 +52,7 @@ header{
     width: 75%;
 } .main a{
     color: #c0e8ff;
+    text-decoration: none;
 } .main ul{
     font-family: BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -75,6 +73,7 @@ footer ul{
     font-family:'Comfortaa', Helvetica, sans-serif;
     font-size:20px;
     color: #FF7700;
+    text-decoration: none;
     padding: 10px;
     transition: background-color .5s;
 } footer p{
@@ -108,5 +107,6 @@ footer ul{
 }
 
 a:hover {
-    color: #ffd45d;
+    text-decoration: underline;
+    color: #fd993c;
 }
