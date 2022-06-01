@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FHDHGNGN - Blog</title>
+        <meta charset = "utf-8">
+        <meta content="anthonyhuang07.github.io" property="og:title" />
+        <meta content="FHDHGNGN/anthonyhuang07's personal website." property="og:description" />
+        <meta content="https://anthonyhuang07.github.io" property="og:url" />
+        <meta content="https://i.imgur.com/mERBq3H.jpg" property="og:image" />
+        <meta content="#ff8c00" data-react-helmet="true" name="theme-color" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/hoQS2ET.png">
+        <link rel="stylesheet" href="../cssjs/main.css">
+        <style>
+            @import url("../cssjs/main.css");
+
+            .main img{
+                margin-left: 30px;
+                margin-bottom: 30px;
+                border: white 2px solid;
+            } .main a{
+                text-decoration: underline;
+            }
+
+            .collapsible {
+                background-color: rgb(46, 46, 50);
+                color: white;
+                cursor: pointer;
+                padding: 10px;
+                width: 25%;
+                border: none;
+                font-family:'Comfortaa', Helvetica, sans-serif;
+                width: 75%;
+                margin-left: 30px;
+                color: white;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            } .collapsible:hover {
+                background-color: rgb(69, 69, 75);
+            } .collapsible:after {
+                content: '\02795';
+                font-size: 13px;
+                color: white;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease-out;
+                background-color: #4a5056; 
+                margin-left: 30px;
+                width: 75%;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            } .content img{
+                margin-left: -30px;
+            }
+            
+            .active{
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .active:after {
+                content: "\2796";
+            }
+
+            footer {
+                background-color: #1f2227;
+                bottom: 0;
+                left: 0;    
+                width: 100%;
+                color: #FF7700;
+                position:absolute;
+            }
+
+            @media screen and (max-width: 1450px) {
+                footer{
+                    display: block;
+                    background-color: #1f2227;  
+                    width: 100%;
+                    color: #FF7700;
+                    position: absolute;    
+                    bottom: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p id="main">anthonyhuang07.github.io</p>
+            <ul>
+                <li><a href = "../index.html">Home</a></li>
+                <li><a href = "../about.html">About</a></li>
+                <li><a href = "../projects.html">Projects</a></li>
+                <li><a href = "../blog.html">Blog</a></li>
+                <li><a href = "../contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <h1>Archive!</h1>
+            <p>Archives of blogs from previous months/years.</p>
+            <button class="collapsible">2022</button>
+            <div class="content">
+                <ul>
+                    <li><a href="may2022.html">May 2022</a></li>
+                </ul>
+            </div><br>
+            <img src="https://i.imgur.com/CFPcHha.jpg" width="540px"/>
+            <br>
+        </div>
+        <footer>
+            <ul>
+                <li><a href = "../index.html">Home</a></li>
+                <li><a href = "../about.html">About</a></li>
+                <li><a href = "../projects.html">Projects</a></li>
+                <li><a href = "../blog.html">Blog</a></li>
+                <li><a href = "../contact.html">Contact</a></li>
+            </ul>
+            <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io"> This Website is Open Source. Copyright (c) 2022 Anthony Huang</a></p>
+        </footer>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+    </body>
+</html>
