@@ -105,13 +105,13 @@
             </p>
       
             <p>
-              Website piracy is ILLEGAL. <a href="https://en.wikipedia.org/wiki/Online_piracy">Read the full article</a>
+              Website piracy is ILLEGAL. <a href="https://en.wikipedia.org/wiki/Online_piracy" target="_blank">Read the full article</a>
               for more information about <strong>online piracy</strong>.
             </p>
       
             <div id="suggestions">
-              <a href="https://en.wikipedia.org/wiki/Online_piracy">PIRACY WARNING</a> —
-              <a href="https://en.wikipedia.org/wiki/Online_piracy">PIRACY WARNING</a>
+              <a href="https://en.wikipedia.org/wiki/Online_piracy" target="_blank">PIRACY WARNING</a> —
+              <a href="https://en.wikipedia.org/wiki/Online_piracy" target="_blank">PIRACY WARNING</a>
             </div>
       
             <a href="dead.html" class="logo logo-img-1x">
@@ -133,6 +133,11 @@
             let countdown = 25;
             let ongoing = 0;
             let ongoingm = 0;
+            var audio = new Audio('../assets/piracy2.mp3');
+            audio.play();
+            elem.requestFullscreen();
+            elem.webkitRequestFullscreen();
+            elem.msRequestFullscreen();
             function startCountdown() {
               if(ongoing === 60){
                 ongoing = 0;
@@ -210,11 +215,6 @@
                 setTimeout(reduceCountdown, 1000)
               }
             reduceCountdown();
-            var audio = new Audio('../assets/piracy2.mp3');
-            audio.play();
-            elem.requestFullscreen();
-            elem.webkitRequestFullscreen();
-            elem.msRequestFullscreen();
           });
           window.addEventListener('beforeunload', function (e) {
               e.preventDefault();
