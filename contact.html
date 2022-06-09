@@ -8,21 +8,25 @@
         <meta content="https://anthonyhuang07.github.io" property="og:url" />
         <meta content="https://i.imgur.com/mERBq3H.jpg" property="og:image" />
         <meta content="#ff8c00" data-react-helmet="true" name="theme-color" />
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://i.imgur.com/hoQS2ET.png">
         <link rel="stylesheet" href="cssjs/main.css">
         <style>
             @import url("cssjs/main.css");
-            .main img{
+            main{
+                margin-bottom: 0;
+            } main img{
                 border: 3px solid white;
                 border-radius: 50%;
                 margin-left: 50px;
             }
 
             .image{
-                top: 25%;
-                padding-right: 5%;
-                padding-bottom: 14%;
+                top: 26%;
+                margin-right: 30%;
                 position: absolute;
                 right: 0%;
                 bottom: 0%;
@@ -38,7 +42,7 @@
             }
 
             @media screen and (max-width: 1450px) {
-                .main img{
+                main img{
                     width: 200px;
                 }
 
@@ -67,16 +71,13 @@
             </nav>
         </header>
         <main>
+            <img src="https://i.imgur.com/299swMmh.png" alt="walter white crying" width="300px" class="image"/>
             <h1>Contact Me!</h1>
             <ul>
                 <li>Email: <a href = "mailto:spiral_wafts.0t@icloud.com" target="_blank">spiral_wafts.0t@icloud.com</a></li>
                 <li>Discord: <a href = "https://discord.com/users/628672513345454122" target="_blank">FHDHGNGN#6050</a></li>
             </ul>
             <h1>External Links!</h1>
-            <div class="image">
-                <img src="https://i.imgur.com/mERBq3H.jpg" alt="kirby gun" width="300px"/>
-                <img src="https://i.imgur.com/zBNWQlO.gif" alt="me" width="300px"/>
-            </div>
             <ul>
                 <li>YouTube: <a href = "https://youtube.com/anthonyhuang07" target="_blank">Anthony Huang</a></li>
                 <li>GitHub: <a href = "https://github.com/anthonyhuang07" target="_blank">anthonyhuang07</a></li>
@@ -87,14 +88,16 @@
             </ul><br>
         </main>
         <footer>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "about.html">About</a></li>
-                <li><a href = "projects.html">Projects</a></li>
-                <li><a href = "blog.html">Blog</a></li>
-                <li><a href = "contact.html">Contact</a></li>
-            </ul>
-            <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io"> This Website is Open Source. Copyright (c) 2022 Anthony Huang</a></p>
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "projects.html">Projects</a></li>
+                    <li><a href = "blog.html">Blog</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+                <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a></p>
+            </nav>
         </footer>
     </body>
 </html>

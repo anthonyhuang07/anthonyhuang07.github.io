@@ -5,15 +5,17 @@ html {
 #main{
     position: absolute;
     font-size: 36px;
-    font-family:'Comfortaa', Helvetica, sans-serif;
+    font-family:'Aldrich', Helvetica, sans-serif;
     text-decoration: none; 
     color: #FF7700;
-    margin: 0;
-    top: 3%;
+    margin-top: 0.5em;
+    top: 0;
+    
 }
 
 body{
-    background-image: linear-gradient(to right, #363d43, #33393e);
+    background-image: url("https://i.imgur.com/gHPqI6Nh.png");
+    background-size: cover;
     margin-bottom: 3.75%;
 }
 
@@ -21,20 +23,19 @@ header{
     background-color: #1f2227;
     padding: 40px;
     margin: -8px;
-} 
-
-nav{
+} header nav{
     position: absolute;
-    left: 54%;
-    margin: 0;
-    top: 1.5%;
-} nav ul{
+    right: 0;
+    padding-right: 30px;
+    margin-top: 0.5em;
+    top: 0;
+} header nav ul{
     list-style-type: none;
     display: inline-block;
-} nav li{
+} header nav li{
     float:left;
-} nav a{
-    font-family:'Comfortaa', Helvetica, sans-serif;
+} header nav a{
+    font-family:'Aldrich', Helvetica, sans-serif;
     font-size:24px;
     color: #FF7700;
     text-decoration: none;
@@ -46,14 +47,14 @@ nav{
     #main{
         position: absolute;
         font-size: 24px;
-        font-family:'Comfortaa', Helvetica, sans-serif;
+        font-family:'Aldrich', Helvetica, sans-serif;
         text-decoration: none; 
         color: #FF7700;
         margin: 0;
         top: 3%;
     }
     nav a{
-        font-family:'Comfortaa', Helvetica, sans-serif;
+        font-family:'Aldrich', Helvetica, sans-serif;
         font-size:16px;
         color: #FF7700;
         text-decoration: none;
@@ -64,45 +65,48 @@ nav{
 
 main{
     color: #ffffff;
+    margin: 0 10px 5em;
+    background-color: rgba(31, 34, 39, 0.9);
+    width: 75%
 } main h1{
-    font-family:'Comfortaa', Helvetica, sans-serif;
+    font-family:'Aldrich', Helvetica, sans-serif;
     padding-top: 30px;
     padding-left: 30px;
     font-size:35px;
 } main p{
-    font-family: BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-family: 'Fira Code', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     padding-left: 30px;
-    width: 75%;
+    width: 90%;
 } main a{
-    color: #c0e8ff;
+    color: #a2ddff;
     text-decoration: none;
 } main ul{
-    font-family: BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-family: 'Fira Code', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     padding-left: 50px;
-    width: 75%;
+    width: 90%;
 } main h2{
-    font-family:'Comfortaa', Helvetica, sans-serif;
+    font-family:'Aldrich', Helvetica, sans-serif;
     padding-left: 30px;
 } 
 
-footer ul{
+footer nav ul{
+    font-size:24px;
     list-style-type: none;
     display: inline-block;
     padding-right: 2%;
-} footer li{
+} footer nav li{
     float:left;
-} footer a{
-    font-family:'Comfortaa', Helvetica, sans-serif;
-    font-size:20px;
+} footer nav a{
+    font-family:'Aldrich', Helvetica, sans-serif;
     color: #FF7700;
     text-decoration: none;
     padding: 10px;
     transition: background-color .5s;
-} footer p{
-    font-size: 20px;
-    font-family:'Comfortaa', Helvetica, sans-serif;
+} footer nav p{
+    font-size:24px;
+    font-family:'Aldrich', Helvetica, sans-serif;
     float: right;
     padding-right: 2%;
 } footer {
@@ -121,7 +125,7 @@ footer ul{
 .box{
     border: 3px solid white;
     border-radius: 10px;
-    width: 400px;
+    width: 5    00px;
     margin-left: 30px;
     color: white;
     display: flex;
