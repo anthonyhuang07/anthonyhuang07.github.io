@@ -19,6 +19,7 @@
             main{
                 margin-bottom: 0;
                 padding-bottom: 24px;
+                margin-bottom: 24px;
                 margin-top: 24px;
             } main h1{
                 margin-top: 0;
@@ -28,24 +29,24 @@
             } main ul{
                 margin-top: 0;
                 margin-bottom: 0;
+                padding-left: 150px;
             }
 
             .image{
                 margin: auto;
             }
 
-            footer {
-                background-color: #1f2227;
-                bottom: -15.5%;
-                left: 0;    
-                width: 100%;
-                color: #FF7700;
-                position:absolute;
-            }
-
             @media screen and (max-width: 1450px) {
                 main img{
                     width: 200px;
+                }
+            }
+
+            @media screen and (min-width: 3280px) {
+                main img, .image{
+                    width: 400px;
+                    margin-top: 48px;
+                    margin-bottom: 48px;
                 }
             }
         </style>
