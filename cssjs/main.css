@@ -43,30 +43,11 @@ header{
     transition: background-color .5s;
 }
 
-@media screen and (max-width: 1000px) {
-    #main{
-        position: absolute;
-        font-size: 24px;
-        font-family:'Aldrich', Helvetica, sans-serif;
-        text-decoration: none; 
-        color: #FF7700;
-        margin: 0;
-        top: 3%;
-    }
-    nav a{
-        font-family:'Aldrich', Helvetica, sans-serif;
-        font-size:16px;
-        color: #FF7700;
-        text-decoration: none;
-        padding: 10px;
-        transition: background-color .5s;
-    }
-}
-
 main{
     color: #ffffff;
     margin: 0 10px 5em;
     background-color: rgba(31, 34, 39, 0.9);
+    border-radius: 15px;
     width: 75%
 } main h1{
     font-family:'Aldrich', Helvetica, sans-serif;
@@ -137,4 +118,99 @@ footer nav ul{
 a:hover {
     text-decoration: underline;
     color: #fd993c;
+}
+
+@media screen and (max-width: 500px) {
+    /*phones*/
+    #main{
+        position: absolute;
+        left: 22px;
+        font-size: 26px;
+        font-family:'Aldrich', Helvetica, sans-serif;
+        text-decoration: none; 
+        color: #FF7700;
+        margin: 0;
+        top: 1%;
+    }
+    header{
+        background-color: #1f2227;
+        padding: 42px;
+        margin: -8px;
+    } header nav{
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 3%;
+        text-align: center;
+    } header nav ul{
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+    } header nav a{
+        padding: 5px;
+        font-family:'Aldrich', Helvetica, sans-serif;
+        font-size:20px;
+        color: #FF7700;
+        text-decoration: none;
+        transition: background-color .5s;
+    }
+    main{
+        color: #ffffff;
+        margin: 10px;
+        background-color: rgba(31, 34, 39, 0.9);
+        border-radius: 15px;
+        width: 95%
+    } main h1{
+        font-family:'Aldrich', Helvetica, sans-serif;
+        padding-top: 30px;
+        padding-left: 30px;
+        font-size:30px;
+    } main p{
+        font-family: 'Fira Code', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        padding-left: 30px;
+        width: 80%;
+    } main a{
+        color: #a2ddff;
+        text-decoration: none;
+    } main ul{
+        font-family: 'Fira Code', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        padding-left: 50px;
+        width: 80%;
+    } main h2{
+        font-family:'Aldrich', Helvetica, sans-serif;
+        padding-left: 30px;
+    } 
+    footer nav ul{
+        font-size:20px;
+        list-style-type: none;
+        display: inline-block;
+        margin: auto;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; 
+    } footer nav li{
+        float:left;
+    } footer nav a{
+        font-family:'Aldrich', Helvetica, sans-serif;
+        color: #FF7700;
+        text-decoration: none;
+        padding: 5px;
+        padding-left: 6px;
+        transition: background-color .5s;
+    } footer nav p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 12px;
+        font-size:20px;
+        font-family:'Aldrich', Helvetica, sans-serif;
+    } footer {
+        background-color: #1f2227;  
+        width: 100%;
+        color: #FF7700;
+        position:absolute;
+    }
 }
