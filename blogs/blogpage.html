@@ -15,15 +15,19 @@
         <link rel="icon" type="image/x-icon" href="https://i.imgur.com/hoQS2ET.png">
         <link rel="stylesheet" href="../cssjs/main.css">
         <style>
-            @import url("cssjs/main.css");
+            @import url("../cssjs/main.css");
             main{
                 margin-bottom: 1em;
             } main img{
-                margin-left: 30px;
                 margin-bottom: 30px;
                 border: white 2px solid;
             } main a{
                 text-decoration: underline;
+            } main ul{
+                list-style-type: none;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 0;
             }
 
             .collapsible {
@@ -31,14 +35,15 @@
                 color: white;
                 cursor: pointer;
                 padding: 10px;
-                width: 25%;
                 border: none;
                 font-family:'Aldrich', Helvetica, sans-serif;
                 width: 75%;
-                margin-left: 30px;
                 color: white;
                 display: flex;
+                text-align: center;
+                margin: auto;
                 align-items: center;
+                justify-content: center;
                 font-size: 20px;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
@@ -59,7 +64,7 @@
                 overflow: hidden;
                 transition: max-height 0.5s ease-out;
                 background-color: #4a5056; 
-                margin-left: 30px;
+                margin: auto;
                 width: 75%;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
@@ -94,13 +99,13 @@
         </header>
         <main>
             <h1>Archive!</h1>
-            <p>Archives of blogs from previous months/years.</p>
+            <p>Archives of blogs from previous months/years.</p><br>
             <button class="collapsible">2022</button>
             <div class="content">
                 <ul>
                     <li><a href="may2022.html">May 2022</a></li>
                 </ul>
-            </div><br>
+            </div><br><br>
             <img src="https://i.imgur.com/CFPcHha.jpg" width="540px"/>
             <br>
         </main>
