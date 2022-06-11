@@ -16,17 +16,6 @@
         <link rel="stylesheet" href="cssjs/main.css">
         <style>
             @import url("cssjs/main.css");
-            @media screen and (min-width: 2000px) {
-                main{
-                    width: 90%;
-                    padding-right: 30px;
-                    margin-bottom: 1em;
-                } main h2{
-                    margin-left: 30px;
-                } main ul{
-                    padding-left: 80px;
-                }
-            }
             main{
                 width: 90%;
                 padding-right: 30px;
@@ -34,26 +23,26 @@
             } main h2{
                 margin-left: 30px;
             } main ul{
-                margin-left: 150px;
-                padding-left: 0;
-                line-height: 64px;
+                margin: auto;
+                line-height: 36px;
                 list-style-position: inside;
-                font-size: 48px;
+                font-size: 20px;
             }
         </style>
     </head>
     <body>
         <header>
-            <p id="main">anthonyhuang07.github.io</p>
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
+            <a href="index.html" class="logo">anthonyhuang07.github.io</a>
+            <nav id="links">
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <p class="fa fa-bars">Menu</p>
+            </a>
         </header>
         <main>
             <h1>Projects!</h1>
@@ -66,20 +55,20 @@
                 </div>
                 <div class="box">
                     <a href="https://drive.google.com/drive/folders/1GgnnoAPEZkAOgXMPx3OoVw0sAdbJ-dN6?usp=sharing" target="_blank">
-                        <h2>C-Scale</h2>
+                        <h2>C Scale</h2>
                         </a>
                     <p>A very simple program made with C.</p>
                 </div>
                 <div class="box">
                     <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io" target="_blank"> 
-                        <h2>anthonyhuang07<br>.github.io</h2>
+                        <h2>anthonyhuang07.github.io</h2>
                         </a>
-                    <p>You're looking at it, what do you want?</p>
+                    <p>You're looking at it right now!</p>
                 </div>
             </div>
             <h1>Old Projects!</h1>
             <p>I made a lot of things when I was younger (Age 8-12) and was just starting out with coding, you can find some of my oldest projects here:<br> (Note: I cannot show all my Khan Academy projects due to parent/child account restrictions and all that, so I'll only show the ones I was the most proud of.)</p>
-            <p>
+            <p><br>
                 <ul>
                     <li><a href="https://www.khanacademy.org/computer-programming/minecraft-stampys-lovely-world/6566043733524480" target="_blank">p5.js Drawing</a></li>
                     <li><a href="https://www.khanacademy.org/computer-programming/minecraft-stampys-lovely-world-part-5/5552778521935872" target="_blank">p5.js Drawing #2</a></li>
@@ -93,15 +82,14 @@
         </main>
         <footer>
             <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
-                <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a></p>
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>    
             </nav>
+            <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>

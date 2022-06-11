@@ -16,28 +16,29 @@
         <link rel="stylesheet" href="cssjs/main.css">
         <style>
             @import url("cssjs/main.css");
-            main{
-                margin-bottom: 1em;
-            } main img{
+            main img{
                 margin-bottom: 30px;
                 border: white 2px solid;
             } main a{
                 text-decoration: underline;
+            } main ul{
+                margin: auto;
             }
         </style>
     </head>
     <body>
         <header>
-            <p id="main">anthonyhuang07.github.io</p>
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
+            <a href="index.html" class="logo">anthonyhuang07.github.io</a>
+            <nav id="links">
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <p class="fa fa-bars">Menu</p>
+            </a>
         </header>
         <main>
             <h1>My Blog!</h1>
@@ -58,14 +59,14 @@
                     Highlights of today: WWDC22! The joy of an Apple Event. Great effects, beautiful cinematography, and wonderful editing. Today felt like an actual "Worldwide Developer's Conference", as Apple announced many new APIs for developers to use publicly, which is something I haven't seen commonly in previous WWDCs.<br><br>
                     <img src="https://i.imgur.com/wCRrVng.png" width="500px" style="margin-left: 0;"/><br>
                     My opinions for today:<br>
-                    <ul style="line-height: 25px">
+                    <ul style="line-height: 25px"><br>
                         <li>iOS 16 - Love the new Home Screen, it looks absolutely fantastic, it feels like an Apple Watch face with the Apple customizability! Live text in video is cool, the Wallet got some nice updates, and the new Maps and Home app look great! One of my favorite parts of everything however, was CarPlay. I don't own a car and can't legally drive one yet, BUT DAMN IT LOOKS SO CLEAN! The new design is absolutely stunning, and with the same customizability as the iPhone lock screen. The indicators are very clean and I love it. <strong>Presentation: 7/10</strong></li><br>
                         <li>macOS Ventura - I thought Passkeys were a cool concept, looking forward to how it gets implemented. Stage Manager is okay, though I probably wouldn't use it. iPhone being used as a webcam is an awesome feature and it's oughtta be very useful! The best part of the feature is desk view, though now I just realised i can't use because I don't have an ultrawide camera. Metal 3 is a crazy introduction, MetalFX Upscaling is awesome. Finally, the settings app. This wasn't mentioned in the keynote but I'm going to miss the old design. Best part? The wallpaper. I think it looks very clean. <strong>Presentation: 6/10</strong></li><br>
                         <li>M2, MacBook Air/Pro - Amazing presentation, the MacBook Air made me the most excited in the event. I have been waiting for its release for a long time now, and it's finally here! The price is kinda uhhhhh.... anyways M2 is awesome, the M2 MacBook Pro announcement was very sloppily done, but the MacBook Air announcement was clean. <strong>Presentation: 8.5/10</strong></li><br>
                         <li>WatchOS 9 - Cool new workout metrics, a useful new medications feature, and a better sleep app. Sad that the watch faces are for Series 7 only :( other than that it's just a regular old presentation, it wasn't as exciting either, just like WatchOS 8. <strong>Presentation: 4/10</strong></li><br>
                         <li>iPadOS 16 - Stage Manager on iPad 💀 now the iPad is literally a Mac. AND THE BEST PART, FINALLY, A WEATHER APP!! With the big screen it looks very clean. And FreeForm is literally just Google Jamboard. Small features, but isn't exciting. <strong>Presentation: 2/10</strong></li><br>
                         That's it for WWDC! I will be downloading the iOS 16 Public Beta when it comes out, and going to save up for the M2 MacBook Air. Goodbye!
-                    </ul>
+                    </ul><br>
                 </p>
             </div><br>
             <button class="collapsible">June 9, 2022</button>
@@ -79,17 +80,15 @@
         </main>
         <footer>
             <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
-                <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a></p>
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>    
             </nav>
+            <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
         </footer>
-        <script src="./cssjs/confetti.js"></script>
+        <script src="index.js"></script>
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;

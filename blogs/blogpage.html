@@ -23,30 +23,25 @@
                 border: white 2px solid;
             } main a{
                 text-decoration: underline;
-            }
-
-            @media screen and (min-width: 3280px) {
-                main img, .image{
-                    width: 700px;
-                }
-                main ul{
-                    padding-left: 100px;
-                }
+            } main ul{
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         </style>
     </head>
     <body>
         <header>
-            <p id="main">anthonyhuang07.github.io</p>
-            <nav>
-                <ul>
-                    <li><a href = "../index.html">Home</a></li>
-                    <li><a href = "../about.html">About</a></li>
-                    <li><a href = "../projects.html">Projects</a></li>
-                    <li><a href = "../blog.html">Blog</a></li>
-                    <li><a href = "../contact.html">Contact</a></li>
-                </ul>
+            <a href="../index.html" class="logo">anthonyhuang07.github.io</a>
+            <nav id="links">
+                <a href = "../index.html">Home</a></li>
+                <a href = "../about.html">About</a></li>
+                <a href = "../projects.html">Projects</a></li>
+                <a href = "../blog.html">Blog</a></li>
+                <a href = "../contact.html">Contact</a></li>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <p class="fa fa-bars">Menu</p>
+            </a>
         </header>
         <main>
             <h1>Archive!</h1>
@@ -62,16 +57,15 @@
         </main>
         <footer>
             <nav>
-                <ul>
-                    <li><a href = "../index.html">Home</a></li>
-                    <li><a href = "../about.html">About</a></li>
-                    <li><a href = "../projects.html">Projects</a></li>
-                    <li><a href = "../blog.html">Blog</a></li>
-                    <li><a href = "../contact.html">Contact</a></li>
-                </ul>
-                <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a></p>
+                <a href = "../index.html">Home</a></li>
+                <a href = "../about.html">About</a></li>
+                <a href = "../projects.html">Projects</a></li>
+                <a href = "../blog.html">Blog</a></li>
+                <a href = "../contact.html">Contact</a></li>    
             </nav>
+            <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
         </footer>
+        <script src="../cssjs/index.js"></script>
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;

@@ -26,43 +26,26 @@
             } main img{
                 border: 3px solid white;
                 border-radius: 50%;
-            } main ul{
-                margin-top: 0;
-                margin-bottom: 0;
-                padding-left: 150px;
             }
 
             .image{
                 margin: auto;
             }
-
-            @media screen and (max-width: 1450px) {
-                main img{
-                    width: 200px;
-                }
-            }
-
-            @media screen and (min-width: 3280px) {
-                main img, .image{
-                    width: 400px;
-                    margin-top: 48px;
-                    margin-bottom: 48px;
-                }
-            }
         </style>
     </head>
     <body>
         <header>
-            <p id="main">anthonyhuang07.github.io</p>
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
+            <a href="index.html" class="logo">anthonyhuang07.github.io</a>
+            <nav id="links">
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <p class="fa fa-bars">Menu</p>
+            </a>
         </header>
         <main>
             <h1>Contact Me!</h1>
@@ -83,15 +66,14 @@
         </main>
         <footer>
             <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
-                <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a></p>
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>    
             </nav>
+            <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>

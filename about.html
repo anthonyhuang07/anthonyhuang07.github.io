@@ -16,44 +16,30 @@
         <link rel="stylesheet" href="cssjs/main.css">
         <style>
             @import url("cssjs/main.css");
-            main{
-                margin-bottom: 1em;
-            } main img{
+            main img{
                 padding-bottom: 30px;
             } main a{
                 text-decoration: underline;
             } main ul{
-                margin-left: 41px;
-                padding-left: 0;
+                margin: auto;
                 line-height: 30px;
                 list-style-position: inside;
-            }
-            @media screen and (min-width: 2000px) {
-                main ul{
-                    margin-left: 150px;
-                    padding-left: 0;
-                    line-height: 64px;
-                    list-style-position: inside;
-                    font-size: 48px;
-                }
-                main{
-                    margin-bottom: 25px;
-                }
             }
         </style>
     </head>
     <body>
         <header>
-            <p id="main">anthonyhuang07.github.io</p>
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
+            <a href="index.html" class="logo">anthonyhuang07.github.io</a>
+            <nav id="links">
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>
             </nav>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <p class="fa fa-bars">Menu</p>
+            </a>
         </header>
         <main>
             <h1>About Me!</h1>
@@ -77,21 +63,20 @@
                     </li><br>
                     <li>I was a somewhat popular YouTuber in 2020, when I made videos about this Roblox JoJo's Bizarre Adventure game, A Bizarre Day. I had 300 subscribers and my most popular video had 17K views until I purged my channel again.</li><br>
                     <li>I have arachnophobia. Pretty bad that even a realistic image of a spider on a screen will scare me.</li>
-                </ul>
+                </ul><br>
             </p>
             <img src="https://i.imgur.com/YyhROkx.png" alt="kirby cone" width="200px"/>
         </main>
         <footer>
             <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "blog.html">Blog</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
-                <p><a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a></p>
+                <a href = "index.html">Home</a></li>
+                <a href = "about.html">About</a></li>
+                <a href = "projects.html">Projects</a></li>
+                <a href = "blog.html">Blog</a></li>
+                <a href = "contact.html">Contact</a></li>    
             </nav>
+            <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
