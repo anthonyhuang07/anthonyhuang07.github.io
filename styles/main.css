@@ -12,74 +12,68 @@ html {
 }
 
 body{
-    min-height:100vh;
     margin:0;
     position: relative;
-    background-image: url("https://i.imgur.com/aRouDQL.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://i.imgur.com/aRouDQL.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-color:
-    rgb(48, 56, 66);
-} body::after{
-    content: '';
-    display: block;
-    height: 90px;
-
 }
 
 header{
-    overflow: hidden;
-    background-color: #1f2227;
-    padding: 20px 10px;
+    border-radius: 5rem;
+    margin: auto;
+    text-align:center;
     font-family: 'Aldrich', monospace;
-    margin-bottom: 15px;
-} header a {
-    float: left;
+    width: 50%;
+    background-color: rgba(21, 23, 28, 0.8);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} header a.logo{
+    margin: 1rem;
+    display: inline-block;
+    font-size: 2.9em;
+    font-family: 'Aldrich', monospace;
+    text-decoration: none;
+    text-align: center;
+    color: #ff7700;
+    transition: text-shadow 0.3s;
+} header nav a {
     color: #FF7700;
     text-align: center;
-    padding: 12px;
+    padding: 0.5rem;
     text-decoration: none;
-    font-size: 24px; 
+    font-size: 1.7em;
     line-height: 25px;
-    border-radius: 5px;
-    transition: color 0.2s;
-} header a.logo{
-    font-size: 36px;
-    padding-left: 20px;
+    transition: text-shadow 0.3s;
 } header a:hover{
-    color: #ffa551;
+    text-shadow: 0 0 5px #ffa135;
     text-decoration: none;
 } header nav{
-    float: right;
-    padding-right: 20px;
-} header a.icon{
-    visibility: hidden;
+    display: block;
+    padding-bottom: 1rem;
 }
 
 main{
     color: #ffffff;
-    background-color: rgba(31, 34, 39, 0.9);
-    border-radius: 15px;
     width: 75%;
     margin: auto;
     text-align: center;
-    margin-bottom: 15px;
 } main h1{
     font-family: 'Aldrich', monospace;
-    padding-top: 30px;
-    margin: 15px;
-    font-size:35px;
-    color: #FF7700;
+    font-size:3em;
+    color: #ffffff;
+    padding: 1rem;
 } main p{
     margin: auto;
     font-family: 'Fira Code', monospace;
-    font-size: 20px;
+    font-size: 1.5em;
     width: 90%;
 } main a{
     color: #a2ddff;
     text-decoration: none;
+    transition: text-shadow 0.3s;
 } main ul{
     font-family: 'Fira Code', 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -89,63 +83,49 @@ main{
 } main h2{
     font-family:'Aldrich', Helvetica, sans-serif;
     margin: 15px;
-} 
+} main a:hover{
+    text-shadow: 0 0 5px #4b93ff;
+} main img{
+    padding: 1.5rem;
+} main hr{
+    margin: auto;
+    border: white solid 0.1rem;
+    border-radius: 10rem;
+    width: 75%;
+}
 
-footer {
-    overflow: hidden;
-    background-color: #1f2227;
-    padding: 20px 10px;
-    font-family: 'Aldrich', monospace;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-} footer a{
-    float: right;
-    font-size: 24px;
-    padding-right: 25px;
-    text-decoration: none;
-    color: #FF7700;
-    line-height: 49px;
-    margin-top: 0;
-} footer nav{
-    float: left;
-    padding-left: 20px;
-} footer nav a{
-    float: left;
-    color: #FF7700;
+footer{
+    margin: auto;
     text-align: center;
-    padding: 12px;
+    font-family: 'Aldrich', Helvetica, sans-serif;
+    padding: 1.5em;
+} footer a{
+    color: #ffffff;
     text-decoration: none;
-    font-size: 24px; 
-    line-height: 25px;
-    transition: color 0.2s;
-} footer a:hover{
-    text-decoration: none;
+    font-size: 1.5em;
 }
 
 .projects{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box{
-    border: 3px solid white;
-    border-radius: 15px;
-    height: 120px;
-    margin-left: 30px;
+    background-color: rgba(21, 23, 28, 0.8);
+    border-radius: 2rem;
+    height: 5rem;
     color: white;
     display: flex;
     align-items: center;
+    margin: 1rem;
 } .box a{
     text-decoration: none;
+    font-size: 1.25em;
 } .box p{
-    padding: 20px;
+    padding: 1rem;
     margin: 0;
-    font-size: 16px;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #ffa551;
+    font-size: 1.5em;
 }
 
 button{
@@ -160,7 +140,7 @@ button{
 }
 
 .collapsible {
-    background-color: rgb(46, 46, 50);
+    background-color: rgb(37, 41, 51);
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -179,7 +159,7 @@ button{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 } .collapsible:hover {
-    background-color: rgb(69, 69, 75);
+    background-color: rgb(44, 44, 52);
 } .collapsible:after {
     content: '\02795';
     font-size: 13px;
@@ -192,7 +172,7 @@ button{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-    background-color: #4a5056; 
+    background-color: rgba(41, 45, 53, 0.8);
     margin: auto;
     width: 75%;
     border-bottom-left-radius: 10px;
