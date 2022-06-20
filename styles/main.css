@@ -24,16 +24,17 @@ body{
 header{
     border-radius: 5rem;
     margin: auto;
-    text-align:center;
+    text-align:
+    center;
     font-family: 'Aldrich', monospace;
-    width: 50%;
+    max-width: 50%;
     background-color: rgba(21, 23, 28, 0.8);
     margin-top: 1rem;
     margin-bottom: 1rem;
 } header a.logo{
     margin: 1rem;
     display: inline-block;
-    font-size: 2.9em;
+    font-size: 2.9vw;
     font-family: 'Aldrich', monospace;
     text-decoration: none;
     text-align: center;
@@ -206,42 +207,37 @@ button{
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media screen and (max-width: 500px) {
-    header a {
-        overflow: hidden;
-        float: none;
-        display: block;
-        text-align: center;
-    } header nav {
-        padding-right: 0;
-        float: none;
-        display: none;
+@media screen and (max-width: 500px){
+    header a.logo{
+        visibility: hidden;
+        margin: 0;
+    } header nav a{
+        line-height: 1.3em;
     } header{
-        position: relative;
-    } header a {
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 16px;
-        display: block;
-    } header a.logo{
-        font-size: 24px;
         text-align: center;
-        margin: auto;
-        padding: 0;
-    } header a.icon {
-        visibility: visible;
-        background: rgb(16, 17, 18);
-        color: #FF7700;
-        display: block;
-        margin: auto;
-        margin-top: 10px;
-        width: 20%;
-        padding: 5px;
-    } header a.icon:active{
-        background: rgb(40, 51, 63);
     }
 
     main{
-        width: 90%;
+        text-align: center;
+    } main h1{
+        font-size: 2em;
+    } main p{
+        font-size: 1.1em;
+    } main img{
+        width: 250px;
     }
-} /* phones */
+
+    .box a{
+        font-size: 0.7em;
+    } .box p{
+        font-size: 0.6em;
+    }
+
+    .collapsible{
+        width: 100%
+    }
+
+    .content{
+        width: 100%;
+    }
+}
