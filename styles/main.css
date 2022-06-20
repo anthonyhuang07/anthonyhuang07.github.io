@@ -35,7 +35,7 @@ header{
 } header a.logo{
     margin: 1rem;
     display: inline-block;
-    font-size: 2.9vw;
+    font-size: 2.6em;
     font-family: 'Aldrich', monospace;
     text-decoration: none;
     text-align: center;
