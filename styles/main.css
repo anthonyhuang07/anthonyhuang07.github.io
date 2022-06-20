@@ -209,6 +209,16 @@ button{
 }
 
 @media screen and (max-width: 500px){
+    body{
+        margin:0;
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://i.imgur.com/aRouDQL.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color:rgb(18, 21, 29);
+    }
+
     header a.logo{
         visibility: hidden;
         margin: 0;
