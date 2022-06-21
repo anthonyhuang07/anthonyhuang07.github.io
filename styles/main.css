@@ -119,8 +119,8 @@ footer{
     height: 5rem;
     color: white;
     display: flex;
-    align-items: center;
     margin: 1rem;
+    align-items: center;
 } .box a{
     text-decoration: none;
     font-size: 1.25em;
