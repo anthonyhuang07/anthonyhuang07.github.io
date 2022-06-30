@@ -16,19 +16,29 @@
         <style>
             main a{
                 text-decoration: underline;
-            } main ul{
+            } main ul li ul{
+                font-size: 1em;
+            }
+
+            article{
+                padding-left: 0;
+                display: block;
+                text-align: center;
+            } article ul{
+                color: #eaeaea;
                 margin: auto;
                 line-height: 30px;
                 list-style-position: inside;
                 font-size: 1.5em;
-            } main ul li ul{
-                font-size: 1em;
+            } article p{
+                margin: auto;
+                text-align: center;
+                width: 80%;
             }
         </style>
     </head>
     <body>
         <header>
-            <a href="../index.html" class="logo">anthonyhuang07.github.io</a>
             <nav>
                 <a href = "../index.html">Home</a></li>
                 <a href = "about.html">About</a></li>
@@ -38,7 +48,10 @@
             </nav>
         </header>
         <main>
-            <h1>About Me!</h1>
+            <div class="cool">
+                <h1>About <span class="date">Me!</span></h1>
+            </div>
+            <article>
             <p>Hello! My name is Anthony Huang, I am a 14 year old male, and I am a Canadian Highschooler (Currently in Grade 9). I enjoy doing all sorts of things with computers, such as video editing, gaming and programming. Here are some random facts about me:<br><br>
                 <ul>
                     <li>I know HTML, CSS and JavaScript. I also know a bit of C. I wish to be a full-stack software engineer in the future.</li><br>
@@ -58,6 +71,7 @@
                     <li>I have arachnophobia. Pretty bad that even a realistic image of a spider on a screen will scare me.</li>
                 </ul><br>
             </p>
+        </article>
             <hr>
         </main>
         <footer>
