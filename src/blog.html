@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://i.imgur.com/mU0RScm.png">
         <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/blog.css">
         <style>
             main img{
                 border: white 2px solid;
@@ -27,7 +28,6 @@
     </head>
     <body>
         <header>
-            <a href="../index.html" class="logo">anthonyhuang07.github.io</a>
             <nav>
                 <a href = "../index.html">Home</a></li>
                 <a href = "about.html">About</a></li>
@@ -37,7 +37,10 @@
             </nav>
         </header>
         <main>
-            <h1>My Blog!</h1>
+            <div class="cool">
+                <h1>My <span class="date">Blog!</span></h1>
+            </div>
+            <article>
             <p>Welcome to my Blog! On interesting days, I will be adding a section for one day, listing the events that have happened every month. I'll also be using this page to share some interesting stuff I found. I will also be linking archives for blogs every month and year that pass by.</p>
             <h2><a href="./blogs/blogpage.html">Blog Archive</a></h2>
             <button class="collapsible">June 1, 2022</button>
@@ -71,9 +74,18 @@
                     Those were the only news I had. But I have just updated the website with a fresh new look, new header and content styles. Hope you enjoy! Goodbye!
                 </p><br>
             </div><br>
-            <br>
-            <img src="https://i.imgur.com/yr4JQhd.png" width="350px" id="blogimage"/><br><br><br>
-            <hr>
+            <button class="collapsible">June 30, 2022</button>
+            <div class="content"><br>
+                <p>Hey guys, it's been almost a month, but I'm back I guess? Nothing really happened during the time I was gone. I did my exams, school is over, wasn't too exciting either. This issue today will mostly be about my projects, starting with FHDBot<br><br>
+                    I am currently moving all my commands to seperate files, for less clutter, and I tried one command handler, but since i wanted multiple commands on 1 file, I had to use a more scuffed method. You can check the source code on my GitHub Page. Most features are still broken, like Guess the countries, that needs to be fixed.<br><br>
+                    Finally, this website got ANOTHER revamp. I think it's the 4th one already? I opted to go even more minimalistic by completely getting rid of the background image, and making the text slightly bigger.<br><br>
+                    That's all for today, see you next time when I get so bored I talk here again
+                </p><br>
+            </div>
+            <br><br>
+            <img src="https://i.imgur.com/yr4JQhd.png" width="350px" id="blogimage"/>
+        </article>
+        <hr>
         </main>
         <footer>
             <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>

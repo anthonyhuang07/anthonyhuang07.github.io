@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>FHDHGNGN - Blog Archive</title>
-        <meta charset = "utf-8">
-        <meta content="anthonyhuang07.github.io" property="og:title" />
-        <meta content="FHDHGNGN/anthonyhuang07's blog archive." property="og:description" />
-        <meta content="https://anthonyhuang07.github.io" property="og:url" />
-        <meta content="https://i.imgur.com/mU0RScm.png" property="og:image" />
-        <meta content="#ff7700" data-react-helmet="true" name="theme-color" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/mU0RScm.png">
-        <link rel="stylesheet" href="../../styles/main.css">
-        <style>
-            main img{
-                margin-bottom: 30px;
-                border: white 2px solid;
-                padding: 0;
-            } main a{
-                text-decoration: underline;
-            } main ul{
-                margin-top: 1em;
-                margin-bottom: 1em;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <a href="../../index.html" class="logo">anthonyhuang07.github.io</a>
-            <nav>
-                <a href = "../../index.html">Home</a></li>
-                <a href = "../about.html">About</a></li>
-                <a href = "../projects.html">Projects</a></li>
-                <a href = "../blog.html">Blog</a></li>
-                <a href = "../contact.html">Contact</a></li>
-            </nav>
-        </header>
-        <main>
-            <h1>Archive!</h1>
+
+<head>
+    <title>FHDHGNGN - Blog Archive</title>
+    <meta charset="utf-8">
+    <meta content="anthonyhuang07.github.io" property="og:title" />
+    <meta content="FHDHGNGN/anthonyhuang07's blog archive." property="og:description" />
+    <meta content="https://anthonyhuang07.github.io" property="og:url" />
+    <meta content="https://i.imgur.com/mU0RScm.png" property="og:image" />
+    <meta content="#ff7700" data-react-helmet="true" name="theme-color" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/mU0RScm.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/blog.css">
+    <style>
+        main img {
+            margin-bottom: 30px;
+            border: white 2px solid;
+            padding: 0;
+        }
+
+        main a {
+            text-decoration: underline;
+        }
+
+        main ul {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a></li>
+            <a href="../about.html">About</a></li>
+            <a href="../projects.html">Projects</a></li>
+            <a href="../blog.html">Blog</a></li>
+            <a href="../contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="cool">
+            <h1>The <span class="date">Archive!</span></h1>
+        </div>
+        <article>
             <p>Archives of blogs from previous months/years.</p><br>
             <button class="collapsible">2022</button>
             <div class="content">
@@ -47,29 +56,29 @@
                     <li><a href="may2022.html">May 2022</a></li>
                 </ul>
             </div><br><br>
-            <img src="https://i.imgur.com/CFPcHha.jpg" width="540px"/>
-            <br>
-            <hr>
-        </main>
-        <footer>
-            <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
-        </footer>
-        <script src="../../scripts/index.js"></script>
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
+            <img src="https://i.imgur.com/CFPcHha.jpg" width="540px" />
+        </article>
+        <hr>
+    </main>
+    <footer>
+        <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-            for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                content.style.maxHeight = null;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
                 } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                } 
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
             });
-            }
-        </script>
-    </body>
+        }
+    </script>
+</body>
+
 </html>
