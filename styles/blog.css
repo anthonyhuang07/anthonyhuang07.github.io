@@ -3,7 +3,7 @@ h2{
 }
 
 .collapsible {
-    background-color: rgb(37, 41, 51);
+    background-color:hsl(240, 25%, 5%);
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -22,7 +22,7 @@ h2{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 } .collapsible:hover {
-    background-color: rgb(44, 44, 52);
+    background-color:hsl(240, 1%, 15%);
 } .collapsible:after {
     content: '\02795';
     font-size: 13px;
@@ -36,7 +36,7 @@ h2{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-    background-color: rgba(41, 45, 53, 0.8);
+    background-color:hsl(240, 1%, 20%);
     margin: auto;
     width: 75%;
     border-bottom-left-radius: 10px;
