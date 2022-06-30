@@ -14,47 +14,32 @@ html {
 body{
     margin:0;
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://i.imgur.com/aRouDQL.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-color:rgb(18, 21, 29);
+    background-color:hsl(240, 25%, 5%);
 }
 
 header{
-    border-radius: 5rem;
-    margin: auto;
-    text-align:
-    center;
-    font-family: 'Aldrich', monospace;
-    max-width: 50%;
-    background-color: rgba(21, 23, 28, 0.8);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-} header a.logo{
-    margin: 1rem;
-    display: inline-block;
-    font-size: 2.6em;
-    font-family: 'Aldrich', monospace;
-    text-decoration: none;
     text-align: center;
-    color: #ff7700;
-    transition: text-shadow 0.3s;
-} header nav a {
-    color: #FF7700;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem;
+    font-family: 'Aldrich', monospace;
+} header a {
+    color: white;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.5em; 
     line-height: 25px;
-    transition: text-shadow 0.3s;
+    border-radius: 1.5rem;
+    transition: 0.5s background-color;
 } header a:hover{
-    text-shadow: 0 0 5px #ffa135;
-    text-decoration: none;
+    background-color: rgb(36, 36, 40);
+    color: white;
 } header nav{
-    display: block;
-    padding-bottom: 1rem;
+    margin: auto;
 }
 
 main{
