@@ -154,3 +154,25 @@ button{
 } button:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px){
+
+    .cool{
+        padding: 2rem;
+    } .cool #title{
+        font-size:1.25em;
+    }
+
+    article{
+        display: flex !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    footer{
+        padding: 2rem 0 2rem 0;
+    } footer nav{
+        font-size: 0.9em;
+    }
+}
