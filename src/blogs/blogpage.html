@@ -49,37 +49,20 @@
             <h1>The <span class="date">Archive!</span></h1>
         </div>
         <article>
-            <p>Archives of blogs from previous months/years.</p><br>
-            <button class="collapsible">2022</button>
-            <div class="content">
-                <ul>
+            <p>Archives of the old blogs.</p>
+            <div>
+                <ul style="list-style-type: none">
                     <li><a href="may2022.html">May 2022</a></li>
                     <li><a href="june2022.html">June 2022</a></li>
+                    <li><a href="july2022.html">July 2022</a></li>
                 </ul>
-            </div><br><br>
-            <img src="https://i.imgur.com/CFPcHha.jpg" width="540px" />
+            </div>
         </article>
         <hr>
     </main>
     <footer>
         <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
     </footer>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
