@@ -15,7 +15,8 @@ article{
 }
 
 article .box{
-    background-color:hsl(200, 10%, 8%);
+    border: 3px solid rgb(125, 125, 125);
+    background-color: rgb(25, 25, 25);
     border-radius: 2rem;
     color: white;
     display: flex;
