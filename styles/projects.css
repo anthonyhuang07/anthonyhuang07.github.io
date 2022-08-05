@@ -14,8 +14,7 @@ article{
 }
 
 article .box{
-    background-color:
-    hsl(240, 25%, 5%);
+    background-color:hsl(200, 10%, 5%);
     border-radius: 2rem;
     color: white;
     display: flex;
