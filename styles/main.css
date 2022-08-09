@@ -29,7 +29,8 @@ header{
     overflow: hidden;
     padding: 1.5rem 1.5rem;
     font-family: 'Aldrich', monospace;
-    background-color:hsl(200, 10%, 10%);
+    background-color:
+    hsl(200, 10%, 10%);
     border-radius: 5rem;
 } header a {
     color: white;
@@ -155,24 +156,23 @@ button{
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 500px){
+    header a{
+        font-size: 1.6em; 
+    }
 
     .cool{
         padding: 2rem;
-    } .cool #title{
-        font-size:1.25em;
+    } .cool h1{
+        font-size:1.6em;
     }
 
-    article{
-        display: flex !important;
-        padding: 0 !important;
-        margin: 0 auto !important;
-        text-align: center;
-    }
-
-    footer{
-        padding: 2rem 0 2rem 0;
-    } footer nav{
-        font-size: 0.9em;
+    article p{
+        font-size: 1.4em;
+        width: 80%;
+    } article li{
+        margin: auto;
+        font-size: 1em;
+        width: 100%;
     }
 }

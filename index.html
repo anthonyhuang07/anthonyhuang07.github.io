@@ -19,20 +19,11 @@
                 text-decoration: underline;
             }
 
-            @media screen and (max-width: 500px){
-                main img{
-                    width: 175px;
-                }
-            }
-
             article{
-                margin: auto;
-                background-color:hsl(200, 10%, 10%);
                 display: flex;
                 padding: 2rem 0 2rem 5rem;
                 text-align: left;
                 width: 90%;
-                border-radius: 2rem;
                 justify-content: space-between;
                 flex-direction: row;
                 align-items: center;
@@ -43,6 +34,20 @@
             } article img{
                 float: right;
                 margin-right: 5rem;
+            }
+
+            @media screen and (max-width: 500px){
+                article{
+                    padding-left: 0;
+                    flex-direction: column;
+                } article p{
+                    text-align: center;
+                    font-size: 1.3em;
+                    width: 80%;
+                } article img{
+                    margin-right: 0;
+                    width: 150px;
+                }
             }
         </style>
     </head>
@@ -56,13 +61,12 @@
                 <a href = "src/contact.html">Contact</a></li>
             </nav>
         </header>
-        <main>
-            <div class="rect"></div>    
+        <main> 
             <div class="cool">
                 <h1 id="title"></h1>
             </div>
             <article>
-                <p>Hey! I'm FHDHGNGN/anthonyhuang07! I am a front-end programmer mainly focusing on HTML, CSS and JavaScript/TypeScript. This website was made with regular HTML/CSS and deployed with GitHub Pages. Check out the other pages on this website to learn more about me! <br><br>Click <a href="./src/extras/error.html">here</a> to own the google.com domain for free!</p>
+                <p>Hey there, I'm FHDHGNGN! I am a front-end programmer mainly focusing on HTML, CSS, JavaScript and TypeScript. This website was made with regular HTML/CSS and deployed with GitHub Pages. Check out the other pages on this website to learn more about me! <br><br>Click <a href="./src/extras/error.html">here</a> to own the google.com domain for free!</p>
                 <img src="https://i.imgur.com/0ZBQP5A.gif" alt="neon stickman dancing gif" width="250px"/>
             </article>
             <hr>
@@ -70,7 +74,6 @@
         <footer>
             <a href="https://github.com/anthonyhuang07/anthonyhuang07.github.io">Copyright (c) 2022 Anthony Huang</a>
         </footer>
-        <script src="scripts/index.js"></script>
         <script>
             let current = new Date();
             document.getElementById("title").innerHTML = `Hello! Today is <span class="date">${current.toLocaleDateString()}.</span>`;

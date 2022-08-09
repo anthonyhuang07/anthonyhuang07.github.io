@@ -34,3 +34,25 @@ article .box{
     border: transparent;
     margin-right: 0;
 }
+
+@media screen and (max-width: 500px){
+    .projects{
+        display: flex;
+    }
+
+    article .box{
+        display: flex;
+        flex-direction: column;
+    } .box p{
+        text-decoration: none;
+        font-size: 1.3em;
+        padding-top: 0;
+    } .box a{
+        font-size: 1em;
+    } .box a h2{
+        padding: 1rem;
+        margin-bottom: 0;
+    } .box img{
+        width: 200px;
+    }
+}
