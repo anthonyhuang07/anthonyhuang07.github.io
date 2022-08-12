@@ -159,12 +159,14 @@ button{
 @media screen and (max-width: 500px){
     header a{
         font-size: 1.6em; 
+        line-height: 2.5rem;
+        padding: 0.5rem;
     }
 
     .cool{
         padding: 2rem;
     } .cool h1{
-        font-size:1.6em;
+        font-size:1.5em;
     }
 
     article p{
@@ -172,7 +174,7 @@ button{
         width: 80%;
     } article li{
         margin: auto;
-        font-size: 1em;
+        font-size: 0.8em;
         width: 100%;
     }
 }
