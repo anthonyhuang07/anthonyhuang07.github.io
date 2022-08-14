@@ -6,6 +6,7 @@
       <meta content="https://anthonyhuang07.github.io" property="og:url" />
       <meta content="https://upload.wikimedia.org/wikipedia/commons/e/eb/Blinking_warning.gif" property="og:image" />
       <meta content="#e00404" data-react-helmet="true" name="theme-color" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="icon" type="image/x-icon" href="https://openclipart.org/image/2000px/29833">
             <meta charset = "utf-8">
             <title>PIRACY WARNING · GitHub Pages</title>
@@ -83,142 +84,53 @@
                   90% { transform: translate(1px, 2px) rotate(0deg); }
                   100% { transform: translate(1px, -2px) rotate(-1deg); }
               }
-        
+              
+              #blood{
+                width: 50%;
+                visibility: hidden;
+                z-index: 999;
+                position: fixed;
+              }
             </style>
     </head>
     <body>
         <div class="container">
-            <h1>404</h1>
-            <p id="OHNO"><strong>PIRACY DETECTED</strong></p>
-      
-            <p id="yourmom">
-              You have attemped to pirate a copyrighted website. Piracy is a serious crime. Once you're ready, please click the screen, and you will be prompted with a message and connected to local authorities via an emergency Wi-Fi connection bruteforce.
-            </p>
-      
-            <p id="JUMPSCARE">
-              Please speak clearly into the microphone.<br>
-              1. State your legal name<br>
-              2. State your current home address<br>
-              3. Recite the following:<br><br>
-              <code>I am in possession of an illegally obtained World-Wide-Web webpage. By order of International Copyright Law, I hereby plead guilty to this crime and request my immediate arrest.</code>
-            </p>
+            <div id="clickable">
+              <img src='https://www.freeiconspng.com/uploads/blood-png-4.png' id="blood"/>
+              <h1>404</h1>
+              <p id="OHNO"><strong>PIRACY DETECTED</strong></p>
+        
+              <p id="yourmom">
+                You have attemped to pirate a copyrighted website. Piracy is a serious crime. Once you're ready, please click the screen, and you will be prompted with a message and connected to local authorities via an emergency Wi-Fi connection bruteforce.
+              </p>
+        
+              <p id="JUMPSCARE">
+                Once connected, please speak clearly into the microphone.<br>
+                1. State your legal name<br>
+                2. State your current home address<br>
+                3. Recite the following:<br><br>
+                <code>I am in possession of an illegally obtained World-Wide-Web webpage. By order of International Copyright Law, I hereby plead guilty to this crime and request my immediate arrest.</code>
+              </p>
+            </div>
       
             <p>
-              Website piracy is ILLEGAL. <a href="https://en.wikipedia.org/wiki/Online_piracy">Read the full article</a>
+              Website piracy is ILLEGAL. <a href="https://www.youtube.com/watch?v=RvBwypGUkPo">Read the full article</a>
               for more information about <strong>online piracy</strong>.
             </p>
       
             <div id="suggestions">
-              <a href="https://en.wikipedia.org/wiki/Online_piracy">PIRACY WARNING</a> —
-              <a href="https://en.wikipedia.org/wiki/Online_piracy">PIRACY WARNING</a>
+              <a href="https://www.youtube.com/watch?v=RvBwypGUkPo">PIRACY WARNING</a> —
+              <a href="https://www.youtube.com/watch?v=RvBwypGUkPo">PIRACY WARNING</a>
             </div>
       
-            <a href="dead.html" class="logo logo-img-1x">
+            <a href="https://www.youtube.com/watch?v=RvBwypGUkPo" class="logo logo-img-1x">
               <img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76IRWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjVs4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODElV6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINYhGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9Okh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqammaAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4xSlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYATKfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsyePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6AbpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT35ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heWVnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyuwM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=">
             </a>
       
-            <a href="dead.html" class="logo logo-img-2x">
+            <a href="https://www.youtube.com/watch?v=RvBwypGUkPo" class="logo logo-img-2x">
               <img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQUM1QkUxRUI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQUM1QkUxRkI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdGQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjgwQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hfPRaQAAB6lJREFUeNrsW2mME2UYbodtt+2222u35QheoCCYGBQligIJgkZJNPzgigoaTEj8AdFEMfADfyABkgWiiWcieK4S+QOiHAYUj2hMNKgYlEujpNttu9vttbvdw+chU1K6M535pt3ubHCSyezR+b73eb73+t7vrfXsufOW4bz6+vom9/b23ovnNNw34b5xYGAgODg46Mbt4mesVmsWd1qSpHhdXd2fuP/Afcput5/A88xwymcdBgLqenp6FuRyuWV4zu/v759QyWBjxoz5t76+/gun09mK5xFyakoCAPSaTCazNpvNPoYVbh6O1YKGRF0u13sNDQ27QMzfpiAAKj0lnU6/gBVfAZW2WWpwwVzy0IgP3G73FpjI6REhAGA9qVRqA1b9mVoBVyIC2tDi8Xg24+dUzQiAbS/s7Ox8G2o/3mKCC+Zw0efzPQEfcVjYrARX3dbV1bUtHo8fMgt42f+Mp0yUTVQbdWsAHVsikdiHkHaPxcQXQufXgUBgMRxme9U0AAxfH4vFvjM7eF6UkbJS5qoQwEQGA57Ac5JllFyUVZZ5ckUEgMVxsK2jlSYzI+QXJsiyjzNEAJyJAzb/KQa41jJKL8pODMQiTEAymXw5n8/P0IjD3bh7Rgog59aanxiIRTVvV/oj0tnHca/WMrVwODwB3raTGxzkBg/gnZVapFV62Wy2n5AO70HM/5wbJ0QnXyQSaVPDIuNZzY0V3ntHMwxiwHA0Gj2Np7ecIBDgaDAYXKCQJM1DhrgJ3nhulcPbl8j4NmHe46X/g60fwbz3aewjkqFQaAqebWU1AOqyQwt8Id6qEHMc97zu7u7FGGsn7HAiVuosVw7P35C1nccdgSCxop1dHeZswmfHMnxBo6ZTk+jN8dl/vF7vWofDsa+MLN9oEUBMxOb3+1eoEsBVw6Zmua49r8YmhAKDiEPcMwBsxMiqQ+ixzPFxZyqRpXARG/YOr1ObFJ0gUskXBbamcR1OKmMUvDxHRAu8/LmY3jFLMUpFqz9HxG65smYJdyKyECOxDiEAe/p1gjF2oonivZAsxVgl2daa4EQWCW6J55qFAFFZiJWYLxNQy2qOSUzGRsyXCUDIeliwAHEO4WSlWQBRFoZakXcKmCXmyXAKs0Ve9vl8q42WoIYpJU4hV3hKcNs8m9gl7p/xQ73eF5kB4j5mNrWmTJRNwAzqiV1CxjVTZCIkEq+Z1bZFZSN2CenmVAFVy4Plz8xKAGWjjAKFk6lCBMDR/MJjLLMSQNm43xAiQKTaA+9/wewhDjL+JVI1kkTSSOTcKbMTwPqESAot6dn6Fr1gHwVJju6IRuyiByPuUUBAg5DGkAgBmxlvdgIEK9gDkohdY/BJo4CAG0R8miRSsGABkgVQs4KXu098IgUXSSRsFAoKZiVAVDY2WUiiPTjYRi41KwGisrGsLtlsth8Fiwnz2fBkQvWfRtlE3iF2yW63/yCacXZ1dW02GwGyTFaRd4idJnCKHRaCxYRHoG5LTKT6SyiToP1fJHbmAYPYRR0UnZQtMnA6s0zg+GZBlt0Gdo7EPHgpE3Q6nZ8YyLhc8Xj8MJh/aKTAY+5FPAKHLE7RdwuYJZmNwzyCMkBCYyKROJBMJl9B/PXXCjjmCmDOVzH3fiPpObEWGqoKe4EBl8v1hlqsdLvd23mkxHM9pc9kMpmno9HoeTii7ewbHEZPPx1ztLS1tV3AnGuMjiNjvbQFuHw6zDo5By7dTPAQNBgMLrRarTkSls1mnwT7uwp9virx9QzbW/HuV/j5d/b+6jniKlllP8lkeONJDk+dq9GsQTnC4fB1heO0K47Hwe7WdDr9nAKgXwOBwHI+C45Htj1d6sd429TUNEcmUdc+PRaLHcvn87dXW4ugzdsaGxufL94NFv9zi1J7GVbhlvb2dnaJ3SVrxfc+n2+NTsZ7/H7/Mr3g5XdSIHyJSH1PZ+7fToyl2+ErqilgZ4NaLYB9goVGaHjR93Hv1ZrU4XDsFT20kH3PObzbWk0CgG1jacVIUnAQb9F+VexyLMzkpcLv0IJV7AHQIOCAUYHx7v5qgScmYHtTqSAyZLEJTK22Bie4iq3xsqpm4SAf9Hq9a2DnJ4uLK3SEULcdRvp3i3zHySqpficxEdsQc1NrlYXXvR+O7qASSezXB+h1SuUomgg9LL8BUoV4749EIolKh+EiqWmqVEZlDgHks2pxHw7xTqUQw9J5NcAXOK10AGIoZ6Zli6JY6Z1Q461KoZ4NiKLHarW+KDsxlDUPHZ5zPQZqUVDPJsTqb5n9malbpAh8C2XXDLl62+WZIDFRUlNVOiwencnNU3aQEkL+cDMSoLvZo2fQB7AJssNAuFuvorlDVVkkg2I87+jo2K2QAVphDrfyViK5VqtO34OkaxXCp+7drdDBCAdubm6eidX+2WwqT5komwh4YQLk+H4aE93h8Xg2gvHekQZOGSgLZTLyDTLJ4Lx9/KZWKBSainT4Iy3FqQBfnUZR42PKQFksBr9QKVXCPusD3OiA/RkQ5kP8qV/Jl1WywAp/6+dcmPM2zL1UrUahe4JqfnWWKXIul3uUbfP8njAFLW1OFr3gdFtZ72cNH+PtQT7/brW+NXqJAHh0y9V8/U/A1U7AfwIMAD7mS3pCbuWJAAAAAElFTkSuQmCC">
             </a>
         </div>
-        <script>
-          var elem = document.documentElement;
-          let clickEnabled = true;
-          let click2 = true;
-          document.body.addEventListener('click', function(event) {
-            if(!clickEnabled) return
-            clickEnabled = false;
-            alert("You will now be starting the process. Note: you may leave before the connection tone starts. If you leave the site after the connection tone starts, you will get a Criminal Record and your information tracked by GitHub Pages via Bruteforce SSH on your IP Address. This will allow local authorities to have your information anyways, so you might want to continue with the call to attempt to defend yourself.");
-            let countdown = 25;
-            let ongoing = 0;
-            let ongoingm = 0;
-            function startCountdown() {
-              if(ongoing === 60){
-                ongoing = 0;
-                ongoingm++;
-              } else if(ongoing === 9){
-                if(!click2) return;
-                document.getElementById('JUMPSCARE').innerHTML = `<img src="https://img.wattpad.com/4009de212dd674200c2f899cfcf4ccf2969b60e3/687474703a2f2f342e62702e626c6f6773706f742e636f6d2f2d7061747570314a6d6973302f557734483534476a5465492f41414141414141414259552f7832595a745752664655772f73313630302f6d617872657364656661756c742e6a7067?s=fit&h=360&w=360&q=80" width="500px" id="JUMPIMAGE"/>`;
-                var audio = new Audio('../assets/jump.mp3');
-                audio.play();
-                click2 = false;
-              }
-              switch(ongoing){
-                case 0:
-                  ongoing = "00"
-                  break;
-                case 1:
-                  ongoing = "01"
-                  break;
-                case 2:
-                  ongoing = "02"
-                  break;
-                case 3:
-                  ongoing = "03"
-                  break;
-                case 4:
-                  ongoing = "04"
-                  break;
-                case 5:
-                  ongoing = "05"
-                  break;
-                case 6:
-                  ongoing = "06"
-                  break;
-                case 7:
-                  ongoing = "07"
-                  break;
-                case 8:
-                  ongoing = "08"
-                  break;
-                case 9:
-                  ongoing = "09"
-                  break;
-              }
-              document.getElementById('yourmom').innerHTML = `Connected. Please follow the instructions below.<br>Ongoing Call: ${ongoingm}:${ongoing}`;
-              ongoing++         
-              setTimeout(startCountdown, 1000)
-            }
-            function reduceCountdown3() {
-              if (countdown == 0) {
-                startCountdown();
-                return
-              }
-              countdown--;                
-              setTimeout(reduceCountdown3, 1000)
-            }
-            function reduceCountdown2() {
-              if (countdown == 0) {
-                document.getElementById('yourmom').innerHTML = `Access Point Found. Connecting... Please wait for local authorities to pick up the line and follow the instructions below.`;
-                countdown = 14;
-                reduceCountdown3();
-                return
-              }
-              countdown--;                
-              setTimeout(reduceCountdown2, 1000)
-            }
-            function reduceCountdown() {
-                if (countdown == 0) {
-                  document.getElementById('yourmom').innerHTML = `The connection tone has started. Initializing bruteforce...`;
-                  countdown = 20;
-                  reduceCountdown2();
-                  return
-                }
-                countdown--;
-                document.getElementById('yourmom').innerHTML = `The process has started. You have ${countdown} seconds until the connection tone starts.`;
-                setTimeout(reduceCountdown, 1000)
-              }
-            reduceCountdown();
-            var audio = new Audio('../../assets/piracy2.mp3');
-            audio.play();
-            elem.requestFullscreen();
-            elem.webkitRequestFullscreen();
-            elem.msRequestFullscreen();
-          });
-          window.addEventListener('beforeunload', function (e) {
-              e.preventDefault();
-              e.returnValue = '';
-          });
-        </script>
+        <script src="../scripts/error.js"></script>
     </body>
 </html>
