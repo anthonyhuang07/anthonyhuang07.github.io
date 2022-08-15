@@ -21,11 +21,11 @@ window.addEventListener('beforeunload', function (thing) { // asks before leavin
 
 function ipLogger() { // DON'T WORRY, THIS WON'T BE SAVED, just a funny troll
     $.getJSON('https://ipapi.co/json/', function (data) {
-        alert(`Local Authorities have located you!\n\nIP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`);
+        document.getElementById('ip').innerHTML = `Local Authorities have located you!<br><br>IP: ${data.ip}<br>Country: ${data.country_name}<br>State/Province: ${data.region}<br>Town/City: ${data.city}<br>Zip/Postal: ${data.postal}<br>Coordinates: ${data.latitude}, ${data.longitude}`;
     });
 }
 
-document.getElementById("clickable").addEventListener('click', function (event) {
+document.body.addEventListener('click', function (event) {
     if (!clickEnabled) return
     clickEnabled = false;
     alert("You will now be starting the process. Note: If you leave the site right now, you will receive a Criminal Record on your name and your information tracked by GitHub & Microsoft Incorporated via Bruteforce SSH on your IP Address. This will allow local authorities to collect your information. In order to defend yourself, please have a lawyer ready before you start the connection. DO NOT LEAVE THIS SITE.");
@@ -47,8 +47,8 @@ document.getElementById("clickable").addEventListener('click', function (event) 
             document.getElementById('JUMPSCARE').innerHTML = `<img src="https://i.ytimg.com/vi/tdXgl8QtU-I/mqdefault.jpg" width="500px" id="JUMPIMAGE"/>`;
             var superLuigi = new Audio('../../assets/superLuigi.mp3');
             superLuigi.play();
-        } else if (ongoing === 25){
-            document.getElementById('JUMPSCARE').innerHTML = `<h1 id="JUMPIMAGE">Happy April Fools.</h1>`;
+        } else if (ongoing === 22){
+            document.getElementById('JUMPSCARE').innerHTML = `<h1 id="JUMPIMAGE" style="color: rgb(119, 7, 7);">Happy April Fools.</h1>`;
         }
         switch (ongoing) {
             case 0:
@@ -120,6 +120,8 @@ document.getElementById("clickable").addEventListener('click', function (event) 
             getLocalStream();
         } else if (countdown == 15) {
             ipLogger();
+        } else if (countdown == 5) {
+            document.getElementById("ip").innerHTML = ""
         }
         countdown--;
         document.getElementById('yourmom').innerHTML = `The process has started. You have ${countdown} seconds until the connection tone starts.`;
