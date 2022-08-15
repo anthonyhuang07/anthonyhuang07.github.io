@@ -14,10 +14,9 @@ function getLocalStream() { //asks for vid and mic perms (does nothing)
     });
 }
 
-window.addEventListener('beforeunload', function (thing) { // asks before leaving page
-    thing.preventDefault();
-    thing.returnValue = '';
-});
+window.onbeforeunload = function () { // asks before leaving page
+    return "";
+};  
 
 function ipLogger() { // DON'T WORRY, THIS WON'T BE SAVED, just a funny troll
     $.getJSON('https://ipapi.co/json/', function (data) {
