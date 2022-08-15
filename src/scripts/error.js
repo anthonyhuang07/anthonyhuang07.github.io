@@ -1,4 +1,4 @@
-// if you're reading this, that link in the homepage of my website is a joke, and there's a jumpscare when the "call" reaches 7 seconds.
+// if you're reading this, that link in the homepage of my website leads to this, a pranking website. Ip loggers, microphone/camera permissions are not used harmfully. You can check the code for yourself.
 
 var elem = document.documentElement;
 let clickEnabled = true; // checks if you're able to click to start the process
@@ -30,10 +30,11 @@ document.body.addEventListener('click', function (event) {
     clickEnabled = false;
     alert("You will now be starting the process. Note: If you leave the site right now, you will receive a Criminal Record on your name and your information tracked by GitHub & Microsoft Incorporated via Bruteforce SSH on your IP Address. This will allow local authorities to collect your information. In order to defend yourself, please have a lawyer ready before you start the connection. DO NOT LEAVE THIS SITE.");
     let countdown = 25;
+    // ongoing call counters (start when startCountdown() is called)
     let ongoing = 0;
     let ongoingm = 0;
 
-    function startCountdown() { //the call countdown (7 sec: jumpscare)
+    function startCountdown() { //the call countdown (7 sec: jumpscare, 15 sec: jumpscare 2, 22 sec: april fools text)
         if (ongoing === 60) {
             ongoing = 0;
             ongoingm++;
@@ -50,6 +51,8 @@ document.body.addEventListener('click', function (event) {
         } else if (ongoing === 22){
             document.getElementById('JUMPSCARE').innerHTML = `<h1 id="JUMPIMAGE" style="color: rgb(119, 7, 7);">Happy April Fools.</h1>`;
         }
+
+        // replaces single digit numbers with double digits in the call timer
         switch (ongoing) {
             case 0:
                 ongoing = "00"
@@ -88,7 +91,7 @@ document.body.addEventListener('click', function (event) {
         setTimeout(startCountdown, 1000)
     }
 
-    function reduceCountdown3() { //countdown no3
+    function reduceCountdown3() { //countdown no3 (access point found)
         if (countdown == 0) {
             startCountdown();
             return
@@ -97,7 +100,7 @@ document.body.addEventListener('click', function (event) {
         setTimeout(reduceCountdown3, 1000)
     }
 
-    function reduceCountdown2() { //countdown no2
+    function reduceCountdown2() { //countdown no2 (bruteforce init)
         if (countdown == 0) {
             document.getElementById('yourmom').innerHTML = `Access Point Found. Connecting... Please wait for local authorities to pick up the line and follow the instructions below.`;
             countdown = 14;
@@ -110,7 +113,7 @@ document.body.addEventListener('click', function (event) {
         setTimeout(reduceCountdown2, 1000)
     }
 
-    function reduceCountdown() { //countdown no1
+    function reduceCountdown() { //countdown no1 (process start)
         if (countdown == 0) {
             document.getElementById('yourmom').innerHTML = `The connection tone has started. Initializing bruteforce...`;
             countdown = 20;
@@ -129,8 +132,9 @@ document.body.addEventListener('click', function (event) {
     }
 
     reduceCountdown();
-    var audio = new Audio('../../assets/piracy2.mp3');
-    audio.play();
+    // the background audio (Credit: Joey Perleoni for the nintendo anti-piracy screens)
+    var audio = new Audio('../../assets/piracy2.mp3'); 
+    audio.play(); 
     // fullscreen requests
     elem.requestFullscreen();
     elem.webkitRequestFullscreen();
