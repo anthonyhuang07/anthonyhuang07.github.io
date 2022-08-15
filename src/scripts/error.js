@@ -38,7 +38,7 @@ document.body.addEventListener('click', function (event) {
         if (ongoing === 60) {
             ongoing = 0;
             ongoingm++;
-        } else if (ongoing === 9){
+        } else if (ongoing === 9){ // adding this line marks my 444th github commit! I BETTER GET RID OF IT, THIS COMMENT SHOULD DO IT!
             document.getElementById('blood').style.visibility = 'visible';
         } else if (ongoing === 7) {
             if (!click2) return;
