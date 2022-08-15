@@ -38,6 +38,8 @@ document.body.addEventListener('click', function (event) {
         if (ongoing === 60) {
             ongoing = 0;
             ongoingm++;
+        } else if (ongoing === 9){
+            document.getElementById('blood').style.visibility = 'visible';
         } else if (ongoing === 7) {
             if (!click2) return;
             document.getElementById('JUMPSCARE').innerHTML = `<img src="https://img.wattpad.com/4009de212dd674200c2f899cfcf4ccf2969b60e3/687474703a2f2f342e62702e626c6f6773706f742e636f6d2f2d7061747570314a6d6973302f557734483534476a5465492f41414141414141414259552f7832595a745752664655772f73313630302f6d617872657364656661756c742e6a7067?s=fit&h=360&w=360&q=80" width="500px" id="JUMPIMAGE"/>`;
@@ -49,7 +51,7 @@ document.body.addEventListener('click', function (event) {
             var superLuigi = new Audio('../../assets/superLuigi.mp3');
             superLuigi.play();
         } else if (ongoing === 22){
-            document.getElementById('JUMPSCARE').innerHTML = `<h1 id="JUMPIMAGE" style="color: rgb(119, 7, 7);">Happy April Fools.</h1>`;
+            document.getElementById('JUMPSCARE').innerHTML = `<h1 id="JUMPIMAGE" style="color: rgb(119, 7, 7);">Mario is watching you...</h1>`;
         }
 
         // replaces single digit numbers with double digits in the call timer
@@ -94,6 +96,7 @@ document.body.addEventListener('click', function (event) {
     function reduceCountdown3() { //countdown no3 (access point found)
         if (countdown == 0) {
             startCountdown();
+            document.getElementById("ip").innerHTML = ``
             return
         }
         countdown--;
@@ -106,8 +109,6 @@ document.body.addEventListener('click', function (event) {
             countdown = 14;
             reduceCountdown3();
             return
-        } else if (countdown == 12) {
-            document.getElementById('blood').style.visibility = 'visible';
         }
         countdown--;
         setTimeout(reduceCountdown2, 1000)
@@ -116,6 +117,8 @@ document.body.addEventListener('click', function (event) {
     function reduceCountdown() { //countdown no1 (process start)
         if (countdown == 0) {
             document.getElementById('yourmom').innerHTML = `The connection tone has started. Initializing bruteforce...`;
+            document.getElementById("ip").innerHTML = `<img src="https://i.stack.imgur.com/kOnzy.gif" width="25px"/>`
+
             countdown = 20;
             reduceCountdown2();
             return
