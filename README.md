@@ -3,6 +3,4 @@ My random website I made for fun, nothing special. Mostly made as a personal pro
 
 Made with decent HTML/CSS/JS knowledge.
 
-~~https://ah07.xyz/index.html~~
-
-NEW DOMAIN! https://ah07.xyz
+https://ah07.xyz
