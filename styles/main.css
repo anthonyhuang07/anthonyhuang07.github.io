@@ -56,7 +56,7 @@ main{
     color: #ffffff;
     padding: 1rem;
 } main p{
-    font-family: 'Fira Code', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 1.75em;
     width: 90%;
 } main a{
@@ -64,7 +64,7 @@ main{
     text-decoration: none;
     transition: text-shadow 0.3s;
 } main ul{
-    font-family: 'Fira Code', 'Helvetica Neue', sans-serif;
+    font-family: 'JetBrains Mono', 'Helvetica Neue', sans-serif;
     font-size: 1.4em;
     width: 90%;
     list-style-position: inside;
