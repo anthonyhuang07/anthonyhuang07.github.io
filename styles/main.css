@@ -51,7 +51,7 @@ main{
     color: #ffffff;
     text-align: center;
 } main h1{
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Aldrich', monospace;
     font-size:3em;
     color: #ffffff;
     padding: 1rem;
@@ -137,7 +137,7 @@ article{
 footer{
     margin: auto;
     text-align: center;
-    font-family: 'Aldrich', Helvetica, sans-serif;
+    font-family: 'JetBrains Mono', Helvetica, sans-serif;
     padding: 1.5em;
 } footer a{
     color: #ffffff;
