@@ -24,7 +24,6 @@ body{
 header{
     margin: auto;
     margin-top: 1rem;
-    max-width: 60%;
     text-align: center;
     overflow: hidden;
     padding: 1.5rem 1.5rem;
@@ -32,20 +31,36 @@ header{
     background-color:
     hsl(200, 10%, 10%);
     border-radius: 5rem;
+    max-width: 55%;
+    transition: animation 0.2s;
+    animation: reverseDynamicIsland 0.2s ease-in-out forwards running;
 } header a {
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     text-decoration: none;
-    font-size: 1.6em; 
+    font-size: 1.6em;
     border-radius: 1.5rem;
     transition: 0.25s background-color;
 } header a:hover{
     background-color: rgb(36, 36, 40);
-    color: white;
 } header nav{
     margin: auto;
+} header:hover{
+    animation: dynamicIsland 0.3s ease-in-out forwards running;
+    transition: animation 0.2s
 }
+
+@keyframes dynamicIsland {
+    0%   {max-width: 55%;}
+    50%  {max-width: 65%;}
+    100% {max-width: 63%;}
+}   
+
+@keyframes reverseDynamicIsland {
+    0%   {max-width: 63%;}
+    100% {max-width: 55%;}
+}   
 
 main{
     color: #ffffff;
@@ -73,7 +88,7 @@ main{
     font-family:'Aldrich', Helvetica, sans-serif;
     margin: 15px;
 } main a:hover{
-    text-shadow: 0 0 5px #4b93ff;
+    text-shadow: 0 0 6px #4b93ff;
 } main img{
     padding: 1.5rem;
 } main hr{
@@ -100,6 +115,7 @@ main{
     background-clip: text;
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
+    text-shadow: 0 0 1px #ff7700;
     background-size: 400% 100%;
 }
 
