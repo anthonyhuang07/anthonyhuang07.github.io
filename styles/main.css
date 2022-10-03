@@ -24,7 +24,7 @@ body{
 header{
     margin: auto;
     margin-top: 1rem;
-    max-width: 50%;
+    max-width: 60%;
     text-align: center;
     overflow: hidden;
     padding: 1.5rem 1.5rem;
@@ -37,7 +37,7 @@ header{
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    font-size: 1.5em; 
+    font-size: 1.6em; 
     border-radius: 1.5rem;
     transition: 0.25s background-color;
 } header a:hover{
@@ -52,12 +52,12 @@ main{
     text-align: center;
 } main h1{
     font-family: 'Aldrich', monospace;
-    font-size:2.6em;
+    font-size:2.5em;
     color: #ffffff;
     padding: 1rem;
 } main p{
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.6em;
+    font-size: 1.4em;
     width: 90%;
 } main a{
     color: #a2ddff;
@@ -65,8 +65,8 @@ main{
     transition: text-shadow 0.3s;
 } main ul{
     font-family: 'JetBrains Mono', 'Helvetica Neue', sans-serif;
-    font-size: 1.4em;
     width: 90%;
+    font-size: 1.4em;
     list-style-position: inside;
     margin: auto;
 } main h2{
@@ -88,8 +88,8 @@ main{
     position: relative;
     margin: 0;
     width: 100%;
-    padding: 7.5rem 2rem 7.5rem;
-    font-size: 2em;
+    padding: 5rem 2rem 5rem;
+    font-size: 1.9em;
 }
 
 /* hello there */
@@ -119,15 +119,17 @@ article{
     text-align: center;
     margin: auto;
     background-color:hsl(200, 10%, 10%);
-    padding: 2rem 0 2rem 0rem;
+    padding: 1.5rem 0 1.5rem 0rem;
     width: 90%;
     border-radius: 2rem;
+    animation-name: fadeInBottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
 } article ul{
     color: #eaeaea;
     margin: auto;
     line-height: 30px;
     list-style-position: inside;
-    font-size: 1.5em;
 } article p{
     margin: auto;
     text-align: center;
@@ -178,3 +180,11 @@ button{
         width: 100%;
     }
 }
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}   
