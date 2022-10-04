@@ -35,7 +35,7 @@
 
         article {
             display: flex;
-            padding: 2rem 0 2rem 5rem;
+            padding: 1rem 0 1rem 5rem;
             text-align: left;
             width: 90%;
             justify-content: space-between;
@@ -52,6 +52,7 @@
         article img {
             float: right;
             margin-right: 3rem;
+            transition: width 0.4s;
         }
 
         @media screen and (max-width: 500px) {
@@ -70,6 +71,10 @@
                 margin-right: 0;
                 width: 150px;
             }
+        }
+
+        article img:hover {
+            width: 300px;
         }
     </style>
 </head>
