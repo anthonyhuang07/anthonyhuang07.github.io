@@ -1,5 +1,5 @@
 # ah07.xyz
-My random website I made for fun, nothing special. Mostly made as a personal project, and to show people so they know more about me.
+My personal website! It's a personal website.
 
 Made with decent HTML/CSS/JS knowledge.
 
