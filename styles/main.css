@@ -158,6 +158,7 @@ article{
     animation-delay: 0s, 1.4s;
     animation-fill-mode: both, forwards;
     animation-timing-function: ease-in, ease-in-out;
+    overflow: hidden;
 }article ul{
     color: #eaeaea;
     margin: auto;

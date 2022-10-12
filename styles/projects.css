@@ -1,7 +1,7 @@
 .projects{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: row;
 }
 
 article{
@@ -20,19 +20,23 @@ article .box{
     color: white;
     display: flex;
     margin: 1rem auto 1rem auto;
+    width: 30%;
+    height: 30rem;
+    flex-direction: column;
     align-items: center;
-    max-width: 80%;
+    
 } .box a{
     text-decoration: none;
     font-size: 1.25em;
 } .box p{
-    padding: 1rem;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
 } .box img{
     border-radius: 10rem;
     border: transparent;
     margin-right: 0;
+} .box h2 {
+    padding: 0.8rem;
 }
 
 @media screen and (max-width: 500px){
