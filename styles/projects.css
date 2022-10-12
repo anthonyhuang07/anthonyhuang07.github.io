@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-evenly;
+} article .projects.discontinued .box{
+    height: 17rem;
 }
 
 article{
@@ -19,24 +22,30 @@ article .box{
     border-radius: 2rem;
     color: white;
     display: flex;
-    margin: 1rem auto 1rem auto;
     width: 30%;
-    height: 30rem;
-    flex-direction: column;
+    height: 27rem;
     align-items: center;
-    
+    flex-direction: column;
+    transition: background-color 0.3s;
 } .box a{
+    width: 100%;
+    display: block;
+    height: 100%;
     text-decoration: none;
-    font-size: 1.25em;
-} .box p{
+    color: white;
     margin: 0;
-    font-size: 1.2em;
+} .box p{
+    font-size: 1.1em;
 } .box img{
     border-radius: 10rem;
     border: transparent;
     margin-right: 0;
 } .box h2 {
     padding: 0.8rem;
+} .box a:hover{
+    text-shadow: none;
+} .box:hover{
+    background-color: rgb(40, 40, 40);
 }
 
 @media screen and (max-width: 500px){
