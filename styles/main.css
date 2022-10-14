@@ -130,13 +130,11 @@ main{
 
 @keyframes fadeInBottom {
     from {
-        max-height: 17.6rem;
         opacity: 0;
         transform: translateY(100%);
     }
     to { 
         opacity: 1; 
-        max-height: 17.6rem;
     }
 }   
 
@@ -144,12 +142,6 @@ main{
     0%   {max-width: 75%;}
     50%  {max-width: 92%;}
     100% {max-width: 90%;}
-}
-
-@keyframes heightChange {
-    from {max-height: 17.6rem;}
-    50% {max-height: initial+2%;}
-    to {max-height: initial;}
 }
 
 article{
@@ -161,13 +153,12 @@ article{
     background-color:hsl(200, 10%, 12%);
     padding: 1.5rem 0 1.5rem 0rem;
     border-radius: 2rem;
-    animation-name: fadeInBottom, shrink, heightChange;
-    animation-duration: 1.5s, 0.3s, 0.2s;
-    animation-delay: 0s, 1.4s, 1.5s;
-    animation-fill-mode: both, forwards, forwards;
-    animation-timing-function: ease-in, ease-in-out, ease-out;
+    animation-name: fadeInBottom, shrink;
+    animation-duration: 1.3s, 0.3s;
+    animation-delay: 0s, 1.2s;
+    animation-fill-mode: both, forwards;
+    animation-timing-function: ease-in, ease-in-out;
     overflow: hidden;
-    transition: max-height 0.3s;
 }article ul{
     color: #eaeaea;
     margin: auto;
