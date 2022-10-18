@@ -48,17 +48,6 @@ article .box{
     background-color: rgb(40, 40, 40);
 }
 
-@keyframes dynamicIsland {
-    0%   {width: 30%;}
-    50%  {width: 40%;}
-    100% {width: 35%;}
-}   
-
-@keyframes reverseDynamicIsland {
-    0%   {max-width: 35%;}
-    100% {max-width: 30%;}
-}   
-
 @media screen and (max-width: 500px){
     .projects{
         display: flex;
