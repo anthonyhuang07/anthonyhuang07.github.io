@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-evenly;
 } article .projects.discontinued .box{
-    height: 17rem;
+    height: 30vh;
 }
 
 article{
