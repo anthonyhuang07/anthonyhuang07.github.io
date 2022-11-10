@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     outline: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -11,18 +13,18 @@ html {
     position: relative;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
     position: relative;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-color:hsl(229, 73%, 3%);
+    background-color: hsl(229, 73%, 3%);
     /* background-image: linear-gradient(315deg, rgba(255, 119, 0, 5%), rgba(119, 0, 255, 5%)) */
 }
 
-header{
+header {
     margin: auto;
     margin-top: 1rem;
     text-align: center;
@@ -30,12 +32,14 @@ header{
     padding: 1.5rem 1.5rem;
     font-family: 'Aldrich', monospace;
     background-color:
-    hsl(200, 10%, 10%);
+        hsl(200, 10%, 10%);
     border-radius: 5rem;
     max-width: 55%;
     transition: animation 0.2s;
     animation: reverseDynamicIsland 0.2s ease-in-out forwards running;
-} header a {
+}
+
+header a {
     color: white;
     text-align: center;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -43,56 +47,91 @@ header{
     font-size: 1.6em;
     border-radius: 1.5rem;
     transition: 0.25s background-color;
-} header a:hover{
+}
+
+header a:hover {
     background-color: rgb(36, 36, 40);
-} header nav{
+}
+
+header nav {
     margin: auto;
-} header:hover{
+}
+
+header:hover {
     animation: dynamicIsland 0.3s ease-in-out forwards running;
     transition: animation 0.2s
 }
 
 @keyframes dynamicIsland {
-    0%   {max-width: 55%;}
-    50%  {max-width: 65%;}
-    100% {max-width: 63%;}
-}   
+    0% {
+        max-width: 55%;
+    }
+
+    50% {
+        max-width: 65%;
+    }
+
+    100% {
+        max-width: 63%;
+    }
+}
 
 @keyframes reverseDynamicIsland {
-    0%   {max-width: 63%;}
-    100% {max-width: 55%;}
-}   
+    0% {
+        max-width: 63%;
+    }
 
-main{
+    100% {
+        max-width: 55%;
+    }
+}
+
+main {
     color: #ffffff;
     text-align: center;
-} main h1{
+}
+
+main h1 {
     font-family: 'Aldrich', monospace;
-    font-size:2.5em;
+    font-size: 2.5em;
     color: #ffffff;
     padding: 1rem;
-} main p{
+}
+
+main p {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.4em;
     width: 90%;
-} main a{
+}
+
+main a {
     color: #a2ddff;
     text-decoration: none;
     transition: text-shadow 0.3s;
-} main ul{
+}
+
+main ul {
     font-family: 'JetBrains Mono', 'Helvetica Neue', sans-serif;
     width: 90%;
     font-size: 1.4em;
     list-style-position: inside;
     margin: auto;
-} main h2{
-    font-family:'Aldrich', Helvetica, sans-serif;
+}
+
+main h2 {
+    font-family: 'Aldrich', Helvetica, sans-serif;
     margin: 15px;
-} main a:hover{
+}
+
+main a:hover {
     text-shadow: 0 0 6px #4b93ff;
-} main img{
+}
+
+main img {
     padding: 1.5rem;
-} main hr{
+}
+
+main hr {
     margin: auto;
     margin-top: 3rem;
     border: white solid 0.1rem;
@@ -100,7 +139,7 @@ main{
     width: 75%;
 }
 
-.cool{
+.cool {
     position: relative;
     margin: 0;
     width: 100%;
@@ -108,25 +147,13 @@ main{
     font-size: 1.9em;
 }
 
-.date{
-    background-image: linear-gradient(to right, #ffbb00, #ff4400);
+.date {
+    background-image: linear-gradient(to right, #ffaa00, #ff9900);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    animation: rainbow_animation 4s ease-in-out infinite;
-    background-size: 400% 100%;
-    text-shadow: 0px 0px 7px rgba(255, 119, 0, 0.75);
-}
-
-@keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
+    text-shadow:0 0 0.1em #ff7700;
 }
 
 @keyframes fadeInBottom {
@@ -134,87 +161,138 @@ main{
         opacity: 0;
         transform: translateY(100%);
     }
-    to { 
-        opacity: 1; 
-    }
-}   
 
-@keyframes shrink {
-    0%   {max-width: 75%;}
-    50%  {max-width: 92%;}
-    100% {max-width: 90%;}
+    to {
+        opacity: 1;
+    }
 }
 
-article{
+@keyframes shrink {
+    0% {
+        max-width: 75%;
+    }
+
+    50% {
+        max-width: 92%;
+    }
+
+    100% {
+        max-width: 90%;
+    }
+}
+
+article:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top left, #ff7700 0%, #7700ff 100%);
+    transform: translate3d(0, 0, 0, 0) scale(0.5);
+    filter: blur(1rem);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+}
+
+article {
+    background-color: hsl(200, 10%, 12%);
     max-width: 75%;
+    text-align: center;
     padding-left: 0;
     display: block;
-    text-align: center;
     margin: auto;
-    background-color:hsl(200, 10%, 12%);
     padding: 1.5rem 0 1.5rem 0rem;
-    border-radius: 2rem;
     animation-name: fadeInBottom, shrink;
     animation-duration: 1.3s, 0.3s;
     animation-delay: 0s, 1.2s;
     animation-fill-mode: both, forwards;
     animation-timing-function: ease-in, ease-in-out;
-    overflow: hidden;
-    /* box-shadow: 0px 0px 7px linear-gradient(315deg, rgba(255, 119, 0, 100%), rgba(119, 0, 255, 100%)); */
-}article ul{
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+article ul {
     color: #eaeaea;
     margin: auto;
     line-height: 30px;
     list-style-position: inside;
-} article p{
+}
+
+article p {
     margin: auto;
     text-align: center;
     width: 80%;
 }
 
-footer{
+article::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: 1.5rem;
+}
+
+footer {
     margin: auto;
     text-align: center;
-    font-family:'Aldrich', Helvetica, sans-serif;
+    font-family: 'Aldrich', Helvetica, sans-serif;
     padding: 1.5em;
-} footer a{
+}
+
+footer a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5em;
 }
 
-button{
+button {
     border: none;
     padding: 20px;
-    font-size:20px;
-    font-family:'Aldrich', Helvetica, sans-serif;
+    font-size: 20px;
+    font-family: 'Aldrich', Helvetica, sans-serif;
     margin-bottom: 30px;
     color: #ffffff;
-} button:hover{
+}
+
+button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 500px){
-    header a{
-        font-size: 1.6em; 
+@media screen and (max-width: 500px) {
+    header a {
+        font-size: 1.6em;
         line-height: 2.5rem;
         padding: 0.5rem;
-    } header:hover{
-        animation: none;
-    } header{
-        animation: none;
-    } 
-
-    .cool{
-        padding: 2rem;
-    } .cool h1{
-        font-size:1.5em;
     }
 
-    article p{
+    header:hover {
+        animation: none;
+    }
+
+    header {
+        animation: none;
+    }
+
+    .cool {
+        padding: 2rem;
+    }
+
+    .cool h1 {
+        font-size: 1.5em;
+    }
+
+    article p {
         font-size: 1.4em;
         width: 80%;
-    } article li{
+    }
+
+    article li {
         margin: auto;
         font-size: 0.8em;
         width: 100%;
