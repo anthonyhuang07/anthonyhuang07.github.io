@@ -189,7 +189,7 @@ article:before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top left, #ff7700 0%, #7700ff 100%);
+    /*background: linear-gradient(to top left, #ff7700 0%, #7700ff 100%); */
     transform: translate3d(0, 0, 0, 0) scale(0.5);
     filter: blur(1rem);
     opacity: var(0.7);
