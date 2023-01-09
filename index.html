@@ -25,7 +25,7 @@
     <meta name="msapplication-TileColor" content="#ff7700">
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <style>
         main a {
             text-decoration: underline;
@@ -52,32 +52,14 @@
             transition: width 0.4s;
         }
 
-        @media screen and (max-width: 500px) {
-            article {
-                padding-left: 0;
-                flex-direction: column;
-            }
-
-            article p {
-                text-align: center;
-                font-size: 1.3em;
-                width: 80%;
-            }
-
-            article img {
-                margin-right: 0;
-                width: 150px;
-            }
-        }
-
         article img:hover {
             width: 300px;
         }
     </style>
 </head>
 
-<body>
-    <header>
+<body onscroll="split(), headerHide()">
+    <header id="h-hide">
         <nav>
             <a href="/">Home</a>
             <a href="/about/">About</a>
@@ -88,18 +70,29 @@
     </header>
     <main>
         <div class="cool">
-            <h1 id="title"></h1>
+            <h1><span class="date" id="date1">FHDH</span><span class="date" id="date2">GNGN</span></h1>
         </div>
+        <div class="mtCoronet0"></div>
+        <div class="mtCoronet"></div>
+        <div class="mtCoronet2"></div>
+        <div class="mtCoronet3"></div>
+        <div class="mtCoronet4"></div>
+        <div class="mtCoronet5"></div>
+        <div class="mtCoronet6"></div>
+        <div class="cloud"></div>
+        <div class="water"></div>
         <article>
             <p>Hey there, I'm Anthony, also known as FHDHGNGN online! I am a male 15 year old Canadian front-end
                 programmer. I am currently in High School (Grade 10). This website was made with plain HTML, CSS and
-                JavaScript.<br><br>For more info, check out my <a href="/about/">About Me!</a></p>
+                JavaScript.<br><br>For more info, check out my <a href="/about/">About Me!</a>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaa<br>aaaaa<br>aaaa<br>aaaaa<br>aaaaaaaaaaaaa
+                aaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaa<br><br>aaaaaaa<br>aaaaaaaaa<br>aaaaaaaaaaaa</p>
             <img src="/assets/images/newProfilePicture.png" alt="profile picture" style="border-radius: 3rem" width="250px" />
         </article>
         <hr>
     </main>
     <footer>
-        <a href="https://github.com/anthonyhuang07/">Copyright (c) 2022 Anthony Huang</a>
+        <a href="https://github.com/anthonyhuang07/">Copyright (c) 2023 Anthony Huang</a>
     </footer>
     <script src="./src/scripts/main.js"></script>
 </body>
