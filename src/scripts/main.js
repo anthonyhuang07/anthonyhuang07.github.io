@@ -1,4 +1,4 @@
-const date1 = document.getElementById("date1")
+/*const date1 = document.getElementById("date1")
 const date2 = document.getElementById("date2")
 const header = document.getElementById("h-hide")
 let yPos = window.scrollY
@@ -17,7 +17,7 @@ function headerHide(){
     }
     yPos = window.scrollY
 }
-
+*/
 
 let current = new Date();
 document.getElementById("title").innerHTML = `Hello! Today is <span class="date">${current.toLocaleDateString()}.</span>`;
