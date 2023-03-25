@@ -5,3 +5,5 @@ package.json
 .vercel
 
 /REVAMPED/
+
+.DS_Store
