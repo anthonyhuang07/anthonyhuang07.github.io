@@ -24,6 +24,10 @@ body {
     /* background-image: linear-gradient(315deg, rgba(255, 119, 0, 5%), rgba(119, 0, 255, 5%)) */
 }
 
+#temp{
+    border-radius: 3rem
+}
+
 header {
     margin: auto;
     margin-top: 1rem;
