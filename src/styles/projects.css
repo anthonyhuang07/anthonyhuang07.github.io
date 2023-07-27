@@ -3,8 +3,6 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-} article .projects.discontinued .box{
-    height: 30vh;
 }
 
 article{
@@ -14,6 +12,10 @@ article{
 #seperator{
     font-size: 2.5em;
     padding-left: 0;
+}
+
+main h2 {
+    padding: 2rem 0 2rem 1rem;
 }
 
 article .box{
