@@ -204,13 +204,11 @@ article {
     background-color: hsl(200, 10%, 12%);
     max-width: 75%;
     text-align: center;
-    padding-left: 0;
-    display: block;
     margin: auto;
     padding: 1.5rem 0 1.5rem 0rem;
     animation-name: fadeInBottom, shrink;
-    animation-duration: 1.3s, 0.3s;
-    animation-delay: 0s, 1.2s;
+    animation-duration: 1s, 0.25s;
+    animation-delay: 0s, 1s;
     animation-fill-mode: both, forwards;
     animation-timing-function: ease-in, ease-in-out;
     border-radius: 1.5rem;
