@@ -274,17 +274,17 @@ button:hover {
     text-decoration: underline;
 }
 
-#aboutMe main a {
+.aboutMeList main a {
     text-decoration: underline;
-} #aboutMe article li {
+} .aboutMeList article li {
     list-style-position: inside;
     display: flex;
     align-items: center;
     justify-content: center;
-} #aboutMe article img {
+} .aboutMeList article img {
     width: 175px;
-    border-radius: 100rem;
+    border-radius: 0;
     transition: width 0.4s;
-} #aboutMe article img:hover{
+} .aboutMeList article img:hover{
     width: 250px;
 }
