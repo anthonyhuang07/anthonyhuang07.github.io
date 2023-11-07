@@ -273,3 +273,18 @@ button:hover {
 } #indexArticle a {
     text-decoration: underline;
 }
+
+#aboutMe main a {
+    text-decoration: underline;
+} #aboutMe article li {
+    list-style-position: inside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} #aboutMe article img {
+    width: 175px;
+    border-radius: 100rem;
+    transition: width 0.4s;
+} #aboutMe article img:hover{
+    width: 250px;
+}
