@@ -288,3 +288,32 @@ button:hover {
 } .aboutMeList article img:hover{
     width: 250px;
 }
+
+@media screen and (max-width: 500px) {
+    .cool{
+        font-size: 1.5em;
+        padding: 2rem 2rem 2rem;
+    }
+
+    article p {
+        width: 90%;
+    }
+    
+    #indexArticle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } #indexArticle p{
+        text-align: center;
+        width: 90%;
+    }
+
+    .aboutMeList article img {
+        width: 100px;
+    }
+
+    #contacts a:before{
+        white-space:pre;
+        content: '\A';
+    }
+}

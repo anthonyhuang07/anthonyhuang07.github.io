@@ -53,11 +53,15 @@ article .box{
 @media screen and (max-width: 500px){
     .projects{
         display: flex;
+        flex-direction: column;
     }
 
     article .box{
         display: flex;
         flex-direction: column;
+        width: 80%;
+        height: 30rem;
+        margin: 2rem;
     } .box p{
         text-decoration: none;
         font-size: 1.3em;
