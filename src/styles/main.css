@@ -274,7 +274,7 @@ button:hover {
     text-decoration: underline;
 }
 
-.aboutMeList main a {
+.aboutMeList article a {
     text-decoration: underline;
 } .aboutMeList article li {
     list-style-position: inside;
