@@ -92,6 +92,7 @@ header:hover {
 main {
     color: #ffffff;
     text-align: center;
+    z-index: 1;
 }
 
 main h1 {
@@ -212,6 +213,7 @@ article {
     animation-timing-function: ease-in, ease-in-out;
     border-radius: 1.5rem;
     position: relative;
+    z-index: 1;
 }
 
 article ul {
@@ -244,6 +246,9 @@ footer {
     text-align: center;
     font-family: 'Aldrich', Helvetica, sans-serif;
     padding: 1.5em;
+    background-color: hsl(229, 73%, 3%);
+    position: relative;
+    z-index: 9999;
 }
 
 footer a {
