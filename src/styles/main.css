@@ -294,6 +294,12 @@ button:hover {
     width: 250px;
 }
 
+.a-left{
+    text-align: left;
+} .a-right{
+    text-align: right;
+}
+
 @media screen and (max-width: 500px) {
     .cool{
         font-size: 1.5em;
