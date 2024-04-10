@@ -1,5 +1,5 @@
 const nowplaying = document.getElementById('nowplaying');
-const apiUrl = 'http://ah07.ddns.net:4000/api/status';
+const apiUrl = 'http://mc.ah07.xyz:4000/api/status';
 
 fetch(apiUrl)
   .then(response => {
