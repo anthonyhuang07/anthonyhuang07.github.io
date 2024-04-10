@@ -9,10 +9,14 @@ fetch(apiUrl)
     return response.json();
   })
   .then(data => {
-    if(data.status[0].name === "Apple Music"){
-        nowplaying.innerHTML = `Currently Listening To: ${data.status[0].details} by ${data.status[0].state}.`
-    } else {
+    console.log(data.status.length)
+    for (let i = 0; i < data.status.length; i++) {
+      if (data.status[i].name === "Apple Music") {
+        nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}.`
+        break
+      } else {
         nowplaying.innerHTML = `Currently Listening To: Nothing.`
+      }
     }
   })
   .catch(error => {
