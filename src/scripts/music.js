@@ -1,5 +1,5 @@
 const nowplaying = document.getElementById('nowplaying');
-const apiUrl = 'http://mc.ah07.xyz:4000/api/status';
+const apiUrl = 'https://server.ah07.xyz/api/status';
 
 fetch(apiUrl)
   .then(response => {
@@ -9,7 +9,6 @@ fetch(apiUrl)
     return response.json();
   })
   .then(data => {
-    console.log(data.status.length)
     for (let i = 0; i < data.status.length; i++) {
       if (data.status[i].name === "Apple Music") {
         nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}.`
