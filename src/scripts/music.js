@@ -10,12 +10,26 @@ function nowPlaying() {
       return response.json();
     })
     .then(data => {
+      let timeLeft = '';
       for (let i = 0; i < data.status.length; i++) {
         if (data.status[i].name === "Apple Music") {
-          nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}.`
-          break
+          const endTimestamp = new Date(data.status[i].timestamps.end);
+          const currentTime = new Date();
+          let timeDifference = endTimestamp - currentTime;
+
+          timeDifference = Math.max(timeDifference, 0);
+
+          // Convert time difference to seconds
+          const totalSeconds = Math.floor(timeDifference / 1000);
+          const minutes = Math.floor(totalSeconds / 60);
+          const seconds = totalSeconds % 60;
+
+          timeLeft = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+          nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}. (Time left: ${timeLeft})`;
+          break;
         } else {
-          nowplaying.innerHTML = `Currently Listening To: Nothing.`
+          nowplaying.innerHTML = `Currently Listening To: Nothing.`;
         }
       }
     })
