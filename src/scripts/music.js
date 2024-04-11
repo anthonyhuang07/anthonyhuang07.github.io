@@ -10,13 +10,10 @@ function nowPlaying() {
       return response.json();
     })
     .then(data => {
-      for (let i = 0; i < data.status.length; i++) {
-        if (data.status[i].name === "Apple Music") {
-          nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}.`
-          break
-        } else {
-          nowplaying.innerHTML = `Currently Listening To: Nothing.`
-        }
+      if (data.status === "Offline") {
+        nowplaying.innerHTML = `Currently Listening To: Nothing.`
+      } else {
+        nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}.`
       }
     })
     .catch(error => {
