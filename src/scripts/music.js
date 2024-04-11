@@ -14,6 +14,8 @@ function nowPlaying() {
         if (data.status[i].name === "Apple Music") {
           nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}.`
           break
+        } else {
+          nowplaying.innerHTML = `Currently Listening To: Nothing.`
         }
       }
     })
