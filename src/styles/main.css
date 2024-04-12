@@ -143,6 +143,10 @@ main hr {
     width: 75%;
 }
 
+main b {
+    font-weight: bold;
+}
+
 .cool {
     position: relative;
     margin: 0;
@@ -272,11 +276,23 @@ button:hover {
 
 #indexArticle {
     display: flex;
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    align-items: flex-start;
+} #indexArticle img {
+    padding-top: 0;
+    width: 15rem;
 } #indexArticle p{
     text-align: left;
 } #indexArticle a {
     text-decoration: underline;
+} #indexArticle #playing {
+    display: flex;
+    align-items: center;
+} #indexArticle p #playing img {
+    padding-top: 1.5rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    width: auto;
 }
 
 .aboutMeList article a {
@@ -317,6 +333,11 @@ button:hover {
     } #indexArticle p{
         text-align: center;
         width: 90%;
+    } #indexArticle img {
+        padding-top: 1.5rem;
+    } #indexArticle #playing {
+        justify-content: center;
+        flex-direction: column;
     }
 
     .aboutMeList article img {

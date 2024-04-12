@@ -16,7 +16,7 @@ permalink: /
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -44,16 +44,22 @@ permalink: /
             <h1><span class="date">ah07</span>.xyz</h1>
         </div>
         <article id="indexArticle">
-            <p>你好 👋, I'm Anthony, also known as FHDHGNGN online! I am a Canadian 16 year old male, and I am a high school student in Grade 11. I specialize in front-end programming, and this website was made with just HTML, CSS and JavaScript.<br><br>
-                <span id="nowplaying">Currently Listening To: Nothing.</span></p>
-            <img src="../../assets/images/newProfilePicture.png" alt="profile picture" width="250px" id="temp"/>
+                <p><span id="randLang">你好</span> 👋, I'm Anthony, also known as FHDHGNGN online! I am a Canadian 16 year old male, and I am a high school student in Grade 11. I specialize in front-end programming, and this website was made with just HTML, CSS and JavaScript.
+                    <br><br>
+                    Currently Listening To:<br>
+                    <span id="playing">
+                        <span id="nowplaying"></span>
+                        <img src="" id="art"/>
+                    </span>
+                </p>
+            <img src="../../assets/images/newProfilePicture.png" alt="profile picture" id="temp"/>
         </article>
         <hr>
     </main>
     <footer>
         <a href="https://ah07.xyz/" id="date"></a>
     </footer>
-    <script src="/src/scripts/date.js"></script>
+    <script src="/src/scripts/index.js"></script>
     <script src="/src/scripts/music.js"></script>
 </body>
 

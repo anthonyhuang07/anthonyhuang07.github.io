@@ -1,4 +1,5 @@
 const nowplaying = document.getElementById('nowplaying');
+const art = document.getElementById('art');
 const apiUrl = 'https://server.ah07.xyz/api/status';
 
 function nowPlaying() {
@@ -26,10 +27,13 @@ function nowPlaying() {
 
           timeLeft = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
-          nowplaying.innerHTML = `Currently Listening To: ${data.status[i].details} by ${data.status[i].state}. (Time left: ${timeLeft})`;
+          nowplaying.innerHTML = `<b>${data.status[i].details}</b><br>by ${data.status[i].state}<br>${timeLeft} left`;
+          art.src = `https://${(data.status[i].assets.largeImage).replace(/^.*?is1/, 'is1')}`
+          art.title = `${data.status[i].assets.largeText}`
           break;
         } else {
-          nowplaying.innerHTML = `Currently Listening To: Nothing.`;
+          nowplaying.innerHTML = ` Nothing.`;
+          art.src = ``
         }
       }
     })
