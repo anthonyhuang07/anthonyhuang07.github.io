@@ -34,7 +34,7 @@ function nowPlaying() {
         } else {
           nowplaying.innerHTML = ` Nothing.`;
           art.src = ``
-          arc.title = ``
+          art.title = ``
         }
       }
     })
