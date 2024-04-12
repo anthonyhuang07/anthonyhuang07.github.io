@@ -41,4 +41,4 @@ function nowPlaying() {
 
 nowPlaying()
 
-setInterval(nowPlaying, 750);
+setInterval(nowPlaying, 500);
