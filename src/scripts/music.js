@@ -2,6 +2,8 @@ const nowplaying = document.getElementById('nowplaying');
 const art = document.getElementById('art');
 const apiUrl = 'https://server.ah07.xyz/api/status';
 
+nowplaying.innerHTML = ` Nothing.`;
+
 function nowPlaying() {
   fetch(apiUrl)
     .then(response => {
