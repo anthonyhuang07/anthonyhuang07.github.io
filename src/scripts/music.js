@@ -29,7 +29,7 @@ function nowPlaying() {
 
           timeLeft = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
-          nowplaying.innerHTML = `<b>${data.status[i].details}</b><br>by ${data.status[i].state}<br>${timeLeft} left`;
+          nowplaying.innerHTML = `<b>${data.status[i].details}</b><br>${data.status[i].state}<br>${timeLeft} left`;
           art.src = `https://${(data.status[i].assets.largeImage).replace(/^.*?is1/, 'is1')}`
           art.title = `${data.status[i].assets.largeText}`
           break;
