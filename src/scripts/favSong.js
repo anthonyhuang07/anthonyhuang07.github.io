@@ -11,11 +11,11 @@ fetch(apiUrl)
     .then(data => {
         fav.innerHTML = `
             <div>
-            As of ${data.date}, my favorite song is <a
-                href="${data.ytLink}">${data.songEN} by ${data.artist}.</a> (${data.songJP}). My
+            As of ${data.songDetails.date}, my favorite song is <a
+                href="${data.songDetails.ytLink}">${data.songDetails.songEN} by ${data.songDetails.artist}.</a> (${data.songDetails.songJP}). My
             favorite artist is Ado, and my favorite genres are J-Pop and EDM.
             </div>
-            <img src="${data.artwork}"
+            <img src="${data.songDetails.artwork}"
             style="border-radius: 2rem;" />
         `
     })
