@@ -9,15 +9,14 @@ fetch(apiUrl)
         return response.json();
     })
     .then(data => {
+        const { songEN, songJP, artist, ytLink, date, artwork } = data.songDetails;
         fav.innerHTML = `
             <div>
-            As of ${data.songDetails.date}, my favorite song is <a
-                href="${data.songDetails.ytLink}">${data.songDetails.songEN} by ${data.songDetails.artist}.</a> (${data.songDetails.songJP}). My
+            As of ${date}, my favorite song is <a href="${ytLink}" target="_blank">${songEN} by ${artist}.</a> (${songJP}). My
             favorite artist is Ado, and my favorite genres are J-Pop and EDM.
             </div>
-            <img src="${data.songDetails.artwork}"
-            style="border-radius: 2rem;" />
-        `
+            <img src="${artwork}" style="border-radius: 2rem;" />
+        `;
     })
     .catch(error => {
         console.error('Error fetching data:', error);
