@@ -1,0 +1,132 @@
+*,
+*:after,
+*:before {
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url('/assets/SF-Pro-Display-Regular.otf')
+}
+
+@font-face {
+    font-family: "SF Pro Display Light";
+    src: url('/assets/SF-Pro-Display-Light.otf')
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background-color: black;
+    font-family: "SF Pro Display", Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+h1 {
+    font-family: "SF Pro Display Light", Helvetica, sans-serif;
+    color: white;
+    font-size: 2.75em;
+    margin: 11.5vh 0 11.5vh 0;
+    letter-spacing: 1.5px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    -webkit-user-drag: none;
+}
+
+main {
+    padding: 39px;
+    width: 380px;
+    border-radius: 47px;
+    background: rgba(33, 36, 38, 0.9);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 24.5px 35px;
+    margin: 0 2rem 0 2rem;
+} main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+} main div img {
+    transition: filter 0.05s;
+    -webkit-user-drag: none;
+    width: 75px;
+} main div p{
+    color: white;
+    margin-top: 5px;
+    letter-spacing: 0.75px;
+    text-align: center;
+} main div img:hover {
+    cursor: pointer;
+} main div img:active {
+    filter: brightness(60%)
+}
+
+#o {
+    position: absolute;
+    display: block;
+    height: 144%; /*144*/
+    top: 58.55%; /*58.55*/
+    left: 15%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 480px){
+    main {
+        padding: 30px;
+        width: 300px;
+        border-radius: 40px;
+        grid-gap: 17px 29px;
+    } main div img {
+        width: 60px;
+    } main div p{
+        margin-top: 5px;
+        font-size: 0.8em;
+        letter-spacing: 0.65px;
+    }
+
+    #bruh {
+        width:60px !important;
+        height:80px !important;
+    }
+
+    #o {
+        position: absolute;
+        display: block;
+        height: 114%; /*144*/
+        top: 52.7%; /*58.55*/
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+    }
+}
