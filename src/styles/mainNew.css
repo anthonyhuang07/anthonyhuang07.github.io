@@ -43,7 +43,7 @@ body {
 #bg {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url('/assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,6 +65,7 @@ a {
     text-decoration: none;
     display: flex;
     -webkit-user-drag: none;
+    cursor: default;
 }
 
 main {
@@ -82,16 +83,15 @@ main {
     align-items: center;
     user-select: none;
 } main div img {
-    transition: filter 0.05s;
+    transition: filter 0.05s linear;
     -webkit-user-drag: none;
+    cursor: pointer;
     width: 75px;
 } main div p{
     color: white;
     margin-top: 5px;
     letter-spacing: 0.75px;
     text-align: center;
-} main div img:hover {
-    cursor: pointer;
 } main div img:active {
     filter: brightness(60%)
 }
@@ -104,7 +104,7 @@ main {
     width: 100%;
     min-height: 100%;
     z-index: 9999;
-    transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear, visibility 0.25s linear;
 }
 
 .menu {
@@ -115,19 +115,37 @@ main {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear, visibility 0.25s linear;
 }
 
-.appStore h1 {
+.appStore header {
     background-color: #121212;
     border-bottom: #272727 1px solid;
-    padding: 5rem 0 1rem 2rem;
-    letter-spacing: 1px;
-    font-size: 2.5em;
+    padding: 0.8rem 0 1rem 0;
     margin-bottom: 1rem;
+} .appStore header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0888FF;
+    margin: 1.5rem 0 1.125rem 1.2rem;
+    cursor: pointer;
+} .appStore header div:active{
+    color: #055090;
+} .appStore header div i {
+    font-size: 1.55em;
+} .appStore header p {
+    margin-left: 0.5rem;
+    font-size: 1.25em;
+    letter-spacing: 0.8px;
+    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+} .appStore header h1 {
+    letter-spacing: 1.05px;
+    font-size: 2.5em;
+    padding-left: 2rem;
 } .appStore > div {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 47.5% 47.5%;
     grid-template-rows: repeat(6, auto);
     grid-auto-flow: column;
     justify-content: space-evenly;
@@ -156,26 +174,40 @@ main {
     height: 72.5px;
     margin: 0.7rem 0 0.5rem 0;
     border-radius: 1rem;
-} .app .rank {
-    font-size: 1.25em;
-    margin-left: 0.75rem;
-    display: flex;
-    align-items: center;
-    /*find a way to align with app name?*/
 } .app > div > div {
-    margin: 0 1.05rem 0 1.05rem;
+    margin-right: 1.05rem;
     display: flex;
+    margin-left: 0.75rem;
     flex-direction: column;
     justify-content: center;
+} .app > div > div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} .app .rank {
+    min-width: 1ch;
+    margin-right: 1.05rem;
+    font-size: 1.25em;
 } .app .name {
     font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.25em;
     letter-spacing: 0.7px;
+} .app .descMargin {
+    min-width: 1ch;
+    margin-right: 1.05rem;
+    font-size: 1.25em;
+    visibility: hidden;
 } .app .desc {
     font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 0.25rem;
     letter-spacing: 0.65px;
     color: #8E8D92;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 } .app .appButton {
     display: flex;
     align-items: center;
@@ -185,9 +217,14 @@ main {
     font-size: 1.2em;
     letter-spacing: 0.5px;
     background-color: #1C1C1E;
-    color: #0885FF;
+    color: #0888FF;
     width: 5.45rem;
     border-radius: 100rem;
+    transition: background-color 0.25s, color 0.25s linear;
+    cursor: pointer;
+} .app .appButton:active{
+    background-color: #111113;
+    color: #055090;
 }
 
 #o {
@@ -198,6 +235,18 @@ main {
     left: 15%;
     transform: translate(-50%,-50%);
     z-index: -1;
+}
+
+@media screen and (max-width: 900px){
+    .appStore > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app {
+        width: 92.5%
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -214,9 +263,8 @@ main {
         letter-spacing: 0.65px;
     }
 
-    .appStore > div {
-        display: flex;
-        flex-direction: column;
+    .app {
+        width: 87.5%
     }
 
     #bruh {
