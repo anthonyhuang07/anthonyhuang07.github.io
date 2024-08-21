@@ -185,7 +185,7 @@ main {
     flex-direction: row;
     align-items: center;
 } .app .rank {
-    min-width: 1ch;
+    min-width: auto;
     margin-right: 1.05rem;
     font-size: 1.25em;
 } .app .name {
@@ -193,7 +193,7 @@ main {
     font-size: 1.25em;
     letter-spacing: 0.7px;
 } .app .descMargin {
-    min-width: 1ch;
+    min-width: auto;
     margin-right: 1.05rem;
     font-size: 1.25em;
     visibility: hidden;
@@ -265,7 +265,7 @@ main {
 
     .app {
         width: 87.5%
-    }
+    } 
 
     #bruh {
         width:60px !important;
