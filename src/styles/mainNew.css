@@ -149,6 +149,7 @@ main {
     border-bottom: #272727 1px solid;
     padding: 0.8rem 0 1rem 0;
     margin-bottom: 1rem;
+    user-select: none;
 } .appStore header div {
     display: flex;
     flex-direction: row;
@@ -203,6 +204,7 @@ main {
     height: 72.5px;
     margin: 0.7rem 0 0.5rem 0;
     border-radius: 1rem;
+    user-select: none;
 } .app > div > div {
     margin-right: 1.05rem;
     display: flex;
@@ -217,6 +219,7 @@ main {
     min-width: auto;
     margin-right: 1.05rem;
     font-size: 1.25em;
+    user-select: none;
 } .app .name {
     font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.25em;
@@ -251,6 +254,7 @@ main {
     border-radius: 100rem;
     transition: background-color 0.25s, color 0.25s linear;
     cursor: pointer;
+    user-select: none;
 } .app .appButton:active{
     background-color: #111113;
     color: #055090;
@@ -329,6 +333,7 @@ main {
     font-size: 1.25em;
     letter-spacing: 1px;
     color: white;
+    user-select: none;
 } .contacts .infoBox p {
     font-size: 1.5em;
     color: var(--appleBlue);
