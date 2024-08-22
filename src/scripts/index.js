@@ -1,23 +1,36 @@
-const inapp = document.querySelector("#inApp")
+const inApp = document.querySelector("#inApp")
+const menu = document.querySelector(".menu")
 const appStore = document.querySelector(".appStore")
+const contacts = document.querySelector(".contacts")
 
-const rankWidth = document.querySelector(".rank").offsetWidth;
-document.documentElement.style.setProperty('--rank-width', `${rankWidth}px`);
+window.onkeydown = (e) => {
+    if(e.keyCode == 27){
+        returnHome()
+    }
+}
 
 function appOpen(app){
-    inapp.style.visibility = "visible";
-    inapp.style.opacity = "1";
+    inApp.style.visibility = "visible";
+    inApp.style.opacity = "1";
+    document.body.style.overflow = "auto";
     switch(app){
         case 1:
             appStore.style.visibility = "visible";
+            appStore.style.overflow = "auto";
             appStore.style.opacity = "1";
             break;
+        case 2:
+            break;
+        case 3:
+            contacts.style.visibility = "visible";
+            contacts.style.overflow = "auto";
+            contacts.style.opacity = "1";
     }
 }
 
 function returnHome(){
-    inapp.style.visibility = "hidden";
-    appStore.style.visibility = "hidden";
-    inapp.style.opacity = "0";
-    appStore.style.opacity = "0";
+    document.body.style.overflow = "hidden";
+    inApp.style.overflow = menu.style.overflow = "hidden"
+    inApp.style.visibility = appStore.style.visibility = contacts.style.visibility = "hidden";
+    inApp.style.opacity = menu.style.opacity = "0";
 }

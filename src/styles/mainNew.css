@@ -1,13 +1,4 @@
-*,
-*:after,
-*:before {
-    outline: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+/* #region San Francisco Fonts */
 
 @font-face {
     font-family: "SF Pro Display Semibold";
@@ -24,6 +15,25 @@
     src: url('/assets/fonts/SF-Pro-Display-Light.otf')
 }
 
+/* #endregion */
+
+/* #region Init */
+
+:root {
+    --appleBlue: #0088ff;
+}
+
+*,
+*:after,
+*:before {
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html {
     position: relative;
 }
@@ -35,10 +45,13 @@ body {
     font-family: "SF Pro Display", "Helvetica Neue", Helvetica, sans-serif;
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* #endregion */
 
 #bg {
     position: absolute;
@@ -66,6 +79,10 @@ a {
     display: flex;
     -webkit-user-drag: none;
     cursor: default;
+}
+
+img {
+    -webkit-user-drag: none;
 }
 
 main {
@@ -96,6 +113,8 @@ main {
     filter: brightness(60%)
 }
 
+/* #region Parent app divs */
+
 #inApp {
     position: absolute;
     visibility: hidden;
@@ -108,8 +127,11 @@ main {
 }
 
 .menu {
+    position: absolute;
     visibility: hidden;
+    overflow: hidden;
     opacity: 0;
+    background-color: black;
     font-family: "SF Pro Display Semibold", "Helvetica Neue", Helvetica, sans-serif;
     color: white;
     width: 100%;
@@ -117,6 +139,10 @@ main {
     z-index: 9999;
     transition: opacity 0.25s linear, visibility 0.25s linear;
 }
+
+/* #endregion */
+
+/* #region About Me */
 
 .appStore header {
     background-color: #121212;
@@ -127,7 +153,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #0888FF;
+    color: var(--appleBlue);
     margin: 1.5rem 0 1.125rem 1.2rem;
     cursor: pointer;
 } .appStore header div:active{
@@ -166,6 +192,9 @@ main {
     left: 7.275rem;
     height: 1px;
     bottom: 0;
+} .app:nth-child(6)::after,
+  .app:nth-child(12)::after {
+    height: 0;
 } .app > div {
     display: flex;
     flex-direction: row;
@@ -217,7 +246,7 @@ main {
     font-size: 1.2em;
     letter-spacing: 0.5px;
     background-color: #1C1C1E;
-    color: #0888FF;
+    color: var(--appleBlue);
     width: 5.45rem;
     border-radius: 100rem;
     transition: background-color 0.25s, color 0.25s linear;
@@ -227,17 +256,114 @@ main {
     color: #055090;
 }
 
-#o {
+/* #endregion */
+
+/* #region Contact */
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+} 
+
+.contacts #contactCard {
+    background-image: linear-gradient(to bottom, #101316, #0D1014);
+    height: 100%;
+    width: 53.4rem;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    justify-content: center;
+} .contacts #contactCard i {
     position: absolute;
-    display: block;
-    height: 144%; /*144*/
-    top: 58.55%; /*58.55*/
-    left: 15%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
+    display: flex;
+    background-color: #34383B;
+    border-radius: 100rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 2rem 0 0 1.1rem;
+    cursor: pointer;
+    top: 0;
+} .contacts #contactCard > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} .contacts #contactCard img {
+    width: 362px;
+    border-radius: 100rem;
+} .contacts #contactCard p{
+    margin-top: 2.225rem;
+    font-size: 1.1em;
+    letter-spacing: 1.25px;
+} .contacts #contactCard h1 {
+    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 3.25em;
+    margin-top: 0.1rem;
+    letter-spacing: 2.4px;
+} 
+
+.contacts #contactInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    overflow: auto;
+} .contacts .infoBox {
+    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1C1C1E;
+    width: 97.5%;
+    height: 5.45rem;
+    border-radius: 0.65rem;
+    padding-left: 1.425rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+} .contacts .infoBox:active{
+    background-color: #3A3A3C;
+} .contacts .infoBox h2 {
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    color: white;
+} .contacts .infoBox p {
+    font-size: 1.5em;
+    color: var(--appleBlue);
+    margin-top: 0.35rem;
+    letter-spacing: 0.45px;
+} .contacts #infoCluster {
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.65rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+} .contacts #infoCluster .infoBox {
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+} .contacts #infoCluster .infoBox::after{
+    content: "";
+    background: #3A3A3A;
+    position: absolute;
+    width: calc(100% - 1.425rem);
+    left: 1.425rem;
+    height: 1px;
+    bottom: 0;
+} .contacts #infoCluster .infoBox:last-child::after{
+    height: 0;
 }
 
-@media screen and (max-width: 900px){
+/* #endregion */
+
+/* #region Mobile Optimization */
+
+@media screen and (max-width: 900px){ /* Tablets */
     .appStore > div {
         display: flex;
         flex-direction: column;
@@ -246,10 +372,68 @@ main {
 
     .app {
         width: 92.5%
+    } .app:nth-child(6)::after {
+        height: 1px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        height: 100%;
+    } 
+    
+    .contacts #contactCard {
+        width: 100%;
+        min-height: 27.5rem;
+        overflow:visible;
+    } .contacts #contactCard i {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.1em;
+        margin: 2rem 0 0 0.8rem;
+    } .contacts #contactCard img {
+        width: 265px;
+    } .contacts #contactCard p{
+        margin-top: 1.6rem;
+        font-size: 0.8em;
+        letter-spacing: 0.9px;
+    } .contacts #contactCard h1 {
+        font-size: 2.35em;
+        letter-spacing: 1.85px;
+    } 
+    
+    .contacts #contactInfo {
+        overflow:visible;
+    } .contacts .infoBox {
+        width: 96%;
+        height: 4rem;
+        border-radius: 0.5rem;
+        padding-left: 1.05rem;
+        margin-bottom: 1rem;
+    } .contacts .infoBox h2 {
+        font-size: 0.9em;
+        letter-spacing: 0.8px;
+        color: white;
+    } .contacts .infoBox p {
+        font-size: 1em;
+        color: var(--appleBlue);
+        margin-top: 0.35rem;
+        letter-spacing: 1.05px;
+    } .contacts #infoCluster {
+        width: 96%;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    } .contacts #infoCluster .infoBox::after{
+        content: "";
+        background: #3A3A3A;
+        position: absolute;
+        width: calc(100% - 1.05rem);
+        left: 1.05rem;
+        height: 1px;
+        bottom: 0;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px){ /* Phones */
     main {
         padding: 30px;
         width: 300px;
@@ -271,14 +455,6 @@ main {
         width:60px !important;
         height:80px !important;
     }
-
-    #o {
-        position: absolute;
-        display: block;
-        height: 114%; /*144*/
-        top: 52.7%; /*58.55*/
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: -1;
-    }
 }
+
+/* #endregion */
