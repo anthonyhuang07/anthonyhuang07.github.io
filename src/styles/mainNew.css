@@ -1,17 +1,17 @@
 /* #region San Francisco Fonts */
 
 @font-face {
-    font-family: "SF Pro Display Semibold";
+    font-family: "SFSB";
     src: url('/assets/fonts/SF-Pro-Display-Semibold.otf')
 }
 
 @font-face {
-    font-family: "SF Pro Display";
+    font-family: "SFR";
     src: url('/assets/fonts/SF-Pro-Display-Regular.otf')
 }
 
 @font-face {
-    font-family: "SF Pro Display Light";
+    font-family: "SFL";
     src: url('/assets/fonts/SF-Pro-Display-Light.otf')
 }
 
@@ -42,7 +42,7 @@ body {
     margin: 0;
     position: relative;
     background-color: black;
-    font-family: "SF Pro Display", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFR", "Helvetica Neue", Helvetica, sans-serif;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -66,7 +66,7 @@ body {
 }
 
 #folderName {
-    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
     color: white;
     font-size: 2.75em;
     margin: 11.5vh 0 11.5vh 0;
@@ -132,7 +132,7 @@ main {
     overflow: hidden;
     opacity: 0;
     background-color: black;
-    font-family: "SF Pro Display Semibold", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFSB", "Helvetica Neue", Helvetica, sans-serif;
     color: white;
     width: 100%;
     height: 100%;
@@ -165,7 +165,7 @@ main {
     margin-left: 0.5rem;
     font-size: 1.25em;
     letter-spacing: 0.8px;
-    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
 } .appStore header h1 {
     letter-spacing: 1.05px;
     font-size: 2.5em;
@@ -221,7 +221,7 @@ main {
     font-size: 1.25em;
     user-select: none;
 } .app .name {
-    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.25em;
     letter-spacing: 0.7px;
 } .app .descMargin {
@@ -230,7 +230,7 @@ main {
     font-size: 1.25em;
     visibility: hidden;
 } .app .desc {
-    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 0.25rem;
     letter-spacing: 0.65px;
     color: #8E8D92;
@@ -259,6 +259,44 @@ main {
     background-color: #111113;
     color: #055090;
 }
+
+/* #endregion */
+/* #region Projects */
+
+.projects header {
+    background-color: #121212;
+    border-bottom: #272727 1px solid;
+    padding: 0.8rem 0 1rem 0;
+    margin-bottom: 1rem;
+    user-select: none;
+} .projects header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--appleBlue);
+    margin: 1.5rem 0 1.125rem 1.2rem;
+    cursor: pointer;
+} .projects header div:active{
+    color: #055090;
+} .projects header div i {
+    font-size: 1.55em;
+} .projects header p {
+    margin-left: 0.5rem;
+    font-size: 1.25em;
+    letter-spacing: 0.8px;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
+} .projects header h1 {
+    letter-spacing: 1.05px;
+    font-size: 2.5em;
+    padding-left: 2rem;
+}
+
+/* #endregion */
+
+
+/* #region Projects */
+
+
 
 /* #endregion */
 
@@ -302,7 +340,7 @@ main {
     font-size: 1.1em;
     letter-spacing: 1.25px;
 } .contacts #contactCard h1 {
-    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 3.25em;
     margin-top: 0.1rem;
     letter-spacing: 2.4px;
@@ -316,7 +354,7 @@ main {
     padding-top: 1.5rem;
     overflow: auto;
 } .contacts .infoBox {
-    font-family: "SF Pro Display Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
