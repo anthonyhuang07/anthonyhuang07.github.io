@@ -132,7 +132,7 @@ main {
     overflow: hidden;
     opacity: 0;
     background-color: black;
-    font-family: "SFSB", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SF Pro Display Semibold", "Helvetica Neue", Helvetica, sans-serif;
     color: white;
     width: 100%;
     height: 100%;
@@ -291,12 +291,9 @@ main {
     padding-left: 2rem;
 }
 
-/* #endregion */
-
-
-/* #region Projects */
-
-
+.project {
+    
+}
 
 /* #endregion */
 
