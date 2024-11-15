@@ -23,13 +23,14 @@ permalink: /
   <meta name="apple-mobile-web-app-title" content="Anthony Huang's Website">
   <meta name="application-name" content="Anthony Huang's Website">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/src/styles/mainNew.css">
+  <link rel="stylesheet" href="/src/main.css">
   <script src="https://kit.fontawesome.com/ebba275678.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="bg"></div>
   <h1 id="folderName">Anthony Huang</h1>
+  <!-- Homepage -->
   <main>
     <div>
       <img src="/assets/icons/aboutme.webp" alt="App Store Icon, About Me" onclick="appOpen(1)">
@@ -54,8 +55,19 @@ permalink: /
     <div id="bruh" style="width:77.34px; height:99px;"></div>
   </main>
   <div id="inApp">
+    <!-- About Me -->
     <div class="menu appStore">
-      <!-- <img src="/assets/o.png" style="z-index: 9999; position: absolute; width: 100%; opacity: 70%; top: -40px; left: 0px;"> -->
+      <div class="menu appView">
+        <img src="/assets/discord.png" style="z-index: 9999; position: absolute; width: 100%; opacity: 70%; left: 0px;">
+        <div onclick="hideAppView()" class="backButton">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p>Back</p>
+        </div>
+        <header>
+          <img src="assets/appstore.png">
+        </header>
+      </div>
+      <!-- <img src="/assets/appstore.png" style="z-index: 9999; position: absolute; width: 100%; opacity: 70%; left: 0px;"> -->
       <header>
         <div onclick="returnHome()">
           <i class="fa-solid fa-chevron-left"></i>
@@ -63,7 +75,7 @@ permalink: /
         </div>
         <h1>About Me!</h1>
       </header>
-      <div>
+      <div id="apps">
         <div class="app">
           <div>
             <img
@@ -119,7 +131,7 @@ permalink: /
             <p class="appButton">View</p>
           </div>
         </div>
-        <div class="app">
+        <div class="app"> <!-- Contests -->
           <div>
             <img src="https://swipefile.com/wp-content/uploads/2023/08/chatgpt-logo-chat-gpt-1024x1024.png"
               style="background-color: white;">
@@ -138,7 +150,7 @@ permalink: /
             <p class="appButton">View</p>
           </div>
         </div>
-        <div class="app">
+        <div class="app"> <!-- Languages -->
           <div>
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/free-translate-icon-download-in-svg-png-gif-file-formats--language-translator-translation-ios-ios14-14-pack-user-interface-icons-2365238.png">
@@ -153,9 +165,9 @@ permalink: /
               </div>
             </div>
           </div>
-          <a href="https://www.duolingo.com/profile/anthonyhuang07" target="_blank">
-            <p class="appButton">Open</p>
-          </a>
+          <div>
+            <p class="appButton">View</p>
+          </div>
         </div>
         <div class="app">
           <div>
@@ -194,7 +206,7 @@ permalink: /
             <p class="appButton">View</p>
           </div>
         </div>
-        <div class="app">
+        <div class="app"> <!-- Anime -->
           <div>
             <img
               src="https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw">
@@ -209,9 +221,9 @@ permalink: /
               </div>
             </div>
           </div>
-          <a href="https://myanimelist.net/profile/FHDHGNGN" target="_blank">
-            <p class="appButton">Open</p>
-          </a>
+          <div>
+            <p class="appButton">View</p>
+          </div>
         </div>
         <div class="app">
           <div>
@@ -251,7 +263,7 @@ permalink: /
             <p class="appButton">View</p>
           </div>
         </div>
-        <div class="app">
+        <div class="app"> <!-- Setup -->
           <div>
             <img src="https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024">
             <div>
@@ -269,7 +281,7 @@ permalink: /
             <p class="appButton">View</p>
           </div>
         </div>
-        <div class="app">
+        <div class="app"> <!-- FHDHGNGN -->
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_Notes_icon.svg/1024px-Apple_Notes_icon.svg.png">
@@ -284,14 +296,15 @@ permalink: /
               </div>
             </div>
           </div>
-          <a href="/name/">
-            <p class="appButton">Open</p>
-          </a>
+          <div>
+            <p class="appButton">View</p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Projects -->
     <div class="menu projects">
-      <img src="/assets/o.jpeg" style="z-index: 9999; position: absolute; height: 135%; opacity: 70%; bottom: -220px; left: 8px;">
+      <!-- <img src="/assets/o.jpeg" style="z-index: 9999; position: absolute; height: 135%; opacity: 70%; bottom: -220px; left: 8px;"> -->
       <header>
         <div onclick="returnHome()">
           <i class="fa-solid fa-chevron-left"></i>
@@ -303,11 +316,12 @@ permalink: /
       </main>
       <footer></footer>
     </div>
+    <!-- Contacts -->
     <div class="menu contacts">
       <div id="contactCard">
         <i class="fa-solid fa-chevron-left" onclick="returnHome()"></i>
         <div>
-          <img src="/assets/mainpfp.png" />
+          <img src="/assets/mainpfp.webp" />
           <p>HE, HIM, HIS</p>
           <h1>Anthony Huang</h1>
         </div>
