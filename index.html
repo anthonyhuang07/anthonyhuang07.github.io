@@ -8,7 +8,7 @@ permalink: /
   <meta charset="utf-8">
   <meta name="description" content="Anthony Huang's personal website.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homepage - ah07.xyz</title>
+  <title>Anthony Huang</title>
   <!-- Embeds -->
   <meta content="ah07.xyz" property="og:title" />
   <meta content="Anthony Huang's personal website." property="og:description" />
@@ -32,23 +32,21 @@ permalink: /
   <h1 id="folderName">Anthony Huang</h1>
   <main>
     <div>
-      <img src="/assets/icons/aboutme.png" alt="App Store Icon, About Me" onclick="appOpen(1)">
+      <img src="/assets/icons/aboutme.webp" alt="App Store Icon, About Me" onclick="appOpen(1)">
       <p>About Me</p>
     </div>
     <div>
-      <a href="/projects/">
-        <img src="/assets/icons/projects.png" alt="Files Icon, Projects">
-      </a>
+      <img src="/assets/icons/projects.webp" alt="Files Icon, Projects" onclick="appOpen(2)">
       <p>Projects (Unfinished)</p>
     </div>
     <div>
       <a href="https://blog.ah07.xyz">
-        <img src="/assets/icons/blog.png" alt="Journal Icon, Blog">
+        <img src="/assets/icons/blog.webp" alt="Journal Icon, Blog">
       </a>
       <p>Blog</p>
     </div>
     <div>
-      <img src="/assets/icons/contact.png" alt="Contacts Icon, Contact" onclick="appOpen(3)">
+      <img src="/assets/icons/contact.webp" alt="Contacts Icon, Contact" onclick="appOpen(3)">
       <p>Contact</p>
     </div>
     <div></div>
@@ -57,7 +55,7 @@ permalink: /
   </main>
   <div id="inApp">
     <div class="menu appStore">
-      <!-- <img src="/assets/o.png" style="z-index: 9999; position: absolute; width: 100%; opacity: 70%; top: 0wpx;"> -->
+      <!-- <img src="/assets/o.png" style="z-index: 9999; position: absolute; width: 100%; opacity: 70%; top: -40px; left: 0px;"> -->
       <header>
         <div onclick="returnHome()">
           <i class="fa-solid fa-chevron-left"></i>
@@ -292,11 +290,24 @@ permalink: /
         </div>
       </div>
     </div>
+    <div class="menu projects">
+      <img src="/assets/o.jpeg" style="z-index: 9999; position: absolute; height: 135%; opacity: 70%; bottom: -220px; left: 8px;">
+      <header>
+        <div onclick="returnHome()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <h1>Active Projects</h1>
+      </header>
+      <main>
+        <div class="project"></div>
+      </main>
+      <footer></footer>
+    </div>
     <div class="menu contacts">
       <div id="contactCard">
         <i class="fa-solid fa-chevron-left" onclick="returnHome()"></i>
         <div>
-          <img src="/assets/eleFHDant.png" />
+          <img src="/assets/mainpfp.png" />
           <p>HE, HIM, HIS</p>
           <h1>Anthony Huang</h1>
         </div>
