@@ -308,6 +308,7 @@ main {
         img {
             width: 150px;
             border-radius: 2rem;
+            background-color: white;
         }
 
         > div {

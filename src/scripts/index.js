@@ -50,7 +50,6 @@ function hideAppView(){
     appView.style.overflow = "hidden"
 }
 
-// Updated mapping for app details: rank => { title, subtitle, description }
 const appDetails = {
     "1": {
         title: "YouTube: Watch, Listen, Stream",
@@ -59,28 +58,28 @@ const appDetails = {
     },
     "2": {
         title: "Programming",
-        subtitle: "HTML/CSS, JavaScript, TypeScript, Python.",
-        description: "I excel at HTML, CSS, JavaScript, TypeScript, and Python, and love building innovative web experiences that make an impact."
+        subtitle: "HTML/CSS, JS/TS, Python",
+        description: "When I was 8 years old, I stumbled upon the computer programming course on Khan Academy, where I was introduced to p5.js. I then moved on to making many projects on Scratch. I learned HTML/CSS when I was 10.\n\nI made my return to programming when I was 13, after my computer history/hardware/YouTuber phase. I learned basic C to get back into it, and then I finally formally learned JavaScript, where I made my first side project, a Discord Bot. Then I started making websites again, where it is still my primary specialty to this day. In later years, I picked up Python and TypeScript."
     },
     "3": {
         title: "School",
-        subtitle: "Education",
-        description: "I am currently a Grade 12 student in the International Baccalaureate Diploma Program, actively engaging in extracurriculars and leadership roles."
+        subtitle: "Grade 12, IBDP",
+        description: "I am currently a high school student in Grade 12, enrolled in the International Baccalaureate Diploma Programme. I am taking HL English A (Language & Literature), HL French B, HL Geography, SL Chemistry, SL Physics, SL Mathematics AA.\n\nI am the Co-President of the Practical Section of our school's Computer Science Club, one of the biggest clubs at the school.\n\nI am an incoming Computer Science student at Carleton University, where I also hope to do a Linguistics minor. I am currently applying to Shopify Dev Degree."
     },
     "4": {
         title: "Contests",
-        subtitle: "Achievements",
-        description: "I've participated in and won multiple hackathons, including 2-time hackathon victories and high scores in competitive programming."
+        subtitle: "2x Hackathon Winner",
+        description: "I've participated in 5 hackathons, winning awards in 2; Hack the Ridge 2023 (Solo Male Winner) and Hack the Ridge 2024 (Best .xyz Use). In all five hackathons, I made websites using HTML/CSS/JS/TS.\n\nI have also participated in the Canadian Computing Competition, Junior Division, where I scored 56/75 (I TLE'd on J4 💀). I use Python for competitive programming."
     },
     "5": {
         title: "Languages",
-        subtitle: "Linguistic Skills",
-        description: "I speak English, French, Mandarin, and Japanese fluently, which helps me connect with diverse cultures and communities."
+        subtitle: "English, French, Mandarin, Japanese",
+        description: "I speak fluent English, B1 French, A2 Mandarin and A1 Japanese.\n\nI was born and lived in Québec for 8 years, where I spoke English and French on a daily basis (I lived in an Anglophone community in Montréal and indulged in mainly English media as a child). I spoke French at school with friends and used it outside the house. At home, I speak Chinese (Mandarin) and English with my family, as my parents are immigrants from China.\n\nWhen I was 8, I moved to Ontario, where I used English on the daily. While I still took French Immersion classes at school, my French skills quickly started to deteriorate over time as I had no opportunity to use them in daily life. My interest in the language has returned in Grade 12, where I am planning to do the DELF B2.\n\nWhen I was 15, I started watching anime again, and as I was travelling to Japan that summer, I decided to learn a bit of Japanese. Currently, I have my JLPT N5 certificate. I am pretty bad at speaking—as I have nobody to talk in Japanese with. The language has been really easy to learn thanks to my knowledge of Chinese. I am planning to take the JLPT N3 on December 2025. I keep up with my Japanese by studying with flashcards daily, watching Japanese Instagram Reels on my feed, as well as listening and singing Japanese music."
     },
     "6": {
         title: "Games",
-        subtitle: "Gaming Interests",
-        description: "From Rocket League to Minecraft, I enjoy games that challenge my creative and analytical skills in a fun way."
+        subtitle: "Minecraft, Roblox, Rocket League",
+        description: "I play a variety of games. I have been playing Minecraft and Roblox for a while, since elementary school.\n\nThe game I currently play most is probably Rocket League, where my peak is Diamond II in 2v2.\n\nThe game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% best on Acu (Extreme Demon)."
     },
     "7": {
         title: "Football",
