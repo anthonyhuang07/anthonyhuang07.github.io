@@ -124,7 +124,8 @@ const appDetails = {
     "12": {
         title: "FHDHGNGN",
         subtitle: "Username Meaning",
-        description: `FHDHGNGN has no meaning. When I made the username, I was playing a mobile game called The Blockheads, where I needed a username. I ended up keyboard smashing. FHDHGNGN is actually the simplified result of that username after I forgot the original keyboard smashed username. The following is a history of all my usernames up to now:
+        description: `
+                FHDHGNGN has no meaning. When I made the username, I was playing a mobile game called The Blockheads, where I needed a username. I ended up keyboard smashing. FHDHGNGN is actually the simplified result of that username after I forgot the original keyboard smashed username. The following is a history of all my usernames up to now:
 
                 2015-2016: xboxgolfer
                 2016-2018: FHDHGNGNgaming
@@ -172,4 +173,32 @@ viewButtons.forEach(button => {
         appView.style.opacity = "1";
         appView.style.overflow = "auto";
     });
+});
+
+// New function to fetch music data and display albumArt
+function fetchMusicData() {
+    fetch('http://localhost:8000/')
+        .then(response => response.json())
+        .then(data => {
+            const song = data.song;
+            if(song && song.albumArt) {
+                const img = document.createElement('img');
+                // Assumes albumArt is Base64 JPEG data
+                img.src = "data:image/jpeg;base64," + song.albumArt;
+                img.alt = song.title || "Album Art";
+                img.style.maxWidth = "100%";
+                // Display the image in the music menu
+                const musicContent = document.getElementById("musicContent");
+                musicContent.innerHTML = "";
+                musicContent.appendChild(img);
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching music data:", error);
+        });
+}
+
+// Call fetchMusicData on page load
+document.addEventListener("DOMContentLoaded", () => {
+    fetchMusicData();
 });
