@@ -124,8 +124,7 @@ const appDetails = {
     "12": {
         title: "FHDHGNGN",
         subtitle: "Username Meaning",
-        description: `
-                FHDHGNGN has no meaning. When I made the username, I was playing a mobile game called The Blockheads, where I needed a username. I ended up keyboard smashing. FHDHGNGN is actually the simplified result of that username after I forgot the original keyboard smashed username. The following is a history of all my usernames up to now:
+        description: `FHDHGNGN has no meaning. When I made the username, I was playing a mobile game called The Blockheads, where I needed a username. I ended up keyboard smashing. FHDHGNGN is actually the simplified result of that username after I forgot the original keyboard smashed username. The following is a history of all my usernames up to now:
 
                 2015-2016: xboxgolfer
                 2016-2018: FHDHGNGNgaming
