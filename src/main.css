@@ -57,7 +57,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/bg.webp');
+    background-image: url('/assets/bgtemp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -144,8 +144,6 @@ main {
     position: absolute;
     z-index: 9999;
 }
-
-/* #endregion */
 
 /* #region About Me */
 
@@ -341,7 +339,21 @@ main {
                 height: 2.1rem;
                 font-size: 1.2em;
                 border-radius: 100rem;
-                letter-spacing: 0.01px;
+                cursor: pointer; /* added */
+                user-select: none; /* added */
+                transition: background-color 0.25s, color 0.25s linear; /* added */
+            }
+
+            .appStore-openButton:active {
+                background-color: #111113;
+                color: #055090;
+            }
+
+            /* Add disabled state for the open button */
+            .appStore-openButton.disabled {
+                opacity: 0.5;
+                pointer-events: none;
+                background-color: gray;
             }
         }
 
@@ -411,7 +423,6 @@ main {
 }
 
 /* #endregion */
-
 /* #region Contact */
 
 .contacts {
@@ -515,7 +526,9 @@ main {
 }
 
 /* #endregion */
+/* #region Music */
 
+/* #endregion */
 /* #region Mobile Optimization */
 
 @media screen and (max-width: 900px){ /* Tablets */
