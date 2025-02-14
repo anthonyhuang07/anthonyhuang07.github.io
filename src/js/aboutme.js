@@ -41,7 +41,7 @@ const appDetails = {
         
         I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics. I am also applying to Shopify's Dev Degree program.`,
         link: "#",
-        icon: "https://ictevangelist.com/wp-content/uploads/2015/02/google-classroom.png"
+        icon: "https://play-lh.googleusercontent.com/c0pmpsPg0vXWp9zH8wLF4VoujteCnZWOE1hvE9xPXDo7s0r0U3fDlHK-YqeSJeTofQ"
     },
     "4": {
         title: "Languages",
@@ -56,7 +56,7 @@ const appDetails = {
         
         Studying Japanese has required me to rely on my Chinese knowledge, leading to fascinating connections. Being part of a diverse friend group has also exposed me to different cultures and languages. Even as a child, I had a knack for mimicking pronunciations, which naturally led to my fascination with phonetics. These experiences combined eventually sparked my interest in linguistics. I often pick up words from various languages—Persian, Turkish, Korean—simply out of curiosity, even if I don’t formally study them. My passion for linguistics is also deeply influenced by my passion for history and geography.`,
         link: "#",
-        icon: "https://cdn.iconscout.com/icon/free/png-256/free-translate-icon-download-in-svg-png-gif-file-formats--language-translator-translation-ios-ios14-14-pack-user-interface-icons-2365238.png"
+        icon: "https://play-lh.googleusercontent.com/0IH4L3pX-jqQXKYCDmxTM5t3Tvak2cb_zUuIs9nKCHPeOqkaRJ_bRTq1qKawsSvunw"
     },
     "5": {
         title: "Games",
@@ -74,22 +74,22 @@ const appDetails = {
     },
     "7": {
         title: "Anime",
-        subtitle: "The only TV I watch",
+        subtitle: "Steins;Gate, Bocchi, Horimiya",
         description: "I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). Then in 2020, I watched JoJo's Bizarre Adventure, which became my favorite and the primary focus of my YouTube channel back then (I was a Roblox JoJo YouTuber). Unfortunately, due to some cyberbullying in that community (I was 12 at the time) I told myself I would never watch anime again.\n\nIn 2023, I was friends with people who were in the anime/manga scene, so I decided to give anime another try, watching Oshi no Ko (which just aired) and later Bocchi the Rock. These animes sparked my interest in learning Japanese.\n\nMy current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock!, and Horimiya.",
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
     "8": {
         title: "Food",
-        subtitle: "Cuisine",
-        description: "I appreciate a wide range of foods, from juicy burgers to exquisite Japanese dishes that never fail to excite my taste buds.",
+        subtitle: "Burgers, Japanese Cuisine",
+        description: "burger.",
         link: "#",
-        icon: "https://play-lh.googleusercontent.com/CSOQQrprvW0fn000Vo0P1NC1NWyQh4pKyL7ErjYC5vzJ_sHM8VjxtF6M9VUfRwWCvQM"
+        icon: "https://play-lh.googleusercontent.com/vkbi0tuXCO6n_dk3djoGDGAdPMoxzDy6c7uOh3TwWn25pfUYHhOiAV9iw3t1CzHgvU6t=w240-h480-rw"
     },
     "9": {
         title: "My Setup",
-        subtitle: "My Devices",
-        description: "I proudly use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows, showcasing my blend of style and functionality.",
+        subtitle: "M2 MacBook Air",
+        description: "I  use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024"
     },
