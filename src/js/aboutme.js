@@ -1,15 +1,19 @@
 const appDetails = {
     "1": {
         title: "Who am I?",
-        subtitle: "Anthony Huang, 17 years old",
-        description: "My name is Anthony Huang, known as anthonyhuang07 or FHDHGNGN online. I am a 17 year old high school student from Ontario, Canada. I was born in Québec, Canada and I am of Chinese descent. ",
+        subtitle: "Anthony Huang, 17 years old.",
+        description: `Hey! My name is Anthony Huang, also known as anthonyhuang07 or FHDHGNGN online.
+        
+        I'm a 17-year-old high school student from Ontario, Canada, born in Québec and of Chinese descent. 
+        
+        I have a strong passion for all things tech and computing, as well as linguistics and geography!`,
         openLink: "#",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
     "2": {
         title: "Programming",
         subtitle: "HTML/CSS, JS/TS, Python",
-        description: "When I was 8 years old, I stumbled upon the computer programming course on Khan Academy, where I was introduced to p5.js. I then moved on to making many projects on Scratch. I learned HTML/CSS when I was 10.\n\nI made my return to programming when I was 13, after my computer history/hardware/YouTuber phase. I learned basic C to get back into it, and then I finally formally learned JavaScript, where I made my first side project, a Discord Bot. Then I started making websites again, where it is still my primary specialty to this day. In later years, I picked up Python and TypeScript.",
+        description: "I started programming at 8 years old with p5.js on Khan Academy, and later spent a lot of time Scratch. When I was 10, I learned basic web development with HTML/CSS\n\nI made my return to programming when I was 13, after my computer history/hardware/YouTuber phase. I learned basic C to get back into it, and then I finally formally learned JavaScript, where I made my first side project, a Discord Bot. Then I started making websites again, where it is still my primary specialty to this day. In later years, I picked up Python and TypeScript.",
         openLink: "#",
         icon: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
     },

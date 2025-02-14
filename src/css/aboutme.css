@@ -156,6 +156,7 @@
 
         img {
             width: 150px;
+            height: 150px;
             border-radius: 2rem;
         }
 
@@ -256,6 +257,9 @@
 }
 
 @media screen and (max-width: 480px){ /* Phones */
+    .menu {
+        overflow: scroll !important;
+    }
     .app {
         width: 87.5%
     } 
