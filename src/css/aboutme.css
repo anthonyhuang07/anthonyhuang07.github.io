@@ -228,6 +228,7 @@
             letter-spacing: 0.95px;
             line-height: 20.9px;
             position: relative;
+            font-size: 1.05em;
         }
 
         &::after {
