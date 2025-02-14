@@ -6,14 +6,16 @@ const appDetails = {
         
         I'm a 17-year-old high school student from Ontario, Canada, born in Québec and of Chinese descent. 
         
-        I have a strong passion for all things tech and computing, as well as linguistics and geography!`,
+        I have a strong passion for all things tech and computing, as well as linguistics and geography! Ironically, I hate math and literature—despite math being the foundation of computing and literature being an application of linguistics. A few factors are to blame for this, don't ask.
+        
+        My life goal is to travel the world, visiting as many countries as possible and connecting with locals by speaking their native languages.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
     "2": {
         title: "Programming",
-        subtitle: "HTML/CSS, JS/TS, Python.",
-        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old with p5.js on Khan Academy, and later spent a lot of time Scratch. When I was 10, I learned basic web development with HTML/CSS.
+        subtitle: "HTML/CSS, JS/TS, Python",
+        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy, and it immediately clicked with me that making cool things on the computer was for me. For a while after, I made many games and animations on Scratch. By the time I was 10, I had started learning basic web development with HTML and CSS.
         
         I made my return to programming at 13, after learning much about the tech world outside of just coding. I learned basic C to get back the vibe, then JavaScript, where I built my first side project—a Discord bot. Web development soon became my primary focus, and I later learned Python and TypeScript.
         
@@ -25,7 +27,7 @@ const appDetails = {
     },
     "3": {
         title: "School",
-        subtitle: "High School Grade 12, IBDP.",
+        subtitle: "High School Grade 12, IBDP",
         description: `I am currently a Grade 12 high school student enrolled in the International Baccalaureate Diploma Programme, and I would describe myself as a high-80s student academically. My courses include: 
 
         • HL English A (Language & Literature)
@@ -43,10 +45,16 @@ const appDetails = {
     },
     "4": {
         title: "Languages",
-        subtitle: "English, French, Mandarin, Japanese",
+        subtitle: "English, French, Chinese, Japanese",
         description: `I speak fluent English, B1 French, A2 Mandarin and A1 Japanese.
         
-        I spent the first 8 years of my life in Québec, where I spoke English and French on a daily basis (I lived in an Anglophone community in Montréal and indulged in mainly English media as a child). I spoke French at school with friends and used it outside the house. At home, I speak Chinese (Mandarin) and English with my family, as my parents are immigrants from China.\n\nWhen I was 8, I moved to Ontario, where I used English on the daily. While I still took French Immersion classes at school, my French skills quickly started to deteriorate over time as I had no opportunity to use them in daily life. My interest in the language has returned in Grade 12, where I am planning to do the DELF B2.\n\nWhen I was 15, I started watching anime again, and as I was travelling to Japan that summer, I decided to learn a bit of Japanese. Currently, I have my JLPT N5 certificate. I am pretty bad at speaking—as I have nobody to talk in Japanese with. The language has been really easy to learn thanks to my knowledge of Chinese. I am planning to take the JLPT N3 on December 2025. I keep up with my Japanese by studying with flashcards daily, watching Japanese Instagram Reels on my feed, as well as listening and singing Japanese music.`,
+        I spent the first 8 years of my life in Québec, where I regularly spoke both English and French. I have been immersed in English media since I was a baby, while also using French outside the house. At home, I spoke both Mandarin and English with my family, as my parents are immigrants from China.
+        
+        At 8, I moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited, and I am now preparing to take the DELF B2 exam.
+        
+        My interest in Japanese began when I was 15, sparked by anime and an upcoming trip to Japan. I currently hold a JLPT N5 certificate, however, I still struggle with speaking as I have nobody to talk to in Japanese. I plan to take the JLPT N3 next, and I actively maintain my skills through daily flashcard reviews, exposure to Japanese content on social media, as well as listening to and singing Japanese music.
+        
+        Studying Japanese has required me to rely on my Chinese knowledge, leading to fascinating connections. Being part of a diverse friend group has also exposed me to different cultures and languages. Even as a child, I had a knack for mimicking pronunciations, which naturally led to my fascination with phonetics. These experiences combined eventually sparked my interest in linguistics. I often pick up words from various languages—Persian, Turkish, Korean—simply out of curiosity, even if I don’t formally study them. My passion for linguistics is also deeply influenced by my passion for history and geography.`,
         link: "#",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-translate-icon-download-in-svg-png-gif-file-formats--language-translator-translation-ios-ios14-14-pack-user-interface-icons-2365238.png"
     },
