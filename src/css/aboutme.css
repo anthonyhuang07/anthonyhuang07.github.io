@@ -241,6 +241,13 @@
             bottom: -1.35rem;
         }
     }
+
+    .appStore-appView-about p a {
+        display: inline;
+        color: var(--appleBlue);
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 900px){ /* Tablets */
