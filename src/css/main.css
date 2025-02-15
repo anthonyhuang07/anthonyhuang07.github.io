@@ -43,6 +43,7 @@ body {
     position: relative;
     background-color: black;
     font-family: "SFR", "Helvetica Neue", Helvetica, sans-serif;
+
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -354,6 +355,13 @@ main {
 }
 
 @media screen and (max-width: 480px){ /* Phones */
+    @supports (-webkit-touch-callout: none){
+        html, body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+
     main {
         padding: 30px;
         width: 300px;
