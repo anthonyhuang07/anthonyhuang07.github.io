@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: "SFSB";
-    src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2')
+    src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: "SFR";
-    src: url('/assets/fonts/SF-Pro-Display-Regular.woff2')
+    src: url('/assets/fonts/SF-Pro-Display-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: "SFL";
-    src: url('/assets/fonts/SF-Pro-Display-Light.woff2')
+    src: url('/assets/fonts/SF-Pro-Display-Light.woff2') format('woff2');
 }
 
 /* #endregion */
@@ -95,22 +95,30 @@ main {
     grid-template-columns: auto auto auto;
     grid-gap: 24.5px 35px;
     margin: 0 2rem 0 2rem;
-} main div{
+}
+
+main div {
     display: flex;
     flex-direction: column;
     align-items: center;
     user-select: none;
-} main div img {
+}
+
+main div img {
     transition: filter 0.05s linear;
     -webkit-user-drag: none;
     cursor: pointer;
     width: 75px;
-} main div p{
+}
+
+main div p {
     color: white;
     margin-top: 5px;
     letter-spacing: 0.75px;
     text-align: center;
-} main div img:active {
+}
+
+main div img:active {
     filter: brightness(60%)
 }
 
@@ -153,138 +161,175 @@ main {
     padding: 0.8rem 0 1rem 0;
     margin-bottom: 1rem;
     user-select: none;
-} .projects header div {
+}
+
+.projects header div {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: var(--appleBlue);
     margin: 1.5rem 0 1.125rem 1.2rem;
     cursor: pointer;
-} .projects header div:active{
+}
+
+.projects header div:active {
     color: #055090;
-} .projects header div i {
+}
+
+.projects header div i {
     font-size: 1.55em;
-} .projects header p {
+}
+
+.projects header p {
     margin-left: 0.5rem;
     font-size: 1.25em;
     letter-spacing: 0.8px;
     font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
-} .projects header h1 {
+}
+
+.projects header h1 {
     letter-spacing: 1.05px;
     font-size: 2.5em;
     padding-left: 2rem;
 }
 
 /* #endregion */
-/* #region Contact */
 
 .contacts {
     display: flex;
     flex-direction: row;
-} 
 
-.contacts #contactCard {
-    background-image: linear-gradient(to bottom, #101316, #0D1014);
-    height: 100%;
-    width: 53.4rem;
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    justify-content: center;
-} .contacts #contactCard i {
-    position: absolute;
-    display: flex;
-    background-color: #34383B;
-    border-radius: 100rem;
-    width: 2.75rem;
-    height: 2.75rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    margin: 2rem 0 0 1.1rem;
-    cursor: pointer;
-    top: 0;
-} .contacts #contactCard > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} .contacts #contactCard img {
-    width: 362px;
-    border-radius: 100rem;
-} .contacts #contactCard p{
-    margin-top: 2.225rem;
-    font-size: 1.1em;
-    letter-spacing: 1.25px;
-} .contacts #contactCard h1 {
-    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 3.25em;
-    margin-top: 0.1rem;
-    letter-spacing: 2.4px;
-} 
+    #contactCard {
+        background-image: linear-gradient(to bottom, #101316, #0D1014);
+        height: 100%;
+        width: 53.4rem;
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+        justify-content: center;
 
-.contacts #contactInfo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.5rem;
-    overflow: auto;
-} .contacts .infoBox {
-    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #1C1C1E;
-    width: 97.5%;
-    height: 5.45rem;
-    border-radius: 0.65rem;
-    padding-left: 1.425rem;
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-} .contacts .infoBox:active{
-    background-color: #3A3A3C;
-} .contacts .infoBox h2 {
-    font-size: 1.25em;
-    letter-spacing: 1px;
-    color: white;
-    user-select: none;
-} .contacts .infoBox p {
-    font-size: 1.5em;
-    color: var(--appleBlue);
-    margin-top: 0.35rem;
-    letter-spacing: 0.45px;
-} .contacts #infoCluster {
-    width: 97.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.65rem;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-} .contacts #infoCluster .infoBox {
-    margin-bottom: 0;
-    width: 100%;
-    border-radius: 0;
-    position: relative;
-} .contacts #infoCluster .infoBox::after{
-    content: "";
-    background: #3A3A3A;
-    position: absolute;
-    width: calc(100% - 1.425rem);
-    left: 1.425rem;
-    height: 1px;
-    bottom: 0;
-} .contacts #infoCluster .infoBox:last-child::after{
-    height: 0;
+        h1 {
+            font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 3.25em;
+            margin-top: 0.1rem;
+            letter-spacing: 2.4px;
+        }
+
+        i {
+            position: absolute;
+            display: flex;
+            background-color: #34383B;
+            border-radius: 100rem;
+            width: 2.75rem;
+            height: 2.75rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            margin: 2rem 0 0 1.1rem;
+            cursor: pointer;
+            top: 0;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 362px;
+            border-radius: 100rem;
+        }
+
+        p {
+            margin-top: 2.225rem;
+            font-size: 1.1em;
+            letter-spacing: 1.25px;
+        }
+    }
+
+    #contactInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.5rem;
+        overflow: auto;
+    }
+
+    .infoBox {
+        font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #1C1C1E;
+        width: 97.5%;
+        height: 5.45rem;
+        border-radius: 0.65rem;
+        padding-left: 1.425rem;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+
+        h2 {
+            font-size: 1.25em;
+            letter-spacing: 1px;
+            color: white;
+            user-select: none;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: var(--appleBlue);
+            margin-top: 0.35rem;
+            letter-spacing: 0.45px;
+        }
+
+        &:active {
+            background-color: #3A3A3C;
+        }
+    }
+
+    #infoCluster {
+        width: 97.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0.65rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+
+        .infoBox {
+            margin-bottom: 0;
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+
+            &:after {
+                content: "";
+                background: #3A3A3A;
+                position: absolute;
+                width: calc(100% - 1.425rem);
+                left: 1.425rem;
+                height: 1px;
+                bottom: 0;
+            }
+
+            &:last-child::after {
+                height: 0;
+            }
+            
+        }
+    }
+    
 }
 
-/* #endregion */
 /* #region Music */
 
 /* #endregion */
 /* #region Mobile Optimization */
 
-@media screen and (max-width: 900px){ /* Tablets */
+@media screen and (max-width: 900px) { /* Tablets */
+
     .appStore #apps {
         display: flex;
         flex-direction: column;
@@ -293,57 +338,77 @@ main {
 
     .app {
         width: 92.5%
-    } .app:nth-child(6)::after {
+    }
+
+    .app:nth-child(6)::after {
         height: 1px;
     }
 
     .contacts {
         flex-direction: column;
         height: 100%;
-    } 
-    
+    }
+
     .contacts #contactCard {
         width: 100%;
         min-height: 27.5rem;
-        overflow:visible;
-    } .contacts #contactCard i {
+        overflow: visible;
+    }
+
+    .contacts #contactCard i {
         width: 2rem;
         height: 2rem;
         font-size: 1.1em;
         margin: 2rem 0 0 0.8rem;
-    } .contacts #contactCard img {
+    }
+
+    .contacts #contactCard img {
         width: 265px;
-    } .contacts #contactCard p{
+    }
+
+    .contacts #contactCard p {
         margin-top: 1.6rem;
         font-size: 0.8em;
         letter-spacing: 0.9px;
-    } .contacts #contactCard h1 {
+    }
+
+    .contacts #contactCard h1 {
         font-size: 2.35em;
         letter-spacing: 1.85px;
-    } 
-    
+    }
+
     .contacts #contactInfo {
-        overflow:visible;
-    } .contacts .infoBox {
+        overflow: visible;
+    }
+
+    .contacts .infoBox {
         width: 96%;
         height: 4rem;
         border-radius: 0.5rem;
         padding-left: 1.05rem;
         margin-bottom: 1rem;
-    } .contacts .infoBox h2 {
+    }
+
+    .contacts .infoBox h2 {
         font-size: 0.9em;
         letter-spacing: 0.8px;
         color: white;
-    } .contacts .infoBox p {
+    }
+
+    .contacts .infoBox p {
         font-size: 1em;
         color: var(--appleBlue);
         margin-top: 0.35rem;
         letter-spacing: 1.05px;
-    } .contacts #infoCluster {
+    }
+
+    .contacts #infoCluster {
         width: 96%;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
-    } .contacts #infoCluster .infoBox::after{
+    }
+
+    .contacts #infoCluster .infoBox::after {
         content: "";
         background: #3A3A3A;
         position: absolute;
@@ -354,34 +419,32 @@ main {
     }
 }
 
-@media screen and (max-width: 480px){ /* Phones */
-    @supports (-webkit-touch-callout: none){
-        html, body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-    }
+@media screen and (max-width: 480px) { /* Phones */
 
     main {
         padding: 30px;
         width: 300px;
         border-radius: 40px;
         grid-gap: 17px 29px;
-    } main div img {
-        width: 60px;
-    } main div p{
-        margin-top: 5px;
-        font-size: 0.8em;
-        letter-spacing: 0.65px;
+
+        div img {
+            width: 60px;
+        }
+
+        div p {
+            margin-top: 5px;
+            font-size: 0.8em;
+            letter-spacing: 0.65px;
+        }
     }
 
     .app {
         width: 87.5%
-    } 
+    }
 
     #bruh {
-        width:60px !important;
-        height:80px !important;
+        width: 60px !important;
+        height: 80px !important;
     }
 }
 
