@@ -39,6 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    cursor: pointer;
     &::after {
         content: "";
         background: #272727;

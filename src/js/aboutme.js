@@ -173,44 +173,65 @@ function populateAppCards() {
     });
 }
 
-// New function: attach delegated listener for view buttons
+function openAppViewByRank(rank) {
+    const details = appDetails[rank];
+    if(details){
+        document.querySelector(".appView header h1").innerText = details.title;
+        document.querySelector(".appView header h2").innerText = details.subtitle;
+        document.querySelector(".appStore-appView-about p").innerHTML = details.description;
+        const openButton = document.querySelector(".appStore-openButton");
+        if(!details.link.trim() || details.link === "#"){
+            openButton.classList.add("disabled");
+            openButton.onclick = null;
+        } else {
+            openButton.classList.remove("disabled");
+            openButton.onclick = () => {
+                window.open(details.link, "_blank");
+            };
+        }
+        document.querySelector(".appView header img").src = details.icon;
+    }
+    const appView = document.querySelector(".appView");
+    if(appView) {
+        appView.style.visibility = "visible";
+        appView.style.opacity = "1";
+        appView.style.overflow = "auto";
+    }
+}
+
+// Modified function: attach delegated listener for view buttons now calls openAppViewByRank
 function attachViewButtonListeners() {
     const appsContainer = document.getElementById("apps");
     appsContainer.addEventListener("click", (event) => {
-        const button = event.target.closest(".appStore-viewButton");
-        if (!button) return;
-        const appCard = button.closest(".app");
-        if (!appCard) return;
-        const rankEl = appCard.querySelector(".rank");
-        if (!rankEl) return;
-        const rank = rankEl.innerText.trim();
-        const details = appDetails[rank];
-        if(details){
-            document.querySelector(".appView header h1").innerText = details.title;
-            document.querySelector(".appView header h2").innerText = details.subtitle;
-            document.querySelector(".appStore-appView-about p").innerHTML = details.description;
-            const openButton = document.querySelector(".appStore-openButton");
-            if(!details.link.trim() || details.link === "#"){
-                openButton.classList.add("disabled");
-                openButton.onclick = null;
-            } else {
-                openButton.classList.remove("disabled");
-                openButton.onclick = () => {
-                    window.open(details.link, "_blank");
-                };
-            }
-            document.querySelector(".appView header img").src = details.icon;
+        // Let the whole .app div trigger a view unless the click originated from the view button
+        if (event.target.closest(".appStore-viewButton")) {
+            // If view button was clicked, process it:
+            const button = event.target.closest(".appStore-viewButton");
+            const appCard = button.closest(".app");
+            if (!appCard) return;
+            const rankEl = appCard.querySelector(".rank");
+            if (!rankEl) return;
+            openAppViewByRank(rankEl.innerText.trim());
         }
-        const appView = document.querySelector(".appView");
-        if(appView) {
-            appView.style.visibility = "visible";
-            appView.style.opacity = "1";
-            appView.style.overflow = "auto";
-        }
+    });
+}
+
+// New: Attach a click listener to each .app card (unless click comes from view button)
+function attachAppCardListeners() {
+    const appCards = document.querySelectorAll("#apps .app");
+    appCards.forEach(card => {
+        card.addEventListener("click", (event) => {
+            // Prevent duplicate triggering if view button was clicked.
+            if (event.target.closest(".appStore-viewButton")) return;
+            const rankEl = card.querySelector(".rank");
+            if (!rankEl) return;
+            openAppViewByRank(rankEl.innerText.trim());
+        });
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     populateAppCards();
     attachViewButtonListeners();
+    attachAppCardListeners();
 });
