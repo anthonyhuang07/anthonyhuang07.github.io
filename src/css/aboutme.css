@@ -48,8 +48,8 @@
         height: 1px;
         bottom: 0;
     }
-    &:nth-child(6)::after,
-    &:nth-child(12)::after {
+    &:nth-child(5)::after,
+    &:nth-child(10)::after {
         height: 0;
     }
     > div {
@@ -200,7 +200,6 @@
                 color: #055090;
             }
 
-            /* Add disabled state for the open button */
             .appStore-openButton.disabled {
                 opacity: 0.5;
                 pointer-events: none;
@@ -259,7 +258,7 @@
 
     .app {
         width: 92.5%
-    } .app:nth-child(6)::after {
+    } .app:nth-child(5)::after {
         height: 1px;
     }
 }
@@ -269,6 +268,34 @@
         overflow: scroll !important;
     }
     .app {
-        width: 87.5%
+        width: 87.5%;
+
+        img {
+            width: 65px;
+            height: 65px;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .name {
+            font-size: 1.1em;
+        }
+
+        .desc {
+            font-size: 0.9em;
+        }
+
+        .appStore-viewButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 1.8rem 0 1.85rem 0;
+            font-size: 1.1em;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            background-color: #1C1C1E;
+            color: var(--appleBlue);
+            width: 5.45rem;
+        }
     } 
 }

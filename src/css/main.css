@@ -129,7 +129,6 @@ main {
 .menu {
     position: absolute;
     visibility: hidden;
-    /* overflow: hidden; */
     opacity: 0;
     background-color: black;
     font-family: "SFSB", "Helvetica Neue", Helvetica, sans-serif;
