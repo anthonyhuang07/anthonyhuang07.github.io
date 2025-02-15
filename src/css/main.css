@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: "SFSB";
-    src: url('/assets/fonts/SF-Pro-Display-Semibold.otf')
+    src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2')
 }
 
 @font-face {
     font-family: "SFR";
-    src: url('/assets/fonts/SF-Pro-Display-Regular.otf')
+    src: url('/assets/fonts/SF-Pro-Display-Regular.woff2')
 }
 
 @font-face {
     font-family: "SFL";
-    src: url('/assets/fonts/SF-Pro-Display-Light.otf')
+    src: url('/assets/fonts/SF-Pro-Display-Light.woff2')
 }
 
 /* #endregion */
