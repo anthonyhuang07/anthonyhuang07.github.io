@@ -131,23 +131,23 @@ const appDetails = {
     }
 };
 
-function populateAppCards() {
+function createApp() {
     const appsContainer = document.getElementById("apps");
-    let html = "";
-    Object.keys(appDetails).forEach(rank => {
-        const details = appDetails[rank];
-        html += `
+    appsContainer.innerHTML = Object.keys(appDetails)
+        .map(rank => {
+            const details = appDetails[rank];
+            return `
             <div class="app">
               <div>
-                <img src="">
+                <img src="${details.icon}" alt="${details.title}">
                 <div>
                   <div>
                     <p class="rank">${rank}</p>
-                    <p class="name"></p>
+                    <p class="name">${details.title}</p>
                   </div>
                   <div>
                     <p class="descMargin">${rank}</p>
-                    <p class="desc"><!-- subtitle placeholder --></p>
+                    <p class="desc">${details.subtitle}</p>
                   </div>
                 </div>
               </div>
@@ -155,83 +155,42 @@ function populateAppCards() {
                 <p class="appStore-viewButton">View</p>
               </div>
             </div>`;
-    });
-    appsContainer.innerHTML = html;
-    // Fill in app card details:
-    const appCards = document.querySelectorAll("#apps .app");
-    appCards.forEach(card => {
-        const rankEl = card.querySelector(".rank");
-        if (!rankEl) return;
-        const rank = rankEl.textContent.trim();
-        const details = appDetails[rank];
-        if (details) {
-            card.querySelector(".name").textContent = details.title;
-            card.querySelector(".desc").textContent = details.subtitle;
-            const imgEl = card.querySelector("img");
-            if (imgEl) imgEl.src = details.icon;
-        }
-    });
+        }).join("");
 }
 
 function openAppViewByRank(rank) {
     const details = appDetails[rank];
-    if(details){
-        document.querySelector(".appView header h1").innerText = details.title;
-        document.querySelector(".appView header h2").innerText = details.subtitle;
-        document.querySelector(".appStore-appView-about p").innerHTML = details.description;
-        const openButton = document.querySelector(".appStore-openButton");
-        if(!details.link.trim() || details.link === "#"){
-            openButton.classList.add("disabled");
-            openButton.onclick = null;
-        } else {
-            openButton.classList.remove("disabled");
-            openButton.onclick = () => {
-                window.open(details.link, "_blank");
-            };
-        }
-        document.querySelector(".appView header img").src = details.icon;
+    if (!details) return;
+    document.querySelector(".appView header h1").innerText = details.title;
+    document.querySelector(".appView header h2").innerText = details.subtitle;
+    document.querySelector(".appStore-appView-about p").innerHTML = details.description;
+    const openButton = document.querySelector(".appStore-openButton");
+    if (!details.link.trim() || details.link === "#") {
+        openButton.classList.add("disabled");
+        openButton.onclick = null;
+    } else {
+        openButton.classList.remove("disabled");
+        openButton.onclick = () => window.open(details.link, "_blank");
     }
+    document.querySelector(".appView header img").src = details.icon;
     const appView = document.querySelector(".appView");
-    if(appView) {
+    if (appView) {
         appView.style.visibility = "visible";
         appView.style.opacity = "1";
         appView.style.overflow = "auto";
     }
 }
 
-// Modified function: attach delegated listener for view buttons now calls openAppViewByRank
-function attachViewButtonListeners() {
-    const appsContainer = document.getElementById("apps");
-    appsContainer.addEventListener("click", (event) => {
-        // Let the whole .app div trigger a view unless the click originated from the view button
-        if (event.target.closest(".appStore-viewButton")) {
-            // If view button was clicked, process it:
-            const button = event.target.closest(".appStore-viewButton");
-            const appCard = button.closest(".app");
-            if (!appCard) return;
-            const rankEl = appCard.querySelector(".rank");
-            if (!rankEl) return;
-            openAppViewByRank(rankEl.innerText.trim());
-        }
-    });
-}
-
-// New: Attach a click listener to each .app card (unless click comes from view button)
-function attachAppCardListeners() {
-    const appCards = document.querySelectorAll("#apps .app");
-    appCards.forEach(card => {
-        card.addEventListener("click", (event) => {
-            // Prevent duplicate triggering if view button was clicked.
-            if (event.target.closest(".appStore-viewButton")) return;
-            const rankEl = card.querySelector(".rank");
-            if (!rankEl) return;
-            openAppViewByRank(rankEl.innerText.trim());
-        });
+function attachAppListeners() {
+    document.getElementById("apps").addEventListener("click", (event) => {
+        const card = event.target.closest(".app");
+        if (!card) return;
+        const rank = card.querySelector(".rank")?.textContent.trim();
+        if (rank) openAppViewByRank(rank);
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    populateAppCards();
-    attachViewButtonListeners();
-    attachAppCardListeners();
+    createApp();
+    attachAppListeners();
 });

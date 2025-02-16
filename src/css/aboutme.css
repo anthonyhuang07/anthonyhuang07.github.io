@@ -1,30 +1,30 @@
-.appStore > header {
+.aboutme > header {
     background-color: #121212;
     border-bottom: #272727 1px solid;
     padding: 0.8rem 0 1rem 0;
     margin-bottom: 1rem;
     user-select: none;
-} .appStore > header div {
+} .aboutme > header div {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: var(--appleBlue);
     margin: 1.655rem 0 1.125rem 1rem;
     cursor: pointer;
-} .appStore > header div:active{
+} .aboutme > header div:active{
     color: #055090;
-} .appStore > header div i {
+} .aboutme > header div i {
     font-size: 1.55em;
-} .appStore > header p {
+} .aboutme > header p {
     margin-left: 0.5rem;
     font-size: 1.25em;
     letter-spacing: 0.8px;
     font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
-} .appStore > header h1 {
+} .aboutme > header h1 {
     letter-spacing: 1.05px;
     font-size: 2.5em;
     padding-left: 3.5rem;
-} .appStore #apps {
+} .aboutme #apps {
     display: grid;
     grid-template-columns: 44.5% 44.5%;
     grid-template-rows: repeat(5, auto);
@@ -251,7 +251,7 @@
 }
 
 @media screen and (max-width: 900px){ /* Tablets */
-    .appStore #apps {
+    .aboutme #apps {
         display: flex;
         flex-direction: column;
         align-items: center;

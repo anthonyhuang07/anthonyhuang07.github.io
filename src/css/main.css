@@ -67,7 +67,7 @@ body {
 }
 
 #folderName {
-    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "SFL", sans-serif;
     color: white;
     font-size: 2.75em;
     margin: 11.5vh 0 11.5vh 0;
@@ -86,7 +86,7 @@ img {
     -webkit-user-drag: none;
 }
 
-main {
+body > main {
     padding: 39px;
     width: 380px;
     border-radius: 47px;
@@ -95,31 +95,31 @@ main {
     grid-template-columns: auto auto auto;
     grid-gap: 24.5px 35px;
     margin: 0 2rem 0 2rem;
-}
 
-main div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    user-select: none;
-}
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
 
-main div img {
-    transition: filter 0.05s linear;
-    -webkit-user-drag: none;
-    cursor: pointer;
-    width: 75px;
-}
+        p {
+            color: white;
+            margin-top: 5px;
+            letter-spacing: 0.75px;
+            text-align: center;
+        }
 
-main div p {
-    color: white;
-    margin-top: 5px;
-    letter-spacing: 0.75px;
-    text-align: center;
-}
+        img {
+            transition: filter 0.05s linear;
+            -webkit-user-drag: none;
+            cursor: pointer;
+            width: 75px;
 
-main div img:active {
-    filter: brightness(60%)
+            &:active {
+                filter: brightness(60%)
+            }
+        }
+    }
 }
 
 /* #region Parent App Divs */
@@ -152,48 +152,6 @@ main div img:active {
     position: absolute;
     z-index: 9999;
 }
-
-/* #region Projects */
-
-.projects header {
-    background-color: #121212;
-    border-bottom: #272727 1px solid;
-    padding: 0.8rem 0 1rem 0;
-    margin-bottom: 1rem;
-    user-select: none;
-}
-
-.projects header div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: var(--appleBlue);
-    margin: 1.5rem 0 1.125rem 1.2rem;
-    cursor: pointer;
-}
-
-.projects header div:active {
-    color: #055090;
-}
-
-.projects header div i {
-    font-size: 1.55em;
-}
-
-.projects header p {
-    margin-left: 0.5rem;
-    font-size: 1.25em;
-    letter-spacing: 0.8px;
-    font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.projects header h1 {
-    letter-spacing: 1.05px;
-    font-size: 2.5em;
-    padding-left: 2rem;
-}
-
-/* #endregion */
 
 .contacts {
     display: flex;
@@ -329,21 +287,7 @@ main div img:active {
 /* #region Mobile Optimization */
 
 @media screen and (max-width: 900px) { /* Tablets */
-
-    .appStore #apps {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .app {
-        width: 92.5%
-    }
-
-    .app:nth-child(6)::after {
-        height: 1px;
-    }
-
+    
     .contacts {
         flex-direction: column;
         height: 100%;
@@ -421,7 +365,7 @@ main div img:active {
 
 @media screen and (max-width: 480px) { /* Phones */
 
-    main {
+    body > main {
         padding: 30px;
         width: 300px;
         border-radius: 40px;

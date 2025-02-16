@@ -1,6 +1,6 @@
 const inApp = document.querySelector("#inApp")
 const menu = document.querySelector(".menu")
-const appStore = document.querySelector(".appStore")
+const aboutme = document.querySelector(".aboutme")
 const projects = document.querySelector(".projects")
 const contacts = document.querySelector(".contacts")
 const music = document.querySelector(".music")
@@ -27,8 +27,8 @@ function appOpen(app) {
   document.querySelector('#inApp').style.opacity = '1';
 
   if (app === 1) {
-    document.querySelector('.menu.appStore').style.visibility = 'visible';
-    document.querySelector('.menu.appStore').style.opacity = '1';
+    document.querySelector('.menu.aboutme').style.visibility = 'visible';
+    document.querySelector('.menu.aboutme').style.opacity = '1';
   } else if (app === 2) {
     document.querySelector('.menu.projects').style.visibility = 'visible';
     document.querySelector('.menu.projects').style.opacity = '1';
@@ -44,7 +44,7 @@ function appOpen(app) {
 function returnHome(){
     document.body.style.overflow = "hidden";
     inApp.style.overflow = menu.style.overflow = appView.style.overflow = "hidden";
-    inApp.style.visibility = appStore.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = "hidden";
+    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = "hidden";
     inApp.style.opacity = menu.style.opacity = appView.style.opacity = "0";
 }
 
