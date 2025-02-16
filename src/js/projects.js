@@ -14,6 +14,11 @@ const projectDetails = {
       link: "https://anthonyhuang.net/piracy/",
       icon: "https://openclipart.org/image/2000px/29833"
   },
+  "ByteBucks": {
+    description: "A basic Adventure Capitalist-inspired game made for my high school CS course.",
+    link: "https://anthonyhuang.net/ICS3U1-FPT/",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Dollar_sign_in_circle_cleaned_%28PD_version%29.green.svg/1024px-Dollar_sign_in_circle_cleaned_%28PD_version%29.green.svg.png"
+},
   "Huang Romanization (Standard Iranian Persian)": {
       description: "A romanization system that standardizes the typed form of Standard Iranian Persian/Western Persian.",
       link: "https://docs.google.com/document/d/1C7u5z-WBAmdkg94pC71cciqXgKX6X-BVK-x6ym0JmvY/edit?tab=t.0",
