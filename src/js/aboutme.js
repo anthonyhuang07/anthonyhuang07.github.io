@@ -21,7 +21,7 @@ const appDetails = {
         
         <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I sometimes dabble in competitive programming, I primarily use Python and took part in the CCC Junior, where I scored 56/75.
         
-        <br><br>I am a soon-to-be Computer Science student in university. I hope to explore more about the fields of full stack and cybersecurity.`,
+        <br><br>I am a soon-to-be Computer Science student in university. I hope to gain more full-stack programming experience, and I am currently learning <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>.`,
         link: "https://github.com/anthonyhuang07",
         icon: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
     },
