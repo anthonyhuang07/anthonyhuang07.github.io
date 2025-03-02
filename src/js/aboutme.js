@@ -90,14 +90,17 @@ const appDetails = {
         
         <br><br>In 2023, I was friends with people who were in the anime/manga scene, so I decided to give anime another try, watching Oshi no Ko (which just aired) and later Bocchi the Rock. These animes sparked my interest in learning Japanese.
         
-        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock!, and Horimiya.`,
+        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock!, Horimiya and The Apothecary Diaries.`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
     "8": {
         title: "Food",
         subtitle: "Burgers, Japanese Cuisine",
-        description: "burger.",
+        description: `My favorite food is a good ol' greasy Hamburger, followed by Phở. Honorable mentions include Takoyaki, Chili Con Carne, Ghormeh Sabzi and Shawarma.
+        
+        <br><br> My favorite cuisine is Japanese. Other ones I enjoy include Italian, Mexican, Middle Eastern (Especially Persian and Levantine), and Korean. Ironically, I'm not really a fan of Chinese cuisine.
+        `,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/vkbi0tuXCO6n_dk3djoGDGAdPMoxzDy6c7uOh3TwWn25pfUYHhOiAV9iw3t1CzHgvU6t=w240-h480-rw"
     },
