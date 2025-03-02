@@ -73,13 +73,16 @@ const appDetails = {
         icon: "/assets/icons/steam.webp"
     },
     "6": {
-        title: "Football",
-        subtitle: "CF Montréal, CanMNT",
+        title: "Sports",
+        subtitle: "CF Montréal, Habs",
         description: `My favorite sport is football. I am a fan of CF Montréal, my boyhood club (Toronto FC my #1 opp) and I obviously support the Canadian National Team. I have been to 5 Montréal games since 2016... where I saw them lose all of them 😭 (Including 3 games against TFC 🤬).
         
         <br><br>I follow what happens in the world of football daily. I don't support any Premier League club, but I guess I can consider myself a Bayern München supporter, though my support for them is nowhere near my support for CF Montréal.
         
-        <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.`,
+        <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
+        
+        <br><br>I also watch Hockey, and I support the Montréal Canadiens (go habs go). I can skate, but I've never actually played Hockey before.
+        `,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/6L1u_v2JGG4Rpkh6UuHD8m5xNDMddxUTp6lcO86fgTzJ-SC8Fphgz7CkLZklnS8Dfjs"
     },
