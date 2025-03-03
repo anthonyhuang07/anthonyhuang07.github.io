@@ -30,7 +30,7 @@ const appDetails = {
     "3": {
         title: "School",
         subtitle: "High School Grade 12, IBDP",
-        description: `I am currently a Grade 12 high school student enrolled in the International Baccalaureate Diploma Programme, and I would describe myself as a high-80s student academically. My courses include: 
+        description: `I am currently a Grade 12 High School student enrolled in the International Baccalaureate Diploma Programme (IBDP), and I would describe myself as a high-80s student academically. My courses include: 
 
         <br><br>• HL English A (Language & Literature)
         <br>• HL French B
