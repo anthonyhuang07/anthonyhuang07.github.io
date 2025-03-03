@@ -3,16 +3,22 @@
 @font-face {
     font-family: "SFSB";
     src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "SFR";
     src: url('/assets/fonts/SF-Pro-Display-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "SFL";
     src: url('/assets/fonts/SF-Pro-Display-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
 }
 
 /* #endregion */
