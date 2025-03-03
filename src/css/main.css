@@ -56,11 +56,11 @@ body {
 
 #bg {
     position: absolute;
-    width: 110%;  /* Expand beyond viewport */
-    height: 110vh; /* Expand beyond viewport */
-    left: -5%; /* Shift left to center the background */
-    top: -5%;  /* Shift up to center the background */
-    background-image: url('/assets/bg.webp');
+    width: 110%;  
+    height: 110vh;
+    left: -5%; 
+    top: -5%; 
+    background-image: url('/assets/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -91,13 +91,14 @@ img {
 body > main {
     display: flex;
     flex-direction: column;
-    width: 40.25%;
-    margin-top: 0.25rem;
+
+    margin: 0.25rem 3rem 0 3rem;
     
     div {
         margin-top: 2.04rem;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     
     div > div {
@@ -372,26 +373,6 @@ body > main {
 
 @media screen and (max-width: 480px) { /* Phones */
 
-    body > main {
-        padding: 30px;
-        width: 300px;
-        border-radius: 40px;
-        grid-gap: 17px 29px;
-
-        div img {
-            width: 60px;
-        }
-
-        div p {
-            margin-top: 5px;
-            font-size: 0.8em;
-            letter-spacing: 0.65px;
-        }
-    }
-
-    .app {
-        width: 87.5%
-    }
 }
 
 /* #endregion */
