@@ -186,6 +186,8 @@ body > main {
     z-index: 9999;
 }
 
+/* #endregion */
+
 .contacts {
     display: flex;
     flex-direction: row;
@@ -314,9 +316,6 @@ body > main {
     
 }
 
-/* #region Music */
-
-/* #endregion */
 /* #region Mobile Optimization */
 
 @media screen and (max-width: 900px) { /* Tablets */
@@ -402,15 +401,29 @@ body > main {
         font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
     }
 
-    body > main {
+    #name {
+        font-size: 2.35em;
+        letter-spacing: 0.7px;
+    }
 
-        margin: 0.25rem 1.5rem 0 1.5rem;
+    body > main {
+        width: 100%;
+        margin: 0.25rem 0rem 0 3.75rem;
+
+        div {
+            margin-top: 1.1rem;
+        }
         
         div > div {
-            margin-right: 1.5rem;
+            margin-right: 1.825rem;
+
+            p {
+                margin-top: 0.25rem;
+                font-size: 0.75em;
+            }
     
             img {
-                width: 65px;
+                width: 60px;
             }
         }
     }
