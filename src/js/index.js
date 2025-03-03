@@ -53,3 +53,20 @@ function hideAppView(){
     appView.style.opacity = "0"
     appView.style.overflow = "hidden"
 }
+
+function cycleName(){
+  const nameEl = document.querySelector("#name");
+  const names = ["Anthony Huang", "黄嘉言", "アンソニー"];
+  let index = 0;
+  setInterval(() => {
+    nameEl.style.opacity = "0";
+    nameEl.addEventListener("transitionend", function handler() {
+      if (window.getComputedStyle(nameEl).opacity === "0") {
+        index = (index + 1) % names.length;
+        nameEl.textContent = names[index];
+        nameEl.style.opacity = "1";
+      }
+    }, { once: true });
+  }, 3000);
+}
+cycleName();

@@ -5,10 +5,12 @@ const appDetails = {
         description: `Hey! My name is Anthony Huang, also known as anthonyhuang07 or FHDHGNGN online.
         
         <br><br>I'm a 17-year-old high school student from Ontario, Canada, born in Québec and of Chinese descent. 
+
+        <br><br>My Chinese name is 黄嘉言 (Huáng Jiāyán), where 黄 (Huáng), my family name, means "Yellow", and 嘉言 (Jiāyán) means "Good with words". Ironically, I don't consider myself good with words in any language.
         
-        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! Ironically, I hate math and literature—despite math being the foundation of computing and literature being an application of linguistics. A few factors are to blame for this, don't ask.
+        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! Ironically, I hate math and literature—despite math being the foundation of computing and literature being an application of linguistics. I also enjoy history, video editing, sports, gaming and adventure.
         
-        <br><br>My life goal is to travel the world, visiting as many countries as possible and connecting with locals by speaking their native languages.`,
+        <br><br>My life goal is to travel the world, visiting as many countries as possible and connecting with locals culturally and linguistically.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
@@ -75,14 +77,14 @@ const appDetails = {
     "6": {
         title: "Sports",
         subtitle: "CF Montréal, Habs",
-        description: `My favorite sport is football. I am a fan of CF Montréal, my boyhood club since I was 8.
+        description: `My favorite sport is Football (Not the American kind). I am a fan of CF Montréal, my boyhood club since I was 8.
         
         <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing, attack or defense. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
         
-        <br><br>I also watch Hockey, and I support the Montréal Canadiens (go habs go). I can skate, but I've never actually played Hockey before.
+        <br><br>I also watch Hockey, and I support the Montréal Canadiens (Go Habs Go!). I can skate, but I've never actually played Hockey in my life.
         `,
-        link: "#",
-        icon: "https://play-lh.googleusercontent.com/6L1u_v2JGG4Rpkh6UuHD8m5xNDMddxUTp6lcO86fgTzJ-SC8Fphgz7CkLZklnS8Dfjs"
+        link: "https://www.youtube.com/watch?v=qgIOXoHwOeM",
+        icon: "https://play-lh.googleusercontent.com/Wfh4tn-kWAGTUIMxVgyZ1g2BEHrdDtjyXwUdqJLwX6w640Lc3DJoLoZqoCSEbYWpTw"
     },
     "7": {
         title: "Anime",
