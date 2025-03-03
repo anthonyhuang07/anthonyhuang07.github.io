@@ -12,6 +12,13 @@
             padding-left: 2rem;
         }
 
+        p {
+            margin-left: 0.5rem;
+            font-size: 1.25em;
+            letter-spacing: 0.8px;
+            font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
+        }
+
         div {
             display: flex;
             flex-direction: row;
@@ -19,6 +26,7 @@
             color: var(--appleBlue);
             margin: 1.5rem 0 1.125rem 1.2rem;
             cursor: pointer;
+            
     
             i {
                 font-size: 1.55em;

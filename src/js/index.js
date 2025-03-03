@@ -6,6 +6,10 @@ const contacts = document.querySelector(".contacts")
 const music = document.querySelector(".music")
 const appView = document.querySelector(".appView")
 
+window.onload = () => {
+
+}
+
 window.onkeydown = (e) => {
     if(e.keyCode == 27){
         if (appView.style.visibility === "visible") {
@@ -69,4 +73,7 @@ function cycleName(){
     }, { once: true });
   }, 3000);
 }
-cycleName();
+
+document.addEventListener("DOMContentLoaded", () => {
+  cycleName();
+});
