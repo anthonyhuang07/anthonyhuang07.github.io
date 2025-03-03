@@ -11,15 +11,17 @@ function nowPlaying() {
       return response.json();
     })
     .then(data => {
-      let found = false;
       for (let i = 0; i < data.status.length; i++) {
         if (data.status[i].name === "Apple Music") {
           let imageUrl = data.status[i].assets.largeImage;
-          if (!imageUrl.startsWith('https://')) {
-            imageUrl = 'https://' + imageUrl.replace(/^.*?is1/, 'is1');
+
+          if (imageUrl.startsWith('mp:external/')) {
+            let fixedUrl = imageUrl.split('/https/').pop();
+            imageUrl = 'https://' + fixedUrl;
           }
+
+          // Apply the (potentially fixed) URL
           albumArt.src = imageUrl;
-          found = true;
           break;
         }
       }
