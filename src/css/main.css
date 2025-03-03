@@ -372,7 +372,39 @@ body > main {
 }
 
 @media screen and (max-width: 480px) { /* Phones */
+    body > main {
 
+        margin: 0.25rem 1.5rem 0 1.5rem;
+        
+        div > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            user-select: none;
+            margin-right: 1.5rem;
+    
+            p {
+                color: white;
+                margin-top: 0.4rem;
+                letter-spacing: 0.75px;
+                text-align: center;
+                font-size: 0.9em;
+                font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
+            }
+    
+            img {
+                transition: filter 0.05s linear;
+                -webkit-user-drag: none;
+                cursor: pointer;
+                width: 65px;
+    
+                &:active {
+                    filter: brightness(60%)
+                }
+            }
+        }
+    }
+    
 }
 
 /* #endregion */
