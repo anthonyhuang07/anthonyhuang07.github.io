@@ -89,9 +89,9 @@ const appDetails = {
     "7": {
         title: "Anime",
         subtitle: "Steins;Gate, Bocchi, Horimiya",
-        description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). Then in 2020, I watched JoJo's Bizarre Adventure, which became my favorite and the primary focus of my YouTube channel back then (I was a Roblox JoJo YouTuber). Unfortunately, due to some cyberbullying in that community (I was 12 at the time) I told myself I would never watch anime again.
+        description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). Then in 2020, I watched JoJo's Bizarre Adventure, which became my favorite and the primary focus of my YouTube channel back then (I was a Roblox JoJo YouTuber). Due to some unfortunate events, I later stopped watching anime.
         
-        <br><br>In 2023, I was friends with people who were in the anime/manga scene, so I decided to give anime another try, watching Oshi no Ko (which just aired) and later Bocchi the Rock. These animes sparked my interest in learning Japanese.
+        <br><br>In 2023, I was friends with people who were in the anime/manga scene, so I decided to give anime another try, watching Oshi no Ko (which just aired) and later Bocchi the Rock. These animes reignited my enjoyment for anime, and kickstarted my Japanese learning journey.
         
         <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock!, Horimiya and The Apothecary Diaries.`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
