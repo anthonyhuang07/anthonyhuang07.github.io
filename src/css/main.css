@@ -104,7 +104,6 @@ body {
             height: 2px;
             background-color: #cfcfcf;
             border-radius: 100rem;
-            box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Adds a subtle glow */
             animation: wave 0.75s infinite ease-in-out;
         }
         .bar:nth-child(1) { animation-delay: -0.75s; }
