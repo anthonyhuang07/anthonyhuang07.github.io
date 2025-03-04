@@ -126,7 +126,7 @@ body {
                     flex-direction: column;
                     color: white;
                     font-size: 0.9em;
-                    letter-spacing: 0.75px;
+                    letter-spacing: 0.5px;
 
                     #artistName {
                         color: var(--appleGray);
@@ -142,13 +142,6 @@ body {
             }
         }
 
-        #mediaControls {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin-top: 1rem;
-        }
-
         #timeline {
             display: flex;
             flex-direction: row;
@@ -161,6 +154,7 @@ body {
                 color: var(--appleGray);
                 font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
                 font-size: 0.5em;
+                letter-spacing: 1px;
             }
             
             .progress-bar {
@@ -169,6 +163,7 @@ body {
                 background-color: var(--appleDarkGray);
                 border-radius: 2.5px;
                 overflow: hidden;
+                margin: 0 0.5rem;
 
                 .progress {
                     height: 100%;
@@ -176,6 +171,22 @@ body {
                     width: 0;
                     transition: width 0.1s linear;
                 }
+            }
+        }
+
+        #mediaControls {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 0.95rem;
+
+            i {
+                color: white;
+                font-size: 2rem;
+            }
+
+            .fa-pause {
+                margin: 0 2rem;
             }
         }
     }
