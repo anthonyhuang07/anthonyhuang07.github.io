@@ -27,6 +27,8 @@
 
 :root {
     --appleBlue: #0088ff;
+    --appleGray: #8E8D93;
+    --appleDarkGray: #252527;
 }
 
 *,
@@ -82,9 +84,101 @@ body {
     width: 190px;
     border-radius: 100rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-radius 0.5s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    #island-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &.playing:hover {
+        height: 172.5px;
+        width: 317.5px;
+        border-radius: 2.25rem;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.1rem;
+
+        #island-main {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            #island-main-left{
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 57.5px;
+                    margin-left: 0;
+                    border-radius: 0.8rem;
+                    -webkit-user-drag: none;
+                }
+
+                #songInfo {
+                    margin-left: 1.075rem;
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                    font-size: 0.9em;
+                    letter-spacing: 0.75px;
+
+                    #artistName {
+                        color: var(--appleGray);
+                        font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+                    }
+                }
+            }
+
+            #audioPreview {
+                margin-right: 0.425rem;
+                margin-bottom: 0.8rem;
+                gap: 2px;
+            }
+        }
+
+        #mediaControls {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        #timeline {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 0.975rem;
+
+            span {
+                color: var(--appleGray);
+                font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+                font-size: 0.5em;
+            }
+            
+            .progress-bar {
+                width: 220px;
+                height: 6px;
+                background-color: var(--appleDarkGray);
+                border-radius: 2.5px;
+                overflow: hidden;
+
+                .progress {
+                    height: 100%;
+                    background-color: var(--appleGray);
+                    width: 0;
+                    transition: width 0.1s linear;
+                }
+            }
+        }
+    }
 
     img {
         height: 22.5px;
@@ -102,16 +196,34 @@ body {
         .bar {
             width: 2px;
             height: 2px;
-            background-color: #cfcfcf;
+            background-color: #ffffff;
             border-radius: 100rem;
             animation: wave 0.75s infinite ease-in-out;
         }
-        .bar:nth-child(1) { animation-delay: -0.75s; }
-        .bar:nth-child(2) { animation-delay: 0.2s; }
-        .bar:nth-child(3) { animation-delay: -0.4s; }
+
+        .bar:nth-child(1) { animation-delay: -0.2s; }
+        .bar:nth-child(2) { animation-delay: 0.4s; }
+        .bar:nth-child(3) { animation-delay: -0.75s; }
         .bar:nth-child(4) { animation-delay: 0.5s; }
-        .bar:nth-child(5) { animation-delay: 0.4s; }
-        .bar:nth-child(6) { animation-delay: -0.6s; }
+        .bar:nth-child(5) { animation-delay: 0.1s; }
+        .bar:nth-child(6) { animation-delay: -0.4s; }
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    #songInfo {
+        display: none;
+    }
+    
+    #mediaControls {
+        display: none;
+        color: white;
+    }
+    
+    #dynamicIsland:hover #mediaControls {
+        display: flex;
     }
 }
 

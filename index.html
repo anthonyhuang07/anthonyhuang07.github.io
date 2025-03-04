@@ -32,18 +32,38 @@ permalink: /
 
 <body>
   <!-- <img src="/assets/rb.png" style="z-index: 9999; position: absolute; height: 100%; opacity: 70%;"> -->
-  <!-- <img src="/assets/island.jpeg" style="z-index: 9999; position: absolute; height: 100%; opacity: 70%; top: 0;"> -->
+  <!-- <img src="/assets/hyuru.jpeg" style="z-index: 0; position: absolute; height: 100%; opacity: 100%; top: 0;"> -->
   <div id="bg"></div>
   <div id="dynamicIsland">
-    <img src="./assets/icons/music.webp" alt="Album Cover"/>
-    <div id="audioPreview">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-  </div>
+    <div id="island-main">
+      <div id="island-main-left">
+        <img src="./assets/icons/music.webp" alt="Album Cover"/>
+        <div id="songInfo">
+          <div id="songName">Song Name</div>
+          <div id="artistName">Artist Name</div>
+        </div>
+      </div>
+      <div id="audioPreview">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div id="timeline">
+        <span id="currentTime">0:00</span>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <span id="totalTime">0:00</span>
+    </div>
+    <div id="mediaControls">
+      <button id="prevButton"><i class="fa fa-backward"></i></button>
+      <button id="playPauseButton"><i class="fa fa-play"></i></button>
+      <button id="nextButton"><i class="fa fa-forward"></i></button>
+    </div>
   </div>
   <main>
     <h1 id="name">Anthony Huang</h1>
