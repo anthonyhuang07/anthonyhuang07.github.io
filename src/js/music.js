@@ -83,5 +83,7 @@ function applyGradientEffect(imgElement) {
   });
 }
 
-nowPlaying();
-setInterval(nowPlaying, 1000);
+document.addEventListener("DOMContentLoaded", () => {
+  nowPlaying();
+  setInterval(nowPlaying, 1000);
+});
