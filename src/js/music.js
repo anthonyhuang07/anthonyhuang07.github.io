@@ -77,15 +77,11 @@ function nowPlaying() {
         dynamicIsland.classList.remove('playing');
         albumArt.style.display = 'none';
         audioPreview.style.display = 'none';
-        songNameElement.style.display = 'none';
-        artistNameElement.style.display = 'none';
         clearInterval(intervalId);
       } else {
         dynamicIsland.classList.add('playing');
         albumArt.style.display = 'block';
         audioPreview.style.display = 'flex';
-        songNameElement.style.display = 'block';
-        artistNameElement.style.display = 'block';
       }
     })
     .catch(error => {
