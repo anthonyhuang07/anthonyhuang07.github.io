@@ -61,8 +61,3 @@ function attachProjectListeners() {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  createProject();
-  attachProjectListeners();
-});

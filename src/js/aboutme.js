@@ -210,8 +210,3 @@ function attachAppListeners() {
         if (rank) openAppView(rank);
     });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    createApp();
-    attachAppListeners();
-});

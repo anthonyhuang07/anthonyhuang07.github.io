@@ -17,21 +17,25 @@ window.onkeydown = (e) => {
 }
 
 function appOpen(app) {
-  // Hide all menus
   document.querySelectorAll('.menu').forEach(menu => {
     menu.style.visibility = 'hidden';
     menu.style.opacity = '0';
   });
-  // Show inApp container
   document.querySelector('#inApp').style.visibility = 'visible';
   document.querySelector('#inApp').style.opacity = '1';
 
   if (app === 1) {
     document.querySelector('.menu.aboutme').style.visibility = 'visible';
     document.querySelector('.menu.aboutme').style.opacity = '1';
+
+    createApp();
+    attachAppListeners();
   } else if (app === 2) {
     document.querySelector('.menu.projects').style.visibility = 'visible';
     document.querySelector('.menu.projects').style.opacity = '1';
+
+    createProject();
+    attachProjectListeners();
   } else if (app === 3) {
     document.querySelector('.menu.contacts').style.visibility = 'visible';
     document.querySelector('.menu.contacts').style.opacity = '1';
