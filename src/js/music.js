@@ -109,8 +109,10 @@ function applyGradientEffect(imgElement) {
 
   ctx.drawImage(imgElement, 0, 0, canvas.width, canvas.height);
 
+  const blurAmount = Math.max(15, canvas.width / 10);
+
   ctx.globalAlpha = 1;
-  ctx.filter = 'blur(15px)';
+  ctx.filter = `blur(${blurAmount}px)`;
   ctx.drawImage(canvas, 0, 0, canvas.width, canvas.height);
   ctx.filter = 'none';
 

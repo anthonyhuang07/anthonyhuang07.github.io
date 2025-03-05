@@ -68,7 +68,7 @@ body {
     margin-left: 0.625rem;
     border-radius: 0.3rem;
     -webkit-user-drag: none;
-    transition: 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
   }
 
   #audioPreview {
@@ -111,16 +111,37 @@ body {
   }
 
   #timeline {
-    display: none;
+    width: 0%;
+    transition: width 0.4s;
+
+    span {
+      font-size: 0;
+      transition: font-size 0.4s; 
+    }
   }
 
   #songInfo {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    letter-spacing: 0.5px;
+    font-family: $SFR;
+    font-size: 0;
+    transition: font-size 0.4s;
   }
 
   #mediaControls {
-    display: none;
-    color: white;
+    width: 0%;
+    transition: width 0.4s;
+    svg {
+      width: 0;
+      height: 0;
+      transition: width 0.4s, height 0.4s;
+    }
+    .fa-pause{
+      font-size: 0;
+      transition: font-size 0.4s;
+    }
   }
 
   &.playing:hover,
@@ -153,12 +174,7 @@ body {
 
         #songInfo {
           margin-left: 1.175rem;
-          display: flex;
-          flex-direction: column;
-          color: white;
           font-size: 1.05em;
-          letter-spacing: 0.5px;
-          font-family: $SFR;
 
           #artistName {
             color: $appleGray;

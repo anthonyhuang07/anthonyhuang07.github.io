@@ -74,7 +74,7 @@ body {
   top: 0.7rem;
   background-color: black;
   height: 40px;
-  width: 137.5px;
+  width: 130px;
   border-radius: 100rem;
   -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
@@ -104,8 +104,8 @@ body {
   margin-left: 0.625rem;
   border-radius: 0.3rem;
   -webkit-user-drag: none;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
 }
 #dynamicIsland #audioPreview {
   margin-right: 0.75rem;
@@ -148,14 +148,45 @@ body {
           animation-delay: -0.6s;
 }
 #dynamicIsland #timeline {
-  display: none;
+  width: 0%;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+#dynamicIsland #timeline span {
+  font-size: 0;
+  -webkit-transition: font-size 0.4s;
+  transition: font-size 0.4s;
 }
 #dynamicIsland #songInfo {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  letter-spacing: 0.5px;
+  font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0;
+  -webkit-transition: font-size 0.4s;
+  transition: font-size 0.4s;
 }
 #dynamicIsland #mediaControls {
-  display: none;
-  color: white;
+  width: 0%;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+#dynamicIsland #mediaControls svg {
+  width: 0;
+  height: 0;
+  -webkit-transition: width 0.4s, height 0.4s;
+  transition: width 0.4s, height 0.4s;
+}
+#dynamicIsland #mediaControls .fa-pause {
+  font-size: 0;
+  -webkit-transition: font-size 0.4s;
+  transition: font-size 0.4s;
 }
 #dynamicIsland.playing:hover, #dynamicIsland.playing:active {
   height: 202.5px;
@@ -201,17 +232,7 @@ body {
 }
 #dynamicIsland.playing:hover #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-main #island-main-left #songInfo {
   margin-left: 1.175rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
   font-size: 1.05em;
-  letter-spacing: 0.5px;
-  font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 #dynamicIsland.playing:hover #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-main #island-main-left #songInfo #artistName {
   color: #8E8D93;
