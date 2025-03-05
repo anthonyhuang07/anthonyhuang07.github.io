@@ -32,7 +32,11 @@ function nowPlaying() {
           let elapsed = currentTime - startTime;
           let remaining = duration - elapsed;
 
-          if (imageUrl.startsWith('mp:external/')) {
+          if (artistName === "Anthony Huang") {
+            imageUrl = '/assets/albumarts/huang.jpg';
+          } else if (artistName === "Ryan Irvani") {
+            imageUrl = '/assets/albumarts/irvani.png';
+          } else if (imageUrl.startsWith('mp:external/')) {
             let fixedUrl = imageUrl.split('/https/').pop();
             imageUrl = 'https://' + fixedUrl;
           }
