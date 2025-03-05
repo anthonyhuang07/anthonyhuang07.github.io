@@ -669,8 +669,8 @@ body > main div > div img:active {
     letter-spacing: 0.7px;
   }
   body > main {
-    width: 100%;
-    margin: 0.25rem 0rem 0 3.75rem;
+    width: 90%;
+    margin: 0.25rem 0rem 0 2rem;
   }
   body > main div {
     margin-top: 1.1rem;
