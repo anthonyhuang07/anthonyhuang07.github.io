@@ -12,6 +12,8 @@ const apiUrl = 'https://server.ah07.xyz/api/status';
 const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
 
+let intervalId;
+
 function nowPlaying() {
   fetch(apiUrl)
     .then(response => response.json())
@@ -28,6 +30,7 @@ function nowPlaying() {
           let currentTime = Date.now();
           let duration = endTime - startTime;
           let elapsed = currentTime - startTime;
+          let remaining = duration - elapsed;
 
           if (imageUrl.startsWith('mp:external/')) {
             let fixedUrl = imageUrl.split('/https/').pop();
@@ -48,9 +51,23 @@ function nowPlaying() {
 
           songNameElement.textContent = songName;
           artistNameElement.textContent = artistName;
-          totalTimeElement.textContent = formatTime(duration);
+          totalTimeElement.textContent = formatTime(remaining);
           currentTimeElement.textContent = formatTime(elapsed);
           progressBar.style.width = `${(elapsed / duration) * 100}%`;
+
+          clearInterval(intervalId);
+          intervalId = setInterval(() => {
+            currentTime = Date.now();
+            elapsed = currentTime - startTime;
+            remaining = duration - elapsed;
+            if (remaining <= 0) {
+              clearInterval(intervalId);
+              remaining = 0;
+            }
+            totalTimeElement.textContent = formatTime(remaining);
+            currentTimeElement.textContent = formatTime(elapsed);
+            progressBar.style.width = `${(elapsed / duration) * 100}%`;
+          }, 1000);
 
           break;
         }
@@ -62,6 +79,7 @@ function nowPlaying() {
         audioPreview.style.display = 'none';
         songNameElement.style.display = 'none';
         artistNameElement.style.display = 'none';
+        clearInterval(intervalId);
       } else {
         dynamicIsland.classList.add('playing');
         albumArt.style.display = 'block';
