@@ -1,97 +1,126 @@
-.projects {
-
-    header {
-        background-color: #121212;
-        border-bottom: #272727 1px solid;
-        padding: 0.8rem 0 1rem 0;
-        user-select: none;
-
-        h1 {
-            letter-spacing: 1.05px;
-            font-size: 2.5em;
-            padding-left: 2rem;
-        }
-
-        p {
-            margin-left: 0.5rem;
-            font-size: 1.25em;
-            letter-spacing: 0.8px;
-            font-family: "SFL", "Helvetica Neue", Helvetica, sans-serif;
-        }
-
-        div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: var(--appleBlue);
-            margin: 1.5rem 0 1.125rem 1.2rem;
-            cursor: pointer;
-            
-    
-            i {
-                font-size: 1.55em;
-            }
-    
-            &:active {
-                color: #055090;
-            }
-        }
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        margin: 0.6rem 1rem 0 1.6rem;
-
-        .project {
-            display: flex;
-            position: relative;
-            padding-top: 0.55rem;
-            padding-bottom: 0.55rem;
-            cursor: pointer;
-
-            > div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-left: 0.85rem;
-            }
-
-            img {
-                margin-left: 0.6rem;
-                width: 50px;
-                height: 50px;
-                border-radius: 0.25rem;
-            }
-
-            .project-name {
-                font-family: "SFL";
-                font-size: 1.15em;
-                letter-spacing: 0.9px;
-            }
-
-            .project-desc {
-                font-family: "SFL";
-                font-size: 0.9em;
-                margin-top: 0.1rem;
-                letter-spacing: 0.9px;
-                color: #8E8D92;
-            }
-
-            &::after {
-                content: "";
-                background: #272727;
-                position: absolute;
-                width: calc(100% - 4rem);
-                left: 4rem;
-                height: 1px;
-                bottom: 0;
-            }
-
-            &:active {
-                background-color: #3A3A3C;
-                border-radius: 1rem;
-            }
-        }
-    }
+@font-face {
+  font-family: "SFSB";
+  src: url("/assets/fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
 }
+@font-face {
+  font-family: "SFR";
+  src: url("/assets/fonts/SF-Pro-Display-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFL";
+  src: url("/assets/fonts/SF-Pro-Display-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+.projects {
+  color: white;
+}
+.projects header {
+  background-color: #121212;
+  border-bottom: #272727 1px solid;
+  padding: 0.8rem 0 1rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.projects header h1 {
+  letter-spacing: 1.05px;
+  font-size: 2.5em;
+  padding-left: 2rem;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.projects header p {
+  margin-left: 0.5rem;
+  font-size: 1.25em;
+  letter-spacing: 0.8px;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.projects header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0088ff;
+  margin: 1.5rem 0 1.125rem 1.2rem;
+  cursor: pointer;
+}
+.projects header div i {
+  font-size: 1.55em;
+}
+.projects header div:active {
+  color: #055090;
+}
+.projects main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.6rem 1rem 0 1.6rem;
+}
+.projects main .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  cursor: pointer;
+}
+.projects main .project > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0.85rem;
+}
+.projects main .project img {
+  margin-left: 0.6rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+}
+.projects main .project .project-name {
+  font-family: "SFL";
+  font-size: 1.15em;
+  letter-spacing: 0.9px;
+}
+.projects main .project .project-desc {
+  font-family: "SFL";
+  font-size: 0.9em;
+  margin-top: 0.1rem;
+  letter-spacing: 0.9px;
+  color: #8E8D92;
+}
+.projects main .project::after {
+  content: "";
+  background: #272727;
+  position: absolute;
+  width: calc(100% - 4rem);
+  left: 4rem;
+  height: 1px;
+  bottom: 0;
+}
+.projects main .project:active {
+  background-color: #3A3A3C;
+  border-radius: 1rem;
+}/*# sourceMappingURL=projects.css.map */

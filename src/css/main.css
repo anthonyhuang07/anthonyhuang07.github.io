@@ -20,7 +20,8 @@
 *:after,
 *:before {
   outline: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -37,10 +38,19 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bg {
@@ -54,7 +64,8 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: blur(15px) brightness(0.75);
+  -webkit-filter: blur(15px) brightness(0.75);
+          filter: blur(15px) brightness(0.75);
 }
 
 #dynamicIsland {
@@ -64,14 +75,25 @@ body {
   height: 40px;
   width: 137.5px;
   border-radius: 100rem;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #dynamicIsland #island-main {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #dynamicIsland.playing {
   width: 190px;
@@ -81,12 +103,15 @@ body {
   margin-left: 0.625rem;
   border-radius: 0.3rem;
   -webkit-user-drag: none;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 #dynamicIsland #audioPreview {
   margin-right: 0.75rem;
   display: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.6px;
 }
 #dynamicIsland #audioPreview .bar {
@@ -94,25 +119,32 @@ body {
   height: 2px;
   background-color: #ffffff;
   border-radius: 100rem;
-  animation: wave 0.75s infinite ease-in-out;
+  -webkit-animation: wave 0.75s infinite ease-in-out;
+          animation: wave 0.75s infinite ease-in-out;
 }
 #dynamicIsland #audioPreview .bar:nth-child(1) {
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 #dynamicIsland #audioPreview .bar:nth-child(2) {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 #dynamicIsland #audioPreview .bar:nth-child(3) {
-  animation-delay: -0.4s;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
 }
 #dynamicIsland #audioPreview .bar:nth-child(4) {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 #dynamicIsland #audioPreview .bar:nth-child(5) {
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 #dynamicIsland #audioPreview .bar:nth-child(6) {
-  animation-delay: -0.6s;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
 }
 #dynamicIsland #timeline {
   display: none;
@@ -129,20 +161,36 @@ body {
   width: 372.5px;
   border-radius: 2.75rem;
   background-color: rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.4rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 #dynamicIsland.playing:hover #island-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 #dynamicIsland.playing:hover #island-main #island-main-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #dynamicIsland.playing:hover #island-main #island-main-left img {
   height: 67.5px;
@@ -152,8 +200,13 @@ body {
 }
 #dynamicIsland.playing:hover #island-main #island-main-left #songInfo {
   margin-left: 1.175rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   font-size: 1.05em;
   letter-spacing: 0.5px;
@@ -169,10 +222,19 @@ body {
   gap: 2.7px;
 }
 #dynamicIsland.playing:hover #timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   margin-top: 1.175rem;
 }
@@ -196,11 +258,16 @@ body {
   height: 100%;
   background-color: #8E8D93;
   width: 0;
+  -webkit-transition: width 0.1s linear;
   transition: width 0.1s linear;
 }
 #dynamicIsland.playing:hover #mediaControls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   margin-top: 1.1rem;
 }
@@ -214,6 +281,18 @@ body {
   margin: 0 2.5rem;
   font-size: 2.5rem;
   color: white;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    height: 2px;
+  }
+  50% {
+    height: 22px;
+  }
+  100% {
+    height: 2px;
+  }
 }
 
 @keyframes wave {
@@ -232,12 +311,15 @@ body {
   color: white;
   font-size: 2.5em;
   letter-spacing: 0.8px;
+  -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   line-height: 48px;
 }
 
 a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-user-drag: none;
   cursor: default;
@@ -248,22 +330,41 @@ img {
 }
 
 body > main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 0.25rem;
 }
 body > main div {
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body > main div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   margin-right: 3rem;
 }
@@ -281,20 +382,32 @@ body > main div > div p {
 body > main div > div img {
   width: 75px;
   border-radius: 22%;
+  -webkit-transition: -webkit-filter 0.05s linear;
+  transition: -webkit-filter 0.05s linear;
   transition: filter 0.05s linear;
+  transition: filter 0.05s linear, -webkit-filter 0.05s linear;
   -webkit-user-drag: none;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.1s ease-out, -webkit-filter 0.05s linear, -webkit-box-shadow 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out, -webkit-filter 0.05s linear, -webkit-box-shadow 0.1s ease-out;
   transition: transform 0.1s ease-out, filter 0.05s linear, box-shadow 0.1s ease-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-out, filter 0.05s linear, box-shadow 0.1s ease-out, -webkit-transform 0.1s ease-out, -webkit-filter 0.05s linear, -webkit-box-shadow 0.1s ease-out;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 body > main div > div img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35), inset 0 2px 6px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35), inset 0 2px 6px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35), inset 0 2px 6px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.25);
 }
 body > main div > div img:active {
-  transform: scale(0.95);
-  filter: brightness(60%);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 2px 6px rgba(255, 255, 255, 0.1), inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 2px 6px rgba(255, 255, 255, 0.1), inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 2px 6px rgba(255, 255, 255, 0.1), inset 0 -2px 6px rgba(0, 0, 0, 0.3);
 }
 
 #inApp,
@@ -306,6 +419,7 @@ body > main div > div img:active {
   width: 100%;
   height: 100%;
   z-index: 9998;
+  -webkit-transition: opacity 0.25s linear, visibility 0.25s linear;
   transition: opacity 0.25s linear, visibility 0.25s linear;
 }
 
@@ -315,19 +429,34 @@ body > main div > div img:active {
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .contacts #contactCard {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#101316), to(#0D1014));
   background-image: linear-gradient(to bottom, #101316, #0D1014);
   height: 100%;
   width: 53.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 .contacts #contactCard h1 {
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -337,22 +466,35 @@ body > main div > div img:active {
 }
 .contacts #contactCard i {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #34383B;
   border-radius: 100rem;
   width: 2.75rem;
   height: 2.75rem;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.5em;
   margin: 2rem 0 0 1.1rem;
   cursor: pointer;
   top: 0;
 }
 .contacts #contactCard > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts #contactCard img {
   width: 362px;
@@ -362,20 +504,35 @@ body > main div > div img:active {
   margin-top: 2.225rem;
   font-size: 1.1em;
   letter-spacing: 1.25px;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .contacts #contactInfo {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 1.5rem;
   overflow: auto;
 }
 .contacts .infoBox {
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #1C1C1E;
   width: 97.5%;
   height: 5.45rem;
@@ -390,6 +547,7 @@ body > main div > div img:active {
   color: white;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .contacts .infoBox p {
@@ -403,9 +561,16 @@ body > main div > div img:active {
 }
 .contacts #infoCluster {
   width: 97.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.65rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
@@ -431,7 +596,10 @@ body > main div > div img:active {
 
 @media screen and (max-width: 900px) {
   .contacts {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
   }
   .contacts #contactCard {

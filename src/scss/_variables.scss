@@ -1,0 +1,30 @@
+// Variables
+$appleBlue: #0088ff;
+$appleGray: #8E8D93;
+$appleDarkGray: #252527;
+$musicRed: #FA2D48;
+$SFSB: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+$SFR: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
+$SFL: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Fonts
+@font-face {
+  font-family: "SFSB";
+  src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFR";
+  src: url('/assets/fonts/SF-Pro-Display-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFL";
+  src: url('/assets/fonts/SF-Pro-Display-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}

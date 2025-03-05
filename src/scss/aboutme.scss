@@ -1,0 +1,350 @@
+@import 'variables';
+
+.aboutme {
+  > header {
+    background-color: #121212;
+    border-bottom: #272727 1px solid;
+    padding: 0.8rem 0 1rem 0;
+    margin-bottom: 1rem;
+    user-select: none;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $appleBlue;
+      margin: 1.655rem 0 1.125rem 1rem;
+      cursor: pointer;
+
+      &:active {
+        color: #055090;
+      }
+
+      i {
+        font-size: 1.55em;
+      }
+    }
+
+    p {
+      margin-left: 0.5rem;
+      font-size: 1.25em;
+      letter-spacing: 0.8px;
+      font-family: $SFL;
+    }
+
+    h1 {
+      letter-spacing: 1.05px;
+      font-size: 2.5em;
+      padding-left: 3.5rem;
+      color: white;
+      font-family: $SFSB;
+    }
+  }
+
+  #apps {
+    display: grid;
+    grid-template-columns: 44.5% 44.5%;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+  }
+
+  .app {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      background: #272727;
+      position: absolute;
+      width: calc(100% - 7.275rem);
+      left: 7.275rem;
+      height: 1px;
+      bottom: 0;
+    }
+
+    &:nth-child(5)::after,
+    &:nth-child(10)::after {
+      height: 0;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+      margin: 0.7rem 0 0.5rem 0;
+      border-radius: 1rem;
+      user-select: none;
+    }
+
+    > div > div {
+      margin-right: 1.05rem;
+      display: flex;
+      margin-left: 0.75rem;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    > div > div > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rank {
+      min-width: auto;
+      margin-right: 1.05rem;
+      font-size: 1.25em;
+      user-select: none;
+      color: white;
+      font-family: $SFSB;
+    }
+
+    .name {
+      font-family: $SFL;
+      font-size: 1.25em;
+      letter-spacing: 0.7px;
+      color: white;
+    }
+
+    .descMargin {
+      min-width: auto;
+      margin-right: 1.05rem;
+      font-size: 1.25em;
+      visibility: hidden;
+    }
+
+    .desc {
+      font-family: $SFL;
+      margin-top: 0.25rem;
+      letter-spacing: 0.65px;
+      color: #8E8D92;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .appStore-viewButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 1.8rem 0 1.85rem 0;
+      font-size: 1.2em;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      background-color: #1C1C1E;
+      color: $appleBlue;
+      width: 5.45rem;
+      border-radius: 100rem;
+      transition: background-color 0.25s, color 0.25s linear;
+      cursor: pointer;
+      user-select: none;
+      font-family: $SFSB;
+
+      &:active {
+        background-color: #111113;
+        color: #055090;
+      }
+    }
+  }
+
+  .appView {
+    .backButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $appleBlue;
+      margin: 2.5rem 0 1rem 1rem;
+      cursor: pointer;
+
+      i {
+        font-size: 1.55em;
+      }
+
+      p {
+        margin-left: 0.5rem;
+        font-size: 1.25em;
+        letter-spacing: 0.8px;
+        font-family: $SFL;
+      }
+
+      &:active {
+        color: #055090;
+      }
+    }
+
+    header {
+      margin: 0 3.5rem 2.5rem 3.5rem;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 2rem;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+
+        h1 {
+          font-size: 1.76em;
+          letter-spacing: 1px;
+          margin-top: 0.325rem;
+          margin-bottom: 0.5rem;
+          color: white;
+          font-family: $SFSB;
+        }
+
+        h2 {
+          font-family: $SFL;
+          font-size: 1.25em;
+          letter-spacing: 0.5px;
+          margin-bottom: 2.9rem;
+          color: #8E8D92;
+        }
+
+        .appStore-openButton {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background-color: $appleBlue;
+          width: 5.3rem;
+          height: 2.1rem;
+          font-size: 1.2em;
+          border-radius: 100rem;
+          cursor: pointer;
+          user-select: none;
+          transition: background-color 0.25s, color 0.25s linear;
+          color: white;
+          font-family: $SFSB;
+
+          &:active {
+            background-color: #111113;
+            color: #055090;
+          }
+
+          &.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+            background-color: gray;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        background: #272727;
+        position: absolute;
+        width: 100%;
+        height: 0.6px;
+        bottom: -2.5rem;
+      }
+    }
+
+    .appStore-appView-about {
+      padding-top: 1.35rem;
+      position: relative;
+
+      p {
+        margin: 0 3.5rem 0 3.5rem;
+        font-family: $SFL;
+        letter-spacing: 0.95px;
+        line-height: 20.9px;
+        position: relative;
+        font-size: 1.05em;
+        color: white;
+      }
+
+      &::after {
+        content: "";
+        background: #272727;
+        position: absolute;
+        width: calc(100% - 7rem);
+        left: 3.5rem;
+        height: 0.6px;
+        bottom: -1.35rem;
+      }
+
+      p a {
+        display: inline;
+        color: $appleBlue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    // Tablets
+    #apps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app {
+      width: 92.5%;
+
+      &:nth-child(5)::after {
+        height: 1px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    // Phones
+    .menu {
+      overflow: scroll !important;
+    }
+
+    .app {
+      width: 87.5%;
+
+      img {
+        width: 65px;
+        height: 65px;
+        margin: 1rem 0 0.5rem 0;
+      }
+
+      .name {
+        font-size: 1.1em;
+      }
+
+      .desc {
+        font-size: 0.9em;
+      }
+
+      .appStore-viewButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1.8rem 0 1.85rem 0;
+        font-size: 1.1em;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        background-color: #1C1C1E;
+        color: $appleBlue;
+        width: 5.45rem;
+      }
+    }
+  }
+}

@@ -1,33 +1,4 @@
-
-// Variables
-$appleBlue: #0088ff;
-$appleGray: #8E8D93;
-$appleDarkGray: #252527;
-$fontSFSB: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
-$fontSFR: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
-$fontSFL: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
-
-// Fonts
-@font-face {
-  font-family: "SFSB";
-  src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SFR";
-  src: url('/assets/fonts/SF-Pro-Display-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SFL";
-  src: url('/assets/fonts/SF-Pro-Display-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-display: swap;
-}
+@import 'variables';
 
 // Reset and base styles
 *,
@@ -47,7 +18,7 @@ body {
   margin: 0;
   position: relative;
   background-color: black;
-  font-family: $fontSFR;
+  font-family: $SFR;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
@@ -186,11 +157,11 @@ body {
           color: white;
           font-size: 1.05em;
           letter-spacing: 0.5px;
-          font-family: $fontSFR;
+          font-family: $SFR;
 
           #artistName {
             color: $appleGray;
-            font-family: $fontSFL;
+            font-family: $SFL;
           }
         }
       }
@@ -212,7 +183,7 @@ body {
 
       span {
         color: $appleGray;
-        font-family: $fontSFL;
+        font-family: $SFL;
         font-size: 0.65em;
         letter-spacing: 1px;
         width: 30px;
@@ -273,7 +244,7 @@ body {
 }
 
 #name {
-  font-family: $fontSFSB;
+  font-family: $SFSB;
   color: white;
   font-size: 2.5em;
   letter-spacing: 0.8px;
@@ -320,7 +291,7 @@ body > main {
         letter-spacing: 0.75px;
         text-align: center;
         font-size: 0.875em;
-        font-family: $fontSFR;
+        font-family: $SFR;
       }
 
       img {
@@ -377,9 +348,10 @@ body > main {
     flex-direction: column;
     user-select: none;
     justify-content: center;
+    color: white;
 
     h1 {
-      font-family: $fontSFL;
+      font-family: $SFL;
       font-size: 3.25em;
       margin-top: 0.1rem;
       letter-spacing: 2.4px;
@@ -415,6 +387,7 @@ body > main {
       margin-top: 2.225rem;
       font-size: 1.1em;
       letter-spacing: 1.25px;
+      font-family: $SFSB;
     }
   }
 
@@ -428,7 +401,7 @@ body > main {
   }
 
   .infoBox {
-    font-family: $fontSFL;
+    font-family: $SFL;
     display: flex;
     flex-direction: column;
     justify-content: center;
