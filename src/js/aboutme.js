@@ -164,7 +164,7 @@ function createApp() {
         }).join("");
 }
 
-function openAppViewByRank(rank) {
+function openAppView(rank) {
     const details = appDetails[rank];
     if (!details) return;
     document.querySelector(".appView header h1").innerText = details.title;
@@ -185,6 +185,18 @@ function openAppViewByRank(rank) {
         appView.style.opacity = "1";
         appView.style.overflow = "auto";
     }
+    document.querySelector('#apps').style.display = 'none';
+    window.scrollTo(0, 0);
+}
+
+function hideAppView() {
+    const appView = document.querySelector(".appView");
+    if (appView) {
+        appView.style.visibility = "hidden";
+        appView.style.opacity = "0";
+        appView.style.overflow = "hidden";
+    }
+    document.querySelector('#apps').style.display = 'flex';
 }
 
 function attachAppListeners() {
@@ -192,7 +204,7 @@ function attachAppListeners() {
         const card = event.target.closest(".app");
         if (!card) return;
         const rank = card.querySelector(".rank")?.textContent.trim();
-        if (rank) openAppViewByRank(rank);
+        if (rank) openAppView(rank);
     });
 }
 
