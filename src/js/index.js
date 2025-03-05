@@ -48,7 +48,7 @@ function appOpen(app) {
 function returnHome(){
     document.body.style.overflow = "hidden";
     inApp.style.overflow = menu.style.overflow = appView.style.overflow = "hidden";
-    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = "hidden";
+    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = "hidden";
     inApp.style.opacity = menu.style.opacity = appView.style.opacity = "0";
 }
 
