@@ -1,0 +1,602 @@
+
+// Variables
+$appleBlue: #0088ff;
+$appleGray: #8E8D93;
+$appleDarkGray: #252527;
+$fontSFSB: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+$fontSFR: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
+$fontSFL: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Fonts
+@font-face {
+  font-family: "SFSB";
+  src: url('/assets/fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFR";
+  src: url('/assets/fonts/SF-Pro-Display-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFL";
+  src: url('/assets/fonts/SF-Pro-Display-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+// Reset and base styles
+*,
+*:after,
+*:before {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: black;
+  font-family: $fontSFR;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bg {
+  position: absolute;
+  width: 110%;
+  height: 110vh;
+  left: -5%;
+  top: -5%;
+  background-image: url('/assets/bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(15px) brightness(0.75);
+}
+
+#dynamicIsland {
+  position: absolute;
+  top: 0.7rem;
+  background-color: black;
+  height: 40px;
+  width: 137.5px;
+  border-radius: 100rem;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+
+  #island-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.playing {
+    width: 190px;
+  }
+
+  img {
+    height: 22.5px;
+    margin-left: 0.625rem;
+    border-radius: 0.3rem;
+    -webkit-user-drag: none;
+    transition: 0.4s ease-in-out;
+  }
+
+  #audioPreview {
+    margin-right: 0.75rem;
+    display: none;
+    align-items: center;
+    gap: 1.6px;
+
+    .bar {
+      width: 2px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 100rem;
+      animation: wave 0.75s infinite ease-in-out;
+
+      &:nth-child(1) {
+        animation-delay: 0.4s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: -0.4s;
+      }
+
+      &:nth-child(4) {
+        animation-delay: 0.2s;
+      }
+
+      &:nth-child(5) {
+        animation-delay: 0.6s;
+      }
+
+      &:nth-child(6) {
+        animation-delay: -0.6s;
+      }
+    }
+  }
+
+  #timeline {
+    display: none;
+  }
+
+  #songInfo {
+    display: none;
+  }
+
+  #mediaControls {
+    display: none;
+    color: white;
+  }
+
+  &.playing:hover {
+    height: 202.5px;
+    width: 372.5px;
+    border-radius: 2.75rem;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    #island-main {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      #island-main-left {
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 67.5px;
+          margin-left: 0;
+          border-radius: 0.8rem;
+          -webkit-user-drag: none;
+        }
+
+        #songInfo {
+          margin-left: 1.175rem;
+          display: flex;
+          flex-direction: column;
+          color: white;
+          font-size: 1.05em;
+          letter-spacing: 0.5px;
+          font-family: $fontSFR;
+
+          #artistName {
+            color: $appleGray;
+            font-family: $fontSFL;
+          }
+        }
+      }
+
+      #audioPreview {
+        margin-right: 0.45rem;
+        margin-bottom: 0.9rem;
+        gap: 2.7px;
+      }
+    }
+
+    #timeline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1.175rem;
+
+      span {
+        color: $appleGray;
+        font-family: $fontSFL;
+        font-size: 0.65em;
+        letter-spacing: 1px;
+        width: 30px;
+        text-align: center;
+      }
+
+      .progress-bar {
+        width: 250px;
+        height: 7px;
+        background-color: $appleDarkGray;
+        border-radius: 100rem;
+        overflow: hidden;
+        margin-right: 0.425rem;
+
+        .progress {
+          height: 100%;
+          background-color: $appleGray;
+          width: 0;
+          transition: width 0.1s linear;
+        }
+      }
+    }
+
+    #mediaControls {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1.1rem;
+
+      svg {
+        color: white;
+        width: 37.5px;
+        height: 37.5px;
+        cursor: pointer;
+      }
+
+      .fa-pause {
+        margin: 0 2.5rem;
+        font-size: 2.5rem;
+        color: white;
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    height: 2px;
+  }
+
+  50% {
+    height: 22px;
+  }
+
+  100% {
+    height: 2px;
+  }
+}
+
+#name {
+  font-family: $fontSFSB;
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: 0.8px;
+  transition: opacity 0.5s ease-in-out;
+  line-height: 48px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+body > main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25rem;
+
+  div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      user-select: none;
+      margin-right: 3rem;
+
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+
+      p {
+        color: white;
+        margin-top: 0.4rem;
+        letter-spacing: 0.75px;
+        text-align: center;
+        font-size: 0.875em;
+        font-family: $fontSFR;
+      }
+
+      img {
+        width: 75px;
+        border-radius: 22%;
+        transition: filter 0.05s linear;
+        -webkit-user-drag: none;
+        cursor: pointer;
+        transition: transform 0.1s ease-out, filter 0.05s linear, box-shadow 0.1s ease-out;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35), inset 0 2px 6px rgba(255, 255, 255, 0.2), inset 0 -2px 6px rgba(0, 0, 0, 0.25);
+        }
+
+        &:active {
+          transform: scale(0.95);
+          filter: brightness(60%);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 2px 6px rgba(255, 255, 255, 0.1), inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+
+// Parent App Divs
+#inApp,
+.menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  transition: opacity 0.25s linear, visibility 0.25s linear;
+}
+
+.appView {
+  position: absolute;
+  z-index: 9999;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+
+  #contactCard {
+    background-image: linear-gradient(to bottom, #101316, #0D1014);
+    height: 100%;
+    width: 53.4rem;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    justify-content: center;
+
+    h1 {
+      font-family: $fontSFL;
+      font-size: 3.25em;
+      margin-top: 0.1rem;
+      letter-spacing: 2.4px;
+    }
+
+    i {
+      position: absolute;
+      display: flex;
+      background-color: #34383B;
+      border-radius: 100rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      margin: 2rem 0 0 1.1rem;
+      cursor: pointer;
+      top: 0;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 362px;
+      border-radius: 100rem;
+    }
+
+    p {
+      margin-top: 2.225rem;
+      font-size: 1.1em;
+      letter-spacing: 1.25px;
+    }
+  }
+
+  #contactInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    overflow: auto;
+  }
+
+  .infoBox {
+    font-family: $fontSFL;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1C1C1E;
+    width: 97.5%;
+    height: 5.45rem;
+    border-radius: 0.65rem;
+    padding-left: 1.425rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+
+    h2 {
+      font-size: 1.25em;
+      letter-spacing: 1px;
+      color: white;
+      user-select: none;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: $appleBlue;
+      margin-top: 0.35rem;
+      letter-spacing: 0.45px;
+    }
+
+    &:active {
+      background-color: #3A3A3C;
+    }
+  }
+
+  #infoCluster {
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.65rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+
+    .infoBox {
+      margin-bottom: 0;
+      width: 100%;
+      border-radius: 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: #3A3A3A;
+        position: absolute;
+        width: calc(100% - 1.425rem);
+        left: 1.425rem;
+        height: 1px;
+        bottom: 0;
+      }
+
+      &:last-child::after {
+        height: 0;
+      }
+    }
+  }
+}
+
+// Mobile Optimization
+@media screen and (max-width: 900px) {
+  .contacts {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .contacts #contactCard {
+    width: 100%;
+    min-height: 27.5rem;
+    overflow: visible;
+  }
+
+  .contacts #contactCard i {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.1em;
+    margin: 2rem 0 0 0.8rem;
+  }
+
+  .contacts #contactCard img {
+    width: 265px;
+  }
+
+  .contacts #contactCard p {
+    margin-top: 1.6rem;
+    font-size: 0.8em;
+    letter-spacing: 0.9px;
+  }
+
+  .contacts #contactCard h1 {
+    font-size: 2.35em;
+    letter-spacing: 1.85px;
+  }
+
+  .contacts #contactInfo {
+    overflow: visible;
+  }
+
+  .contacts .infoBox {
+    width: 96%;
+    height: 4rem;
+    border-radius: 0.5rem;
+    padding-left: 1.05rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 0.9em;
+      letter-spacing: 0.8px;
+      color: white;
+    }
+
+    p {
+      font-size: 1em;
+      color: $appleBlue;
+      margin-top: 0.35rem;
+      letter-spacing: 1.05px;
+    }
+  }
+
+  .contacts #infoCluster {
+    width: 96%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+
+    .infoBox::after {
+      content: "";
+      background: #3A3A3A;
+      position: absolute;
+      width: calc(100% - 1.05rem);
+      left: 1.05rem;
+      height: 1px;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+  }
+
+  #name {
+    font-size: 2.35em;
+    letter-spacing: 0.7px;
+  }
+
+  body > main {
+    width: 100%;
+    margin: 0.25rem 0rem 0 3.75rem;
+
+    div {
+      margin-top: 1.1rem;
+
+      > div {
+        margin-right: 1.825rem;
+
+        p {
+          margin-top: 0.25rem;
+          font-size: 0.75em;
+        }
+
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
