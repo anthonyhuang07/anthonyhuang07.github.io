@@ -185,8 +185,9 @@ function openAppView(rank) {
         appView.style.opacity = "1";
         appView.style.overflow = "auto";
     }
-    document.querySelector('#apps').style.display = 'none';
-    window.scrollTo(0, 0);
+    if (window.innerWidth <= 480) {
+        document.querySelector('#apps').style.display = 'none';
+    }
 }
 
 function hideAppView() {
@@ -196,7 +197,9 @@ function hideAppView() {
         appView.style.opacity = "0";
         appView.style.overflow = "hidden";
     }
-    document.querySelector('#apps').style.display = 'flex';
+    if (window.innerWidth <= 480) {
+        document.querySelector('#apps').style.display = 'flex';
+    }
 }
 
 function attachAppListeners() {
