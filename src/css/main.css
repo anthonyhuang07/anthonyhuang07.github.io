@@ -685,4 +685,8 @@ body > main div > div img:active {
   body > main div > div img {
     width: 60px;
   }
+  #inApp,
+  .menu {
+    overflow: scroll;
+  }
 }/*# sourceMappingURL=main.css.map */

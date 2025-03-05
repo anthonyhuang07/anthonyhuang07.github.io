@@ -262,7 +262,7 @@ img {
   -webkit-user-drag: none;
 }
 
-body > main {
+body>main {
   display: flex;
   flex-direction: column;
   margin-top: 0.25rem;
@@ -273,7 +273,7 @@ body > main {
     flex-direction: row;
     flex-wrap: wrap;
 
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -371,7 +371,7 @@ body > main {
       top: 0;
     }
 
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -550,14 +550,14 @@ body > main {
     letter-spacing: 0.7px;
   }
 
-  body > main {
+  body>main {
     width: 90%;
     margin: 0.25rem 0rem 0 1rem;
 
     div {
       margin-top: 1.1rem;
 
-      > div {
+      >div {
         margin-right: 1.825rem;
 
         p {
@@ -570,5 +570,10 @@ body > main {
         }
       }
     }
+  }
+
+  #inApp,
+  .menu {
+    overflow: scroll;
   }
 }
