@@ -64,10 +64,10 @@ body {
 
 #bg {
     position: absolute;
-    width: 110%;  
+    width: 110%;
     height: 110vh;
-    left: -5%; 
-    top: -5%; 
+    left: -5%;
+    top: -5%;
     background-image: url('/assets/bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,9 +81,10 @@ body {
     top: 0.7rem;
     background-color: black;
     height: 40px;
-    width: 190px;
+    width: 137.5px;
+    /* Default width when not playing */
     border-radius: 100rem;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-radius 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     display: flex;
     align-items: center;
 
@@ -91,6 +92,70 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    &.playing {
+        width: 190px;
+    }
+
+    img {
+        height: 22.5px;
+        margin-left: 0.625rem;
+        border-radius: 0.3rem;
+        -webkit-user-drag: none;
+        transition: 0.4s ease-in-out;
+    }
+
+    #audioPreview {
+        margin-right: 0.75rem;
+        display: none;
+        align-items: center;
+        gap: 1.6px;
+
+        .bar {
+            width: 2px;
+            height: 2px;
+            background-color: #ffffff;
+            border-radius: 100rem;
+            animation: wave 0.75s infinite ease-in-out;
+        }
+
+        .bar:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+
+        .bar:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .bar:nth-child(3) {
+            animation-delay: -0.4s;
+        }
+
+        .bar:nth-child(4) {
+            animation-delay: 0.2s;
+        }
+
+        .bar:nth-child(5) {
+            animation-delay: 0.6s;
+        }
+
+        .bar:nth-child(6) {
+            animation-delay: -0.6s;
+        }
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    #songInfo {
+        display: none;
+    }
+
+    #mediaControls {
+        display: none;
+        color: white;
     }
 
     /* Expanded Dynamic Island */
@@ -110,7 +175,7 @@ body {
             justify-content: space-between;
             width: 100%;
 
-            #island-main-left{
+            #island-main-left {
                 display: flex;
                 align-items: center;
 
@@ -160,7 +225,7 @@ body {
                 width: 30px;
                 text-align: center;
             }
-            
+
             .progress-bar {
                 width: 250px;
                 height: 7px;
@@ -198,58 +263,20 @@ body {
             }
         }
     }
-
-    img {
-        height: 22.5px;
-        margin-left: 0.625rem;
-        border-radius: 0.3rem;
-        -webkit-user-drag: none;
-    }
-
-    #audioPreview {
-        margin-right: 0.75rem;
-        display: flex;
-        align-items: center;
-        gap: 1.6px;
-
-        .bar {
-            width: 2px;
-            height: 2px;
-            background-color: #ffffff;
-            border-radius: 100rem;
-            animation: wave 0.75s infinite ease-in-out;
-        }
-
-        .bar:nth-child(1) { animation-delay: 0.4s; }
-        .bar:nth-child(2) { animation-delay: 0.2s; }
-        .bar:nth-child(3) { animation-delay: -0.4s; }
-        .bar:nth-child(4) { animation-delay: 0.2s; }
-        .bar:nth-child(5) { animation-delay: 0.6s; }
-        .bar:nth-child(6) { animation-delay: -0.6s; }
-    }
-
-    #timeline {
-        display: none;
-    }
-
-    #songInfo {
-        display: none;
-    }
-    
-    #mediaControls {
-        display: none;
-        color: white;
-    }
-    
-    #dynamicIsland:hover #mediaControls {
-        display: flex;
-    }
 }
 
 @keyframes wave {
-    0% { height: 2px; }
-    50% { height: 22px; }
-    100% { height: 2px; }
+    0% {
+        height: 2px;
+    }
+
+    50% {
+        height: 22px;
+    }
+
+    100% {
+        height: 2px;
+    }
 }
 
 #name {
@@ -272,27 +299,27 @@ img {
     -webkit-user-drag: none;
 }
 
-body > main {
+body>main {
     display: flex;
     flex-direction: column;
 
     margin-top: 0.25rem;
-    
+
     div {
         margin-top: 2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
-    div > div {
+
+    div>div {
         display: flex;
         flex-direction: column;
         align-items: center;
         user-select: none;
         margin-right: 3rem;
 
-        &:nth-child(4){
+        &:nth-child(4) {
             margin-right: 0;
         }
 
@@ -312,27 +339,27 @@ body > main {
             -webkit-user-drag: none;
             cursor: pointer;
             transition: transform 0.1s ease-out, filter 0.05s linear, box-shadow 0.1s ease-out;
-            box-shadow: 
+            box-shadow:
                 0 4px 10px rgba(0, 0, 0, 0.3),
                 inset 0 2px 4px rgba(255, 255, 255, 0.15),
                 inset 0 -2px 4px rgba(0, 0, 0, 0.2);
 
-            &:hover{
+            &:hover {
                 transform: scale(1.05);
-                box-shadow: 
+                box-shadow:
                     0 6px 14px rgba(0, 0, 0, 0.35),
-                    inset 0 2px 6px rgba(255, 255, 255, 0.2), 
+                    inset 0 2px 6px rgba(255, 255, 255, 0.2),
                     inset 0 -2px 6px rgba(0, 0, 0, 0.25);
             }
-            
+
             &:active {
                 transform: scale(0.95);
                 filter: brightness(60%);
-                box-shadow: 
-                    0 2px 5px rgba(0, 0, 0, 0.2), 
+                box-shadow:
+                    0 2px 5px rgba(0, 0, 0, 0.2),
                     inset 0 2px 6px rgba(255, 255, 255, 0.1),
                     inset 0 -2px 6px rgba(0, 0, 0, 0.3);
-            } 
+            }
         }
     }
 }
@@ -405,7 +432,7 @@ body > main {
             top: 0;
         }
 
-        > div {
+        >div {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -492,16 +519,17 @@ body > main {
             &:last-child::after {
                 height: 0;
             }
-            
+
         }
     }
-    
+
 }
 
 /* #region Mobile Optimization */
 
-@media screen and (max-width: 900px) { /* Tablets */
-    
+@media screen and (max-width: 900px) {
+    /* Tablets */
+
     .contacts {
         flex-direction: column;
         height: 100%;
@@ -577,7 +605,8 @@ body > main {
     }
 }
 
-@media screen and (max-width: 480px) { /* Phones */
+@media screen and (max-width: 480px) {
+    /* Phones */
 
     body {
         font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
@@ -588,28 +617,28 @@ body > main {
         letter-spacing: 0.7px;
     }
 
-    body > main {
+    body>main {
         width: 100%;
         margin: 0.25rem 0rem 0 3.75rem;
 
         div {
             margin-top: 1.1rem;
         }
-        
-        div > div {
+
+        div>div {
             margin-right: 1.825rem;
 
             p {
                 margin-top: 0.25rem;
                 font-size: 0.75em;
             }
-    
+
             img {
                 width: 60px;
             }
         }
     }
-    
+
 }
 
 /* #endregion */

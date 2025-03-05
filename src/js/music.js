@@ -5,7 +5,7 @@ const songNameElement = dynamicIsland.querySelector('#songName');
 const artistNameElement = dynamicIsland.querySelector('#artistName');
 const playPauseButton = dynamicIsland.querySelector('#playPauseButton');
 const currentTimeElement = dynamicIsland.querySelector('#currentTime');
-const totalTimeElement = dynamicIsland.querySelector('#totalTime');
+const timeLeft = dynamicIsland.querySelector('#timeLeft');
 const progressBar = dynamicIsland.querySelector('.progress-bar .progress');
 const apiUrl = 'https://server.ah07.xyz/api/status';
 
@@ -46,28 +46,24 @@ function nowPlaying() {
 
           albumArt.onerror = () => {
             console.error('Error loading album art image');
-            displayDefaultImage();
+            albumArt.src = '/assets/icons/music.webp';
+            albumArt.onload = () => {
+              const bars = document.querySelectorAll('.bar');
+              bars.forEach(bar => {
+                bar.style.backgroundColor = '#ffffff';
+                bar.style.backgroundImage = 'none';
+              });
+            };
           };
 
           songNameElement.textContent = songName;
           artistNameElement.textContent = artistName;
-          totalTimeElement.textContent = formatTime(remaining);
-          currentTimeElement.textContent = formatTime(elapsed);
-          progressBar.style.width = `${(elapsed / duration) * 100}%`;
 
-          clearInterval(intervalId);
-          intervalId = setInterval(() => {
-            currentTime = Date.now();
-            elapsed = currentTime - startTime;
-            remaining = duration - elapsed;
-            if (remaining <= 0) {
-              clearInterval(intervalId);
-              remaining = 0;
-            }
-            totalTimeElement.textContent = formatTime(remaining);
+          if (remaining > 0) {
+            timeLeft.textContent = formatTime(remaining);
             currentTimeElement.textContent = formatTime(elapsed);
             progressBar.style.width = `${(elapsed / duration) * 100}%`;
-          }, 1000);
+          }
 
           break;
         }
@@ -90,7 +86,6 @@ function nowPlaying() {
     })
     .catch(error => {
       console.error('Error fetching data:', error);
-      displayDefaultImage();
     });
 }
 
@@ -137,17 +132,6 @@ function applyGradientEffect(imgElement) {
     bar.style.backgroundSize = 'cover';
     bar.style.backgroundPosition = 'center';
   });
-}
-
-function displayDefaultImage() {
-  albumArt.src = '/assets/icons/music.webp';
-  albumArt.onload = () => {
-    const bars = document.querySelectorAll('.bar');
-    bars.forEach(bar => {
-      bar.style.backgroundColor = '#ffffff';
-      bar.style.backgroundImage = 'none';
-    });
-  };
 }
 
 document.addEventListener("DOMContentLoaded", () => {
