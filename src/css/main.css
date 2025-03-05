@@ -28,13 +28,13 @@
 
 html {
   position: relative;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   position: relative;
   background-color: black;
-  font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
@@ -156,7 +156,7 @@ body {
   display: none;
   color: white;
 }
-#dynamicIsland.playing:hover {
+#dynamicIsland.playing:hover, #dynamicIsland.playing:active {
   height: 202.5px;
   width: 372.5px;
   border-radius: 2.75rem;
@@ -175,7 +175,7 @@ body {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-#dynamicIsland.playing:hover #island-main {
+#dynamicIsland.playing:hover #island-main, #dynamicIsland.playing:active #island-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +184,7 @@ body {
           justify-content: space-between;
   width: 100%;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left {
+#dynamicIsland.playing:hover #island-main #island-main-left, #dynamicIsland.playing:active #island-main #island-main-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,13 +192,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left img {
+#dynamicIsland.playing:hover #island-main #island-main-left img, #dynamicIsland.playing:active #island-main #island-main-left img {
   height: 67.5px;
   margin-left: 0;
   border-radius: 0.8rem;
   -webkit-user-drag: none;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left #songInfo {
+#dynamicIsland.playing:hover #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-main #island-main-left #songInfo {
   margin-left: 1.175rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,16 +212,16 @@ body {
   letter-spacing: 0.5px;
   font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left #songInfo #artistName {
+#dynamicIsland.playing:hover #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-main #island-main-left #songInfo #artistName {
   color: #8E8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-#dynamicIsland.playing:hover #island-main #audioPreview {
+#dynamicIsland.playing:hover #island-main #audioPreview, #dynamicIsland.playing:active #island-main #audioPreview {
   margin-right: 0.45rem;
   margin-bottom: 0.9rem;
   gap: 2.7px;
 }
-#dynamicIsland.playing:hover #timeline {
+#dynamicIsland.playing:hover #timeline, #dynamicIsland.playing:active #timeline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,15 +238,15 @@ body {
   width: 100%;
   margin-top: 1.175rem;
 }
-#dynamicIsland.playing:hover #timeline span {
+#dynamicIsland.playing:hover #timeline span, #dynamicIsland.playing:active #timeline span {
   color: #8E8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.65em;
+  font-size: 0.75em;
   letter-spacing: 1px;
   width: 30px;
   text-align: center;
 }
-#dynamicIsland.playing:hover #timeline .progress-bar {
+#dynamicIsland.playing:hover #timeline .progress-bar, #dynamicIsland.playing:active #timeline .progress-bar {
   width: 250px;
   height: 7px;
   background-color: #252527;
@@ -254,14 +254,14 @@ body {
   overflow: hidden;
   margin-right: 0.425rem;
 }
-#dynamicIsland.playing:hover #timeline .progress-bar .progress {
+#dynamicIsland.playing:hover #timeline .progress-bar .progress, #dynamicIsland.playing:active #timeline .progress-bar .progress {
   height: 100%;
   background-color: #8E8D93;
   width: 0;
   -webkit-transition: width 0.1s linear;
   transition: width 0.1s linear;
 }
-#dynamicIsland.playing:hover #mediaControls {
+#dynamicIsland.playing:hover #mediaControls, #dynamicIsland.playing:active #mediaControls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,13 +271,12 @@ body {
   width: 100%;
   margin-top: 1.1rem;
 }
-#dynamicIsland.playing:hover #mediaControls svg {
+#dynamicIsland.playing:hover #mediaControls svg, #dynamicIsland.playing:active #mediaControls svg {
   color: white;
   width: 37.5px;
   height: 37.5px;
-  cursor: pointer;
 }
-#dynamicIsland.playing:hover #mediaControls .fa-pause {
+#dynamicIsland.playing:hover #mediaControls .fa-pause, #dynamicIsland.playing:active #mediaControls .fa-pause {
   margin: 0 2.5rem;
   font-size: 2.5rem;
   color: white;

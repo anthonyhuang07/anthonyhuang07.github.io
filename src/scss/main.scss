@@ -1,6 +1,5 @@
 @import 'variables';
 
-// Reset and base styles
 *,
 *:after,
 *:before {
@@ -12,13 +11,13 @@
 
 html {
   position: relative;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   position: relative;
   background-color: black;
-  font-family: $SFR;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
@@ -123,7 +122,8 @@ body {
     color: white;
   }
 
-  &.playing:hover {
+  &.playing:hover,
+  &.playing:active {
     height: 202.5px;
     width: 372.5px;
     border-radius: 2.75rem;
@@ -184,7 +184,7 @@ body {
       span {
         color: $appleGray;
         font-family: $SFL;
-        font-size: 0.65em;
+        font-size: 0.75em;
         letter-spacing: 1px;
         width: 30px;
         text-align: center;
@@ -217,7 +217,6 @@ body {
         color: white;
         width: 37.5px;
         height: 37.5px;
-        cursor: pointer;
       }
 
       .fa-pause {
