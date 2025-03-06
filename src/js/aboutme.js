@@ -1,7 +1,7 @@
 const appDetails = {
     "1": {
         title: "Who am I?",
-        subtitle: "Anthony Huang, 17 years old.",
+        subtitle: "Anthony Huang, 17 y/o from Ontario, Canada",
         description: `Hey! My name is Anthony Huang, also known as anthonyhuang07 or FHDHGNGN online.
         
         <br><br>I'm a 17-year-old high school student from Ontario, Canada, born in Québec and of Chinese descent. 
@@ -16,7 +16,7 @@ const appDetails = {
     },
     "2": {
         title: "Programming",
-        subtitle: "HTML/CSS, JS/TS, Python",
+        subtitle: "HTML, CSS/SCSS, JS/TS, Python",
         description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy, and it immediately clicked with me that making cool things on the computer was for me. For a while after, I made many games and animations on <a href="https://scratch.mit.edu/users/Xboxgolfer/" target="_blank">Scratch</a>. By the time I was 10, I had started learning basic web development with HTML and CSS.
         
         <br><br>I made my return to programming at 13, after learning much about the tech world outside of just coding. I learned basic C to get back the vibe, then JavaScript, where I built my first side project—a Discord bot. Web development soon became my primary focus, and I later learned Python and TypeScript.
@@ -29,7 +29,7 @@ const appDetails = {
     },
     "3": {
         title: "School",
-        subtitle: "High School Grade 12, IBDP",
+        subtitle: "Grade 12, IBDP, CS Club Co-President",
         description: `I am currently a Grade 12 High School student enrolled in the International Baccalaureate Diploma Programme (IBDP), and I would describe myself as a high-80s student academically. My courses include: 
 
         <br><br>• HL English A (Language & Literature)
@@ -47,7 +47,7 @@ const appDetails = {
     },
     "4": {
         title: "Languages",
-        subtitle: "English, French, Chinese, Japanese",
+        subtitle: "English, French, Chinese (Mandarin), Japanese",
         description: `I speak fluent English, B1 French, A2 Mandarin and A1 Japanese.
         
         <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French. I have been immersed in English media since I was a baby, while also using French outside the house. At home, I spoke both Mandarin and English with my family, as my parents are immigrants from China.
@@ -76,7 +76,7 @@ const appDetails = {
     },
     "6": {
         title: "Sports",
-        subtitle: "CF Montréal, Habs",
+        subtitle: "CF Montréal, Montréal Canadiens",
         description: `My favorite sport is Football (Not the American kind). I am a fan of CF Montréal, my boyhood club since I was 8.
         
         <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing, attack or defense. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
@@ -88,7 +88,7 @@ const appDetails = {
     },
     "7": {
         title: "Anime",
-        subtitle: "Steins;Gate, Bocchi, Horimiya",
+        subtitle: "S;G, Bocchi, The Apothecary Diaries",
         description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). Then in 2020, I watched JoJo's Bizarre Adventure, which became my favorite and the primary focus of my YouTube channel back then (I was a Roblox JoJo YouTuber). Due to some unfortunate events, I later stopped watching anime.
         
         <br><br>In 2023, I was friends with people who were in the anime/manga scene, so I decided to give anime another try, watching Oshi no Ko (which just aired) and later Bocchi the Rock. These animes reignited my enjoyment for anime, and kickstarted my Japanese learning journey.
@@ -109,14 +109,14 @@ const appDetails = {
     },
     "9": {
         title: "My Setup",
-        subtitle: "M2 MacBook Air",
+        subtitle: "M2 MacBook Air, Keychron K8",
         description: "I  use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024"
     },
     "10": {
         title: "FHDHGNGN",
-        subtitle: "Username Meaning",
+        subtitle: "What does FHDHGNGN mean?",
         description: `
                 FHDHGNGN has no meaning. When I made the username, I was playing a mobile game called The Blockheads, where I needed a username. I ended up keyboard smashing. FHDHGNGN is actually the simplified result of that username after I forgot the original keyboard smashed username. The following is a history of all my usernames up to now:
 

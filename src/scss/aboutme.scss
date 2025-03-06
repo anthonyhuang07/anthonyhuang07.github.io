@@ -1,7 +1,7 @@
 @import 'variables';
 
 .aboutme {
-  > header {
+  >header {
     background-color: #121212;
     border-bottom: #272727 1px solid;
     padding: 0.8rem 0 1rem 0;
@@ -73,7 +73,7 @@
       height: 0;
     }
 
-    > div {
+    >div {
       display: flex;
       flex-direction: row;
     }
@@ -86,7 +86,7 @@
       user-select: none;
     }
 
-    > div > div {
+    >div>div {
       margin-right: 1.05rem;
       display: flex;
       margin-left: 0.75rem;
@@ -94,7 +94,7 @@
       justify-content: center;
     }
 
-    > div > div > div {
+    >div>div>div {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -198,7 +198,7 @@
         border-radius: 2rem;
       }
 
-      > div {
+      >div {
         display: flex;
         flex-direction: column;
         margin-left: 2rem;
@@ -293,6 +293,7 @@
   }
 
   @media screen and (max-width: 900px) {
+
     // Tablets
     #apps {
       display: flex;
@@ -311,16 +312,32 @@
 
   @media screen and (max-width: 480px) {
     // Phones
+
+    >header {
+      h1 {
+        letter-spacing: 1.05px;
+        font-size: 2em;
+        padding-left: 1.25rem;
+        color: white;
+        font-family: $SFSB;
+      }
+    }
+
     .menu {
       overflow: scroll !important;
     }
 
+    #apps {
+      margin-bottom: 1rem;
+    }
+
     .app {
-      width: 87.5%;
+      width: 90%;
+      height: 5.1rem;
 
       img {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
         margin: 1rem 0 0.5rem 0;
       }
 
@@ -329,7 +346,7 @@
       }
 
       .desc {
-        font-size: 0.9em;
+        font-size: 0.85em;
       }
 
       .appStore-viewButton {
@@ -338,12 +355,13 @@
         justify-content: center;
         text-align: center;
         margin: 1.8rem 0 1.85rem 0;
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 500;
         letter-spacing: 0.5px;
         background-color: #1C1C1E;
         color: $appleBlue;
-        width: 5.45rem;
+        width: 4.6rem;
+        height: 2rem;
       }
     }
   }
