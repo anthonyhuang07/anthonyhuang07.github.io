@@ -195,7 +195,7 @@ function hideAppView() {
     if (appView) {
         appView.style.visibility = "hidden";
         appView.style.opacity = "0";
-        appView.style.overflow = "hidden";
+
     }
     if (window.innerWidth <= 480) {
         document.querySelector('#apps').style.display = 'flex';
