@@ -5,10 +5,8 @@ const appDetails = {
         description: `Hey! My name is Anthony Huang, also known as anthonyhuang07 or FHDHGNGN online.
         
         <br><br>I'm a 17-year-old high school student from Ontario, Canada, born in Québec and of Chinese descent. 
-
-        <br><br>My Chinese name is 黄嘉言 (Huáng Jiāyán), where 黄 (Huáng), my family name, means "Yellow", and 嘉言 (Jiāyán) means "Good with words". Ironically, I don't consider myself good with words in any language.
         
-        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! Ironically, I hate math and literature—despite math being the foundation of computing and literature being an application of linguistics. I also enjoy history, video editing, sports, gaming and adventure.
+        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! I also enjoy history, video editing, sports, gaming and adventure.
         
         <br><br>My life goal is to travel the world, visiting as many countries as possible and connecting with locals culturally and linguistically.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
