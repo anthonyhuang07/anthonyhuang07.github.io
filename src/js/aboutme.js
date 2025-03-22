@@ -17,8 +17,6 @@ const appDetails = {
         subtitle: "HTML, CSS/SCSS, JS/TS, Python",
         description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy, and it immediately clicked with me that making cool things on the computer was for me. For a while after, I made many games and animations on <a href="https://scratch.mit.edu/users/Xboxgolfer/" target="_blank">Scratch</a>. By the time I was 10, I had started learning basic web development with HTML and CSS.
         
-        <br><br>I made my return to programming at 13, after learning much about the tech world outside of just coding. I learned basic C to get back the vibe, then JavaScript, where I built my first side project—a Discord bot. Web development soon became my primary focus, and I later learned Python and TypeScript.
-        
         <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I sometimes dabble in competitive programming, I primarily use Python and took part in the CCC Junior, where I scored 56/75.
         
         <br><br>I am a soon-to-be Computer Science student in university. I hope to gain more full-stack programming experience, and I am currently learning <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, hoping to become a pentester.`,
@@ -79,7 +77,7 @@ const appDetails = {
         
         <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing, attack or defense. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
         
-        <br><br>I also watch Hockey, and I support the Montréal Canadiens (Go Habs Go!). I can skate, but I've never actually played Hockey in my life.
+        <br><br>I also watch Hockey, and I support the Montréal Canadiens. I can skate, but I've never actually played Hockey in my life.
         `,
         link: "https://www.youtube.com/watch?v=qgIOXoHwOeM",
         icon: "https://play-lh.googleusercontent.com/Wfh4tn-kWAGTUIMxVgyZ1g2BEHrdDtjyXwUdqJLwX6w640Lc3DJoLoZqoCSEbYWpTw"
