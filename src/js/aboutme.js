@@ -37,14 +37,14 @@ const appDetails = {
         
         <br><br>I serve as the Co-President of the Practical Section of our school's Computer Science Club, one of the largest clubs at the school.
         
-        <br><br>I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics. I am also applying to Shopify's Dev Degree program.`,
+        <br><br>I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics.`,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/c0pmpsPg0vXWp9zH8wLF4VoujteCnZWOE1hvE9xPXDo7s0r0U3fDlHK-YqeSJeTofQ"
     },
     "4": {
         title: "Languages",
         subtitle: "English, French, Chinese (Mandarin), Japanese",
-        description: `I speak fluent English, B1 French, A2 Mandarin and A1 Japanese.
+        description: `I speak fluent English, B2 French, B1 Mandarin and A2 Japanese.
         
         <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French. I have been immersed in English media since I was a baby, while also using French outside the house. At home, I spoke both Mandarin and English with my family, as my parents are immigrants from China.
         
