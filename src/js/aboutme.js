@@ -44,13 +44,13 @@ const appDetails = {
         subtitle: "English, French, Chinese (Mandarin), Japanese",
         description: `I speak fluent English, B2 French, B1 Mandarin and A2 Japanese.
         
-        <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French. I have been immersed in English media since I was a baby, while also using French outside the house. At home, I spoke both Mandarin and English with my family, as my parents are immigrants from China.
+        <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French. I have been immersed in English media since I was a baby, while also using French outside the house.
         
         <br><br>At 8, I moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited, and I am now preparing to take the DELF B2 exam.
         
-        <br><br>My interest in Japanese began when I was 15, sparked by anime and an upcoming trip to Japan. I currently hold a JLPT N5 certificate, however, I still struggle with speaking as I have nobody to talk to in Japanese. I plan to take the JLPT N3 next, and I actively maintain my skills through daily flashcard reviews, exposure to Japanese content on social media, as well as listening to and singing Japanese music.
+        <br><br>My interest in Japanese began when I was 15, sparked by anime and an upcoming trip to Japan. I currently hold a JLPT N5 certificate. I plan to take the JLPT N3 next, and I actively maintain my skills through daily flashcard reviews, exposure to Japanese content on social media, as well as listening to and singing Japanese music.
         
-        <br><br>Studying Japanese has required me to rely on my Chinese knowledge, leading to fascinating connections. Being part of a diverse friend group has also exposed me to different cultures and languages. Even as a child, I had a knack for mimicking pronunciations, which naturally led to my fascination with phonetics. These experiences combined eventually sparked my interest in linguistics. I often pick up words from various languages—Persian, Turkish, Korean—simply out of curiosity, even if I don’t formally study them. My passion for linguistics is also deeply influenced by my passion for history and geography.`,
+        <br><br>Being part of a diverse friend group has also exposed me to different cultures and languages. Even as a child, I had a knack for mimicking pronunciations, which naturally led to my fascination with phonetics. These experiences combined eventually sparked my interest in linguistics. I often pick up words from various languages—Persian, Turkish, Korean—simply out of curiosity, even if I don’t formally study them. My passion for linguistics is also deeply influenced by my passion for history and geography.`,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/0IH4L3pX-jqQXKYCDmxTM5t3Tvak2cb_zUuIs9nKCHPeOqkaRJ_bRTq1qKawsSvunw"
     },
@@ -58,10 +58,6 @@ const appDetails = {
         title: "Games",
         subtitle: "Minecraft, Roblox, Rocket League",
         description: `I play a variety of games. I have been playing Minecraft and <a href="https://www.roblox.com/users/549511045/profile" target="_blank">Roblox</a> for a while, since elementary school.
-        
-        <br><br>The game I currently play most is probably Rocket League, where my peak is Diamond II in 2v2.
-
-        <br><br>I also play a lot of Geotastic (a crowdsourced version of GeoGuessr) due to my love for geography.
         
         <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% best on Acu (Extreme Demon). 
         <br>Check out my demonlist <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">here!</a>`,
@@ -71,11 +67,9 @@ const appDetails = {
     "6": {
         title: "Sports",
         subtitle: "CF Montréal, Montréal Canadiens",
-        description: `My favorite sport is Football (Not the American kind). I am a fan of CF Montréal, my boyhood club since I was 8.
+        description: `My favorite sports are Football (Soccer) and Hockey. In football, I am a fan of CF Montréal, my boyhood club. I only recently started watching and following hockey, but I've always been a fan of the Montréal Canadiens.
         
         <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing, attack or defense. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
-        
-        <br><br>I also watch Hockey, and I support the Montréal Canadiens. I can skate, but I've never actually played Hockey in my life.
         `,
         link: "https://www.youtube.com/watch?v=qgIOXoHwOeM",
         icon: "https://play-lh.googleusercontent.com/Wfh4tn-kWAGTUIMxVgyZ1g2BEHrdDtjyXwUdqJLwX6w640Lc3DJoLoZqoCSEbYWpTw"
