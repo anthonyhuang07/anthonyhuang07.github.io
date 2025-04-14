@@ -95,7 +95,7 @@ const appDetails = {
     "9": {
         title: "My Setup",
         subtitle: "M2 MacBook Air, Keychron K8",
-        description: "I  use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows",
+        description: "I use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024"
     },
