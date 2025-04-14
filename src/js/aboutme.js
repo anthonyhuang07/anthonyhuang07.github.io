@@ -85,7 +85,7 @@ const appDetails = {
     "8": {
         title: "Food",
         subtitle: "Burgers, Japanese Cuisine",
-        description: `My favorite food is a good ol' greasy Hamburger, followed by Phở. Honorable mentions include Takoyaki, Chili Con Carne, Ghormeh Sabzi and Shawarma.
+        description: `My favorite food is the Hamburger (yes, it's true), followed by Phở. Honorable mentions include Takoyaki, Chili Con Carne, Ghormeh Sabzi and Shawarma.
         
         <br><br> My favorite cuisine is Japanese. Other ones I enjoy include Italian, Mexican, Middle Eastern (Especially Persian and Levantine), and Korean. Ironically, I'm not really a fan of Chinese cuisine.
         `,
