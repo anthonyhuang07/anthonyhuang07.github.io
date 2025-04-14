@@ -13,11 +13,11 @@ const appDetails = {
     "2": {
         title: "Programming",
         subtitle: "HTML, CSS/SCSS, JS/TS, Python",
-        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy, and it immediately clicked with me that making cool things on the computer was for me. For a while after, I made many games and animations on <a href="https://scratch.mit.edu/users/Xboxgolfer/" target="_blank">Scratch</a>. By the time I was 10, I had started learning basic web development with HTML and CSS.
+        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy. For a while after, I made many games and animations on <a href="https://scratch.mit.edu/users/Xboxgolfer/" target="_blank">Scratch</a>. By the time I was 10, I had started learning basic web development with HTML and CSS. To this day, front-end development is my specialty field.
         
-        <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I sometimes dabble in competitive programming, I primarily use Python and took part in the CCC Junior, where I scored 56/75.
+        <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I rarely dabble in competitive programming, I primarily use Python and took part in the CCC Junior and Senior competitions.
         
-        <br><br>I am a soon-to-be Computer Science student in university. I hope to gain more full-stack programming experience, and I am currently learning <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, hoping to become a pentester.`,
+        <br><br>I am a soon-to-be Computer Science student in university. I hope to gain more full-stack programming experience, and I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.`,
         link: "https://github.com/anthonyhuang07",
         icon: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
     },
