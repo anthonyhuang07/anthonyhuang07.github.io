@@ -4,7 +4,7 @@ const appDetails = {
         subtitle: "Anthony Huang, 17 y/o from Ontario, Canada",
         description: `Hey! My name is Anthony Huang. I'm a 17-year-old high school student from Ontario, Canada.
         
-        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! I also enjoy history, video editing, sports, gaming and adventure.
+        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! I also enjoy history, video editing, sports, gaming and travelling.
         
         <br><br>My life goal is to travel the world, visiting as many countries as possible and connecting with locals culturally and linguistically.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
