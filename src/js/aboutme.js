@@ -92,6 +92,7 @@ const appDetails = {
         link: "#",
         icon: "https://play-lh.googleusercontent.com/vkbi0tuXCO6n_dk3djoGDGAdPMoxzDy6c7uOh3TwWn25pfUYHhOiAV9iw3t1CzHgvU6t=w240-h480-rw"
     },
+    /*
     "9": {
         title: "My Setup",
         subtitle: "M2 MacBook Air, Keychron K8",
@@ -120,6 +121,7 @@ const appDetails = {
         link: "#",
         icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_Notes_icon.svg/1024px-Apple_Notes_icon.svg.png"
     }
+    */
 };
 
 function createApp() {

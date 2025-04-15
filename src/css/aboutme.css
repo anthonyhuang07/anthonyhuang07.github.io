@@ -63,7 +63,7 @@
 .aboutme #apps {
   display: grid;
   grid-template-columns: 44.5% 44.5%;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
