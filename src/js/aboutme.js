@@ -26,14 +26,7 @@ const appDetails = {
     "3": {
         title: "School",
         subtitle: "Grade 12, IBDP, CS Club Co-President",
-        description: `I am currently a Grade 12 High School student enrolled in the International Baccalaureate Diploma Programme (IBDP), and I would describe myself as a high-80s student academically. My courses include: 
-
-        <br><br>• HL English A (Language & Literature)
-        <br>• HL French B
-        <br>• HL Geography
-        <br>• SL Chemistry
-        <br>• SL Physics [Level 5]
-        <br>• SL Mathematics (Analysis & Approaches) [Level 5]
+        description: `I am currently a Grade 12 High School student enrolled in the International Baccalaureate Diploma Programme (IBDP), and I would describe myself as a high-80s student academically.
         
         <br><br>I serve as the Co-President of the Practical Section of our school's Computer Science Club, one of the largest clubs at the school.
         
@@ -50,9 +43,7 @@ const appDetails = {
         
         <br><br>At 8, I moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited, and I am now preparing to take the DELF B2 exam.
         
-        <br><br>My interest in Japanese began when I was 15, sparked by anime and an upcoming trip to Japan. I currently hold a JLPT N5 certificate. I plan to take the JLPT N3 next, and I actively maintain my skills through daily flashcard reviews, exposure to Japanese content on social media, as well as listening to and singing Japanese music.
-        
-        <br><br>Being part of a diverse friend group has also exposed me to different cultures and languages. Even as a child, I had a knack for mimicking pronunciations, which naturally led to my fascination with phonetics. These experiences combined eventually sparked my interest in linguistics. I often pick up words from various languages—Persian, Turkish, Korean—simply out of curiosity, even if I don’t formally study them. My passion for linguistics is also deeply influenced by my passion for history and geography.`,
+        <br><br>My interest in Japanese began when I was 15, sparked by anime and an upcoming trip to Japan. I currently hold a JLPT N5 certificate. I plan to take the JLPT N3 next, and I actively maintain my skills through daily flashcard reviews, exposure to Japanese content on social media, as well as listening to and singing Japanese music.`,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/0IH4L3pX-jqQXKYCDmxTM5t3Tvak2cb_zUuIs9nKCHPeOqkaRJ_bRTq1qKawsSvunw"
     },
@@ -68,7 +59,7 @@ const appDetails = {
     "6": {
         title: "Sports",
         subtitle: "CF Montréal, Montréal Canadiens",
-        description: `My favorite sports are Football (Soccer) and Hockey. In football, I am a fan of CF Montréal, my boyhood club. I only recently started watching and following hockey, but I've always been a fan of the Montréal Canadiens.
+        description: `My favorite sports are Football (Soccer) and Hockey. In football, I am a fan of CF Montréal, my boyhood club. Of course in hockey, I support the Montréal Canadiens.
         
         <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing, attack or defense. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
         `,
@@ -77,7 +68,7 @@ const appDetails = {
     },
     "7": {
         title: "Anime",
-        subtitle: "S;G, Bocchi, The Apothecary Diaries",
+        subtitle: "Steins;Gate, Bocchi the Rock...",
         description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). 
         
         <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock!, Horimiya and The Apothecary Diaries.`,
