@@ -49,10 +49,12 @@ const appDetails = {
     },
     "5": {
         title: "Games",
-        subtitle: "Minecraft, Roblox, Rocket League",
+        subtitle: "Minecraft, Roblox, Minesweeper",
         description: `I play a variety of games. I have been playing Minecraft and <a href="https://www.roblox.com/users/549511045/profile" target="_blank">Roblox</a> for a while, like every other Gen-Z kid.
         
-        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% best on Acu (Extreme Demon). Check out my demonlist <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">here!</a>`,
+        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% best on Acu (Extreme Demon). Check out my demonlist <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">here!</a>
+        
+        <br><br> I'm also pretty cracked at <a href="https://minesweeper.online/player/12600262" target="_blank">Minesweeper</a>. It's the game I currently play the most, and I am ranked Top 500 in Canada.`,
         link: "https://steamcommunity.com/profiles/76561199118468554/", 
         icon: "/assets/icons/steam.webp"
     },
@@ -71,7 +73,7 @@ const appDetails = {
         subtitle: "Steins;Gate, Bocchi the Rock...",
         description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). 
         
-        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock!, Horimiya and The Apothecary Diaries.`,
+        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock! and Seishun Buta Yarou.`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
