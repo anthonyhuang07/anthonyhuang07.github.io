@@ -1,7 +1,7 @@
 const appDetails = {
     "1": {
         title: "Who am I?",
-        subtitle: "Anthony Huang, 17 y/o from Ontario, Canada",
+        subtitle: "Anthony Huang (17), from Ontario, Canada",
         description: `Hey! My name is Anthony Huang. I'm a 17-year-old high school student from Ontario, Canada.
         
         <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! I also enjoy history, video editing, sports, gaming and travelling.
@@ -25,14 +25,10 @@ const appDetails = {
     },
     "3": {
         title: "School",
-        subtitle: "Grade 12, IBDP, CS Club Co-President",
-        description: `I am currently a Grade 12 High School student enrolled in the International Baccalaureate Diploma Programme (IBDP), and I would describe myself as a high-80s student academically.
-        
-        <br><br>I serve as the Co-President of the Practical Section of our school's Computer Science Club, one of the largest clubs at the school.
-        
-        <br><br>I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics.`,
+        subtitle: "CS @ Carleton University",
+        description: `>I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics.`,
         link: "#",
-        icon: "https://play-lh.googleusercontent.com/c0pmpsPg0vXWp9zH8wLF4VoujteCnZWOE1hvE9xPXDo7s0r0U3fDlHK-YqeSJeTofQ"
+        icon: "https://play-lh.googleusercontent.com/oUIb5n6akLJ0fk66LiD8jk89_Ya9HK-8a4NJpPxNe4d8cE0B7_HJjDhrx6WTR90FJxiF"
     },
     "4": {
         title: "Languages",
@@ -41,7 +37,7 @@ const appDetails = {
         
         <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French. I have been immersed in English media since I was a baby, while also using French outside the house.
         
-        <br><br>At 8, I moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited, and I am now preparing to take the DELF B2 exam.
+        <br><br>At 8, I moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited. I currently hold a DELF B2 certificate.
         
         <br><br>My interest in Japanese began when I was 15, sparked by anime and an upcoming trip to Japan. I currently hold a JLPT N5 certificate. I plan to take the JLPT N3 next, and I actively maintain my skills through daily flashcard reviews, exposure to Japanese content on social media, as well as listening to and singing Japanese music.`,
         link: "#",
@@ -70,17 +66,17 @@ const appDetails = {
     },
     "7": {
         title: "Anime",
-        subtitle: "Steins;Gate, Bocchi the Rock...",
+        subtitle: "Steins;Gate, Bocchi the Rock, Lycoris Recoil...",
         description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). 
         
-        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Pokémon, Steins;Gate, Bocchi the Rock! and Seishun Buta Yarou.`,
+        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Steins;Gate, Bocchi the Rock!, Rascal Does Not Dream and Lycoris Recoil.`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
     "8": {
         title: "Food",
         subtitle: "Burgers, Japanese Cuisine",
-        description: `My favorite food is the Hamburger (yes, it's true), followed by Phở. Honorable mentions include Takoyaki, Chili Con Carne, Ghormeh Sabzi and Shawarma.
+        description: `My favorite food is the Hamburger (yes, it's true), followed by Phở and Udon. Honorable mentions include Takoyaki, Chili Con Carne, Ghormeh Sabzi and Shawarma.
         
         <br><br> My favorite cuisine is Japanese. Other ones I enjoy include Italian, Mexican, Middle Eastern (Especially Persian and Levantine), and Korean. Ironically, I'm not really a fan of Chinese cuisine.
         `,
