@@ -26,7 +26,7 @@ const appDetails = {
     "3": {
         title: "School",
         subtitle: "1st Year Computer Science @ Carleton University",
-        description: `>I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics.`,
+        description: `I am an incoming Computer Science student at Carleton University, where I also plan to pursue a minor in Linguistics.`,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/oUIb5n6akLJ0fk66LiD8jk89_Ya9HK-8a4NJpPxNe4d8cE0B7_HJjDhrx6WTR90FJxiF"
     },
