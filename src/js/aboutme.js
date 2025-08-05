@@ -4,9 +4,7 @@ const appDetails = {
         subtitle: "Anthony Huang (17), from Ontario, Canada",
         description: `Hey! My name is Anthony Huang. I'm a 17-year-old high school student from Ontario, Canada.
         
-        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! I also enjoy history, video editing, sports, gaming and travelling.
-        
-        <br><br>My life goal is to travel the world, visiting as many countries as possible and connecting with locals culturally and linguistically.`,
+        <br><br>I have a strong passion for all things tech and computing, as well as linguistics and geography! I also enjoy singing, video editing, sports, gaming and travelling.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
