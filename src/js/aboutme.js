@@ -11,11 +11,11 @@ const appDetails = {
     "2": {
         title: "Programming",
         subtitle: "HTML, CSS/SCSS, JS/TS, Python",
-        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy. For a while after, I made many games and animations on <a href="https://scratch.mit.edu/users/Xboxgolfer/" target="_blank">Scratch</a>. By the time I was 10, I had started learning basic web development with HTML and CSS. To this day, front-end development is my specialty field.
+        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy. 
         
         <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I rarely dabble in competitive programming, I primarily use Python and took part in the CCC Junior and Senior competitions.
         
-        <br><br>I am a soon-to-be Computer Science student in university. I hope to gain more full-stack programming experience, and I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.
+        <br><br>I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.
         
         <br><br><iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3734675" style='border:none;width: 100%; height: 88px;'></iframe>`,
         link: "https://github.com/anthonyhuang07",
@@ -71,14 +71,14 @@ const appDetails = {
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
-    /*
-    "9": {
+    "8": {
         title: "My Setup",
         subtitle: "M2 MacBook Air, Keychron K8",
         description: "I use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024"
     },
+    /*
     "10": {
         title: "FHDHGNGN",
         subtitle: "What does FHDHGNGN mean?",

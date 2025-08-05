@@ -37,7 +37,7 @@ permalink: /
   <div id="dynamicIsland">
     <div id="island-main">
       <div id="island-main-left">
-        <img src=""/>
+        <img src="" />
         <div id="songInfo">
           <div id="songName">Song Name</div>
           <div id="artistName">Artist Name</div>
@@ -53,21 +53,31 @@ permalink: /
       </div>
     </div>
     <div id="timeline">
-        <span id="currentTime">0:00</span>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-        <span id="timeLeft">0:00</span>
+      <span id="currentTime">0:00</span>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <span id="timeLeft">0:00</span>
     </div>
     <div id="mediaControls">
-      <svg id="prevButton" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff" stroke-width="1.5">
-        <path d="M21.0441 5.70436C21.4402 5.41246 22 5.69531 22 6.1874V17.8126C22 18.3047 21.4402 18.5875 21.0441 18.2956L13.1555 12.483C12.8301 12.2432 12.8301 11.7568 13.1555 11.517L21.0441 5.70436Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M10.0441 5.70436C10.4402 5.41246 11 5.69531 11 6.1874V17.8126C11 18.3047 10.4402 18.5875 10.0441 18.2956L2.15555 12.483C1.8301 12.2432 1.8301 11.7568 2.15555 11.517L10.0441 5.70436Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <svg id="prevButton" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        color="#ffffff" stroke-width="1.5">
+        <path
+          d="M21.0441 5.70436C21.4402 5.41246 22 5.69531 22 6.1874V17.8126C22 18.3047 21.4402 18.5875 21.0441 18.2956L13.1555 12.483C12.8301 12.2432 12.8301 11.7568 13.1555 11.517L21.0441 5.70436Z"
+          fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+          d="M10.0441 5.70436C10.4402 5.41246 11 5.69531 11 6.1874V17.8126C11 18.3047 10.4402 18.5875 10.0441 18.2956L2.15555 12.483C1.8301 12.2432 1.8301 11.7568 2.15555 11.517L10.0441 5.70436Z"
+          fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
       <i class="fa fa-pause"></i>
-      <svg id="nextButton" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff" stroke-width="1.5">
-        <path d="M2.95592 5.70436C2.55976 5.41246 2 5.69531 2 6.1874V17.8126C2 18.3047 2.55976 18.5875 2.95592 18.2956L10.8445 12.483C11.1699 12.2432 11.1699 11.7568 10.8445 11.517L2.95592 5.70436Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M13.9559 5.70436C13.5598 5.41246 13 5.69531 13 6.1874V17.8126C13 18.3047 13.5598 18.5875 13.9559 18.2956L21.8445 12.483C22.1699 12.2432 22.1699 11.7568 21.8445 11.517L13.9559 5.70436Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <svg id="nextButton" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        color="#ffffff" stroke-width="1.5">
+        <path
+          d="M2.95592 5.70436C2.55976 5.41246 2 5.69531 2 6.1874V17.8126C2 18.3047 2.55976 18.5875 2.95592 18.2956L10.8445 12.483C11.1699 12.2432 11.1699 11.7568 10.8445 11.517L2.95592 5.70436Z"
+          fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+          d="M13.9559 5.70436C13.5598 5.41246 13 5.69531 13 6.1874V17.8126C13 18.3047 13.5598 18.5875 13.9559 18.2956L21.8445 12.483C22.1699 12.2432 22.1699 11.7568 21.8445 11.517L13.9559 5.70436Z"
+          fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
     </div>
   </div>
@@ -156,10 +166,16 @@ permalink: /
           <h2><i class="fa-solid fa-envelope"></i> email</h2>
           <p>info@anthonyhuang.net</p>
         </a>
-        <a class="infoBox" href="https://discord.com/users/628672513345454122" target="_blank">
-          <h2><i class="fa-brands fa-discord"></i> Discord</h2>
-          <p>@fhdhgngn</p>
-        </a>
+        <div id="infoCluster">
+          <a class="infoBox" href="https://discord.com/users/628672513345454122" target="_blank">
+            <h2><i class="fa-brands fa-discord"></i> Discord</h2>
+            <p>@fhdhgngn</p>
+          </a>
+          <a class="infoBox" href="https://www.instagram.com/anthonyhuang07/" target="_blank">
+            <h2><i class="fa-brands fa-instagram"></i> Instagram</h2>
+            <p>anthonyhuang07</p>
+          </a>
+        </div>
         <div id="infoCluster">
           <a class="infoBox" href="https://github.com/anthonyhuang07" target="_blank">
             <h2><i class="fa-brands fa-github"></i> GitHub</h2>
@@ -170,16 +186,6 @@ permalink: /
             <p>anthonyhuang07</p>
           </a>
         </div>
-        <!-- <div id="infoCluster">
-          <a class="infoBox" href="https://www.youtube.com/@fhdhgngn" target="_blank">
-            <h2><i class="fa-brands fa-youtube"></i> YouTube</h2>
-            <p>FHDHGNGN</p>
-          </a>
-          <a class="infoBox" href="https://www.reddit.com/user/FyreBoyeYT" target="_blank">
-            <h2><i class="fa-brands fa-reddit"></i> Reddit</h2>
-            <p>u/FyreBoyeYT</p>
-          </a>
-        </div> -->
       </div>
     </div>
     <!-- Music -->
