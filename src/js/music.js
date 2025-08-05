@@ -19,57 +19,54 @@ function nowPlaying() {
     .then(response => response.json())
     .then(data => {
       let musicPlaying = false;
-      for (let i = 0; i < data.status.length; i++) {
-        if (data.status[i].name === "Apple Music") {
-          musicPlaying = true;
-          let imageUrl = data.status[i].assets.largeImage;
-          let songName = data.status[i].details;
-          let artistName = data.status[i].state;
-          let startTime = new Date(data.status[i].timestamps.start).getTime();
-          let endTime = new Date(data.status[i].timestamps.end).getTime();
-          let currentTime = Date.now();
-          let duration = endTime - startTime;
-          let elapsed = currentTime - startTime;
-          let remaining = duration - elapsed;
+      console.log(data);
+      if (data.status.type === "LISTENING") {
+        musicPlaying = true;
+        let imageUrl = data.status.assets.largeImage;
+        let songName = data.status.details;
+        let artistName = data.status.state;
+        let startTime = new Date(data.status.timestamps.start).getTime();
+        let endTime = new Date(data.status.timestamps.end).getTime();
+        let currentTime = Date.now();
+        let duration = endTime - startTime;
+        let elapsed = currentTime - startTime;
+        let remaining = duration - elapsed;
 
-          if (artistName === "Anthony Huang") {
-            imageUrl = '/assets/albumarts/huang.jpg';
-          } else if (artistName === "Ryan Irvani") {
-            imageUrl = '/assets/albumarts/irvani.png';
-          } else if (imageUrl.startsWith('mp:external/')) {
-            let fixedUrl = imageUrl.split('/https/').pop();
-            imageUrl = 'https://' + fixedUrl;
-          }
+        if (artistName === "Anthony Huang") {
+          imageUrl = '/assets/albumarts/huang.jpg';
+        } else if (artistName === "Ryan Irvani") {
+          imageUrl = '/assets/albumarts/irvani.png';
+        } else if (imageUrl.startsWith('mp:external/')) {
+          let fixedUrl = imageUrl.split('/https/').pop();
+          imageUrl = 'https://' + fixedUrl;
+        }
 
-          albumArt.crossOrigin = "Anonymous";
-          albumArt.src = imageUrl;
+        albumArt.crossOrigin = "Anonymous";
+        albumArt.src = imageUrl;
 
+        albumArt.onload = () => {
+          applyGradientEffect(albumArt);
+        };
+
+        albumArt.onerror = () => {
+          console.error('Error loading album art image');
+          albumArt.src = '/assets/icons/music.webp';
           albumArt.onload = () => {
-            applyGradientEffect(albumArt);
+            const bars = document.querySelectorAll('.bar');
+            bars.forEach(bar => {
+              bar.style.backgroundColor = '#ffffff';
+              bar.style.backgroundImage = 'none';
+            });
           };
+        };
 
-          albumArt.onerror = () => {
-            console.error('Error loading album art image');
-            albumArt.src = '/assets/icons/music.webp';
-            albumArt.onload = () => {
-              const bars = document.querySelectorAll('.bar');
-              bars.forEach(bar => {
-                bar.style.backgroundColor = '#ffffff';
-                bar.style.backgroundImage = 'none';
-              });
-            };
-          };
+        songNameElement.textContent = songName;
+        artistNameElement.textContent = artistName;
 
-          songNameElement.textContent = songName;
-          artistNameElement.textContent = artistName;
-
-          if (remaining > 0) {
-            timeLeft.textContent = formatTime(remaining);
-            currentTimeElement.textContent = formatTime(elapsed);
-            progressBar.style.width = `${(elapsed / duration) * 100}%`;
-          }
-
-          break;
+        if (remaining > 0) {
+          timeLeft.textContent = formatTime(remaining);
+          currentTimeElement.textContent = formatTime(elapsed);
+          progressBar.style.width = `${(elapsed / duration) * 100}%`;
         }
       }
 

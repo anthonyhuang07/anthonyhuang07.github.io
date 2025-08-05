@@ -73,16 +73,6 @@ const appDetails = {
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
-    "8": {
-        title: "Food",
-        subtitle: "Burgers, Japanese Cuisine",
-        description: `My favorite food is the Hamburger (yes, it's true), followed by Phở and Udon. Honorable mentions include Takoyaki, Chili Con Carne, Ghormeh Sabzi and Shawarma.
-        
-        <br><br> My favorite cuisine is Japanese. Other ones I enjoy include Italian, Mexican, Middle Eastern (Especially Persian and Levantine), and Korean. Ironically, I'm not really a fan of Chinese cuisine.
-        `,
-        link: "#",
-        icon: "https://play-lh.googleusercontent.com/vkbi0tuXCO6n_dk3djoGDGAdPMoxzDy6c7uOh3TwWn25pfUYHhOiAV9iw3t1CzHgvU6t=w240-h480-rw"
-    },
     /*
     "9": {
         title: "My Setup",
