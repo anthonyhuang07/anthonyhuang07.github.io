@@ -1,20 +1,15 @@
 @import 'variables';
 
-:root {
-  --musicRed: #FA2D48;
-}
-
 .music {
   header {
-    background-color: #121212;
-    height: 18.4rem;
-    padding: 1.5rem 0 1rem 0;
     user-select: none;
 
     h1 {
-      letter-spacing: 1.9px;
-      font-size: 2.8em;
-      padding-left: 3.5rem;
+      letter-spacing: 1px;
+      font-size: 2.25em;
+      padding-left: 3.35rem;
+      color: white;
+      font-family: $SFSB;
     }
 
     div {
@@ -22,7 +17,7 @@
       flex-direction: row;
       align-items: center;
       color: $musicRed;
-      margin: 1.5rem 0 1.125rem 1.2rem;
+      margin: 2.25rem 0 1rem 1.9rem;
       cursor: pointer;
 
       i {
@@ -35,12 +30,133 @@
     }
   }
 
+  article {
+    display: flex;
+    margin: 1.6rem 0 0 3.45rem;
+
+    .music-favoriteSong {
+      display: flex;
+      color: white;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1.55em;
+        font-family: $SFSB;
+        letter-spacing: 0.01px;
+        margin-bottom: 0.7rem;
+      }
+
+      >div {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          width: 172px;
+          border-radius: 0.6rem;
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 1rem;
+
+          >div {
+            margin-top: 1.95rem;
+
+            h6 {
+              font-size: 0.8em;
+              letter-spacing: 0.3px;
+              font-family: $SFSB;
+              color: $appleGray;
+            }
+
+            p {
+              margin-top: 0.075rem;
+              font-size: 1.15em;
+              letter-spacing: 0.7px;
+              color: white;
+              font-family: $SFL;
+            }
+
+            h5 {
+              margin-top: 0.05rem;
+              font-size: 1em;
+              letter-spacing: 0.75px;
+              color: $appleGray;
+              font-family: $SFL;
+            }
+          }
+
+          a {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $appleDarkGrayAlt;
+            width: 4.75rem;
+            height: 1.8rem;
+            font-size: 1em;
+            border-radius: 100rem;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.25s, color 0.25s linear;
+            color: $musicRed;
+            font-family: $SFSB;
+
+            &:hover {}
+          }
+        }
+      }
+
+    }
+  }
+
   .music-nowPlaying {
-    width: 100%;
+    display: flex;
+    width: calc(100% - 2.75*2rem);
+    border-radius: 0.8rem;
     height: 4.185rem;
-    background-color: white;
-    position: absolute;
+    background-color: #222226;
+    position: fixed;
     bottom: 0;
     margin: 0 2.75rem 1.6rem 2.75rem;
+
+    >div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 0.7rem;
+
+      img {
+        width: 47.5px;
+        height: 47.5px;
+        border-radius: 0.5rem;
+        object-fit: cover;
+      }
+
+      >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.5rem;
+        height: 100%;
+
+        .music-nowPlaying-song {
+          font-size: 1em;
+          letter-spacing: 0.5px;
+          color: white;
+          font-family: $SFR;
+        }
+
+        .music-nowPlaying-artist {
+          font-size: 1.05em;
+          letter-spacing: 1.05px;
+          color: $appleGray;
+          font-family: $SFL;
+        }
+      }
+    }
   }
 }

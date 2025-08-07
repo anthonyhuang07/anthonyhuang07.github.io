@@ -16,23 +16,18 @@
   font-weight: 300;
   font-display: swap;
 }
-:root {
-  --musicRed: #FA2D48;
-}
-
 .music header {
-  background-color: #121212;
-  height: 18.4rem;
-  padding: 1.5rem 0 1rem 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 .music header h1 {
-  letter-spacing: 1.9px;
-  font-size: 2.8em;
-  padding-left: 3.5rem;
+  letter-spacing: 1px;
+  font-size: 2.25em;
+  padding-left: 3.35rem;
+  color: white;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .music header div {
   display: -webkit-box;
@@ -46,7 +41,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #FA2D48;
-  margin: 1.5rem 0 1.125rem 1.2rem;
+  margin: 2.25rem 0 1rem 1.9rem;
   cursor: pointer;
 }
 .music header div i {
@@ -55,11 +50,159 @@
 .music header div:active {
   color: #055090;
 }
+.music article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.6rem 0 0 3.45rem;
+}
+.music article .music-favoriteSong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.music article .music-favoriteSong h2 {
+  font-size: 1.55em;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01px;
+  margin-bottom: 0.7rem;
+}
+.music article .music-favoriteSong > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.music article .music-favoriteSong > div img {
+  width: 172px;
+  border-radius: 0.6rem;
+}
+.music article .music-favoriteSong > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1rem;
+}
+.music article .music-favoriteSong > div > div > div {
+  margin-top: 1.95rem;
+}
+.music article .music-favoriteSong > div > div > div h6 {
+  font-size: 0.8em;
+  letter-spacing: 0.3px;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #8D8D93;
+}
+.music article .music-favoriteSong > div > div > div p {
+  margin-top: 0.075rem;
+  font-size: 1.15em;
+  letter-spacing: 0.7px;
+  color: white;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.music article .music-favoriteSong > div > div > div h5 {
+  margin-top: 0.05rem;
+  font-size: 1em;
+  letter-spacing: 0.75px;
+  color: #8D8D93;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.music article .music-favoriteSong > div > div a {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #1C1C1F;
+  width: 4.75rem;
+  height: 1.8rem;
+  font-size: 1em;
+  border-radius: 100rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color 0.25s, color 0.25s linear;
+  transition: background-color 0.25s, color 0.25s linear;
+  color: #FA2D48;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+}
 .music .music-nowPlaying {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 5.5rem);
+  border-radius: 0.8rem;
   height: 4.185rem;
-  background-color: white;
-  position: absolute;
+  background-color: #222226;
+  position: fixed;
   bottom: 0;
   margin: 0 2.75rem 1.6rem 2.75rem;
+}
+.music .music-nowPlaying > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.7rem;
+}
+.music .music-nowPlaying > div img {
+  width: 47.5px;
+  height: 47.5px;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.music .music-nowPlaying > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0.5rem;
+  height: 100%;
+}
+.music .music-nowPlaying > div > div .music-nowPlaying-song {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  color: white;
+  font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.music .music-nowPlaying > div > div .music-nowPlaying-artist {
+  font-size: 1.05em;
+  letter-spacing: 1.05px;
+  color: #8D8D93;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
 }/*# sourceMappingURL=music.css.map */

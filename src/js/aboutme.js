@@ -15,9 +15,7 @@ const appDetails = {
         
         <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I rarely dabble in competitive programming, I primarily use Python and took part in the CCC Junior and Senior competitions.
         
-        <br><br>I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.
-        
-        <br><br><iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3734675" style='border:none;width: 100%; height: 88px;'></iframe>`,
+        <br><br>I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.`,
         link: "https://github.com/anthonyhuang07",
         icon: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
     },

@@ -60,7 +60,6 @@ body {
   height: 110vh;
   left: -5%;
   top: -5%;
-  background-image: url("/assets/bg1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -235,7 +234,7 @@ body {
   font-size: 1.05em;
 }
 #dynamicIsland.playing:hover #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-main #island-main-left #songInfo #artistName {
-  color: #8E8D93;
+  color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 #dynamicIsland.playing:hover #island-main #audioPreview, #dynamicIsland.playing:active #island-main #audioPreview {
@@ -261,7 +260,7 @@ body {
   margin-top: 1.175rem;
 }
 #dynamicIsland.playing:hover #timeline span, #dynamicIsland.playing:active #timeline span {
-  color: #8E8D93;
+  color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.75em;
   letter-spacing: 1px;
@@ -278,7 +277,7 @@ body {
 }
 #dynamicIsland.playing:hover #timeline .progress-bar .progress, #dynamicIsland.playing:active #timeline .progress-bar .progress {
   height: 100%;
-  background-color: #8E8D93;
+  background-color: #8D8D93;
   width: 0;
   -webkit-transition: width 0.1s linear;
   transition: width 0.1s linear;
@@ -580,7 +579,7 @@ body > main div > div img:active {
 .contacts .infoBox:active {
   background-color: #3A3A3C;
 }
-.contacts #infoCluster {
+.contacts .infoCluster {
   width: 97.5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,13 +595,13 @@ body > main div > div img:active {
   overflow: hidden;
   margin-bottom: 1rem;
 }
-.contacts #infoCluster .infoBox {
+.contacts .infoCluster .infoBox {
   margin-bottom: 0;
   width: 100%;
   border-radius: 0;
   position: relative;
 }
-.contacts #infoCluster .infoBox:after {
+.contacts .infoCluster .infoBox:after {
   content: "";
   background: #3A3A3A;
   position: absolute;
@@ -611,7 +610,7 @@ body > main div > div img:active {
   height: 1px;
   bottom: 0;
 }
-.contacts #infoCluster .infoBox:last-child::after {
+.contacts .infoCluster .infoBox:last-child::after {
   height: 0;
 }
 

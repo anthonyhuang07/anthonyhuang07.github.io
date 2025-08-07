@@ -46,7 +46,7 @@ function appOpen(app) {
 }
 
 function returnHome(){
-    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = "hidden";
+    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = "hidden";
     inApp.style.opacity = menu.style.opacity = appView.style.opacity = "0";
 }
 
@@ -73,5 +73,15 @@ function cycleName(){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const backgrounds = [
+    "assets/backgrounds/0.webp",
+    "assets/backgrounds/1.webp",
+    "assets/backgrounds/2.jpg",
+  ];
+  const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  const bgDiv = document.getElementById("bg");
+  if (bgDiv) {
+    bgDiv.style.backgroundImage = `url('${randomBg}')`;
+  }
   cycleName();
 });

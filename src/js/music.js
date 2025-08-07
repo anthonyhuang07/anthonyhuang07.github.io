@@ -44,6 +44,13 @@ function nowPlaying() {
         albumArt.crossOrigin = "Anonymous";
         albumArt.src = imageUrl;
 
+        const nowPlayingArt = document.querySelector('.music-nowPlaying img');
+        const nowPlayingSong = document.querySelector('.music-nowPlaying-song');
+        const nowPlayingArtist = document.querySelector('.music-nowPlaying-artist');
+        nowPlayingArt.src = imageUrl;
+        nowPlayingSong.textContent = songName;
+        nowPlayingArtist.textContent = artistName;
+
         albumArt.onload = () => {
           applyGradientEffect(albumArt);
         };
