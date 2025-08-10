@@ -14,12 +14,19 @@ const ctx = canvas.getContext('2d');
 
 let intervalId;
 
+const favoriteSongDetails = {
+  favoriteDate: "AUG 2, 2025",
+  songName: "ときはなて!",
+  artistName: "はしメロ",
+  albumArt: "https://static.wikia.nocookie.net/witch-watch/images/e/e3/Tokihanate%21_Cover_Illustration.png",
+  link: "https://www.youtube.com/watch?v=hda6HhDk3m4"
+};
+
 function nowPlaying() {
   fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
       let musicPlaying = false;
-      console.log(data);
       if (data.status.type === "LISTENING") {
         musicPlaying = true;
         let imageUrl = data.status.assets.largeImage;
@@ -45,11 +52,12 @@ function nowPlaying() {
         albumArt.src = imageUrl;
 
         const nowPlayingArt = document.querySelector('.music-nowPlaying img');
-        const nowPlayingSong = document.querySelector('.music-nowPlaying-song');
-        const nowPlayingArtist = document.querySelector('.music-nowPlaying-artist');
+        const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
         nowPlayingArt.src = imageUrl;
-        nowPlayingSong.textContent = songName;
-        nowPlayingArtist.textContent = artistName;
+        nowPlayingTextContainer.innerHTML = `
+          <p class="music-nowPlaying-song">${songName}</p>
+          <p class="music-nowPlaying-artist">${artistName}</p>
+        `;
 
         albumArt.onload = () => {
           applyGradientEffect(albumArt);
@@ -77,11 +85,19 @@ function nowPlaying() {
         }
       }
 
+      const nowPlayingArt = document.querySelector('.music-nowPlaying img');
+      const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
+
       if (!musicPlaying) {
         dynamicIsland.classList.remove('playing');
         albumArt.style.display = 'none';
         audioPreview.style.display = 'none';
         clearInterval(intervalId);
+
+        nowPlayingArt.src = '/assets/icons/music.webp'; // Ensure default album art is set
+        nowPlayingTextContainer.innerHTML = `
+          <p>Not Playing</p>
+        `;
       } else {
         dynamicIsland.classList.add('playing');
         albumArt.style.display = 'block';
@@ -140,7 +156,25 @@ function applyGradientEffect(imgElement) {
   });
 }
 
+function renderFavoriteSong() {
+  const favoriteSongContainer = document.querySelector('.music-favoriteSong');
+  favoriteSongContainer.innerHTML = `
+    <div>
+      <img src="${favoriteSongDetails.albumArt}" alt="Favorite Song Album Art" />
+      <div>
+        <div>
+          <h6>${favoriteSongDetails.favoriteDate}</h6>
+          <p>${favoriteSongDetails.songName}</p>
+          <h5>${favoriteSongDetails.artistName}</h5>
+        </div>
+        <a href="${favoriteSongDetails.link}" target="_blank">Open</a>
+      </div>
+    </div>
+  `;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  renderFavoriteSong();
   nowPlaying();
   setInterval(nowPlaying, 1000);
 });

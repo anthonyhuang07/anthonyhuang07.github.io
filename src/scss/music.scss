@@ -143,6 +143,11 @@
         margin-left: 0.5rem;
         height: 100%;
 
+        p {
+          font-family: $SFR;
+          color: white;
+        }
+
         .music-nowPlaying-song {
           font-size: 1em;
           letter-spacing: 0.5px;

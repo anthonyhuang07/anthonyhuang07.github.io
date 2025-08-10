@@ -194,6 +194,10 @@
   margin-left: 0.5rem;
   height: 100%;
 }
+.music .music-nowPlaying > div > div p {
+  font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+}
 .music .music-nowPlaying > div > div .music-nowPlaying-song {
   font-size: 1em;
   letter-spacing: 0.5px;
