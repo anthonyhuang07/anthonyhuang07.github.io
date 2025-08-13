@@ -41,13 +41,13 @@ const appDetails = {
     },
     "5": {
         title: "Games",
-        subtitle: "Minecraft, Roblox, Minesweeper",
-        description: `I play a variety of games. I have been playing Minecraft and <a href="https://www.roblox.com/users/549511045/profile" target="_blank">Roblox</a> for a while, like every other Gen-Z kid.
-        
-        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% best on Acu (Extreme Demon). Check out my demonlist <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">here!</a>
-        
-        <br><br> I'm also pretty cracked at <a href="https://minesweeper.online/player/12600262" target="_blank">Minesweeper</a>. It's the game I currently play the most, and I am ranked Top 500 in Canada.`,
-        link: "https://steamcommunity.com/profiles/76561199118468554/", 
+        subtitle: "Geometry Dash, Rocket League, TETR.IO",
+        description: `I play a variety of games. I've been playing Minecraft and Roblox the longest, games I always come back to once in a while.
+
+        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 Demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon). Check out my demonlist <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">here!</a>
+
+        <br><br>I also play Rocket League (Diamond II), TETR.IO (A-, Top 1000 in Canada) and Minesweeper (Top 500 in Canada)`,
+        link: "https://steamcommunity.com/profiles/76561199118468554/",
         icon: "/assets/icons/steam.webp"
     },
     "6": {

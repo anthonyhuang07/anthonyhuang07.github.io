@@ -94,7 +94,7 @@ function nowPlaying() {
         audioPreview.style.display = 'none';
         clearInterval(intervalId);
 
-        nowPlayingArt.src = '/assets/icons/music.webp'; // Ensure default album art is set
+        nowPlayingArt.src = '/assets/icons/music.webp';
         nowPlayingTextContainer.innerHTML = `
           <p>Not Playing</p>
         `;
