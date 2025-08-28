@@ -16,10 +16,10 @@ let intervalId;
 
 const favoriteSongDetails = {
   favoriteDate: "AUG 2, 2025",
-  songName: "ときはなて!",
-  artistName: "はしメロ",
-  albumArt: "https://static.wikia.nocookie.net/witch-watch/images/e/e3/Tokihanate%21_Cover_Illustration.png",
-  link: "https://www.youtube.com/watch?v=hda6HhDk3m4"
+  songName: "最低界隈 - Saitei Kaiwai",
+  artistName: "tuki.",
+  albumArt: "https://i.scdn.co/image/ab67616d0000b2735415cc68ed6af3a136bc396f",
+  link: "https://www.youtube.com/watch?v=cENYLTXTOQ4"
 };
 
 function nowPlaying() {
