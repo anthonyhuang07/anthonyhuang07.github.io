@@ -19,7 +19,7 @@ const favoriteSongDetails = {
   songName: "最低界隈 - Saitei Kaiwai",
   artistName: "tuki.",
   albumArt: "https://i.scdn.co/image/ab67616d0000b2735415cc68ed6af3a136bc396f",
-  link: "https://www.youtube.com/watch?v=cENYLTXTOQ4"
+  link: "https://www.youtube.com/watch?v=UAsdgWVwXlc"
 };
 
 function nowPlaying() {
