@@ -1,7 +1,7 @@
 const appDetails = {
     "1": {
         title: "Who am I?",
-        subtitle: "Anthony Huang, 17 years old",
+        subtitle: "Anthony Huang, 17 Years Old",
         description: `Hey! My name is Anthony Huang. I'm a 17-year-old Chinese-Canadian 🇨🇦🇨🇳 university student living in Ottawa.
 
         <br><br>My primary passion is all things Tech and Computing 💻. Other hobbies/interests include Geography/Geopolitics 🌎, Languages/Linguistics 💬, Anime 🎥, J-Pop 🎵 (I enjoy singing 🎤 J-Pop as well), Vlogging/Editing 🎬, Sports ⚽️🏒, Gaming 🎮, and Travelling ✈️.`,
