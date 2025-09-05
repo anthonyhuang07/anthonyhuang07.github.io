@@ -58,7 +58,7 @@ function hideAppView(){
 
 function cycleName(){
   const nameEl = document.querySelector("#name");
-  const names = ["Anthony Huang", "黄嘉言", "アンソニー"];
+  const names = ["Anthony Huang", "黄嘉言", "アンソニー", "황가언"];
   let index = 0;
   setInterval(() => {
     nameEl.style.opacity = "0";

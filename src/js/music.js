@@ -15,7 +15,7 @@ const ctx = canvas.getContext('2d');
 let intervalId;
 
 const favoriteSongDetails = {
-  favoriteDate: "AUG 2, 2025",
+  favoriteDate: "AUG 27, 2025",
   songName: "最低界隈 - Saitei Kaiwai",
   artistName: "tuki.",
   albumArt: "https://i.scdn.co/image/ab67616d0000b2735415cc68ed6af3a136bc396f",

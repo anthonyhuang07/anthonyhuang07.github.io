@@ -1,8 +1,8 @@
 const appDetails = {
     "1": {
         title: "Who am I?",
-        subtitle: "Anthony Huang (17), from Ontario, Canada",
-        description: `Hey! My name is Anthony Huang. I'm a 17-year-old first-year Computer Science student at Carleton University.
+        subtitle: "Anthony Huang, 17 years old",
+        description: `Hey! My name is Anthony Huang. I'm a 17-year-old Chinese-Canadian university student living in Ottawa.
         
         <br><br>My primary passion is all things tech and computing. Other hobbies/interests include geography/geopolitics, languages/linguistics, anime, J-Pop (I enjoy singing J-Pop as well), video editing, sports, gaming and travelling.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
@@ -62,19 +62,28 @@ const appDetails = {
     },
     "7": {
         title: "Anime",
-        subtitle: "Steins;Gate, Bocchi the Rock, Lycoris Recoil...",
-        description: `I would say I watch a decent amount of anime. I first started watching anime in 2019, with my first being Dragon Ball Super (why did I start with Super? I don't know). 
-        
-        <br><Br>My current favorites include Dragon Ball, JoJo's Bizarre Adventure, Steins;Gate, Bocchi the Rock!, Rascal Does Not Dream and Lycoris Recoil.`,
+        subtitle: "MyAnimeList.net/profile/FHDHGNGN",
+        description: `I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
     "8": {
-        title: "My Setup",
+        title: "Setup",
         subtitle: "M2 MacBook Air, Keychron K8",
-        description: "I use an M2 MacBook Air paired with a Keychron K8 featuring Milky Yellows",
+        description: "I use an M2 MacBook Air for everything. I'm a keyboard enthusiast as well",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024"
+    },
+    "9": {
+        title: "Transit",
+        subtitle: "Urban Rail Enthusiast & Avgeek",
+        description: `I enjoy riding and learning about urban rail systems (metros, light rails, etc.) around the world. I also love commercial aviation, which is the backbone of global travel.
+
+        <br><br>My favorite rail systems include the Tokyo Metro (Ginza & Hanzōmon Lines), Montréal Metro, Ottawa O-Train, and Shenzhen Metro.
+
+        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon (ICN, Korea), Vancouver (YVR, Canada), and Shenzhen Bao'an (SZX, China). I enjoy flying on Boeing aircraft, mainly the B38M and B789. My favorite looking aircraft is the Boeing 747, especially the Air China livery.`,
+        link: "#",
+        icon: "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
     },
     /*
     "10": {
