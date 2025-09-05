@@ -2,18 +2,20 @@ const appDetails = {
     "1": {
         title: "Who am I?",
         subtitle: "Anthony Huang, 17 years old",
-        description: `Hey! My name is Anthony Huang. I'm a 17-year-old Chinese-Canadian university student living in Ottawa.
-        
-        <br><br>My primary passion is all things tech and computing. Other hobbies/interests include geography/geopolitics, languages/linguistics, anime, J-Pop (I enjoy singing J-Pop as well), video editing, sports, gaming and travelling.`,
+        description: `Hey! My name is Anthony Huang. I'm a 17-year-old Chinese-Canadian 🇨🇦🇨🇳 university student living in Ottawa.
+
+        <br><br>My primary passion is all things Tech and Computing 💻. Other hobbies/interests include Geography/Geopolitics 🌎, Languages/Linguistics 💬, Anime 🎥, J-Pop 🎵 (I enjoy singing 🎤 J-Pop as well), Vlogging/Editing 🎬, Sports ⚽️🏒, Gaming 🎮, and Travelling ✈️.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
     "2": {
         title: "Programming",
         subtitle: "HTML, CSS/SCSS, JS/TS, Python",
-        description: `Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy. 
+        description: `I currently specialize in Front-End Web Development. I am familiar with HTML, CSS/SCSS, JavaScript/TypeScript, and Python.
+
+        <br><br>Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy. 
         
-        <br><br>I've participated in 5 hackathons, earning awards in 2 of them. I rarely dabble in competitive programming, I primarily use Python and took part in the CCC Junior and Senior competitions.
+        <br><br>I've participated in 5 hackathons, earning awards in 2 of them.
         
         <br><br>I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.`,
         link: "https://github.com/anthonyhuang07",
@@ -41,38 +43,38 @@ const appDetails = {
     },
     "5": {
         title: "Games",
-        subtitle: "Geometry Dash, Rocket League, TETR.IO",
-        description: `I play a variety of games. I've been playing Minecraft and Roblox the longest, games I always come back to once in a while.
+        subtitle: "Rocket League D1, 1K+ Hours on Geometry Dash",
+        description: `I play a variety of games. I've been playing Minecraft and Roblox the longest, games I always come back to once in a while. I am particularly good at SkyWars Lucky Blocks on Hypixel.
 
-        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 Demons completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon). Check out my demonlist <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">here!</a>
+        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">Demons</a> completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon).
 
-        <br><br>I also play Rocket League (Diamond II), TETR.IO (A-, Top 1000 in Canada) and Minesweeper (Top 500 in Canada)`,
+        <br><br>I also play <a href="https://rocketleague.tracker.network/rocket-league/profile/epic/fhdhgngn/" target="_blank">Rocket League</a> (Diamond I 💎), TETR.IO (A-) and Minesweeper (Canada 🇨🇦 Top 500)`,
         link: "https://steamcommunity.com/profiles/76561199118468554/",
         icon: "/assets/icons/steam.webp"
     },
     "6": {
         title: "Sports",
-        subtitle: "CF Montréal, Montréal Canadiens",
+        subtitle: "Montréal Canadiens, CF Montréal",
         description: `My favorite sports are Football (Soccer) and Hockey. In football, I am a fan of CF Montréal, my boyhood club. Of course in hockey, I support the Montréal Canadiens.
         
         <br><br>In real life, I played house league at my local soccer club on and off, and I can play any position on either wing, attack or defense. I can even play as backup goalkeeper because I have very strong reaction time and reflexes.
         `,
         link: "https://www.youtube.com/watch?v=qgIOXoHwOeM",
-        icon: "https://play-lh.googleusercontent.com/Wfh4tn-kWAGTUIMxVgyZ1g2BEHrdDtjyXwUdqJLwX6w640Lc3DJoLoZqoCSEbYWpTw"
+        icon: "https://play-lh.googleusercontent.com/BoCbco5x4p64e2fc0XkGEpgvsH42gReh4OzKYeoYnFpUfmKD96clplFFKk7JpxVmMNM"
     },
     "7": {
         title: "Anime",
-        subtitle: "MyAnimeList.net/profile/FHDHGNGN",
+        subtitle: "60+ Days of Watchtime",
         description: `I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
     "8": {
         title: "Setup",
-        subtitle: "M2 MacBook Air, Keychron K8",
-        description: "I use an M2 MacBook Air for everything. I'm a keyboard enthusiast as well",
+        subtitle: "M2 MacBook Air, Keychron K8, AKG K240",
+        description: "I use an M2 MacBook Air for everything. I'm a keyboard enthusiast as well, using a Keychron K8 (Lubed Gateron Milky Yellows). For audio, I use the AKG K240 Studio headphones and a Blue Snowball iCE microphone.",
         link: "#",
-        icon: "https://cdn.jim-nielsen.com/ios/512/apple-support-2017-06-07.png?rf=1024"
+        icon: "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
     },
     "9": {
         title: "Transit",
