@@ -70,8 +70,8 @@ const appDetails = {
     },
     "8": {
         title: "Setup",
-        subtitle: "M2 MacBook Air, Keychron K8, AKG K240",
-        description: "I use an M2 MacBook Air 💻 for everything. I'm a keyboard enthusiast as well, using a Keychron K8 ⌨️ (Lubed Gateron Milky Yellows). For audio, I use the AKG K240 Studio Headphones 🎧 and a Blue Snowball iCE Microphone 🎙️.",
+        subtitle: "M4 MacBook Air, Keychron K8, AKG K240",
+        description: "I use an M4 MacBook Air 💻 for everything (R.I.P Hardware Failure M2 MacBook Air). I'm a keyboard enthusiast as well, using a Keychron K8 ⌨️ (Lubed Gateron Milky Yellows). For audio, I use the AKG K240 Studio Headphones 🎧 and a Blue Snowball iCE Microphone 🎙️.",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
     },
