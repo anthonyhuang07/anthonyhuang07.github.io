@@ -44,6 +44,13 @@ const appDetails = {
         icon: "https://play-lh.googleusercontent.com/0IH4L3pX-jqQXKYCDmxTM5t3Tvak2cb_zUuIs9nKCHPeOqkaRJ_bRTq1qKawsSvunw"
     },
     "5": {
+        title: "Anime",
+        subtitle: "60+ Days of Watchtime",
+        description: `I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!`,
+        link: "https://myanimelist.net/profile/FHDHGNGN",
+        icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
+    },
+    "6": {
         title: "Games",
         subtitle: "Rocket League D1, 1K+ Hours on Geometry Dash",
         description: `I play a variety of games. I've been playing Minecraft and Roblox the longest, games I always come back to once in a while. I am particularly good at SkyWars Lucky Blocks on Hypixel.
@@ -54,37 +61,30 @@ const appDetails = {
         link: "https://steamcommunity.com/profiles/76561199118468554/",
         icon: "/assets/icons/steam.webp"
     },
-    "6": {
+    "7": {
         title: "Sports",
         subtitle: "Montréal Canadiens, CF Montréal",
         description: `My favorite sports are Football ⚽️ and Hockey 🏒. In football, I am a fan of CF Montréal ⚜️, my boyhood club. Of course in hockey, I support the Montréal Canadiens.`,
         link: "https://www.youtube.com/watch?v=qgIOXoHwOeM",
         icon: "https://play-lh.googleusercontent.com/BoCbco5x4p64e2fc0XkGEpgvsH42gReh4OzKYeoYnFpUfmKD96clplFFKk7JpxVmMNM"
     },
-    "7": {
-        title: "Anime",
-        subtitle: "60+ Days of Watchtime",
-        description: `I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!`,
-        link: "https://myanimelist.net/profile/FHDHGNGN",
-        icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
-    },
     "8": {
+        title: "Transit",
+        subtitle: "Urban Rail Enthusiast & Avgeek",
+        description: `I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.
+
+        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵 (Ginza & Hanzōmon Lines), Montréal Metro 🇨🇦, Ottawa O-Train 🇨🇦, and Shenzhen Metro 🇨🇳. I really like the Stadler FLIRT, specifically the Ottawa O-Train Line 2 livery.
+
+        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner. My favorite looking aircraft is the Boeing 747, especially the Air China livery.`,
+        link: "#",
+        icon: "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
+    },
+    "9": {
         title: "Setup",
         subtitle: "M4 MacBook Air, Keychron K8, AKG K240",
         description: "I use an M4 MacBook Air 💻 for everything (R.I.P Hardware Failure M2 MacBook Air). I'm a keyboard enthusiast as well, using a Keychron K8 ⌨️ (Lubed Gateron Milky Yellows). For audio, I use the AKG K240 Studio Headphones 🎧 and a Blue Snowball iCE Microphone 🎙️.",
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
-    },
-    "9": {
-        title: "Transit",
-        subtitle: "Urban Rail Enthusiast & Avgeek",
-        description: `I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.
-
-        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵 (Ginza & Hanzōmon Lines), Montréal Metro 🇨🇦, Ottawa O-Train 🇨🇦, and Shenzhen Metro 🇨🇳.
-
-        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner. My favorite looking aircraft is the Boeing 747, especially the Air China livery.`,
-        link: "#",
-        icon: "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
     },
     /*
     "10": {
