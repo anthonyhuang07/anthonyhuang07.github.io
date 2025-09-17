@@ -4,7 +4,7 @@ const appDetails = {
         subtitle: "Anthony Huang, 17 Years Old",
         description: `Hey! My name is Anthony Huang. I'm a 17-year-old Chinese-Canadian 🇨🇦🇨🇳 university student living in Ottawa.
 
-        <br><br>My primary passion is all things Tech and Computing 💻. Other hobbies/interests include Geography/Geopolitics 🌎, Languages/Linguistics 💬, Anime 🎥, J-Pop 🎵 (I enjoy singing 🎤 J-Pop as well), Vlogging/Editing 🎬, Sports ⚽️🏒, Gaming 🎮, and Travelling ✈️.`,
+        <br><br>My primary passion is all things Tech and Computing 💻. Other hobbies/interests include Geography/Geopolitics 🌎, Languages/Linguistics 💬, Anime 🎥, Listening & Singing to J-Pop 🎵, Vlogging/Editing 🎬, Sports ⚽️🏒, and Travelling ✈️.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
@@ -31,7 +31,7 @@ const appDetails = {
     "4": {
         title: "Languages",
         subtitle: "English, French, Chinese (Mandarin), Japanese",
-        description: `I speak fluent English 🇬🇧, B2 French 🇫🇷, B1 Mandarin 🇨🇳 and A2 Japanese 🇯🇵.
+        description: `I speak fluent English 🇬🇧, B2 French 🇫🇷, B1 Mandarin 🇨🇳, A2 Japanese 🇯🇵, Learning Korean 🇰🇷.
 
         <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French.
         
@@ -73,7 +73,7 @@ const appDetails = {
         subtitle: "Urban Rail Enthusiast & Avgeek",
         description: `I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.
 
-        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵 (Ginza & Hanzōmon Lines), Montréal Metro 🇨🇦, Ottawa O-Train 🇨🇦, and Shenzhen Metro 🇨🇳. I really like the Stadler FLIRT, specifically the Ottawa O-Train Line 2 livery.
+        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵 (Ginza & Hanzōmon Lines), Montréal Metro 🇨🇦, Ottawa O-Train 🇨🇦, and Shenzhen Metro 🇨🇳.
 
         <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner. My favorite looking aircraft is the Boeing 747, especially the Air China livery.`,
         link: "#",
