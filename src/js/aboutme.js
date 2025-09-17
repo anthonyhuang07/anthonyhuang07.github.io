@@ -33,9 +33,7 @@ const appDetails = {
         subtitle: "English, French, Chinese (Mandarin), Japanese",
         description: `I speak fluent English 🇬🇧, B2 French 🇫🇷, B1 Mandarin 🇨🇳, A2 Japanese 🇯🇵, Learning Korean 🇰🇷.
 
-        <br><br>I spent the first 8 years of my life in Québec, where I regularly spoke both English and French.
-        
-        <br><br>At 8, I moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited. I currently hold a DELF B2 certificate.
+        <br><br>I was born and raised in Québec, where I regularly spoke both English and French. I then moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited. I currently hold a DELF B2 certificate.
         
         <br><br>My interest in Japanese began when I was 15, sparked by Anime, J-Pop and an upcoming trip to Japan. I currently hold a JLPT N5 certificate. I plan to take the JLPT N3 this December.
         
