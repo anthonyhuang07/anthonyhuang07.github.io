@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const backgrounds = [
     "assets/backgrounds/0.webp",
     "assets/backgrounds/1.webp",
-    "assets/backgrounds/2.webp",
+    "assets/backgrounds/2.jpg",
+    "assets/backgrounds/3.jpg",
   ];
   const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
   const bgDiv = document.getElementById("bg");
