@@ -1,7 +1,7 @@
 const projectDetails = {
   "Ontario IB Mark Converter": {
     description: "Converts your Raw IB Mark to a Converted OSSD Mark.",
-    link: "https://ibconverter.live/",
+    link: "http://ibconverter.com/",
     icon: "https://www.ibschoolsofontario.ca/wp-content/uploads/2018/12/IB-world-shools-1.png"
   },
   "PomodoPro": {
