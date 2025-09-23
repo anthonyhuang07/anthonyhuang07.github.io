@@ -24,7 +24,7 @@ const appDetails = {
     "3": {
         title: "School",
         subtitle: "1st Year Computer Science @ Carleton University",
-        description: `I am a first-year Computer Science 💻 (Co-op) student at Carleton University 🎓, where I plan to specialize in Cybersecurity as well as pursue a minor in Linguistics.`,
+        description: `I am a first-year Computer Science 💻 (Co-op) student at Carleton University 🎓. I also plan to pursue a minor in Linguistics.`,
         link: "#",
         icon: "https://play-lh.googleusercontent.com/oUIb5n6akLJ0fk66LiD8jk89_Ya9HK-8a4NJpPxNe4d8cE0B7_HJjDhrx6WTR90FJxiF"
     },
@@ -73,7 +73,7 @@ const appDetails = {
 
         <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵 (Ginza & Hanzōmon Lines), Montréal Metro 🇨🇦, Ottawa O-Train 🇨🇦, and Shenzhen Metro 🇨🇳.
 
-        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner. My favorite looking aircraft is the Boeing 747, especially the Air China livery.`,
+        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner.`,
         link: "#",
         icon: "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
     },
