@@ -15,11 +15,11 @@ const ctx = canvas.getContext('2d');
 let intervalId;
 
 const favoriteSongDetails = {
-  favoriteDate: "SEP 18, 2025",
-  songName: "最低界隈 - Saitei Kaiwai",
-  artistName: "tuki.",
-  albumArt: "https://i.scdn.co/image/ab67616d0000b2735415cc68ed6af3a136bc396f",
-  link: "https://www.youtube.com/watch?v=UAsdgWVwXlc"
+  favoriteDate: "SEP 24, 2025",
+  songName: "DEADPOOL (feat. KAF)",
+  artistName: "Hoshimachi Suisei",
+  albumArt: "https://images.genius.com/eeb2490ea2a00ea03ccec34e073e8cbe.1000x1000x1.png",
+  link: "https://www.youtube.com/watch?v=Fg5-55vZwp0"
 };
 
 function nowPlaying() {
