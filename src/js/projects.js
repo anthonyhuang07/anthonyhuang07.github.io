@@ -12,7 +12,7 @@ const projectDetails = {
   "Piracy": {
     description: "Piracy is a serious crime. Click for more info...",
     link: "https://anthonyhuang.net/piracy/",
-    icon: "https://openclipart.org/image/2000px/29833"
+    icon: "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"
   },
   "ByteBucks": {
     description: "A basic Adventure Capitalist-inspired game made for my high school CS course.",
