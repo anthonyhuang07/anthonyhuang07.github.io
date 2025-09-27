@@ -35,8 +35,6 @@ function nowPlaying() {
 
         if (artistName === "Anthony Huang") {
           imageUrl = '/assets/albumarts/huang.jpg';
-        } else if (artistName === "Ryan Irvani") {
-          imageUrl = '/assets/albumarts/irvani.png';
         } else if (imageUrl.startsWith('mp:external/')) {
           let fixedUrl = imageUrl.split('/https/').pop();
           imageUrl = 'https://' + fixedUrl;
@@ -90,7 +88,7 @@ function nowPlaying() {
 
         nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
         nowPlayingTextContainer.innerHTML = `
-          <p>I'm not listening to anything right now!</p>
+          <p>Not Playing</p>
         `;
       } else {
         dynamicIsland.classList.add('playing');
@@ -204,10 +202,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=urh7DZp59WU"
   },
   {
-    title: "Moral Crumble",
+    title: "劣等上等 歌ってみた",
     artist: "FantasticYouth",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/1200x630bb.jpg",
-    link: "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/0c/20/950c2012-f8c2-67b8-4321-2a4138557c1a/199066040836.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=wBglu_UImio"
   },
   {
     title: "Monotone",
@@ -216,10 +214,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
-    title: "Circle",
-    artist: "Lilas Ikuta",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d4/3e/cb/d43ecbf0-43bd-6507-3faa-a5a29f1683be/197188156664.jpg/1200x630bb.jpg",
-    link: "https://example.com/track-5"
+    title: "That band",
+    artist: "kessoku band",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6d/03/4f/6d034fd0-e05f-89a3-ed78-73670304340e/4534530141118.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=L2i0i9gWE00"
   },
   {
     title: "不治",

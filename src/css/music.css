@@ -161,6 +161,7 @@
           flex-direction: column;
   color: white;
   margin-left: 4.4rem;
+  min-width: 0;
 }
 .music article .music-featuredSongs h2 {
   font-size: 1.55em;
@@ -171,13 +172,17 @@
 .music article .music-featuredSongs .featuredSongs-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(3, 19.35rem);
+  grid-auto-columns: 19.35rem;
   grid-template-rows: repeat(3, 3.75rem);
   margin-top: 0.11rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.music article .music-featuredSongs .featuredSongs-grid::-webkit-scrollbar {
+  display: none;
 }
 .music article .music-featuredSongs .featuredSongs-grid .song {
-  text-decoration: none;
-  color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +190,7 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  scroll-snap-align: start;
 }
 .music article .music-featuredSongs .featuredSongs-grid .song img {
   width: 52px;
@@ -252,8 +258,13 @@
   gap: 1.625rem;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   padding-bottom: 0.2rem;
+}
+.music .music-featuredAlbums .albums-row::-webkit-scrollbar {
+  display: none;
 }
 .music .music-featuredAlbums .albums-row .album {
   display: -webkit-box;

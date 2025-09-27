@@ -119,6 +119,7 @@
       flex-direction: column;
       color: white;
       margin-left: 4.4rem;
+      min-width: 0;
 
       h2 {
         font-size: 1.55em;
@@ -130,16 +131,21 @@
       .featuredSongs-grid {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: repeat(3, 19.35rem);
+        grid-auto-columns: 19.35rem;
         grid-template-rows: repeat(3, 3.75rem);
         margin-top: 0.11rem;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
         .song {
-          text-decoration: none;
-          color: inherit;
           display: flex;
           align-items: center;
           cursor: pointer;
+          scroll-snap-align: start;
 
           img {
             width: 52px;
@@ -186,64 +192,71 @@
     }
   }
 
-      .music-featuredAlbums {
-      margin-left: 3.45rem;
-      color: white;
+  .music-featuredAlbums {
+    margin-left: 3.45rem;
+    color: white;
 
-      h2 {
-        font-size: 1.55em;
-        font-family: $SFSB;
-        letter-spacing: 0.01px;
-        margin-bottom: 0.9rem;
+    h2 {
+      font-size: 1.55em;
+      font-family: $SFSB;
+      letter-spacing: 0.01px;
+      margin-bottom: 0.9rem;
+    }
+
+    .albums-row {
+      display: flex;
+      flex-direction: row;
+      gap: 1.625rem;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
       }
 
-      .albums-row {
+      padding-bottom: 0.2rem;
+
+      .album {
         display: flex;
-        flex-direction: row;
-        gap: 1.625rem;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding-bottom: 0.2rem;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
 
-        .album {
-          display: flex;
-          flex-direction: column;
-          text-decoration: none;
-          color: inherit;
-          cursor: pointer;
+        img {
+          width: 187.5px;
+          height: 187.5px;
+          border-radius: 0.6rem;
+          object-fit: cover;
+        }
 
-          img {
-            width: 187.5px;
-            height: 187.5px;
-            border-radius: 0.6rem;
-            object-fit: cover;
-          }
+        .album-title {
+          margin-top: 0.35rem;
+          font-family: $SFL;
+          font-size: 1.025rem;
+          letter-spacing: 0.8px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+        }
 
-          .album-title {
-            margin-top: 0.35rem;
-            font-family: $SFL;
-            font-size: 1.025rem;
-            letter-spacing: 0.8px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 100%;
-          }
-
-          .album-artist {
-            margin-top: 0.15rem;
-            font-family: $SFL;
-            color: $appleGray;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 100%;
-          }
+        .album-artist {
+          margin-top: 0.15rem;
+          font-family: $SFL;
+          color: $appleGray;
+          font-size: 1rem;
+          letter-spacing: 0.5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
         }
       }
     }
+  }
 
   .music-nowPlaying {
     display: flex;
