@@ -198,7 +198,7 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=K9YGGOd63yc"
   },
   {
-    title: "Aimoraimo",
+    title: "アイモライモ",
     artist: "tuki.",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/0f/2c/290f2ce9-6af3-4ace-e5f7-d9c9df751c0e/4582649322263.jpg/600x600bf-60.jpg",
     link: "https://www.youtube.com/watch?v=urh7DZp59WU"
@@ -222,7 +222,7 @@ const featuredSongs = [
     link: "https://example.com/track-5"
   },
   {
-    title: "Huji",
+    title: "不治",
     artist: "Trooper Salute",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=_ti7ovjaDG4"
@@ -279,7 +279,7 @@ const featuredAlbums = [
     link: "https://music.apple.com/album/ados-utattemita-album/1718531990"
   },
   {
-    title: "SHINSEI MOKUROKU",
+    title: "新星目録",
     artist: "Hoshimachi Suisei",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
     link: "https://music.apple.com/album/shinsei-mokuroku/1789078173"
