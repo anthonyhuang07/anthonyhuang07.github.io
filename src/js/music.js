@@ -159,6 +159,7 @@ function applyGradientEffect(imgElement) {
 function renderFavoriteSong() {
   const favoriteSongContainer = document.querySelector('.music-favoriteSong');
   favoriteSongContainer.innerHTML = `
+  <h2>Favorite Song</h2>
     <div>
       <img src="${favoriteSongDetails.albumArt}" alt="Favorite Song Album Art" />
       <div>
