@@ -54,7 +54,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1.6rem 0 0 3.45rem;
+  margin: 1.6rem 0 2.7rem 3.45rem;
 }
 .music article .music-favoriteSong {
   display: -webkit-box;
@@ -230,6 +230,70 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0.575rem;
+}
+.music .music-featuredAlbums {
+  margin-left: 3.45rem;
+  color: white;
+}
+.music .music-featuredAlbums h2 {
+  font-size: 1.55em;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01px;
+  margin-bottom: 0.9rem;
+}
+.music .music-featuredAlbums .albums-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.625rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+.music .music-featuredAlbums .albums-row .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.music .music-featuredAlbums .albums-row .album img {
+  width: 187.5px;
+  height: 187.5px;
+  border-radius: 0.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.music .music-featuredAlbums .albums-row .album .album-title {
+  margin-top: 0.35rem;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.025rem;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.music .music-featuredAlbums .albums-row .album .album-artist {
+  margin-top: 0.15rem;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #8D8D93;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 .music .music-nowPlaying {
   display: -webkit-box;
