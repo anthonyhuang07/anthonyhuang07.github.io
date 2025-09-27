@@ -113,6 +113,9 @@
   letter-spacing: 0.7px;
   color: white;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .music article .music-favoriteSong > div > div > div h5 {
   margin-top: 0.05rem;
@@ -147,6 +150,86 @@
   transition: background-color 0.25s, color 0.25s linear;
   color: #FA2D48;
   font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.music article .music-featuredSongs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  margin-left: 4.4rem;
+}
+.music article .music-featuredSongs h2 {
+  font-size: 1.55em;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01px;
+  margin-bottom: 0.7rem;
+}
+.music article .music-featuredSongs .featuredSongs-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 19.35rem);
+  grid-template-rows: repeat(3, 3.75rem);
+  margin-top: 0.11rem;
+}
+.music article .music-featuredSongs .featuredSongs-grid .song {
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.music article .music-featuredSongs .featuredSongs-grid .song img {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1.1rem;
+}
+.music article .music-featuredSongs .featuredSongs-grid .song .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #252527;
+  margin-right: 1.35rem;
+}
+.music article .music-featuredSongs .featuredSongs-grid .song .meta .title {
+  color: white;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.55rem;
+}
+.music article .music-featuredSongs .featuredSongs-grid .song .meta .artist {
+  color: #8D8D93;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.575rem;
 }
 .music .music-nowPlaying {
   display: -webkit-box;

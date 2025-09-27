@@ -22,6 +22,63 @@ const favoriteSongDetails = {
   link: "https://www.youtube.com/watch?v=Fg5-55vZwp0"
 };
 
+const featuredSongs = [
+  {
+    title: "Show",
+    artist: "Ado",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/e8/82/80e8826c-f877-9a74-0e7b-a142108feda0/23UMGIM92958.rgb.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=pgXpM4l_MwI"
+  },
+  {
+    title: "AWAKE",
+    artist: "Hoshimachi Suisei",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/02/ed/af02ede0-cf69-ed76-65fd-7f969a30a409/HoshimachiSuisei_AWAKE_JKT.png/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=K9YGGOd63yc"
+  },
+  {
+    title: "Aimoraimo",
+    artist: "tuki.",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/0f/2c/290f2ce9-6af3-4ace-e5f7-d9c9df751c0e/4582649322263.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=urh7DZp59WU"
+  },
+  {
+    title: "Moral Crumble",
+    artist: "FantasticYouth",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
+  },
+  {
+    title: "Monotone",
+    artist: "YOASOBI",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/05/a9/df05a94d-ff41-e0e1-f156-f40ee7c9922b/198846242873.jpg/486x486bb.png",
+    link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
+  },
+  {
+    title: "Circle",
+    artist: "Lilas Ikuta",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d4/3e/cb/d43ecbf0-43bd-6507-3faa-a5a29f1683be/197188156664.jpg/1200x630bb.jpg",
+    link: "https://example.com/track-5"
+  },
+    {
+    title: "Huji",
+    artist: "Trooper Salute",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=_ti7ovjaDG4"
+  },
+  {
+    title: "MURI MURI EVOLUTION",
+    artist: "NANAOAKARI",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=o4OsvOqHnZM"
+  },
+  {
+    title: "Tokihanate!",
+    artist: "Hashimero",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/ec/de/25ecde3a-0028-c1d1-4b66-5c3809d2cd52/4547366757477.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=yDChK7w4II8"
+  },
+];
+
 function nowPlaying() {
   fetch(apiUrl)
     .then(response => response.json())
@@ -65,7 +122,7 @@ function nowPlaying() {
 
         albumArt.onerror = () => {
           console.error('Error loading album art image');
-          albumArt.src = '/assets/icons/music.webp';
+          albumArt.src = '/assets/icons/defaultMusic.webp';
           albumArt.onload = () => {
             const bars = document.querySelectorAll('.bar');
             bars.forEach(bar => {
@@ -94,7 +151,7 @@ function nowPlaying() {
         audioPreview.style.display = 'none';
         clearInterval(intervalId);
 
-        nowPlayingArt.src = '/assets/icons/music.webp';
+        nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
         nowPlayingTextContainer.innerHTML = `
           <p>Not Playing</p>
         `;
@@ -174,8 +231,35 @@ function renderFavoriteSong() {
   `;
 }
 
+function renderfeaturedSongs() {
+  const container = document.querySelector('.music-featuredSongs');
+  if (!container) return;
+
+  const items = featuredSongs.slice(0, 9);
+
+  let gridHtml = items
+    .map((song) => `
+        <a class="song" href="${song.link}" target="_blank" rel="noopener noreferrer" aria-label="Play ${song.title} by ${song.artist}">
+          <img src="${song.albumArt}" alt="Album art for ${song.title} by ${song.artist}" />
+          <div class="meta">
+            <p class="title">${song.title}</p>
+            <p class="artist">${song.artist}</p>
+          </div>
+        </a>
+      `)
+    .join('');
+
+  container.innerHTML = `
+    <h2>Featured Songs</h2>
+    <div class="featuredSongs-grid">
+      ${gridHtml}
+    </div>
+  `;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderFavoriteSong();
+  renderfeaturedSongs();
   nowPlaying();
   setInterval(nowPlaying, 1000);
 });

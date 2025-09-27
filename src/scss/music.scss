@@ -77,6 +77,9 @@
               letter-spacing: 0.7px;
               color: white;
               font-family: $SFL;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
 
             h5 {
@@ -110,6 +113,77 @@
         }
       }
 
+    }
+
+    .music-featuredSongs {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      margin-left: 4.4rem;
+
+      h2 {
+        font-size: 1.55em;
+        font-family: $SFSB;
+        letter-spacing: 0.01px;
+        margin-bottom: 0.7rem;
+      }
+
+      .featuredSongs-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 19.35rem);
+        grid-template-rows: repeat(3, 3.75rem);
+        margin-top: 0.11rem;
+
+        .song {
+          text-decoration: none;
+          color: inherit;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          img {
+            width: 52px;
+            height: 52px;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            margin-right: 1.1rem;
+          }
+
+          .meta {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            border-top: 1px solid $appleDarkGray;
+            margin-right: 1.35rem;
+
+            .title {
+              color: white;
+              font-family: $SFL;
+              font-size: 1.1em;
+              letter-spacing: 1px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-top: 0.55rem;
+            }
+
+            .artist {
+              color: $appleGray;
+              font-family: $SFL;
+              font-size: 0.9em;
+              letter-spacing: 0.6px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-bottom: 0.575rem;
+            }
+          }
+        }
+      }
     }
   }
 
