@@ -171,6 +171,8 @@
   font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
   letter-spacing: 0.01px;
   margin-bottom: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .music article .music-featuredSongs .featuredSongs-grid {
   display: grid;
@@ -339,6 +341,9 @@
   width: auto;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .music .music-nowPlaying img.playingControlsBadge {
   margin-right: 1.5rem;
@@ -346,6 +351,9 @@
   width: auto;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .music .music-nowPlaying > div {
   display: -webkit-box;
@@ -359,6 +367,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin-left: 0.7rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
 }
 .music .music-nowPlaying > div img {
   width: 47.5px;
@@ -380,6 +392,11 @@
           justify-content: center;
   margin-left: 0.55rem;
   height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
 }
 .music .music-nowPlaying > div > div p {
   font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -391,10 +408,50 @@
   letter-spacing: 0.5px;
   color: white;
   font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .music .music-nowPlaying > div > div .music-nowPlaying-artist {
   font-size: 1.05em;
   letter-spacing: 1.05px;
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 480px) {
+  .music header h1 {
+    padding-left: 1.25rem;
+  }
+  .music article {
+    margin: 1.6rem 0 2.7rem 1.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .music article .music-favoriteSong > div img {
+    width: 100px;
+    height: 100px;
+  }
+  .music article .music-favoriteSong > div > div > div {
+    margin-top: 0.25rem;
+  }
+  .music article .music-favoriteSong > div > div a {
+    margin-bottom: 0;
+  }
+  .music article .music-featuredSongs {
+    margin: 1.6rem 0 0 0;
+  }
+  .music .music-favoriteArtists {
+    margin: 1.6rem 0 8.6rem 1.25rem;
+  }
+  .music .music-nowPlaying {
+    width: 90%;
+    margin: 0 1rem 1.6rem 1rem;
+  }
 }/*# sourceMappingURL=music.css.map */

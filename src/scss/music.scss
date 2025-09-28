@@ -128,6 +128,8 @@
         font-family: $SFSB;
         letter-spacing: 0.01px;
         margin-bottom: 0.7rem;
+        white-space: nowrap;
+        overflow: hidden;
       }
 
       .featuredSongs-grid {
@@ -251,24 +253,22 @@
   }
 
   .music-nowPlayingBackground {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 5.785rem;
-  backdrop-filter: blur(20px) brightness(20%);
-  -webkit-backdrop-filter: blur(20px) brightness(20%);
-  pointer-events: none;
-  z-index: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5.785rem;
+    backdrop-filter: blur(20px) brightness(20%);
+    -webkit-backdrop-filter: blur(20px) brightness(20%);
+    pointer-events: none;
+    z-index: 0;
 
-  mask-image: linear-gradient(
-  to bottom,
-  rgba(0,0,0,0) 0%,
-  rgba(0,0,0,1) 30%
-);
+    mask-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 30%);
 
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
-}
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
 
 
   .music-nowPlaying {
@@ -283,12 +283,12 @@
     margin: 0 2.75rem 1.6rem 2.75rem;
     backdrop-filter: blur(12px);
 
-    // Badge shown when not playing
     img.notPlayingBadge {
       margin-right: 1.55rem;
       height: 26.5px;
       width: auto;
       align-self: center;
+      flex: 0 0 auto; // don't shrink the badge
     }
 
     img.playingControlsBadge {
@@ -296,6 +296,7 @@
       height: 30px;
       width: auto;
       align-self: center;
+      flex: 0 0 auto; // don't shrink the badge
     }
 
     >div {
@@ -303,6 +304,8 @@
       flex-direction: row;
       align-items: center;
       margin-left: 0.7rem;
+      flex: 1 1 auto;
+      min-width: 0;
 
       img {
         width: 47.5px;
@@ -317,6 +320,9 @@
         justify-content: center;
         margin-left: 0.55rem;
         height: 100%;
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
 
         p {
           font-family: $SFR;
@@ -329,6 +335,10 @@
           letter-spacing: 0.5px;
           color: white;
           font-family: $SFR;
+          max-width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .music-nowPlaying-artist {
@@ -336,8 +346,60 @@
           letter-spacing: 1.05px;
           color: $appleGray;
           font-family: $SFL;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .music {
+
+    header {
+      h1 {
+        padding-left: 1.25rem;
+      }
+    }
+
+    article {
+      margin: 1.6rem 0 2.7rem 1.25rem;
+      flex-direction: column;
+
+      .music-favoriteSong {
+        >div {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+
+          >div {
+            >div {
+              margin-top: 0.25rem;
+            }
+
+            a {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .music-featuredSongs {
+        margin: 1.6rem 0 0 0;
+      }
+    }
+
+    .music-favoriteArtists {
+      margin: 1.6rem 0 8.6rem 1.25rem;
+    }
+
+    .music-nowPlaying {
+      width: 90%;
+      margin: 0 1rem 1.6rem 1rem;
+    }
+
   }
 }

@@ -92,7 +92,6 @@ function nowPlaying() {
           <p>Not Playing</p>
         `;
 
-        // Append a not-playing badge at the end of the bar
         if (nowPlayingBar && !nowPlayingBar.querySelector('img.notPlayingBadge')) {
           const badge = document.createElement('img');
           badge.className = 'notPlayingBadge';
@@ -101,7 +100,6 @@ function nowPlaying() {
           nowPlayingBar.appendChild(badge);
         }
 
-        // Ensure any playing controls badge is removed
         const playingBadge = document.querySelector('.music-nowPlaying img.playingControlsBadge');
         if (playingBadge) playingBadge.remove();
       } else {
@@ -109,15 +107,13 @@ function nowPlaying() {
         albumArt.style.display = 'block';
         audioPreview.style.display = 'flex';
 
-        // Remove the not-playing badge if present
         const badge = document.querySelector('.music-nowPlaying img.notPlayingBadge');
         if (badge) badge.remove();
 
-        // Append a playing controls badge at the end of the bar
         if (nowPlayingBar && !nowPlayingBar.querySelector('img.playingControlsBadge')) {
           const controls = document.createElement('img');
           controls.className = 'playingControlsBadge';
-          controls.src = '/assets/playingControls.png'; // assumed to exist per request
+          controls.src = '/assets/playingControls.png';
           controls.alt = 'Playback Controls';
           nowPlayingBar.appendChild(controls);
         }
