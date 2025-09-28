@@ -237,6 +237,30 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
+    title: "Buriki No Dance",
+    artist: "Ado",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/da/f9/71/daf9718d-6877-6852-c6e3-897f5b9e064a/23UM1IM45773.rgb.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=DNapSDRWMlE"
+  },
+  {
+    title: "Caramel Pain",
+    artist: "Hoshimachi Suisei",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=UpEPkPg8YP4"
+  },
+  {
+    title: "最低界隈",
+    artist: "tuki.",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=UAsdgWVwXlc"
+  },
+  {
+    title: "Moral Crumble",
+    artist: "FantasticYouth",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
+  },
+  {
     title: "不治",
     artist: "Trooper Salute",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
@@ -253,30 +277,6 @@ const featuredSongs = [
     artist: "Hashimero",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/ec/de/25ecde3a-0028-c1d1-4b66-5c3809d2cd52/4547366757477.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=yDChK7w4II8"
-  },
-  {
-    title: "立ち入り禁止",
-    artist: "Ayase×Ado",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4b/8f/7d/4b8f7dba-a4ad-6625-ca6d-f7b25d429a7a/4580684129731.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=LBOqy1AoJlw"
-  },
-  {
-    title: "最低界隈",
-    artist: "tuki.",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
-    link: "https://www.youtube.com/watch?v=UAsdgWVwXlc"
-  },
-  {
-    title: "Blueprint Supreme",
-    artist: "SKAI ISYOURGOD & AR",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/95/32/3b/95323b31-1bdd-9bcc-8a6b-329a8d97ec03/749085368376.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=mldcDidGJCg"
-  },
-  {
-    title: "UNFORGIVEN",
-    artist: "LE SSERAFIM",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/88/da/da/88dada02-f9e3-b632-6fb7-d52414d7ac76/23UMGIM43940.rgb.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=WdiSosDz4ss"
   },
 ];
 
