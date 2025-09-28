@@ -243,10 +243,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=DNapSDRWMlE"
   },
   {
-    title: "Caramel Pain",
-    artist: "Hoshimachi Suisei",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=UpEPkPg8YP4"
+    title: "UNDEAD",
+    artist: "YOASOBI",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/b3/fb/4fb3fb99-7c8b-f028-8683-6128f3e20caf/198588375464.jpg/486x486bb.png",
+    link: "https://www.youtube.com/watch?v=Jj1_mfUzjOs"
   },
   {
     title: "最低界隈",

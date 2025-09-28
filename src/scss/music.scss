@@ -3,6 +3,10 @@
 .music {
   overflow: scroll;
 
+  img {
+    user-select: none;
+  }
+
   header {
     user-select: none;
 

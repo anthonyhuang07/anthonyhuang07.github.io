@@ -2,35 +2,37 @@ const appDetails = {
     "1": {
         title: "Who am I?",
         subtitle: "Anthony Huang, 17 Years Old",
-        description: `Hey! My name is Anthony Huang. I'm a 17-year-old Chinese-Canadian 🇨🇦🇨🇳 university student living in Ottawa.
+        description: `Hey! I'm Anthony Huang, a 17-year-old Chinese-Canadian 🇨🇦⚜️🇨🇳 university student based in Ottawa.
 
-        <br><br>My primary passion is all things Tech and Computing 💻. Other hobbies/interests include Geography/Geopolitics 🌎, Languages/Linguistics 💬, Anime 🎥, Listening & Singing to J-Pop 🎵, Vlogging/Editing 🎬, Sports ⚽️🏒, and Travelling ✈️.`,
-        link: "https://www.linkedin.com/in/anthonyhuang07/",
+        <br><br>I'm passionate about all things tech 💻, whether it's geeking out over computer history and cool modern tech, hunting for vintage hardware, repairing devices, or solving problems through software and code.
+
+        <br><br>Outside of tech, I'm into geography and geopolitics 🌎, languages 💬, anime 🎥, listening & singing to J-Pop 🎵, vlogging and editing 🎬, mobile photography 📸, sports ⚽️🏒, and travelling ✈️.`,
+        link: "#",
         icon: "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
     },
     "2": {
+        title: "Education",
+        subtitle: "1st Year Computer Science @ Carleton University",
+        description: `I am a first-year Computer Science 💻 student at Carleton University 🎓, minoring in Linguistics.
+        
+        <br><br>In high school, I completed the International Baccalaureate Diploma Programme (IBDP) and served as Co-President of the Computer Science Club.`,
+        link: "https://www.linkedin.com/in/anthonyhuang07/",
+        icon: "https://play-lh.googleusercontent.com/oUIb5n6akLJ0fk66LiD8jk89_Ya9HK-8a4NJpPxNe4d8cE0B7_HJjDhrx6WTR90FJxiF"
+    },
+    "3": {
         title: "Programming",
-        subtitle: "HTML, CSS/SCSS, JS/TS, Python",
-        description: `I currently specialize in Front-End Web Development 🌐. I am familiar with HTML, CSS/SCSS, JavaScript/TypeScript, and Python.
+        subtitle: "Front-End Specialist, 2x Hackathon Winner",
+        description: `I currently specialize in Front-End Web Development 🌐. I am familiar with HTML, CSS/SCSS, JavaScript/TypeScript, Python, and a bit of C.
 
-        <br><br>Almost everything I know in this field is self-taught. I started programming at 8 years old when I discovered the p5.js course on Khan Academy. 
+        <br><br>Almost everything I know in this field is self-taught. I started programming at 8 years old when I stumbled across the p5.js course on Khan Academy. 
         
-        <br><br>I've participated in 5 Hackathons, winning 🏆 in 2 of them.
-        
-        <br><br>I am currently exploring the field of <a href="https://tryhackme.com/p/FHDHGNGN" target="_blank">cybersecurity</a>, where I plan to specialize in.`,
+        <br><br>I've participated in 5 Hackathons, winning 🏆 in 2 of them.`,
         link: "https://github.com/anthonyhuang07",
         icon: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
     },
-    "3": {
-        title: "School",
-        subtitle: "1st Year Computer Science @ Carleton University",
-        description: `I am a first-year Computer Science 💻 student at Carleton University 🎓. I'm also minoring in Linguistics.`,
-        link: "#",
-        icon: "https://play-lh.googleusercontent.com/oUIb5n6akLJ0fk66LiD8jk89_Ya9HK-8a4NJpPxNe4d8cE0B7_HJjDhrx6WTR90FJxiF"
-    },
     "4": {
         title: "Languages",
-        subtitle: "English, French, Chinese (Mandarin), Japanese",
+        subtitle: "English, French, Chinese, Japanese, Learning Korean",
         description: `I speak fluent English 🇬🇧, B2 French 🇫🇷, B1 Mandarin 🇨🇳, A2 Japanese 🇯🇵, Learning Korean 🇰🇷.
 
         <br><br>I was born and raised in Québec, where I regularly spoke both English and French. I then moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited. I currently hold a DELF B2 certificate.
@@ -43,7 +45,7 @@ const appDetails = {
     },
     "5": {
         title: "Anime",
-        subtitle: "60+ Days of Watchtime",
+        subtitle: "60+ Days of Watchtime, 100+ Entries on MAL",
         description: `I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!`,
         link: "https://myanimelist.net/profile/FHDHGNGN",
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
