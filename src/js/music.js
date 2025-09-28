@@ -79,6 +79,7 @@ function nowPlaying() {
 
       const nowPlayingArt = document.querySelector('.music-nowPlaying img');
       const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
+      const nowPlayingBar = document.querySelector('.music-nowPlaying');
 
       if (!musicPlaying) {
         dynamicIsland.classList.remove('playing');
@@ -90,10 +91,36 @@ function nowPlaying() {
         nowPlayingTextContainer.innerHTML = `
           <p>Not Playing</p>
         `;
+
+        // Append a not-playing badge at the end of the bar
+        if (nowPlayingBar && !nowPlayingBar.querySelector('img.notPlayingBadge')) {
+          const badge = document.createElement('img');
+          badge.className = 'notPlayingBadge';
+          badge.src = '/assets/notPlaying.png';
+          badge.alt = 'Not Playing';
+          nowPlayingBar.appendChild(badge);
+        }
+
+        // Ensure any playing controls badge is removed
+        const playingBadge = document.querySelector('.music-nowPlaying img.playingControlsBadge');
+        if (playingBadge) playingBadge.remove();
       } else {
         dynamicIsland.classList.add('playing');
         albumArt.style.display = 'block';
         audioPreview.style.display = 'flex';
+
+        // Remove the not-playing badge if present
+        const badge = document.querySelector('.music-nowPlaying img.notPlayingBadge');
+        if (badge) badge.remove();
+
+        // Append a playing controls badge at the end of the bar
+        if (nowPlayingBar && !nowPlayingBar.querySelector('img.playingControlsBadge')) {
+          const controls = document.createElement('img');
+          controls.className = 'playingControlsBadge';
+          controls.src = '/assets/playingControls.png'; // assumed to exist per request
+          controls.alt = 'Playback Controls';
+          nowPlayingBar.appendChild(controls);
+        }
       }
     })
     .catch(error => {
@@ -214,12 +241,6 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
-    title: "That band",
-    artist: "kessoku band",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6d/03/4f/6d034fd0-e05f-89a3-ed78-73670304340e/4534530141118.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=L2i0i9gWE00"
-  },
-  {
     title: "不治",
     artist: "Trooper Salute",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
@@ -237,15 +258,37 @@ const featuredSongs = [
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/ec/de/25ecde3a-0028-c1d1-4b66-5c3809d2cd52/4547366757477.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=yDChK7w4II8"
   },
+  {
+    title: "立ち入り禁止",
+    artist: "Ayase×Ado",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4b/8f/7d/4b8f7dba-a4ad-6625-ca6d-f7b25d429a7a/4580684129731.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=LBOqy1AoJlw"
+  },
+  {
+    title: "最低界隈",
+    artist: "tuki.",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=UAsdgWVwXlc"
+  },
+  {
+    title: "Blueprint Supreme",
+    artist: "SKAI ISYOURGOD & AR",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/95/32/3b/95323b31-1bdd-9bcc-8a6b-329a8d97ec03/749085368376.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=mldcDidGJCg"
+  },
+  {
+    title: "UNFORGIVEN",
+    artist: "LE SSERAFIM",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/88/da/da/88dada02-f9e3-b632-6fb7-d52414d7ac76/23UMGIM43940.rgb.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=WdiSosDz4ss"
+  },
 ];
 
-function renderfeaturedSongs() {
+function renderFeaturedSongs() {
   const container = document.querySelector('.music-featuredSongs');
   if (!container) return;
 
-  const items = featuredSongs.slice(0, 9);
-
-  let gridHtml = items
+  let gridHtml = featuredSongs
     .map((song) => `
         <a class="song" href="${song.link}" target="_blank" rel="noopener noreferrer" aria-label="Play ${song.title} by ${song.artist}">
           <img src="${song.albumArt}" alt="Album art for ${song.title} by ${song.artist}" />
@@ -267,74 +310,73 @@ function renderfeaturedSongs() {
 
 // #endregion
 
-// #region Featured Albums
+// #region Favorite Artists
 
-const featuredAlbums = [
+const favoriteArtists = [
   {
-    title: "Ado's Utattemita Album",
-    artist: "Ado",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fa/e9/42/fae942a7-dca5-6cc0-9e49-4a4f2da6b81e/23UM1IM45777.rgb.jpg/600x600bf-60.jpg",
-    link: "https://music.apple.com/album/ados-utattemita-album/1718531990"
+    name: "Ado",
+    art: "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/cc/19/c9/cc19c998-8c2a-b278-d0ed-d85c5a04fedc/ami-identity-75a97779b1fcac49bfafa6c4b7a6a78f-2025-01-10T01-04-23.725Z_cropped.png/486x486bb.png",
+    link: "https://www.youtube.com/@Ado1024/releases"
   },
   {
-    title: "新星目録",
-    artist: "Hoshimachi Suisei",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
-    link: "https://music.apple.com/album/shinsei-mokuroku/1789078173"
+    name: "Hoshimachi Suisei",
+    art: "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/33/b7/12/33b71234-9a80-bb43-ba51-90957936aa67/ami-identity-e6d23ad47868d1a630f4c3d23676d80b-2024-11-14T13-08-57.789Z_cropped.png/486x486bb.png",
+    link: "https://www.youtube.com/@HoshimachiSuisei/releases"
   },
   {
-    title: "15",
-    artist: "tuki.",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f3/c0/47/f3c04781-71d4-1a2c-5a50-81e68bddcc5d/4582649401234.jpg/600x600bf-60.jpg",
-    link: "https://music.apple.com/album/15/1781833057"
+    name: "tuki.",
+    art: "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/94/6e/ac/946eace6-19bd-50fb-47e3-11d1e6069308/mzl.lbazlcoq.jpg/486x486bb.png",
+    link: "https://www.youtube.com/@tuki.music_official/releases"
   },
   {
-    title: "BlueGuns",
-    artist: "FantasicYouth",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/486x486bb.png",
-    link: "https://music.apple.com/album/blueguns/1562602234"
+    name: "FantasticYouth",
+    art: "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/74/b2/fd/74b2fdac-51dd-470f-a65e-1c5d9425c1b2/mzl.yovtyvrc.jpg/486x486bb.png",
+    link: "https://www.youtube.com/@fantasticyouth3913/releases"
   },
   {
-    title: "Kessoku Band",
-    artist: "kessoku band",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bf-60.jpg",
-    link: "https://music.apple.com/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89/1657318546"
+    name: "YOASOBI",
+    art: "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/56/15/1b/56151bed-1098-5871-e142-6958c608e1df/mzl.yauzwfvn.jpg/486x486bb.png",
+    link: "https://www.youtube.com/@Ayase_YOASOBI/releases"
   },
   {
-    title: "Sketch",
-    artist: "Lilas Ikuta",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d4/3e/cb/d43ecbf0-43bd-6507-3faa-a5a29f1683be/197188156664.jpg/600x600bf-60.jpg",
-    link: "https://music.apple.com/album/sketch/1671948398"
+    name: "Lilas Ikuta",
+    art: "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/a8/88/ae/a888ae75-fd6f-5299-303d-b7df7d2ab90c/mzl.dandmemk.jpg/486x486bb.png",
+    link: "https://www.youtube.com/@Lilas_Ikuta/releases"
+  },
+  {
+    name: "kessoku band",
+    art: "https://lh3.googleusercontent.com/JQIgeDQZjVs4Jgj5QgptQU3gBQ9H-RkLyqNU-5s1_zxNS5qn6mWG--I4TlChdGt319elzvllUrnWpGs=w544-h544-p-l90-rj",
+    link: "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
   },
 ];
 
-function renderFeaturedAlbums() {
-  const container = document.querySelector('.music-featuredAlbums');
+function renderFavoriteArtists() {
+  const container = document.querySelector('.music-favoriteArtists');
   if (!container) return;
 
-  const items = featuredAlbums;
+  const items = favoriteArtists;
   const gridHtml = items
-    .map(album => `
-      <a class="album" href="${album.link}" target="_blank" rel="noopener noreferrer" aria-label="Open album ${album.title} by ${album.artist}">
-        <img src="${album.albumArt}" alt="Album art for ${album.title} by ${album.artist}" />
-        <p class="album-title">${album.title}</p>
-        <p class="album-artist">${album.artist}</p>
+    .map(artist => `
+      <a class="artist" href="${artist.link}" target="_blank" rel="noopener noreferrer" aria-label="Open artist ${artist.name}">
+        <img src="${artist.art}" alt="Album art for ${artist.name}" />
+        <p class="artist-name">${artist.name}</p>
       </a>
     `)
     .join('');
 
   container.innerHTML = `
-    <h2>Featured Albums</h2>
-    <div class="albums-row">${gridHtml}</div>
+    <h2>Favorite Artists</h2>
+    <div class="artists-row">${gridHtml}</div>
   `;
 }
 
 // #endregion
 
+
 document.addEventListener("DOMContentLoaded", () => {
   renderFavoriteSong();
-  renderfeaturedSongs();
-  renderFeaturedAlbums();
+  renderFeaturedSongs();
+  renderFavoriteArtists();
   nowPlaying();
   setInterval(nowPlaying, 1000);
 });

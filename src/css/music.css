@@ -16,6 +16,9 @@
   font-weight: 300;
   font-display: swap;
 }
+.music {
+  overflow: scroll;
+}
 .music header {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -237,17 +240,17 @@
   text-overflow: ellipsis;
   margin-bottom: 0.575rem;
 }
-.music .music-featuredAlbums {
-  margin-left: 3.45rem;
+.music .music-favoriteArtists {
+  margin: 0 0 8.6rem 3.45rem;
   color: white;
 }
-.music .music-featuredAlbums h2 {
+.music .music-favoriteArtists h2 {
   font-size: 1.55em;
   font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
-  letter-spacing: 0.01px;
+  letter-spacing: 0.2px;
   margin-bottom: 0.9rem;
 }
-.music .music-featuredAlbums .albums-row {
+.music .music-favoriteArtists .artists-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,10 +266,10 @@
   -ms-overflow-style: none;
   padding-bottom: 0.2rem;
 }
-.music .music-featuredAlbums .albums-row::-webkit-scrollbar {
+.music .music-favoriteArtists .artists-row::-webkit-scrollbar {
   display: none;
 }
-.music .music-featuredAlbums .albums-row .album {
+.music .music-favoriteArtists .artists-row .artist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,45 +281,71 @@
   color: inherit;
   cursor: pointer;
 }
-.music .music-featuredAlbums .albums-row .album img {
-  width: 187.5px;
-  height: 187.5px;
-  border-radius: 0.6rem;
+.music .music-favoriteArtists .artists-row .artist img {
+  width: 151.7px;
+  height: 151.7px;
+  border-radius: 100rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.music .music-featuredAlbums .albums-row .album .album-title {
+.music .music-favoriteArtists .artists-row .artist .artist-name {
   margin-top: 0.35rem;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.025rem;
+  font-size: 1rem;
   letter-spacing: 0.8px;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
 }
-.music .music-featuredAlbums .albums-row .album .album-artist {
-  margin-top: 0.15rem;
-  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #8D8D93;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
+.music .music-nowPlayingBackground {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5.785rem;
+  backdrop-filter: blur(20px) brightness(20%);
+  -webkit-backdrop-filter: blur(20px) brightness(20%);
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(30%, rgb(0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(30%, rgb(0, 0, 0)));
+          mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
 }
 .music .music-nowPlaying {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: calc(100% - 5.5rem);
   border-radius: 0.8rem;
   height: 4.185rem;
-  background-color: #222226;
+  background-color: rgba(37, 37, 39, 0.75);
   position: fixed;
   bottom: 0;
   margin: 0 2.75rem 1.6rem 2.75rem;
+  backdrop-filter: blur(12px);
+}
+.music .music-nowPlaying img.notPlayingBadge {
+  margin-right: 1.55rem;
+  height: 26.5px;
+  width: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.music .music-nowPlaying img.playingControlsBadge {
+  margin-right: 1.5rem;
+  height: 30px;
+  width: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .music .music-nowPlaying > div {
   display: -webkit-box;
@@ -349,12 +378,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 0.5rem;
+  margin-left: 0.55rem;
   height: 100%;
 }
 .music .music-nowPlaying > div > div p {
   font-family: "SFR", -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
+  letter-spacing: 0.8px;
 }
 .music .music-nowPlaying > div > div .music-nowPlaying-song {
   font-size: 1em;
