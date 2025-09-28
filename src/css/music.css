@@ -31,14 +31,7 @@
       -ms-user-select: none;
           user-select: none;
 }
-.music header h1 {
-  letter-spacing: 1px;
-  font-size: 2.25em;
-  padding-left: 3.35rem;
-  color: white;
-  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.music header div {
+.music header .music-backButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,11 +46,50 @@
   margin: 2.25rem 0 1rem 1.9rem;
   cursor: pointer;
 }
-.music header div i {
+.music header .music-backButton i {
   font-size: 1.55em;
 }
-.music header div:active {
+.music header .music-backButton:active {
   color: #055090;
+}
+.music header .music-header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.music header .music-header-title h1 {
+  letter-spacing: 1px;
+  font-size: 2.25em;
+  padding-left: 3.35rem;
+  color: white;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.music header .music-header-title a {
+  background-color: #FA2D48;
+  border-radius: 100rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 3.35rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+.music header .music-header-title a i {
+  color: white;
 }
 .music article {
   display: -webkit-box;

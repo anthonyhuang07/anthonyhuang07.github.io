@@ -156,54 +156,26 @@ permalink: /
       <div id="contactCard">
         <i class="fa-solid fa-chevron-left" onclick="returnHome()"></i>
         <div>
-          <img src="/assets/mokuroku.png" />
+          <img src="/assets/eleFHDant.png" />
           <p>HE, HIM, HIS</p>
           <h1>Anthony Huang</h1>
         </div>
       </div>
-      <div id="contactInfo">
-        <a class="infoBox" href="mailto:info@anthonyhuang.net">
-          <h2><i class="fa-solid fa-envelope"></i> email</h2>
-          <p>info@anthonyhuang.net</p>
-        </a>
-        <div class="infoCluster">
-          <a class="infoBox" href="https://discord.com/users/628672513345454122" target="_blank">
-            <h2><i class="fa-brands fa-discord"></i> Discord</h2>
-            <p>@fhdhgngn</p>
-          </a>
-          <a class="infoBox" href="https://www.instagram.com/anthonyhuang07/" target="_blank">
-            <h2><i class="fa-brands fa-instagram"></i> Instagram</h2>
-            <p>anthonyhuang07</p>
-          </a>
-        </div>
-        <div class="infoCluster">
-          <a class="infoBox" href="https://github.com/anthonyhuang07" target="_blank">
-            <h2><i class="fa-brands fa-github"></i> GitHub</h2>
-            <p>anthonyhuang07</p>
-          </a>
-          <a class="infoBox" href="https://www.linkedin.com/in/anthonyhuang07/" target="_blank">
-            <h2><i class="fa-brands fa-linkedin"></i> LinkedIn</h2>
-            <p>anthonyhuang07</p>
-          </a>
-        </div>
-        <div class="infoCluster">
-          <a class="infoBox" href="https://myanimelist.net/profile/FHDHGNGN" target="_blank">
-            <h2><i class="fa-solid fa-film"></i></i> MyAnimeList</h2>
-            <p>FHDHGNGN</p>
-          </a>
-        </div>
-      </div>
+      <div id="contactInfo"><!-- Contacts list rendered dynamically by contacts.js --></div>
     </div>
     <!-- Music -->
     <div class="menu music">
-      <!-- <img src="/assets/ipad.png" style="z-index: 9999; position: absolute; height: 100%; opacity:50%;"> -->
-       <!-- <img src="/assets/mobileart.png" style="z-index: 9999; position: absolute; width: 100%; opacity:50%; bottom: -17.2rem;"> -->
-      <!-- <img src="/assets/tech.png" style="z-index: 9999; position: absolute; height: 100%; opacity: 70%; bottom: -14.3rem;"> -->
+      <!-- <img src="/assets/kill.png" style="z-index: 9999; position: absolute; height: 100%; opacity:50%;"> -->
       <header>
-        <div onclick="returnHome()">
+        <div onclick="returnHome()" class="music-backButton">
           <i class="fa-solid fa-chevron-left"></i>
         </div>
-        <h1>Music</h1>
+        <div class="music-header-title">
+          <h1>Music</h1>
+          <a href="https://music.apple.com/profile/anthonyhuang07" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
       </header>
       <article>
         <div class="music-favoriteSong">
@@ -227,6 +199,7 @@ permalink: /
   <script src="/src/js/index.js"></script>
   <script src="/src/js/aboutme.js"></script>
   <script src="/src/js/projects.js"></script>
+  <script src="/src/js/contacts.js"></script>
   <script src="/src/js/music.js"></script>
 </body>
 

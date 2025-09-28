@@ -33,9 +33,7 @@ function nowPlaying() {
         let elapsed = currentTime - startTime;
         let remaining = duration - elapsed;
 
-        if (artistName === "Anthony Huang") {
-          imageUrl = '/assets/albumarts/huang.jpg';
-        } else if (imageUrl.startsWith('mp:external/')) {
+        if (imageUrl.startsWith('mp:external/')) {
           let fixedUrl = imageUrl.split('/https/').pop();
           imageUrl = 'https://' + fixedUrl;
         }
@@ -95,7 +93,7 @@ function nowPlaying() {
         if (nowPlayingBar && !nowPlayingBar.querySelector('img.notPlayingBadge')) {
           const badge = document.createElement('img');
           badge.className = 'notPlayingBadge';
-          badge.src = '/assets/notPlaying.png';
+          badge.src = '/assets/elements/notPlaying.png';
           badge.alt = 'Not Playing';
           nowPlayingBar.appendChild(badge);
         }
@@ -113,7 +111,7 @@ function nowPlaying() {
         if (nowPlayingBar && !nowPlayingBar.querySelector('img.playingControlsBadge')) {
           const controls = document.createElement('img');
           controls.className = 'playingControlsBadge';
-          controls.src = '/assets/playingControls.png';
+          controls.src = '/assets/elements/playingControls.png';
           controls.alt = 'Playback Controls';
           nowPlayingBar.appendChild(controls);
         }

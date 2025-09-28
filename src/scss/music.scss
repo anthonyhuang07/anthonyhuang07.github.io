@@ -10,15 +10,7 @@
   header {
     user-select: none;
 
-    h1 {
-      letter-spacing: 1px;
-      font-size: 2.25em;
-      padding-left: 3.35rem;
-      color: white;
-      font-family: $SFSB;
-    }
-
-    div {
+    .music-backButton {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -32,6 +24,37 @@
 
       &:active {
         color: #055090;
+      }
+    }
+
+    .music-header-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        letter-spacing: 1px;
+        font-size: 2.25em;
+        padding-left: 3.35rem;
+        color: white;
+        font-family: $SFSB;
+      }
+
+      a {
+        background-color: $musicRed;
+        border-radius: 100rem;
+        width: 2.25rem;
+        height: 2.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3.35rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+
+        i {
+          color: white;
+        }
       }
     }
   }
@@ -414,8 +437,9 @@
         letter-spacing: 0.6px;
       }
 
-      .artists-row{
+      .artists-row {
         gap: 0.6rem;
+
         .artist {
           img {
             width: 110px;
