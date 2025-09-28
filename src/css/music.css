@@ -296,7 +296,7 @@
   font-size: 1rem;
   letter-spacing: 0.8px;
   text-align: center;
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
@@ -434,6 +434,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .music article .music-favoriteSong h2 {
+    font-size: 1.45em;
+    letter-spacing: 0.6px;
+  }
   .music article .music-favoriteSong > div img {
     width: 100px;
     height: 100px;
@@ -447,11 +451,26 @@
   .music article .music-featuredSongs {
     margin: 1.6rem 0 0 0;
   }
+  .music article .music-featuredSongs h2 {
+    font-size: 1.45em;
+    letter-spacing: 0.6px;
+  }
   .music .music-favoriteArtists {
-    margin: 1.6rem 0 8.6rem 1.25rem;
+    margin: 1.6rem 0 5.835rem 1.25rem;
+  }
+  .music .music-favoriteArtists h2 {
+    font-size: 1.45em;
+    letter-spacing: 0.6px;
+  }
+  .music .music-favoriteArtists .artists-row {
+    gap: 0.6rem;
+  }
+  .music .music-favoriteArtists .artists-row .artist img {
+    width: 110px;
+    height: 110px;
   }
   .music .music-nowPlaying {
-    width: 90%;
-    margin: 0 1rem 1.6rem 1rem;
+    width: calc(100% - 1.2rem);
+    margin: 0 0.6rem 0.5rem 0.6rem;
   }
 }/*# sourceMappingURL=music.css.map */
