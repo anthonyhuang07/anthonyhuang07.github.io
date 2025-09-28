@@ -361,7 +361,7 @@ function renderFavoriteArtists() {
     .join('');
 
   container.innerHTML = `
-    <h2>Similar Artists</h2>
+    <h2>Favorite Artists</h2>
     <div class="artists-row">${gridHtml}</div>
   `;
 }
