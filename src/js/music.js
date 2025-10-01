@@ -235,10 +235,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
-    title: "Buriki No Dance",
+    title: "0",
     artist: "Ado",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/da/f9/71/daf9718d-6877-6852-c6e3-897f5b9e064a/23UM1IM45773.rgb.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=DNapSDRWMlE"
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/3d/3e/c93d3e8a-cce6-aac8-c544-bead75a03cbc/24UMGIM62188.rgb.jpg/486x486bb.png",
+    link: "https://www.youtube.com/watch?v=E9UPr5SesCM"
   },
   {
     title: "UNDEAD",
