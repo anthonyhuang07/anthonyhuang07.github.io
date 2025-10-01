@@ -241,12 +241,6 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=E9UPr5SesCM"
   },
   {
-    title: "UNDEAD",
-    artist: "YOASOBI",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/b3/fb/4fb3fb99-7c8b-f028-8683-6128f3e20caf/198588375464.jpg/486x486bb.png",
-    link: "https://www.youtube.com/watch?v=Jj1_mfUzjOs"
-  },
-  {
     title: "最低界隈",
     artist: "tuki.",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
@@ -257,6 +251,12 @@ const featuredSongs = [
     artist: "FantasticYouth",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
+  },
+  {
+    title: "Flashbacker",
+    artist: "kessoku band",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/486x486bb.png",
+    link: "https://www.youtube.com/watch?v=ecVnw_SiREQ"
   },
   {
     title: "不治",
