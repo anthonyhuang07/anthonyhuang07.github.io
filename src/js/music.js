@@ -33,10 +33,10 @@ function nowPlaying() {
         let elapsed = currentTime - startTime;
         let remaining = duration - elapsed;
 
-        if (imageUrl.startsWith('mp:external/')) {
-          let fixedUrl = imageUrl.split('/https/').pop();
-          imageUrl = 'https://' + fixedUrl;
-        }
+        // if (imageUrl.startsWith('mp:external/')) {
+        //   let fixedUrl = imageUrl.split('/https/').pop();
+        //   imageUrl = 'https://' + fixedUrl;
+        // }
 
         albumArt.crossOrigin = "Anonymous";
         albumArt.src = imageUrl;
@@ -56,6 +56,7 @@ function nowPlaying() {
         albumArt.onerror = () => {
           console.error('Error loading album art image');
           albumArt.src = '/assets/icons/defaultMusic.webp';
+          nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
           albumArt.onload = () => {
             const bars = document.querySelectorAll('.bar');
             bars.forEach(bar => {
@@ -75,8 +76,6 @@ function nowPlaying() {
         }
       }
 
-      const nowPlayingArt = document.querySelector('.music-nowPlaying img');
-      const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
       const nowPlayingBar = document.querySelector('.music-nowPlaying');
 
       if (!musicPlaying) {
