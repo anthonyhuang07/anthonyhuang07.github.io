@@ -173,11 +173,11 @@ function applyGradientEffect(imgElement) {
 // #region Favorite Song
 
 const favoriteSongDetails = {
-  favoriteDate: "SEP 24, 2025",
-  songName: "DEADPOOL (feat. KAF)",
-  artistName: "Hoshimachi Suisei",
-  albumArt: "https://images.genius.com/eeb2490ea2a00ea03ccec34e073e8cbe.1000x1000x1.png",
-  link: "https://www.youtube.com/watch?v=Fg5-55vZwp0"
+  favoriteDate: "OCT 4, 2025",
+  songName: "Everyday World",
+  artistName: "Yukino Yukinoshita & Yui Yuigahama",
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/32/03/0e320365-e756-f2d2-d4cb-ba59b3017abb/5021732649164.jpg/1200x630bb.jpg",
+  link: "https://www.youtube.com/watch?v=rbVFAF9BmwE"
 };
 
 function renderFavoriteSong() {
@@ -228,16 +228,16 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=wBglu_UImio"
   },
   {
-    title: "Monotone",
-    artist: "YOASOBI",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/05/a9/df05a94d-ff41-e0e1-f156-f40ee7c9922b/198846242873.jpg/486x486bb.png",
-    link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
-  },
-  {
     title: "0",
     artist: "Ado",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/3d/3e/c93d3e8a-cce6-aac8-c544-bead75a03cbc/24UMGIM62188.rgb.jpg/486x486bb.png",
     link: "https://www.youtube.com/watch?v=E9UPr5SesCM"
+  },
+  {
+    title: "DEADPOOL (feat. KAF)",
+    artist: "Hoshimachi Suisei",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=Fg5-55vZwp0"
   },
   {
     title: "最低界隈",
@@ -250,6 +250,12 @@ const featuredSongs = [
     artist: "FantasticYouth",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
+  },
+  {
+    title: "Monotone",
+    artist: "YOASOBI",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/05/a9/df05a94d-ff41-e0e1-f156-f40ee7c9922b/198846242873.jpg/486x486bb.png",
+    link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
     title: "Flashbacker",
@@ -268,12 +274,6 @@ const featuredSongs = [
     artist: "NANAOAKARI",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=o4OsvOqHnZM"
-  },
-  {
-    title: "Tokihanate!",
-    artist: "Hashimero",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/ec/de/25ecde3a-0028-c1d1-4b66-5c3809d2cd52/4547366757477.jpg/1200x630bb.jpg",
-    link: "https://www.youtube.com/watch?v=yDChK7w4II8"
   },
 ];
 
