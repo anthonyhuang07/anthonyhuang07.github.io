@@ -33,10 +33,10 @@ function nowPlaying() {
         let elapsed = currentTime - startTime;
         let remaining = duration - elapsed;
 
-        // if (imageUrl.startsWith('mp:external/')) {
-        //   let fixedUrl = imageUrl.split('/https/').pop();
-        //   imageUrl = 'https://' + fixedUrl;
-        // }
+        if (imageUrl.startsWith('mp:external/')) {
+          let fixedUrl = imageUrl.split('/https/').pop();
+          imageUrl = 'https://' + fixedUrl;
+        }
 
         albumArt.crossOrigin = "Anonymous";
         albumArt.src = imageUrl;
