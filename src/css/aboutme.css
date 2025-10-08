@@ -369,6 +369,37 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .aboutme .appView header {
+    margin: 0 1.75rem 1.75rem 1.75rem;
+  }
+  .aboutme .appView header > div {
+    margin-left: 1rem;
+  }
+  .aboutme .appView header > div h1 {
+    font-size: 1.5em;
+  }
+  .aboutme .appView header > div h2 {
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+  .aboutme .appView .appStore-appView-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 1.75rem 0 1.75rem;
+  }
+  .aboutme .appView .appStore-appView-about p {
+    margin: 0.5rem 0 0 0;
+  }
+  .aboutme .appView .appStore-appView-about::after {
+    left: 0;
+    width: 100%;
+    bottom: -1rem;
+  }
+  .aboutme > header {
+    padding: 0.8rem 0 1rem 0;
+  }
   .aboutme > header h1 {
     letter-spacing: 1.05px;
     font-size: 2em;

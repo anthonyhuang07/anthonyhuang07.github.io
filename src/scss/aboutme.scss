@@ -311,9 +311,46 @@
   }
 
   @media screen and (max-width: 480px) {
-    // Phones
+
+    .appView {
+      header {
+        margin: 0 1.75rem 1.75rem 1.75rem;
+
+        >div {
+          margin-left: 1rem;
+
+          h1 {
+            font-size: 1.5em;
+          }
+
+          h2 {
+            font-size: 1em;
+            margin-bottom: 2em;
+          }
+        }
+      }
+
+      .appStore-appView-about {
+        display: flex;
+        width: 80%;
+        margin: 0 1.75rem 0 1.75rem;
+
+        p {
+          margin: 0.5rem 0 0 0;
+        }
+
+        &::after {
+          left: 0;
+          width: 100%;
+          bottom: -1rem;
+        }
+      }
+    }
 
     >header {
+
+      padding: 0.8rem 0 1rem 0;
+
       h1 {
         letter-spacing: 1.05px;
         font-size: 2em;
