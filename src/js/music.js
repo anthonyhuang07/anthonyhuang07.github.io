@@ -84,7 +84,7 @@ function nowPlaying() {
         audioPreview.style.display = 'none';
         clearInterval(intervalId);
 
-        nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
+        data.status.assets.largeImage.src = '/assets/icons/defaultMusic.webp';
         nowPlayingTextContainer.innerHTML = `
           <p>Not Playing</p>
         `;
