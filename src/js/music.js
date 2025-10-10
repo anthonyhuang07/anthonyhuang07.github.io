@@ -173,11 +173,11 @@ function applyGradientEffect(imgElement) {
 // #region Favorite Song
 
 const favoriteSongDetails = {
-  favoriteDate: "OCT 4, 2025",
-  songName: "Everyday World",
-  artistName: "Yukino Yukinoshita & Yui Yuigahama",
-  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/32/03/0e320365-e756-f2d2-d4cb-ba59b3017abb/5021732649164.jpg/1200x630bb.jpg",
-  link: "https://www.youtube.com/watch?v=rbVFAF9BmwE"
+  favoriteDate: "OCT 10, 2025",
+  songName: "雨と",
+  artistName: "suzuki mamiko",
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7d/f6/6c/7df66c36-48fb-0401-fa14-a669c49cf1e9/199350518386.jpg/600x600bf-60.jpg",
+  link: "https://www.youtube.com/watch?v=T0PYzggLT9w"
 };
 
 function renderFavoriteSong() {
@@ -258,12 +258,6 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
-    title: "Flashbacker",
-    artist: "kessoku band",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/486x486bb.png",
-    link: "https://www.youtube.com/watch?v=ecVnw_SiREQ"
-  },
-  {
     title: "不治",
     artist: "Trooper Salute",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
@@ -274,6 +268,12 @@ const featuredSongs = [
     artist: "NANAOAKARI",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=o4OsvOqHnZM"
+  },
+  {
+    title: "Flashbacker",
+    artist: "kessoku band",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/486x486bb.png",
+    link: "https://www.youtube.com/watch?v=ecVnw_SiREQ"
   },
 ];
 
