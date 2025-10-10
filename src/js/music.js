@@ -228,10 +228,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=wBglu_UImio"
   },
   {
-    title: "0",
+    title: "風と私の物語",
     artist: "Ado",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/3d/3e/c93d3e8a-cce6-aac8-c544-bead75a03cbc/24UMGIM62188.rgb.jpg/486x486bb.png",
-    link: "https://www.youtube.com/watch?v=E9UPr5SesCM"
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=oAuKa5NOzWE"
   },
   {
     title: "DEADPOOL (feat. KAF)",
