@@ -6,6 +6,8 @@ const artistNameElement = dynamicIsland.querySelector('#artistName');
 const playPauseButton = dynamicIsland.querySelector('#playPauseButton');
 const currentTimeElement = dynamicIsland.querySelector('#currentTime');
 const timeLeft = dynamicIsland.querySelector('#timeLeft');
+const nowPlayingArt = document.querySelector('.music-nowPlaying img');
+const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
 const progressBar = dynamicIsland.querySelector('.progress-bar .progress');
 const apiUrl = 'https://server.ah07.xyz/api/status';
 
@@ -41,8 +43,6 @@ function nowPlaying() {
         albumArt.crossOrigin = "Anonymous";
         albumArt.src = imageUrl;
 
-        const nowPlayingArt = document.querySelector('.music-nowPlaying img');
-        const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
         nowPlayingArt.src = imageUrl;
         nowPlayingTextContainer.innerHTML = `
           <p class="music-nowPlaying-song">${songName}</p>
@@ -84,7 +84,7 @@ function nowPlaying() {
         audioPreview.style.display = 'none';
         clearInterval(intervalId);
 
-        data.status.assets.largeImage.src = '/assets/icons/defaultMusic.webp';
+        nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
         nowPlayingTextContainer.innerHTML = `
           <p>Not Playing</p>
         `;
