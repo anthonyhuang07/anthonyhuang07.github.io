@@ -13,9 +13,9 @@ const appDetails = {
     "2": {
         title: "Education",
         subtitle: "1st Year Computer Science @ Carleton University",
-        description: `I am a first-year Computer Science 💻 student at Carleton University 🎓, minoring in Linguistics.
-        
-        <br><br>In high school, I completed the International Baccalaureate Diploma Programme (IBDP) and served as Co-President of the Computer Science Club.`,
+        description: `I am a first-year Computer Science 💻 student at Carleton University 🎓. I am also pursuing a minor in Linguistics.
+
+        <br><br>In High School, I completed the International Baccalaureate Diploma Programme (IBDP) and Ontario Secondary School Diploma (OSSD) with a French Immersion Certificate. I also served as Co-President of the Computer Science Club.`,
         link: "https://www.linkedin.com/in/anthonyhuang07/",
         icon: "https://play-lh.googleusercontent.com/oUIb5n6akLJ0fk66LiD8jk89_Ya9HK-8a4NJpPxNe4d8cE0B7_HJjDhrx6WTR90FJxiF"
     },
