@@ -73,7 +73,7 @@ const appDetails = {
         subtitle: "Urban Rail Enthusiast & Avgeek",
         description: `I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.
 
-        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵 (Ginza & Hanzōmon Lines), Montréal Metro 🇨🇦, Ottawa O-Train 🇨🇦, and Shenzhen Metro 🇨🇳.
+        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵, Montréal Metro 🇨🇦, and Ottawa O-Train 🇨🇦.
 
         <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner.`,
         link: "#",
