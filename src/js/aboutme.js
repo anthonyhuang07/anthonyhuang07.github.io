@@ -75,7 +75,7 @@ const appDetails = {
 
         <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵, Montréal Metro 🇨🇦, and Ottawa O-Train 🇨🇦.
 
-        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). I enjoy flying on Boeing aircraft, such as the MAX 8 and Dreamliner.`,
+        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). My favorite aircraft is the Boeing 747, especially the Air China livery.`,
         link: "#",
         icon: "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
     },
