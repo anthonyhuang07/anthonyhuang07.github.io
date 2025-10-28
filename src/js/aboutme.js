@@ -53,11 +53,7 @@ const appDetails = {
     "6": {
         title: "Games",
         subtitle: "Rocket League D1, 1K+ Hours on Geometry Dash",
-        description: `I play a variety of games. I've been playing Minecraft and Roblox the longest, games I always come back to once in a while. I am particularly good at SkyWars Lucky Blocks on Hypixel.
-
-        <br><br>The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">Demons</a> completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon).
-
-        <br><br>I also play <a href="https://rocketleague.tracker.network/rocket-league/profile/epic/fhdhgngn/" target="_blank">Rocket League</a> (Diamond I 💎), TETR.IO (A-) and Minesweeper (Canada 🇨🇦 Top 500)`,
+        description: `I occasionally play games. The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">Demons</a> completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon). I also play <a href="https://rocketleague.tracker.network/rocket-league/profile/epic/fhdhgngn/" target="_blank">Rocket League</a> (Diamond I 💎)`,
         link: "https://steamcommunity.com/profiles/76561199118468554/",
         icon: "/assets/icons/steam.webp"
     },
