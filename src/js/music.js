@@ -173,11 +173,11 @@ function applyGradientEffect(imgElement) {
 // #region Favorite Song
 
 const favoriteSongDetails = {
-  favoriteDate: "OCT 10, 2025",
-  songName: "雨と",
-  artistName: "suzuki mamiko",
-  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7d/f6/6c/7df66c36-48fb-0401-fa14-a669c49cf1e9/199350518386.jpg/600x600bf-60.jpg",
-  link: "https://www.youtube.com/watch?v=T0PYzggLT9w"
+  favoriteDate: "OCT 31, 2025",
+  songName: "Actor",
+  artistName: "Lilas Ikuta",
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/ed/1f/faed1f7f-9534-b72e-3773-ae1764fd2818/199538775334.jpg/600x600bf-60.jpg",
+  link: "https://www.youtube.com/watch?v=fH8hLLww2JI"
 };
 
 function renderFavoriteSong() {
@@ -258,12 +258,6 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
-    title: "Actor",
-    artist: "Lilas Ikuta",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/ed/1f/faed1f7f-9534-b72e-3773-ae1764fd2818/199538775334.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=fH8hLLww2JI"
-  },
-  {
     title: "MURI MURI EVOLUTION",
     artist: "NANAOAKARI",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
@@ -274,6 +268,12 @@ const featuredSongs = [
     artist: "Trooper Salute",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=_ti7ovjaDG4"
+  },
+  {
+    title: "Karma Code",
+    artist: "SKAI ISYOURGOD",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/95/32/3b/95323b31-1bdd-9bcc-8a6b-329a8d97ec03/749085368376.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=w-3nsoKpsv8"
   },
 ];
 
