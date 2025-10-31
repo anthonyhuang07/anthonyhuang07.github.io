@@ -258,10 +258,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
   },
   {
-    title: "不治",
-    artist: "Trooper Salute",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
-    link: "https://www.youtube.com/watch?v=_ti7ovjaDG4"
+    title: "Actor",
+    artist: "Lilas Ikuta",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/ed/1f/faed1f7f-9534-b72e-3773-ae1764fd2818/199538775334.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=fH8hLLww2JI"
   },
   {
     title: "MURI MURI EVOLUTION",
@@ -270,10 +270,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=o4OsvOqHnZM"
   },
   {
-    title: "Flashbacker",
-    artist: "kessoku band",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/486x486bb.png",
-    link: "https://www.youtube.com/watch?v=ecVnw_SiREQ"
+    title: "不治",
+    artist: "Trooper Salute",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
+    link: "https://www.youtube.com/watch?v=_ti7ovjaDG4"
   },
 ];
 

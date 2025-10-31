@@ -106,6 +106,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 35%;
 }
 .music article .music-favoriteSong h2 {
   font-size: 1.55em;
