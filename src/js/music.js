@@ -173,11 +173,11 @@ function applyGradientEffect(imgElement) {
 // #region Favorite Song
 
 const favoriteSongDetails = {
-  favoriteDate: "OCT 31, 2025",
-  songName: "Actor",
-  artistName: "Lilas Ikuta",
-  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/ed/1f/faed1f7f-9534-b72e-3773-ae1764fd2818/199538775334.jpg/600x600bf-60.jpg",
-  link: "https://www.youtube.com/watch?v=fH8hLLww2JI"
+  favoriteDate: "NOV 2, 2025",
+  songName: "PPPP",
+  artistName: "TAK",
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/dc/6d/72dc6d7f-e723-2f61-9229-6906822d7b53/199538670301.jpg/600x600bf-60.jpg",
+  link: "https://www.youtube.com/watch?v=8Cm-7oCq9HA"
 };
 
 function renderFavoriteSong() {
@@ -252,6 +252,12 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
   },
   {
+    title: "Actor",
+    artist: "Lilas Ikuta",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/ed/1f/faed1f7f-9534-b72e-3773-ae1764fd2818/199538775334.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=fH8hLLww2JI"
+  },
+  {
     title: "Monotone",
     artist: "YOASOBI",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/05/a9/df05a94d-ff41-e0e1-f156-f40ee7c9922b/198846242873.jpg/486x486bb.png",
@@ -262,12 +268,6 @@ const featuredSongs = [
     artist: "NANAOAKARI",
     albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
     link: "https://www.youtube.com/watch?v=o4OsvOqHnZM"
-  },
-  {
-    title: "不治",
-    artist: "Trooper Salute",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/43/2a/96432a2b-764a-874a-4e82-5793f1c8dace/4580789718663.png/1200x630bb.jpg",
-    link: "https://www.youtube.com/watch?v=_ti7ovjaDG4"
   },
   {
     title: "Karma Code",
