@@ -17,7 +17,7 @@
   font-display: swap;
 }
 .music {
-  overflow: scroll;
+  overflow: auto;
 }
 .music img {
   -webkit-user-select: none;

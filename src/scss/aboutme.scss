@@ -1,6 +1,8 @@
 @import 'variables';
 
 .aboutme {
+  overflow: auto;
+
   >header {
     background-color: #121212;
     border-bottom: #272727 1px solid;

@@ -539,7 +539,6 @@ body > main div > div img:active {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1rem;
-  overflow: auto;
 }
 .contacts .infoBox {
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;

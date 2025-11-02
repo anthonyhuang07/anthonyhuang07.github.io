@@ -17,6 +17,7 @@
   font-display: swap;
 }
 .projects {
+  overflow: auto;
   color: white;
 }
 .projects header {
