@@ -67,7 +67,6 @@
       display: flex;
       color: white;
       flex-direction: column;
-      width: 20%;
 
       h2 {
         font-size: 1.55em;
@@ -79,6 +78,7 @@
       >div {
         display: flex;
         flex-direction: row;
+        width: 23rem;
 
         img {
           width: 172px;

@@ -364,6 +364,7 @@ body>main {
     user-select: none;
     justify-content: center;
     color: white;
+    position:sticky;
 
     h1 {
       font-family: $SFL;
@@ -412,38 +413,8 @@ body>main {
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-  }
-
-  .infoBox {
-    font-family: $SFL;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #1C1C1E;
-    width: 97.5%;
-    height: 5.45rem;
-    border-radius: 0.65rem;
-    padding-left: 1.425rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-
-    h2 {
-      font-size: 1.25em;
-      letter-spacing: 1px;
-      color: white;
-      user-select: none;
-    }
-
-    p {
-      font-size: 1.5em;
-      color: $appleBlue;
-      margin-top: 0.35rem;
-      letter-spacing: 0.45px;
-    }
-
-    &:active {
-      background-color: #3A3A3C;
-    }
+    overflow-y: auto;
+    max-height: 100%;
   }
 
   .infoCluster {
@@ -454,12 +425,36 @@ body>main {
     border-radius: 0.65rem;
     overflow: hidden;
     margin-bottom: 1rem;
+    flex-shrink: 0;
 
     .infoBox {
-      margin-bottom: 0;
-      width: 100%;
-      border-radius: 0;
       position: relative;
+      font-family: $SFL;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #1C1C1E;
+      height: 5.45rem;
+      padding-left: 1.425rem;
+      cursor: pointer;
+      width: 100%;
+
+      h2 {
+        font-size: 1.25em;
+        letter-spacing: 1px;
+        color: white;
+        user-select: none;
+      }
+
+      p {
+        font-size: 1.5em;
+        color: $appleBlue;
+        margin-top: 0.35rem;
+        letter-spacing: 0.45px;
+      }
+
+      &:active {
+        background-color: #3A3A3C;
+      }
 
       &:after {
         content: "";

@@ -477,6 +477,7 @@ body > main div > div img:active {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  position: sticky;
 }
 .contacts #contactCard h1 {
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -539,44 +540,8 @@ body > main div > div img:active {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1rem;
-}
-.contacts .infoBox {
-  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #1C1C1E;
-  width: 97.5%;
-  height: 5.45rem;
-  border-radius: 0.65rem;
-  padding-left: 1.425rem;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-.contacts .infoBox h2 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
-  color: white;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.contacts .infoBox p {
-  font-size: 1.5em;
-  color: #0088ff;
-  margin-top: 0.35rem;
-  letter-spacing: 0.45px;
-}
-.contacts .infoBox:active {
-  background-color: #3A3A3C;
+  overflow-y: auto;
+  max-height: 100%;
 }
 .contacts .infoCluster {
   width: 97.5%;
@@ -593,12 +558,42 @@ body > main div > div img:active {
   border-radius: 0.65rem;
   overflow: hidden;
   margin-bottom: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .contacts .infoCluster .infoBox {
-  margin-bottom: 0;
-  width: 100%;
-  border-radius: 0;
   position: relative;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1C1C1E;
+  height: 5.45rem;
+  padding-left: 1.425rem;
+  cursor: pointer;
+  width: 100%;
+}
+.contacts .infoCluster .infoBox h2 {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.contacts .infoCluster .infoBox p {
+  font-size: 1.5em;
+  color: #0088ff;
+  margin-top: 0.35rem;
+  letter-spacing: 0.45px;
+}
+.contacts .infoCluster .infoBox:active {
+  background-color: #3A3A3C;
 }
 .contacts .infoCluster .infoBox:after {
   content: "";
