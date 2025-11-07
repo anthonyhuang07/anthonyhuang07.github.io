@@ -78,7 +78,7 @@
       >div {
         display: flex;
         flex-direction: row;
-        width: 23rem;
+        min-width: 23rem;
 
         img {
           width: 172px;

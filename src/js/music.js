@@ -173,11 +173,11 @@ function applyGradientEffect(imgElement) {
 // #region Favorite Song
 
 const favoriteSongDetails = {
-  favoriteDate: "NOV 2, 2025",
-  songName: "PPPP",
-  artistName: "TAK",
-  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/dc/6d/72dc6d7f-e723-2f61-9229-6906822d7b53/199538670301.jpg/600x600bf-60.jpg",
-  link: "https://www.youtube.com/watch?v=8Cm-7oCq9HA"
+  favoriteDate: "NOV 6, 2025",
+  songName: "Requiem (feat. Hoshimachi Suisei)",
+  artistName: "Kanaria",
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ac/19/f3/ac19f312-548f-2323-2fd3-f93bc6949d1f/859759552014_cover.png/600x600bf-60.jpg",
+  link: "https://www.youtube.com/watch?v=5Jja39-69G8"
 };
 
 function renderFavoriteSong() {

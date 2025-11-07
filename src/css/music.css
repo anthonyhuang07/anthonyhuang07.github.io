@@ -121,7 +121,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 23rem;
+  min-width: 23rem;
 }
 .music article .music-favoriteSong > div img {
   width: 172px;
