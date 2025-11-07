@@ -62,7 +62,7 @@ body {
     width: 190px;
   }
 
-  img {
+  #island-albumArt {
     height: 22.5px;
     margin-left: 0.625rem;
     border-radius: 0.3rem;
@@ -132,18 +132,9 @@ body {
   #mediaControls {
     width: 0%;
     transition: width 0.4s;
-    svg {
-      width: 0;
-      height: 0;
-      transition: width 0.4s, height 0.4s;
-    }
-    .fa-pause{
-      font-size: 0;
-      transition: font-size 0.4s;
-    }
   }
 
-  &.playing:hover,
+  &.playing,
   &.playing:active {
     height: 202.5px;
     width: 372.5px;
@@ -163,8 +154,9 @@ body {
       #island-main-left {
         display: flex;
         align-items: center;
+        min-width: 0; // allow text to shrink for ellipsis
 
-        img {
+        #island-albumArt {
           height: 67.5px;
           margin-left: 0;
           border-radius: 0.8rem;
@@ -174,7 +166,16 @@ body {
         #songInfo {
           margin-left: 1.175rem;
           font-size: 1.05em;
+          min-width: 0;   // allow song info to shrink
+          overflow: hidden; // required for ellipsis on children
 
+          #songName {
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+          }
           #artistName {
             color: $appleGray;
             font-family: $SFL;
@@ -224,22 +225,8 @@ body {
     }
 
     #mediaControls {
-      display: flex;
-      justify-content: center;
-      width: 100%;
+      width: 19rem;
       margin-top: 1.1rem;
-
-      svg {
-        color: white;
-        width: 37.5px;
-        height: 37.5px;
-      }
-
-      .fa-pause {
-        margin: 0 2.5rem;
-        font-size: 2.5rem;
-        color: white;
-      }
     }
   }
 }

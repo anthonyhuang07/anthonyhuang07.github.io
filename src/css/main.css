@@ -98,7 +98,7 @@ body {
 #dynamicIsland.playing {
   width: 190px;
 }
-#dynamicIsland img {
+#dynamicIsland #island-albumArt {
   height: 22.5px;
   margin-left: 0.625rem;
   border-radius: 0.3rem;
@@ -176,18 +176,7 @@ body {
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
 }
-#dynamicIsland #mediaControls svg {
-  width: 0;
-  height: 0;
-  -webkit-transition: width 0.4s, height 0.4s;
-  transition: width 0.4s, height 0.4s;
-}
-#dynamicIsland #mediaControls .fa-pause {
-  font-size: 0;
-  -webkit-transition: font-size 0.4s;
-  transition: font-size 0.4s;
-}
-#dynamicIsland.playing:hover, #dynamicIsland.playing:active {
+#dynamicIsland.playing, #dynamicIsland.playing:active {
   height: 202.5px;
   width: 372.5px;
   border-radius: 2.75rem;
@@ -206,7 +195,7 @@ body {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-#dynamicIsland.playing:hover #island-main, #dynamicIsland.playing:active #island-main {
+#dynamicIsland.playing #island-main, #dynamicIsland.playing:active #island-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,34 +204,44 @@ body {
           justify-content: space-between;
   width: 100%;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left, #dynamicIsland.playing:active #island-main #island-main-left {
+#dynamicIsland.playing #island-main #island-main-left, #dynamicIsland.playing:active #island-main #island-main-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 0;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left img, #dynamicIsland.playing:active #island-main #island-main-left img {
+#dynamicIsland.playing #island-main #island-main-left #island-albumArt, #dynamicIsland.playing:active #island-main #island-main-left #island-albumArt {
   height: 67.5px;
   margin-left: 0;
   border-radius: 0.8rem;
   -webkit-user-drag: none;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-main #island-main-left #songInfo {
+#dynamicIsland.playing #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-main #island-main-left #songInfo {
   margin-left: 1.175rem;
   font-size: 1.05em;
+  min-width: 0;
+  overflow: hidden;
 }
-#dynamicIsland.playing:hover #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-main #island-main-left #songInfo #artistName {
+#dynamicIsland.playing #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing:active #island-main #island-main-left #songInfo #songName {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+#dynamicIsland.playing #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-main #island-main-left #songInfo #artistName {
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-#dynamicIsland.playing:hover #island-main #audioPreview, #dynamicIsland.playing:active #island-main #audioPreview {
+#dynamicIsland.playing #island-main #audioPreview, #dynamicIsland.playing:active #island-main #audioPreview {
   margin-right: 0.45rem;
   margin-bottom: 0.9rem;
   gap: 2.7px;
 }
-#dynamicIsland.playing:hover #timeline, #dynamicIsland.playing:active #timeline {
+#dynamicIsland.playing #timeline, #dynamicIsland.playing:active #timeline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +258,7 @@ body {
   width: 100%;
   margin-top: 1.175rem;
 }
-#dynamicIsland.playing:hover #timeline span, #dynamicIsland.playing:active #timeline span {
+#dynamicIsland.playing #timeline span, #dynamicIsland.playing:active #timeline span {
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.75em;
@@ -267,7 +266,7 @@ body {
   width: 30px;
   text-align: center;
 }
-#dynamicIsland.playing:hover #timeline .progress-bar, #dynamicIsland.playing:active #timeline .progress-bar {
+#dynamicIsland.playing #timeline .progress-bar, #dynamicIsland.playing:active #timeline .progress-bar {
   width: 250px;
   height: 7px;
   background-color: #252527;
@@ -275,32 +274,16 @@ body {
   overflow: hidden;
   margin-right: 0.425rem;
 }
-#dynamicIsland.playing:hover #timeline .progress-bar .progress, #dynamicIsland.playing:active #timeline .progress-bar .progress {
+#dynamicIsland.playing #timeline .progress-bar .progress, #dynamicIsland.playing:active #timeline .progress-bar .progress {
   height: 100%;
   background-color: #8D8D93;
   width: 0;
   -webkit-transition: width 0.1s linear;
   transition: width 0.1s linear;
 }
-#dynamicIsland.playing:hover #mediaControls, #dynamicIsland.playing:active #mediaControls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+#dynamicIsland.playing #mediaControls, #dynamicIsland.playing:active #mediaControls {
+  width: 19rem;
   margin-top: 1.1rem;
-}
-#dynamicIsland.playing:hover #mediaControls svg, #dynamicIsland.playing:active #mediaControls svg {
-  color: white;
-  width: 37.5px;
-  height: 37.5px;
-}
-#dynamicIsland.playing:hover #mediaControls .fa-pause, #dynamicIsland.playing:active #mediaControls .fa-pause {
-  margin: 0 2.5rem;
-  font-size: 2.5rem;
-  color: white;
 }
 
 @-webkit-keyframes wave {
