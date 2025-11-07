@@ -127,9 +127,9 @@ function setProjectsHeader(title) {
 }
 
 function setProjectsFooterActive(view) {
-  const featuredBtn = document.getElementById('projects-footer-featuredprojects');
-  const archivedBtn = document.getElementById('projects-footer-archivedprojects');
-  const nontechBtn = document.getElementById('projects-footer-nontechprojects');
+  const featuredBtn = document.getElementById('projects-footer-featured');
+  const archivedBtn = document.getElementById('projects-footer-archived');
+  const nontechBtn = document.getElementById('projects-footer-nontech');
   if (featuredBtn) featuredBtn.classList.toggle('active', view === 'featured');
   if (archivedBtn) archivedBtn.classList.toggle('active', view === 'archived');
   if (nontechBtn) nontechBtn.classList.toggle('active', view === 'nontech');
@@ -178,9 +178,9 @@ function attachProjectListeners() {
   }
 
   // Footer toggle buttons
-  const featuredBtn = document.getElementById('projects-footer-featuredprojects');
-  const archivedBtn = document.getElementById('projects-footer-archivedprojects');
-  const nontechBtn = document.getElementById('projects-footer-nontechprojects');
+  const featuredBtn = document.getElementById('projects-footer-featured');
+  const archivedBtn = document.getElementById('projects-footer-archived');
+  const nontechBtn = document.getElementById('projects-footer-nontech');
   if (featuredBtn) {
     featuredBtn.addEventListener('click', () => {
       if (currentProjectsView !== 'featured') showFeaturedProjects();

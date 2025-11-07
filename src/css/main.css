@@ -601,8 +601,7 @@ body > main div > div img:active {
   }
   .contacts #contactCard {
     width: 100%;
-    min-height: 27.5rem;
-    overflow: visible;
+    max-height: 27.5rem;
   }
   .contacts #contactCard i {
     width: 2rem;
@@ -622,15 +621,10 @@ body > main div > div img:active {
     font-size: 2.35em;
     letter-spacing: 1.85px;
   }
-  .contacts #contactInfo {
-    overflow: visible;
-  }
   .contacts .infoBox {
     width: 96%;
     height: 4rem;
-    border-radius: 0.5rem;
     padding-left: 1.05rem;
-    margin-bottom: 1rem;
   }
   .contacts .infoBox h2 {
     font-size: 0.9em;
@@ -686,5 +680,25 @@ body > main div > div img:active {
   #inApp,
   .menu {
     overflow: scroll;
+  }
+  .contacts #contactCard {
+    min-height: 27.5rem;
+    position: relative;
+  }
+  .contacts #contactInfo {
+    overflow-y: visible;
+  }
+  .contacts #contactInfo .infoCluster {
+    width: 96%;
+  }
+  .contacts #contactInfo .infoCluster .infoBox {
+    height: 4rem;
+    padding-left: 1.05rem;
+  }
+  .contacts #contactInfo .infoCluster .infoBox h2 {
+    font-size: 0.9em;
+  }
+  .contacts #contactInfo .infoCluster .infoBox p {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=main.css.map */

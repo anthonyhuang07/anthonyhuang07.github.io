@@ -115,7 +115,7 @@ body {
 
     span {
       font-size: 0;
-      transition: font-size 0.4s; 
+      transition: font-size 0.4s;
     }
   }
 
@@ -166,7 +166,7 @@ body {
         #songInfo {
           margin-left: 1.175rem;
           font-size: 1.05em;
-          min-width: 0;   // allow song info to shrink
+          min-width: 0; // allow song info to shrink
           overflow: hidden; // required for ellipsis on children
 
           #songName {
@@ -176,6 +176,7 @@ body {
             text-overflow: ellipsis;
             display: block;
           }
+
           #artistName {
             color: $appleGray;
             font-family: $SFL;
@@ -351,7 +352,7 @@ body>main {
     user-select: none;
     justify-content: center;
     color: white;
-    position:sticky;
+    position: sticky;
 
     h1 {
       font-family: $SFL;
@@ -465,74 +466,67 @@ body>main {
   .contacts {
     flex-direction: column;
     height: 100%;
-  }
 
-  .contacts #contactCard {
-    width: 100%;
-    min-height: 27.5rem;
-    overflow: visible;
-  }
+    #contactCard {
+      width: 100%;
+      max-height: 27.5rem;
 
-  .contacts #contactCard i {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.1em;
-    margin: 2rem 0 0 0.8rem;
-  }
+      i {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.1em;
+        margin: 2rem 0 0 0.8rem;
+      }
 
-  .contacts #contactCard img {
-    width: 265px;
-  }
+      img {
+        width: 265px;
+      }
 
-  .contacts #contactCard p {
-    margin-top: 1.6rem;
-    font-size: 0.8em;
-    letter-spacing: 0.9px;
-  }
+      p {
+        margin-top: 1.6rem;
+        font-size: 0.8em;
+        letter-spacing: 0.9px;
+      }
 
-  .contacts #contactCard h1 {
-    font-size: 2.35em;
-    letter-spacing: 1.85px;
-  }
-
-  .contacts #contactInfo {
-    overflow: visible;
-  }
-
-  .contacts .infoBox {
-    width: 96%;
-    height: 4rem;
-    border-radius: 0.5rem;
-    padding-left: 1.05rem;
-    margin-bottom: 1rem;
-
-    h2 {
-      font-size: 0.9em;
-      letter-spacing: 0.8px;
-      color: white;
+      h1 {
+        font-size: 2.35em;
+        letter-spacing: 1.85px;
+      }
     }
 
-    p {
-      font-size: 1em;
-      color: $appleBlue;
-      margin-top: 0.35rem;
-      letter-spacing: 1.05px;
+    .infoBox {
+      width: 96%;
+      height: 4rem;
+      padding-left: 1.05rem;
+
+      h2 {
+        font-size: 0.9em;
+        letter-spacing: 0.8px;
+        color: white;
+      }
+
+      p {
+        font-size: 1em;
+        color: $appleBlue;
+        margin-top: 0.35rem;
+        letter-spacing: 1.05px;
+      }
     }
-  }
 
-  .contacts #infoCluster {
-    width: 96%;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    #infoCluster {
+      width: 96%;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
 
-    .infoBox::after {
-      content: "";
-      background: #3A3A3A;
-      position: absolute;
-      width: calc(100% - 1.05rem);
-      left: 1.05rem;
-      height: 1px;
-      bottom: 0;
+      .infoBox::after {
+        content: "";
+        background: #3A3A3A;
+        position: absolute;
+        width: calc(100% - 1.05rem);
+        left: 1.05rem;
+        height: 1px;
+        bottom: 0;
+      }
     }
   }
 }
@@ -572,5 +566,34 @@ body>main {
   #inApp,
   .menu {
     overflow: scroll;
+  }
+
+  .contacts {
+
+    #contactCard {
+      min-height: 27.5rem;
+      position: relative;
+    }
+
+    #contactInfo {
+      overflow-y: visible;
+
+      .infoCluster {
+        width: 96%; 
+
+        .infoBox {
+          height: 4rem;
+          padding-left: 1.05rem;
+
+          h2 {
+            font-size: 0.9em;
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
   }
 }
