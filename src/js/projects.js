@@ -15,11 +15,6 @@ const projectDetails = {
     link: "https://anthonyhuang.net/ICS3U1-FPT/",
     icon: "/assets/icons/bytebucks.png"
   },
-  "SelfStats": {
-    description: "A hub for simple, everyday health tools. Solo Hackathon-Winning project.",
-    link: "https://anthonyhuang.net/SelfStats/",
-    icon: "/assets/icons/selfstats.png"
-  },
   "Piracy": {
     description: "Piracy is a serious crime. Click for more info... (Prank Website)",
     link: "https://anthonyhuang.net/piracy/",
@@ -58,6 +53,11 @@ const archivedProjects = {
     description: "Web rhythm game made for my Grade 10 High School CS course.",
     link: "https://anthonyhuang.net/ICS2O1-FPT/",
     icon: "https://media.licdn.com/dms/image/v2/C5112AQExUeu0Uwrxdg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1555853756108?e=2147483647&v=beta&t=N96fwDtStzXrEpQh9sTr9VUOmtLYGL3jNvK0QvobxuU"
+  },
+  "SelfStats": {
+    description: "A hub for simple, everyday health tools. Solo Hackathon-Winning project.",
+    link: "https://anthonyhuang.net/SelfStats/",
+    icon: "/assets/icons/selfstats.png"
   },
   "TextToTest": {
     description: "A quiz website that uses Markdown to create quizzes. Solo Hackathon-Winning project.",
