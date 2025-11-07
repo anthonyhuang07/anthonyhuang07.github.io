@@ -134,7 +134,7 @@ body {
     transition: width 0.4s;
   }
 
-  &.playing,
+  &.playing:hover,
   &.playing:active {
     height: 202.5px;
     width: 372.5px;
