@@ -20,16 +20,6 @@ const projectDetails = {
     link: "https://anthonyhuang.net/piracy/",
     icon: "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"
   },
-  "Metropolitan French VS Québec French": {
-    description: "My IB Extended Essay (~4000 word academic paper) comparing Parisian and Québec French linguistically.",
-    link: "https://docs.google.com/document/d/1_EMppz874MndkfzhzCydNiehpn5TGKabTHW_8_mD1lI/edit?usp=sharing",
-    icon: "/assets/icons/quebec.webp"
-  },
-  "Huang Romanization (Standard Iranian Persian)": {
-    description: "A romanization system that standardizes the typed form of Standard Iranian Persian/Western Persian.",
-    link: "https://docs.google.com/document/d/1C7u5z-WBAmdkg94pC71cciqXgKX6X-BVK-x6ym0JmvY/edit?tab=t.0",
-    icon: "/assets/icons/iran.webp"
-  },
 };
 
 // Archived projects
@@ -76,8 +66,27 @@ const archivedProjects = {
   },
 };
 
+// Non-Tech projects (same shape as above)
+const nonTechProjects = {
+  "Metropolitan French VS Québec French": {
+    description: "My IB Extended Essay (~4000 word academic paper) comparing Parisian and Québec French linguistically.",
+    link: "https://docs.google.com/document/d/1_EMppz874MndkfzhzCydNiehpn5TGKabTHW_8_mD1lI/edit?usp=sharing",
+    icon: "/assets/icons/quebec.webp"
+  },
+  '"Why Are You Gay?" Interview Transcript': {
+    description: '(WIP) Transcript of the full "Why Are You Gay?" meme interview, including attempted Luganda transcriptions.',
+    link: "https://docs.google.com/document/d/1YS78bgezRsP86fOXIdbk1NIXc3aLJF3CZcPdBh2vup0/",
+    icon: "https://i1.sndcdn.com/artworks-yHfbqspd8QRZY5ZM-r0ANfQ-t500x500.jpg"
+  },
+  "Huang Romanization (Standard Iranian Persian)": {
+    description: "A romanization system that standardizes the typed form of Standard Iranian Persian/Western Persian.",
+    link: "https://docs.google.com/document/d/1C7u5z-WBAmdkg94pC71cciqXgKX6X-BVK-x6ym0JmvY/edit?tab=t.0",
+    icon: "/assets/icons/iran.webp"
+  },
+};
+
 let currentProjectsMap = projectDetails;
-let currentProjectsView = 'featured'; // 'featured' | 'archived'
+let currentProjectsView = 'featured'; // 'featured' | 'archived' | 'nontech'
 
 function renderProjects(map) {
   const projectsContainer = document.querySelector('.menu.projects main');
@@ -120,15 +129,10 @@ function setProjectsHeader(title) {
 function setProjectsFooterActive(view) {
   const featuredBtn = document.getElementById('projects-footer-featuredprojects');
   const archivedBtn = document.getElementById('projects-footer-archivedprojects');
-  if (featuredBtn && archivedBtn) {
-    if (view === 'featured') {
-      featuredBtn.classList.add('active');
-      archivedBtn.classList.remove('active');
-    } else {
-      archivedBtn.classList.add('active');
-      featuredBtn.classList.remove('active');
-    }
-  }
+  const nontechBtn = document.getElementById('projects-footer-nontechprojects');
+  if (featuredBtn) featuredBtn.classList.toggle('active', view === 'featured');
+  if (archivedBtn) archivedBtn.classList.toggle('active', view === 'archived');
+  if (nontechBtn) nontechBtn.classList.toggle('active', view === 'nontech');
 }
 
 function showFeaturedProjects() {
@@ -143,6 +147,13 @@ function showArchivedProjects() {
   setProjectsHeader('Archived Projects');
   setProjectsFooterActive('archived');
   currentProjectsView = 'archived';
+}
+
+function showNonTechProjects() {
+  renderProjects(nonTechProjects);
+  setProjectsHeader('Non-Tech Projects');
+  setProjectsFooterActive('nontech');
+  currentProjectsView = 'nontech';
 }
 
 function createProject() {
@@ -169,6 +180,7 @@ function attachProjectListeners() {
   // Footer toggle buttons
   const featuredBtn = document.getElementById('projects-footer-featuredprojects');
   const archivedBtn = document.getElementById('projects-footer-archivedprojects');
+  const nontechBtn = document.getElementById('projects-footer-nontechprojects');
   if (featuredBtn) {
     featuredBtn.addEventListener('click', () => {
       if (currentProjectsView !== 'featured') showFeaturedProjects();
@@ -177,6 +189,11 @@ function attachProjectListeners() {
   if (archivedBtn) {
     archivedBtn.addEventListener('click', () => {
       if (currentProjectsView !== 'archived') showArchivedProjects();
+    });
+  }
+  if (nontechBtn) {
+    nontechBtn.addEventListener('click', () => {
+      if (currentProjectsView !== 'nontech') showNonTechProjects();
     });
   }
 }
