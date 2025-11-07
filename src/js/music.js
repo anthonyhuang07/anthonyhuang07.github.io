@@ -270,10 +270,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=o4OsvOqHnZM"
   },
   {
-    title: "Karma Code",
-    artist: "SKAI ISYOURGOD",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/95/32/3b/95323b31-1bdd-9bcc-8a6b-329a8d97ec03/749085368376.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=w-3nsoKpsv8"
+    title: "PPPP (feat. Hatsune Miku & Kasane Teto)",
+    artist: "TAK",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/dc/6d/72dc6d7f-e723-2f61-9229-6906822d7b53/199538670301.jpg/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=8Cm-7oCq9HA"
   },
 ];
 
