@@ -178,7 +178,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #1C1C1F;
+  background-color: #1C1C1C;
   width: 4.75rem;
   height: 1.8rem;
   font-size: 1em;
@@ -368,7 +368,7 @@
   width: calc(100% - 5.5rem);
   border-radius: 0.8rem;
   height: 4.185rem;
-  background-color: rgba(37, 37, 39, 0.75);
+  background-color: rgba(37, 37, 37, 0.75);
   position: fixed;
   bottom: 0;
   margin: 0 2.75rem 1.6rem 2.75rem;

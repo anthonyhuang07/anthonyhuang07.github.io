@@ -1,3 +1,4 @@
+// Featured projects
 const projectDetails = {
   "Ontario IB Mark Converter": {
     description: "Converts your Raw IB Mark to a Converted OSSD Mark. (Used by ~300 IBDP students, 8000+ Google clicks)",
@@ -10,12 +11,12 @@ const projectDetails = {
     icon: "https://github.com/anthonyhuang07/PomodoPro/blob/main/assets/pomodoProLogo.png?raw=true"
   },
   "ByteBucks": {
-    description: "An Adventure Capitalist-inspired game made for my Grade 11 High School CS course (100% Final).",
+    description: "An Adventure Capitalist-inspired game made for my Grade 11 High School CS course.",
     link: "https://anthonyhuang.net/ICS3U1-FPT/",
     icon: "/assets/icons/bytebucks.png"
   },
   "SelfStats": {
-    description: "A hub for simple, everyday health tools. Solo Hackathon-Winning project which took under 12 hours to build.",
+    description: "A hub for simple, everyday health tools. Solo Hackathon-Winning project.",
     link: "https://anthonyhuang.net/SelfStats/",
     icon: "/assets/icons/selfstats.png"
   },
@@ -36,33 +37,146 @@ const projectDetails = {
   },
 };
 
+// Archived projects
+const archivedProjects = {
+  "blog.anthonyhuang.net": {
+    description: "My personal blog. No longer maintained.",
+    link: "https://blog.anthonyhuang.net/",
+    icon: "https://github.com/anthonyhuang07/blog.anthonyhuang.net/blob/main/assets/img/newProfilePicture.png?raw=true"
+  },
+  "FHDBot": {
+    description: "A random bot with random features. My first project, made in 2022.",
+    link: "https://github.com/anthonyhuang07/FHDBot",
+    icon: "/assets/icons/oldpfp.png"
+  },
+  "Discord Formatter": {
+    description: "A website to help you format your Discord messages!",
+    link: "https://anthonyhuang.net/discord-formatter/",
+    icon: "https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ=w240-h480-rw"
+  },
+  "Rhythm Revolver": {
+    description: "Web rhythm game made for my Grade 10 High School CS course.",
+    link: "https://anthonyhuang.net/ICS2O1-FPT/",
+    icon: "https://media.licdn.com/dms/image/v2/C5112AQExUeu0Uwrxdg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1555853756108?e=2147483647&v=beta&t=N96fwDtStzXrEpQh9sTr9VUOmtLYGL3jNvK0QvobxuU"
+  },
+  "TextToTest": {
+    description: "A quiz website that uses Markdown to create quizzes. Solo Hackathon-Winning project.",
+    link: "https://anthonyhuang.net/TextToTest/",
+    icon: "https://github.com/anthonyhuang07/TextToTest/blob/main/assets/logo.png?raw=true"
+  },
+  "Latin Variants Translator": {
+    description: "A translator for Pig Latin, Egg Latin, and Bacon Omelette Latin.",
+    link: "https://anthonyhuang.net/Latin-Variants-Translator/",
+    icon: "https://static.wikia.nocookie.net/logopedia/images/5/52/Translate.png"
+  },
+  "FocusFrame": {
+    description: "A minimalistic and customizable study dashboard. Made for a Hackathon.",
+    link: "https://anthonyhuang.net/FocusFrame/",
+    icon: "https://github.com/anthonyhuang07/FocusFrame/blob/main/assets/image.png?raw=true"
+  },
+};
+
+let currentProjectsMap = projectDetails;
+let currentProjectsView = 'featured'; // 'featured' | 'archived'
+
+function renderProjects(map) {
+  const projectsContainer = document.querySelector('.menu.projects main');
+  if (!projectsContainer) return;
+
+  const keys = Object.keys(map);
+  if (keys.length === 0) {
+    projectsContainer.innerHTML = `
+      <div class="project empty">
+        <div>
+          <p class="project-name">Nothing here yet</p>
+          <p class="project-desc">No projects in this section for now.</p>
+        </div>
+      </div>
+    `;
+  } else {
+    projectsContainer.innerHTML = keys
+      .map((title) => {
+        const details = map[title];
+        return `
+            <div class="project">
+              <img src="${details.icon}" alt="${title}">
+              <div>
+                <p class="project-name">${title}</p>
+                <p class="project-desc">${details.description}</p>
+              </div>
+            </div>`;
+      })
+      .join('');
+  }
+
+  currentProjectsMap = map;
+}
+
+function setProjectsHeader(title) {
+  const header = document.querySelector('.menu.projects header h1');
+  if (header) header.textContent = title;
+}
+
+function setProjectsFooterActive(view) {
+  const featuredBtn = document.getElementById('projects-footer-featuredprojects');
+  const archivedBtn = document.getElementById('projects-footer-archivedprojects');
+  if (featuredBtn && archivedBtn) {
+    if (view === 'featured') {
+      featuredBtn.classList.add('active');
+      archivedBtn.classList.remove('active');
+    } else {
+      archivedBtn.classList.add('active');
+      featuredBtn.classList.remove('active');
+    }
+  }
+}
+
+function showFeaturedProjects() {
+  renderProjects(projectDetails);
+  setProjectsHeader('Featured Projects');
+  setProjectsFooterActive('featured');
+  currentProjectsView = 'featured';
+}
+
+function showArchivedProjects() {
+  renderProjects(archivedProjects);
+  setProjectsHeader('Archived Projects');
+  setProjectsFooterActive('archived');
+  currentProjectsView = 'archived';
+}
+
 function createProject() {
-  const projectsContainer = document.querySelector(".menu.projects main");
-  projectsContainer.innerHTML = Object.keys(projectDetails)
-    .map(title => {
-      const details = projectDetails[title];
-      return `
-          <div class="project">
-            <img src="${details.icon}" alt="${title}">
-            <div>
-              <p class="project-name">${title}</p>
-              <p class="project-desc">${details.description}</p>
-            </div>
-          </div>`;
-    }).join("");
+  // default view
+  showFeaturedProjects();
 }
 
 function attachProjectListeners() {
-  const projectsContainer = document.querySelector(".menu.projects main");
-  projectsContainer.addEventListener("click", event => {
-    const card = event.target.closest(".project");
-    if (!card) return;
-    const name = card.querySelector(".project-name")?.textContent.trim();
-    if (name) {
-      const details = projectDetails[name];
-      if (details && details.link) {
-        window.open(details.link, "_blank");
+  const projectsContainer = document.querySelector('.menu.projects main');
+  if (projectsContainer) {
+    projectsContainer.addEventListener('click', (event) => {
+      const card = event.target.closest('.project');
+      if (!card) return;
+      const name = card.querySelector('.project-name')?.textContent.trim();
+      if (name) {
+        const details = currentProjectsMap[name];
+        if (details && details.link) {
+          window.open(details.link, '_blank');
+        }
       }
-    }
-  });
+    });
+  }
+
+  // Footer toggle buttons
+  const featuredBtn = document.getElementById('projects-footer-featuredprojects');
+  const archivedBtn = document.getElementById('projects-footer-archivedprojects');
+  if (featuredBtn) {
+    featuredBtn.addEventListener('click', () => {
+      if (currentProjectsView !== 'featured') showFeaturedProjects();
+    });
+  }
+  if (archivedBtn) {
+    archivedBtn.addEventListener('click', () => {
+      if (currentProjectsView !== 'archived') showArchivedProjects();
+    });
+  }
 }

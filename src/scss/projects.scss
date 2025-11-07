@@ -98,4 +98,42 @@
             }
         }
     }
+
+    footer {
+        height: 3.5rem;
+        width: 100%;
+        background-color: rgb(37, 37, 37, 0.75);
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(12px);
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 3rem 0 3rem;
+            cursor: pointer;
+
+            i {
+            font-size: 1.55em;
+            }
+
+            p {
+                font-family: $SFR;
+                font-size: 0.7em;
+                text-align: center;
+                margin-top: 0.25rem;
+                letter-spacing: 0.5px;
+            }
+
+            &.active {
+                color: $appleBlue;
+            }   
+        }
+
+        // Highlight the active tab (Featured/Archived)
+    }
 }
