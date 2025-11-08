@@ -73,7 +73,9 @@ const appDetails = {
         subtitle: "M4 MacBook Air, Keychron Q1",
         description: `I care very much about my desk setup and tech. My main machine is an M4 MacBook Air (16GB RAM, 512GB SSD)
 
-        <br><br>I am also a mechanical keyboard enthusiast. My current build is a Keychron Q1 V2 (Knob) with Gateron Milky Yellows (lubed w/ Krytox 205g0) and Keychron Binary Cherry Dye-Sub PBT keycaps. I use stock stabilizers (factory pre-lubed) and I use a foam + PE foam mod using the Keychron Q1 Acoustic upgrade kit. `,
+        <br><br>I am also a mechanical keyboard enthusiast. My current build is a Keychron Q1 V2 (Knob) with Gateron Milky Yellows (lubed w/ Krytox 205g0) and Keychron Binary Cherry Dye-Sub PBT keycaps. I use stock stabilizers (factory pre-lubed) and I use a foam + PE foam mod using the Keychron Q1 Acoustic upgrade kit.
+
+        <br><br>Other parts of my setup include my monitor - Acer EK241Y Gbi (24", 1080p, 120Hz), my headphones - AKG K240 Studio (55Ω), my mouse - Razer Basilisk V3, and my microphone - Blue Snowball iCE.`,
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
     },
