@@ -77,8 +77,10 @@ const appDetails = {
     },
     "9": {
         title: "Setup",
-        subtitle: "M4 MacBook Air, Keychron K8, AKG K240",
-        description: "I use an M4 MacBook Air 💻 for everything (R.I.P Hardware Failure M2 MacBook Air). I'm a keyboard enthusiast as well, using a Keychron K8 ⌨️ (Lubed Gateron Milky Yellows). For audio, I use the AKG K240 Studio Headphones 🎧 and a Blue Snowball iCE Microphone 🎙️.",
+        subtitle: "M4 MacBook Air, Keychron Q1",
+        description: `I care very much about my desk setup and tech. My main machine is an M4 MacBook Air (16GB RAM, 512GB SSD)
+
+        <br><br>I am also a mechanical keyboard enthusiast. My current build is a Keychron Q1 V2 (Knob) with Gateron Milky Yellows (lubed w/ Krytox 205g0) and Keychron Binary Cherry Dye-Sub PBT keycaps. I use stock stabilizers (factory pre-lubed) and I use a foam + PE foam mod using the Keychron Q1 Acoustic upgrade kit. `,
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
     },
