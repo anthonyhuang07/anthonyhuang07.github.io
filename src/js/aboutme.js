@@ -51,20 +51,13 @@ const appDetails = {
         icon: "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
     },
     "6": {
-        title: "Games",
-        subtitle: "Rocket League D1, 1K+ Hours on Geometry Dash",
-        description: `I occasionally play games. The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">Demons</a> completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon). I also play <a href="https://rocketleague.tracker.network/rocket-league/profile/epic/fhdhgngn/" target="_blank">Rocket League</a> (Diamond I 💎)`,
-        link: "https://steamcommunity.com/profiles/76561199118468554/",
-        icon: "/assets/icons/steam.webp"
-    },
-    "7": {
         title: "Sports",
         subtitle: "Montréal Canadiens, CF Montréal",
         description: `My favorite sports are Football ⚽️ and Hockey 🏒. In football, I am a fan of CF Montréal ⚜️, my boyhood club. Of course in hockey, I support the Montréal Canadiens.`,
         link: "https://www.youtube.com/watch?v=qgIOXoHwOeM",
         icon: "https://play-lh.googleusercontent.com/BoCbco5x4p64e2fc0XkGEpgvsH42gReh4OzKYeoYnFpUfmKD96clplFFKk7JpxVmMNM"
     },
-    "8": {
+    "7": {
         title: "Transit",
         subtitle: "Urban Rail Enthusiast & Avgeek",
         description: `I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.
@@ -75,7 +68,7 @@ const appDetails = {
         link: "#",
         icon: "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
     },
-    "9": {
+    "8": {
         title: "Setup",
         subtitle: "M4 MacBook Air, Keychron Q1",
         description: `I care very much about my desk setup and tech. My main machine is an M4 MacBook Air (16GB RAM, 512GB SSD)
@@ -83,6 +76,13 @@ const appDetails = {
         <br><br>I am also a mechanical keyboard enthusiast. My current build is a Keychron Q1 V2 (Knob) with Gateron Milky Yellows (lubed w/ Krytox 205g0) and Keychron Binary Cherry Dye-Sub PBT keycaps. I use stock stabilizers (factory pre-lubed) and I use a foam + PE foam mod using the Keychron Q1 Acoustic upgrade kit. `,
         link: "#",
         icon: "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
+    },
+    "9": {
+        title: "Games",
+        subtitle: "Rocket League D1, 1K+ Hours on Geometry Dash",
+        description: `I occasionally play games. The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 <a href="https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0" target="_blank">Demons</a> completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon). I also play <a href="https://rocketleague.tracker.network/rocket-league/profile/epic/fhdhgngn/" target="_blank">Rocket League</a> (Diamond I 💎)`,
+        link: "https://steamcommunity.com/profiles/76561199118468554/",
+        icon: "/assets/icons/steam.webp"
     },
     /*
     "10": {
