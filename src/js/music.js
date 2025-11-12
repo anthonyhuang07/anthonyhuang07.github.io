@@ -173,11 +173,11 @@ function applyGradientEffect(imgElement) {
 // #region Favorite Song
 
 const favoriteSongDetails = {
-  favoriteDate: "NOV 6, 2025",
-  songName: "Requiem (feat. Hoshimachi Suisei)",
-  artistName: "Kanaria",
-  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ac/19/f3/ac19f312-548f-2323-2fd3-f93bc6949d1f/859759552014_cover.png/600x600bf-60.jpg",
-  link: "https://www.youtube.com/watch?v=5Jja39-69G8"
+  favoriteDate: "NOV 12, 2025",
+  songName: "Sakura Biyori and Time Machine",
+  artistName: "Ado & Hatsune Miku",
+  albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
+  link: "https://www.youtube.com/watch?v=nIWZfhpnq6M"
 };
 
 function renderFavoriteSong() {
@@ -234,10 +234,10 @@ const featuredSongs = [
     link: "https://www.youtube.com/watch?v=oAuKa5NOzWE"
   },
   {
-    title: "DEADPOOL (feat. KAF)",
-    artist: "Hoshimachi Suisei",
-    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
-    link: "https://www.youtube.com/watch?v=Fg5-55vZwp0"
+    title: "Requiem (feat. Hoshimachi Suisei)",
+    artist: "Kanaria",
+    albumArt: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ac/19/f3/ac19f312-548f-2323-2fd3-f93bc6949d1f/859759552014_cover.png/600x600bf-60.jpg",
+    link: "https://www.youtube.com/watch?v=5Jja39-69G8"
   },
   {
     title: "最低界隈",
