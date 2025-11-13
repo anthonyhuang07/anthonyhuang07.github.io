@@ -16,12 +16,12 @@ jobs:
         if: success()
         run: |
           curl -H "Content-Type: application/json" \
-          -d "{\"content\": null, \"embeds\": [{\"title\": \"🚀 Deployment Successful\", \"description\": \"The website **anthonyhuang.net** deployed successfully.\", \"color\": 3066993}]}" \
+          -d "{\"content\": null, \"embeds\": [{\"title\": \"🚀 Deployment Successful\", \"description\": \"Your fuckass website **anthonyhuang.net** deployed successfully.\", \"color\": 3066993}]}" \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Notify Discord (failure)
         if: failure()
         run: |
           curl -H "Content-Type: application/json" \
-          -d "{\"content\": null, \"embeds\": [{\"title\": \"❌ Deployment Failed\", \"description\": \"Deployment for **anthonyhuang.net** failed.\", \"color\": 15158332}]}" \
+          -d "{\"content\": null, \"embeds\": [{\"title\": \"❌ Deployment Failed\", \"description\": \"Your fuckass website **anthonyhuang.net** fucking failed to deploy. Are you stupid?\", \"color\": 15158332}]}" \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
