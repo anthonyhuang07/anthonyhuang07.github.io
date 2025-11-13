@@ -74,9 +74,9 @@ function cycleName(){
 
 document.addEventListener("DOMContentLoaded", () => {
   const backgrounds = [
-    "assets/backgrounds/0.webp",
-    "assets/backgrounds/1.webp",
-    "assets/backgrounds/2.webp",
+    "/assets/backgrounds/0.webp",
+    "/assets/backgrounds/1.webp",
+    "/assets/backgrounds/2.webp",
     // "assets/backgrounds/4.jpg",
   ];
   const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];

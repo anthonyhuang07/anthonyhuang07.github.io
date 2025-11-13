@@ -288,6 +288,20 @@ body>main {
         margin-right: 0;
       }
 
+      .app-icon-button {
+        background: none;
+        border: none;
+        padding: 0;
+        border-radius: 22%;
+        display: inline-flex;
+        cursor: pointer;
+
+        &:focus-visible {
+          outline: 2px solid rgba(255, 255, 255, 0.8);
+          outline-offset: 4px;
+        }
+      }
+
       p {
         color: white;
         margin-top: 0.4rem;

@@ -65,12 +65,16 @@ permalink: /
     <h1 id="name">Anthony Huang</h1>
     <div>
       <div>
-        <img src="/assets/icons/aboutme.webp" alt="App Store Icon, About Me" onclick="appOpen(1)">
-        <p>About Me</p>
+        <button type="button" class="app-icon-button" onclick="appOpen(1)" aria-labelledby="app-label-about">
+          <img src="/assets/icons/aboutme.webp" alt="">
+        </button>
+        <p id="app-label-about">About Me</p>
       </div>
       <div>
-        <img src="/assets/icons/projects.webp" alt="Files Icon, Projects" onclick="appOpen(2)">
-        <p>Projects</p>
+        <button type="button" class="app-icon-button" onclick="appOpen(2)" aria-labelledby="app-label-projects">
+          <img src="/assets/icons/projects.webp" alt="">
+        </button>
+        <p id="app-label-projects">Projects</p>
       </div>
       <!-- <div>
         <a href="https://blog.anthonyhuang.net">
@@ -79,12 +83,16 @@ permalink: /
         <p>Blog</p>
       </div> -->
       <div>
-        <img src="/assets/icons/contact.webp" alt="Contacts Icon, Contact" onclick="appOpen(3)">
-        <p>Contact</p>
+        <button type="button" class="app-icon-button" onclick="appOpen(3)" aria-labelledby="app-label-contact">
+          <img src="/assets/icons/contact.webp" alt="">
+        </button>
+        <p id="app-label-contact">Contact</p>
       </div>
       <div>
-        <img src="/assets/icons/music.webp" alt="Music Icon, Music" onclick="appOpen(4)">
-        <p>Music</p>
+        <button type="button" class="app-icon-button" onclick="appOpen(4)" aria-labelledby="app-label-music">
+          <img src="/assets/icons/music.webp" alt="">
+        </button>
+        <p id="app-label-music">Music</p>
       </div>
     </div>
   </main>
