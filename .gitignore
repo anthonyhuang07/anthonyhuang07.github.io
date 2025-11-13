@@ -1,5 +1,6 @@
 .DS_Store
 /.vscode/
 
-/assets/*.{jpg,jpeg}
+/assets/*.jpg
+/assets/*.jpeg
 /assets/*.png
