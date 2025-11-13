@@ -12,12 +12,12 @@
     },
     "ByteBucks": {
       "description": "An Adventure Capitalist-inspired game made for my Grade 11 High School CS course.",
-      "link": "https://anthonyhuang.net/ICS3U1-FPT/",
+      "link": "https://anthonyhuang07.github.io/ICS3U1-FPT/",
       "icon": "/assets/icons/bytebucks.png"
     },
     "Piracy": {
       "description": "Piracy is a serious crime. Click for more info... (Prank Website)",
-      "link": "https://anthonyhuang.net/piracy/",
+      "link": "https://anthonyhuang07.github.io/piracy/",
       "icon": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"
     }
   },
@@ -34,32 +34,32 @@
     },
     "Discord Formatter": {
       "description": "A website to help you format your Discord messages!",
-      "link": "https://anthonyhuang.net/discord-formatter/",
+      "link": "https://anthonyhuang07.github.io/discord-formatter/",
       "icon": "https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ=w240-h480-rw"
     },
     "Rhythm Revolver": {
       "description": "Web rhythm game made for my Grade 10 High School CS course.",
-      "link": "https://anthonyhuang.net/ICS2O1-FPT/",
+      "link": "https://anthonyhuang07.github.io/ICS2O1-FPT/",
       "icon": "https://media.licdn.com/dms/image/v2/C5112AQExUeu0Uwrxdg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1555853756108?e=2147483647&v=beta&t=N96fwDtStzXrEpQh9sTr9VUOmtLYGL3jNvK0QvobxuU"
     },
     "SelfStats": {
       "description": "A hub for simple, everyday health tools. Solo Hackathon-Winning project.",
-      "link": "https://anthonyhuang.net/SelfStats/",
+      "link": "https://anthonyhuang07.github.io/SelfStats/",
       "icon": "/assets/icons/selfstats.png"
     },
     "TextToTest": {
       "description": "A quiz website that uses Markdown to create quizzes. Solo Hackathon-Winning project.",
-      "link": "https://anthonyhuang.net/TextToTest/",
+      "link": "https://anthonyhuang07.github.io/TextToTest/",
       "icon": "https://github.com/anthonyhuang07/TextToTest/blob/main/assets/logo.png?raw=true"
     },
     "Latin Variants Translator": {
       "description": "A translator for Pig Latin, Egg Latin, and Bacon Omelette Latin.",
-      "link": "https://anthonyhuang.net/Latin-Variants-Translator/",
+      "link": "https://anthonyhuang07.github.io/Latin-Variants-Translator/",
       "icon": "https://static.wikia.nocookie.net/logopedia/images/5/52/Translate.png"
     },
     "FocusFrame": {
       "description": "A minimalistic and customizable study dashboard. Made for a Hackathon.",
-      "link": "https://anthonyhuang.net/FocusFrame/",
+      "link": "https://anthonyhuang07.github.io/FocusFrame/",
       "icon": "https://github.com/anthonyhuang07/FocusFrame/blob/main/assets/image.png?raw=true"
     }
   },
