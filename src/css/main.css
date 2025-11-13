@@ -374,7 +374,7 @@ body > main div > div {
 body > main div > div:nth-child(4) {
   margin-right: 0;
 }
-body > main div > div .app-icon-button {
+body > main div > div .home-appIcon {
   background: none;
   border: none;
   padding: 0;
@@ -384,7 +384,7 @@ body > main div > div .app-icon-button {
   display: inline-flex;
   cursor: pointer;
 }
-body > main div > div .app-icon-button:focus-visible {
+body > main div > div .home-appIcon:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.8);
   outline-offset: 4px;
 }
