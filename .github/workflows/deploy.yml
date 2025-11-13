@@ -15,13 +15,43 @@ jobs:
       - name: Notify Discord (success)
         if: success()
         run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          AUTHOR="${{ github.actor }}"
+          URL="${{ github.event.head_commit.url }}"
+
           curl -H "Content-Type: application/json" \
-          -d "{\"content\": null, \"embeds\": [{\"title\": \"🚀 Deployment Successful\", \"description\": \"Your fuckass website **anthonyhuang.net** deployed successfully.\", \"color\": 3066993}]}" \
+          -d "{
+            \"content\": null,
+            \"embeds\": [{
+              \"title\": \"🚀 Deployment Successful\",
+              \"description\": \"Your fuckass website **anthonyhuang.net** deployed successfully.\",
+              \"fields\": [
+                {\"name\": \"Commit Message\", \"value\": \"${COMMIT_MSG}\"},
+                {\"name\": \"Author\", \"value\": \"${AUTHOR}\"},
+                {\"name\": \"Commit\", \"value\": \"[View Commit](${URL})\"}
+              ],
+              \"color\": 3066993
+            }]
+          }" \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Notify Discord (failure)
         if: failure()
         run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          AUTHOR="${{ github.actor }}"
+
           curl -H "Content-Type: application/json" \
-          -d "{\"content\": null, \"embeds\": [{\"title\": \"❌ Deployment Failed\", \"description\": \"Your fuckass website **anthonyhuang.net** fucking failed to deploy. Are you stupid?\", \"color\": 15158332}]}" \
+          -d "{
+            \"content\": null,
+            \"embeds\": [{
+              \"title\": \"❌ Deployment Failed\",
+              \"description\": \"Your fuckass website **anthonyhuang.net** failed to deploy. Cope.\",
+              \"fields\": [
+                {\"name\": \"Commit Message\", \"value\": \"${COMMIT_MSG}\"},
+                {\"name\": \"Author\", \"value\": \"${AUTHOR}\"}
+              ],
+              \"color\": 15158332
+            }]
+          }" \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
