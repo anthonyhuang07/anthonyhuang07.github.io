@@ -341,6 +341,11 @@ const favoriteArtists = [
     art: "https://lh3.googleusercontent.com/JQIgeDQZjVs4Jgj5QgptQU3gBQ9H-RkLyqNU-5s1_zxNS5qn6mWG--I4TlChdGt319elzvllUrnWpGs=w544-h544-p-l90-rj",
     link: "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
   },
+  {
+    name: "Creo",
+    art: "https://static.wikia.nocookie.net/youtube/images/6/6e/Creo.jpg",
+    link: "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
+  },
 ];
 
 function renderFavoriteArtists() {
