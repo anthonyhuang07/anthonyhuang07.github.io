@@ -1,0 +1,125 @@
+{
+  "favoriteSong": {
+    "favoriteDate": "NOV 12, 2025",
+    "songName": "Sakura Biyori and Time Machine",
+    "artistName": "Ado & Hatsune Miku",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
+    "link": "https://www.youtube.com/watch?v=nIWZfhpnq6M"
+  },
+  "featuredSongs": [
+    {
+      "title": "Show",
+      "artist": "Ado",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/e8/82/80e8826c-f877-9a74-0e7b-a142108feda0/23UMGIM92958.rgb.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=pgXpM4l_MwI"
+    },
+    {
+      "title": "AWAKE",
+      "artist": "Hoshimachi Suisei",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/02/ed/af02ede0-cf69-ed76-65fd-7f969a30a409/HoshimachiSuisei_AWAKE_JKT.png/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=K9YGGOd63yc"
+    },
+    {
+      "title": "アイモライモ",
+      "artist": "tuki.",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/0f/2c/290f2ce9-6af3-4ace-e5f7-d9c9df751c0e/4582649322263.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=urh7DZp59WU"
+    },
+    {
+      "title": "劣等上等 歌ってみた",
+      "artist": "FantasticYouth",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/0c/20/950c2012-f8c2-67b8-4321-2a4138557c1a/199066040836.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=wBglu_UImio"
+    },
+    {
+      "title": "風と私の物語",
+      "artist": "Ado",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=oAuKa5NOzWE"
+    },
+    {
+      "title": "Requiem (feat. Hoshimachi Suisei)",
+      "artist": "Kanaria",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ac/19/f3/ac19f312-548f-2323-2fd3-f93bc6949d1f/859759552014_cover.png/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=5Jja39-69G8"
+    },
+    {
+      "title": "最低界隈",
+      "artist": "tuki.",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=UAsdgWVwXlc"
+    },
+    {
+      "title": "Moral Crumble",
+      "artist": "FantasticYouth",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2f/87/a3/2f87a3ac-624e-70e6-76a6-1ec1a409e706/21UMGIM25282.rgb.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=Z3dVAI0_YTI"
+    },
+    {
+      "title": "Actor",
+      "artist": "Lilas Ikuta",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/ed/1f/faed1f7f-9534-b72e-3773-ae1764fd2818/199538775334.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=fH8hLLww2JI"
+    },
+    {
+      "title": "Monotone",
+      "artist": "YOASOBI",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/05/a9/df05a94d-ff41-e0e1-f156-f40ee7c9922b/198846242873.jpg/486x486bb.png",
+      "link": "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
+    },
+    {
+      "title": "MURI MURI EVOLUTION",
+      "artist": "NANAOAKARI",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=o4OsvOqHnZM"
+    },
+    {
+      "title": "PPPP (feat. Hatsune Miku & Kasane Teto)",
+      "artist": "TAK",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/dc/6d/72dc6d7f-e723-2f61-9229-6906822d7b53/199538670301.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=8Cm-7oCq9HA"
+    }
+  ],
+  "favoriteArtists": [
+    {
+      "name": "Ado",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/cc/19/c9/cc19c998-8c2a-b278-d0ed-d85c5a04fedc/ami-identity-75a97779b1fcac49bfafa6c4b7a6a78f-2025-01-10T01-04-23.725Z_cropped.png/486x486bb.png",
+      "link": "https://www.youtube.com/@Ado1024/releases"
+    },
+    {
+      "name": "Hoshimachi Suisei",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/33/b7/12/33b71234-9a80-bb43-ba51-90957936aa67/ami-identity-e6d23ad47868d1a630f4c3d23676d80b-2024-11-14T13-08-57.789Z_cropped.png/486x486bb.png",
+      "link": "https://www.youtube.com/@HoshimachiSuisei/releases"
+    },
+    {
+      "name": "tuki.",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/94/6e/ac/946eace6-19bd-50fb-47e3-11d1e6069308/mzl.lbazlcoq.jpg/486x486bb.png",
+      "link": "https://www.youtube.com/@tuki.music_official/releases"
+    },
+    {
+      "name": "FantasticYouth",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/74/b2/fd/74b2fdac-51dd-470f-a65e-1c5d9425c1b2/mzl.yovtyvrc.jpg/486x486bb.png",
+      "link": "https://www.youtube.com/@fantasticyouth3913/releases"
+    },
+    {
+      "name": "YOASOBI",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/56/15/1b/56151bed-1098-5871-e142-6958c608e1df/mzl.yauzwfvn.jpg/486x486bb.png",
+      "link": "https://www.youtube.com/@Ayase_YOASOBI/releases"
+    },
+    {
+      "name": "Lilas Ikuta",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/a8/88/ae/a888ae75-fd6f-5299-303d-b7df7d2ab90c/mzl.dandmemk.jpg/486x486bb.png",
+      "link": "https://www.youtube.com/@Lilas_Ikuta/releases"
+    },
+    {
+      "name": "kessoku band",
+      "art": "https://lh3.googleusercontent.com/JQIgeDQZjVs4Jgj5QgptQU3gBQ9H-RkLyqNU-5s1_zxNS5qn6mWG--I4TlChdGt319elzvllUrnWpGs=w544-h544-p-l90-rj",
+      "link": "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
+    },
+    {
+      "name": "Creo",
+      "art": "https://static.wikia.nocookie.net/youtube/images/6/6e/Creo.jpg",
+      "link": "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
+    }
+  ]
+}

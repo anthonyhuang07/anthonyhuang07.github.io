@@ -1,0 +1,60 @@
+[
+  {
+    "items": [
+      {
+        "platform": "email",
+        "username": "info@anthonyhuang.net",
+        "link": "mailto:info@anthonyhuang.net",
+        "icon": "fa-solid fa-envelope"
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "platform": "Discord",
+        "username": "@fhdhgngn",
+        "link": "https://discord.com/users/628672513345454122",
+        "icon": "fa-brands fa-discord"
+      },
+      {
+        "platform": "Instagram",
+        "username": "anthonyhuang07",
+        "link": "https://www.instagram.com/anthonyhuang07/",
+        "icon": "fa-brands fa-instagram"
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "platform": "GitHub",
+        "username": "anthonyhuang07",
+        "link": "https://github.com/anthonyhuang07",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "platform": "LinkedIn",
+        "username": "anthonyhuang07",
+        "link": "https://www.linkedin.com/in/anthonyhuang07/",
+        "icon": "fa-brands fa-linkedin"
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "platform": "MyAnimeList",
+        "username": "FHDHGNGN",
+        "link": "https://myanimelist.net/profile/FHDHGNGN",
+        "icon": "fa-solid fa-film"
+      },
+      {
+        "platform": "Apple Music",
+        "username": "anthonyhuang07",
+        "link": "https://music.apple.com/profile/anthonyhuang07",
+        "icon": "fa-solid fa-music"
+      }
+    ]
+  }
+]
