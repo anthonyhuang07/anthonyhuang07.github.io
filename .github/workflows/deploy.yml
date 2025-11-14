@@ -27,7 +27,6 @@ jobs:
               \"description\": \"Your fuckass website **anthonyhuang.net** deployed successfully.\",
               \"fields\": [
                 {\"name\": \"Commit Message\", \"value\": \"${COMMIT_MSG}\"},
-                {\"name\": \"Author\", \"value\": \"${AUTHOR}\"},
                 {\"name\": \"Commit\", \"value\": \"[View Commit](${URL})\"}
               ],
               \"color\": 3066993
