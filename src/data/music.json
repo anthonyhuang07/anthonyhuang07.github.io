@@ -1,10 +1,10 @@
 {
   "favoriteSong": {
-    "favoriteDate": "NOV 12, 2025",
-    "songName": "Sakura Biyori and Time Machine",
-    "artistName": "Ado & Hatsune Miku",
-    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
-    "link": "https://www.youtube.com/watch?v=nIWZfhpnq6M"
+    "favoriteDate": "NOV 14, 2025",
+    "title": "BALALAIKA",
+    "artist": "9Lana",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e1/bc/68/e1bc68eb-3ba5-6da9-953f-e1800a4fcd38/197190970227.jpg/600x600bf-60.jpg",
+    "link": "https://www.youtube.com/watch?v=S2Xu6_XWy4M"
   },
   "featuredSongs": [
     {
@@ -32,10 +32,10 @@
       "link": "https://www.youtube.com/watch?v=wBglu_UImio"
     },
     {
-      "title": "風と私の物語",
-      "artist": "Ado",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
-      "link": "https://www.youtube.com/watch?v=oAuKa5NOzWE"
+      "title": "Sakura Biyori and Time Machine",
+      "artist": "Ado & Hatsune Miku",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=nIWZfhpnq6M"
     },
     {
       "title": "Requiem (feat. Hoshimachi Suisei)",
@@ -48,6 +48,12 @@
       "artist": "tuki.",
       "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
       "link": "https://www.youtube.com/watch?v=UAsdgWVwXlc"
+    },
+    {
+      "title": "風と私の物語",
+      "artist": "Ado",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=oAuKa5NOzWE"
     },
     {
       "title": "Moral Crumble",
@@ -66,12 +72,6 @@
       "artist": "YOASOBI",
       "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/05/a9/df05a94d-ff41-e0e1-f156-f40ee7c9922b/198846242873.jpg/486x486bb.png",
       "link": "https://www.youtube.com/watch?v=sJ-2X3rHtXw"
-    },
-    {
-      "title": "MURI MURI EVOLUTION",
-      "artist": "NANAOAKARI",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/a9/11/9da911e3-c3ee-7f2c-ca38-3fc34850885f/4547366756616.jpg/1200x630bb.jpg",
-      "link": "https://www.youtube.com/watch?v=o4OsvOqHnZM"
     },
     {
       "title": "Kichijoji",

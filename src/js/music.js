@@ -208,8 +208,8 @@ function renderFavoriteSong(details) {
       <div>
         <div>
           <h6>${details.favoriteDate}</h6>
-          <p>${details.songName}</p>
-          <h5>${details.artistName}</h5>
+          <p>${details.title}</p>
+          <h5>${details.artist}</h5>
         </div>
         <a href="${details.link}" target="_blank" rel="noopener noreferrer">Open</a>
       </div>
