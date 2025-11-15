@@ -106,7 +106,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 0;
 }
 .music article .music-favoriteSong h2 {
   font-size: 1.55em;
@@ -123,7 +122,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   min-width: 23rem;
-  min-width: 0;
 }
 .music article .music-favoriteSong > div img {
   width: 172px;
@@ -141,11 +139,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 1rem;
-  min-width: 0;
 }
 .music article .music-favoriteSong > div > div > div {
   margin-top: 1.95rem;
-  min-width: 0;
 }
 .music article .music-favoriteSong > div > div > div h6 {
   font-size: 0.8em;

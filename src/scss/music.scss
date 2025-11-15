@@ -67,7 +67,6 @@
       display: flex;
       color: white;
       flex-direction: column;
-      min-width: 0; // allow inner text to shrink
 
       h2 {
         font-size: 1.55em;
@@ -80,7 +79,6 @@
         display: flex;
         flex-direction: row;
         min-width: 23rem;
-        min-width: 0; // permit shrinking
 
         img {
           width: 172px;
@@ -92,11 +90,10 @@
           flex-direction: column;
           justify-content: space-between;
           margin-left: 1rem;
-          min-width: 0; // allow child text block to shrink
+
 
           >div {
             margin-top: 1.95rem;
-            min-width: 0; // container for h6/p/h5
 
             h6 {
               font-size: 0.8em;
