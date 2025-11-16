@@ -1,6 +1,6 @@
 const dynamicIsland = document.getElementById('dynamicIsland');
-const albumArt = dynamicIsland.querySelector('img');
-const audioPreview = dynamicIsland.querySelector('#audioPreview');
+const albumArt = dynamicIsland.querySelectorAll('.island-albumArt');
+const audioPreview = dynamicIsland.querySelectorAll('.island-audioPreview');
 const songNameElement = dynamicIsland.querySelector('#songName');
 const artistNameElement = dynamicIsland.querySelector('#artistName');
 const playPauseButton = dynamicIsland.querySelector('#playPauseButton');
@@ -66,31 +66,33 @@ function nowPlaying() {
           imageUrl = 'https://' + fixedUrl;
         }
 
-        albumArt.crossOrigin = "Anonymous";
-        albumArt.src = imageUrl;
+        albumArt.forEach(img => {
+          img.crossOrigin = "Anonymous";
+          img.src = imageUrl;
+          
+          img.onload = () => {
+            applyGradientEffect(img);
+          };
+
+          img.onerror = () => {
+            console.error('Error loading album art image');
+            img.src = '/assets/icons/defaultMusic.webp';
+            nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
+            img.onload = () => {
+              const bars = document.querySelectorAll('.bar');
+              bars.forEach(bar => {
+                bar.style.backgroundColor = '#ffffff';
+                bar.style.backgroundImage = 'none';
+              });
+            };
+          };
+        });
 
         nowPlayingArt.src = imageUrl;
         nowPlayingTextContainer.innerHTML = `
           <p class="music-nowPlaying-song">${songName}</p>
           <p class="music-nowPlaying-artist">${artistName}</p>
         `;
-
-        albumArt.onload = () => {
-          applyGradientEffect(albumArt);
-        };
-
-        albumArt.onerror = () => {
-          console.error('Error loading album art image');
-          albumArt.src = '/assets/icons/defaultMusic.webp';
-          nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
-          albumArt.onload = () => {
-            const bars = document.querySelectorAll('.bar');
-            bars.forEach(bar => {
-              bar.style.backgroundColor = '#ffffff';
-              bar.style.backgroundImage = 'none';
-            });
-          };
-        };
 
         songNameElement.textContent = songName;
         artistNameElement.textContent = artistName;
@@ -106,8 +108,8 @@ function nowPlaying() {
 
       if (!musicPlaying) {
         dynamicIsland.classList.remove('playing');
-        albumArt.style.display = 'none';
-        audioPreview.style.display = 'none';
+        albumArt.forEach(img => img.style.display = 'none');
+        audioPreview.forEach(preview => preview.style.display = 'none');
         clearInterval(intervalId);
 
         nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
@@ -127,8 +129,8 @@ function nowPlaying() {
         if (playingBadge) playingBadge.remove();
       } else {
         dynamicIsland.classList.add('playing');
-        albumArt.style.display = 'block';
-        audioPreview.style.display = 'flex';
+        albumArt.forEach(img => img.style.display = 'block');
+        audioPreview.forEach(preview => preview.style.display = 'flex');
 
         const badge = document.querySelector('.music-nowPlaying img.notPlayingBadge');
         if (badge) badge.remove();
@@ -268,19 +270,13 @@ function renderFavoriteArtists(artists = []) {
 
 // #endregion
 
-
 document.addEventListener("DOMContentLoaded", () => {
   loadMusicData()
     .then((data) => {
       renderFavoriteSong(data.favoriteSong);
-      renderFeaturedSongs(data.featuredSongs || []);
-      renderFavoriteArtists(data.favoriteArtists || []);
+      renderFeaturedSongs(data.featuredSongs);
+      renderFavoriteArtists(data.favoriteArtists);
     })
-    .catch(() => {
-      renderFavoriteSong();
-      renderFeaturedSongs();
-      renderFavoriteArtists();
-    });
   nowPlaying();
   setInterval(nowPlaying, 1000);
 });

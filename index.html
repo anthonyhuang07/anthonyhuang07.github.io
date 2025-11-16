@@ -35,31 +35,44 @@ permalink: /
   <!-- <img src="/assets/hyuru.jpeg" style="z-index: 9999; position: absolute; height: 100%; opacity: 50%; top: 0;"> -->
   <div id="bg"></div>
   <div id="dynamicIsland">
-    <div id="island-main">
-      <div id="island-main-left">
-        <img src="" id="island-albumArt" />
-        <div id="songInfo">
-          <div id="songName">Song Name</div>
-          <div id="artistName">Artist Name</div>
+    <div id="island-closed">
+      <img src="" class="island-albumArt closed" alt="Dynamic Island Music Album Art"/>
+      <div class="island-audioPreview closed">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div id="island-open">
+      <div id="island-main">
+        <div id="island-main-left">
+          <img src="" class="island-albumArt open" />
+          <div id="songInfo">
+            <div id="songName">Song Name</div>
+            <div id="artistName">Artist Name</div>
+          </div>
+        </div>
+        <div class="island-audioPreview open">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
       </div>
-      <div id="audioPreview">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div id="timeline">
+        <span id="currentTime">0:00</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <span id="timeLeft">0:00</span>
       </div>
+      <img src="/assets/elements/dynamicIslandControls.png" id="mediaControls" />
     </div>
-    <div id="timeline">
-      <span id="currentTime">0:00</span>
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-      <span id="timeLeft">0:00</span>
-    </div>
-    <img src="/assets/elements/dynamicIslandControls.png" id="mediaControls" />
   </div>
   <main>
     <h1 id="name">Anthony Huang</h1>
