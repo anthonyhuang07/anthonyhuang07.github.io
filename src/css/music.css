@@ -155,6 +155,8 @@
           align-items: center;
   position: absolute;
   padding: 1.4rem;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   -webkit-animation: showIslandOpen 0.6s forwards;
           animation: showIslandOpen 0.6s forwards;
 }
@@ -347,7 +349,6 @@
     opacity: 1;
     -webkit-filter: blur(0px);
             filter: blur(0px);
-    display: none;
   }
   100% {
     opacity: 0;
@@ -363,7 +364,6 @@
     opacity: 1;
     -webkit-filter: blur(0px);
             filter: blur(0px);
-    display: none;
   }
   100% {
     opacity: 0;
@@ -376,10 +376,14 @@
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0;
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
   }
   100% {
     opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 @keyframes showIslandOpen {
@@ -387,10 +391,14 @@
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0;
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
   }
   100% {
     opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 .music {
