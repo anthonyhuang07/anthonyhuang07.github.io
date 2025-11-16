@@ -32,6 +32,7 @@
 
   #island-open {
     display: none;
+    position: absolute;
     width: 100%;
 
     #timeline {
@@ -73,6 +74,15 @@
 
   &.playing {
     width: 190px;
+    animation: dynamicIslandCollapse 0.75s ease-in-out forwards;
+
+    #island-closed {
+      animation: showIslandClosed 0.6s forwards;
+    }
+
+    #island-open {
+      animation: hideIslandOpen 0.6s forwards;
+    }
 
     &:hover,
     &:active {
@@ -93,7 +103,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
         padding: 1.4rem;
         filter: blur(20px);
         animation: showIslandOpen 0.6s forwards;
@@ -236,6 +245,28 @@
   }
 }
 
+@keyframes dynamicIslandCollapse {
+  0% {
+    transform: scale(1);
+    width: 372.5px;
+    height: 202.5px;
+    border-radius: 2.75rem;
+  }
+
+  43% {
+    width: 130px;
+    height: 40px;
+    border-radius: 2.75rem;
+  }
+
+  100% {
+    transform: scale(1);
+    width: 190px;
+    height: 40px;
+    border-radius: 100rem;
+  }
+}
+
 @keyframes hideIslandClosed {
   0% {
     opacity: 1;
@@ -252,6 +283,22 @@
   }
 }
 
+@keyframes showIslandClosed {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
 @keyframes showIslandOpen {
   0% {
     opacity: 0;
@@ -265,6 +312,22 @@
   100% {
     opacity: 1;
     filter: blur(0px);
+  }
+}
+
+@keyframes hideIslandOpen {
+  0% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
