@@ -58,17 +58,18 @@ function hideAppView(){
 
 function cycleName(){
   const nameEl = document.querySelector("#name");
+  if (!nameEl) return;
   const names = ["Anthony Huang", "黄嘉言", "アンソニー", "황가언"];
   let index = 0;
+  const fadeDuration = 500;
   setInterval(() => {
-    nameEl.style.opacity = "0";
-    nameEl.addEventListener("transitionend", function handler() {
-      if (window.getComputedStyle(nameEl).opacity === "0") {
-        index = (index + 1) % names.length;
-        nameEl.textContent = names[index];
-        nameEl.style.opacity = "1";
-      }
-    }, { once: true });
+    nameEl.style.opacity = "0"; // fade out
+    // fallback after fade completes regardless of tab visibility
+    setTimeout(() => {
+      index = (index + 1) % names.length;
+      nameEl.textContent = names[index];
+      nameEl.style.opacity = "1"; // fade in
+    }, fadeDuration);
   }, 3000);
 }
 
