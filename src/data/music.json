@@ -1,10 +1,10 @@
 {
   "favoriteSong": {
-    "favoriteDate": "DEC 11, 2025",
-    "title": "灼熱にて純情(wii-wii-woo)",
-    "artist": "Hoshimachi Suisei",
-    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1d/48/26/1d4826d9-8855-afae-33b8-33872750279b/4582622506314_art.png/600x600bf-60.jpg",
-    "link": "https://www.youtube.com/watch?v=r1ZVPTCOCSQ"
+    "favoriteDate": "DEC 16, 2025",
+    "title": "The Last Frontier",
+    "artist": "AZKi & Hoshimachi Suisei",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9a/77/ac/9a77ac5f-872f-7ed4-3689-bd12e5dbbc53/3000_3000.png/1200x630bb.jpg",
+    "link": "https://www.youtube.com/watch?v=-9wUbw5qevU"
   },
   "featuredSongs": [
     {
@@ -74,10 +74,10 @@
       "link": "https://www.youtube.com/watch?v=TGowEYYtKII"
     },
     {
-      "title": "Kichijoji",
-      "artist": "Lilas Ikuta",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d4/3e/cb/d43ecbf0-43bd-6507-3faa-a5a29f1683be/197188156664.jpg/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=Y-5GPiLm9H4"
+      "title": "I I I",
+      "artist": "Houshou Marine & Kobo Kanaeru",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/8a/54/b18a54c6-28e7-7630-bcfe-954e08867c66/4582729914913_art.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=lUDPjyfmJrs"
     }
   ],
   "favoriteArtists": [
@@ -102,14 +102,14 @@
       "link": "https://www.youtube.com/@Lilas_Ikuta/releases"
     },
     {
-      "name": "YOASOBI",
-      "art": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/56/15/1b/56151bed-1098-5871-e142-6958c608e1df/mzl.yauzwfvn.jpg/486x486bb.png",
-      "link": "https://www.youtube.com/@Ayase_YOASOBI/releases"
-    },
-    {
       "name": "9Lana",
       "art": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/56/5a/08/565a086c-16e0-7655-c8c2-e37402a64b20/mzl.enenabgl.jpg/486x486bb.png",
       "link": "https://www.youtube.com/@9lana357/releases"
+    },
+    {
+      "name": "YOASOBI",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/56/15/1b/56151bed-1098-5871-e142-6958c608e1df/mzl.yauzwfvn.jpg/486x486bb.png",
+      "link": "https://www.youtube.com/@Ayase_YOASOBI/releases"
     },
     {
       "name": "FantasticYouth",
@@ -117,14 +117,14 @@
       "link": "https://www.youtube.com/@fantasticyouth3913/releases"
     },
     {
-      "name": "kessoku band",
-      "art": "https://lh3.googleusercontent.com/JQIgeDQZjVs4Jgj5QgptQU3gBQ9H-RkLyqNU-5s1_zxNS5qn6mWG--I4TlChdGt319elzvllUrnWpGs=w544-h544-p-l90-rj",
-      "link": "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
-    },
-    {
       "name": "Trooper Salute",
       "art": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/6b/36/20/6b3620ba-b377-8678-d090-c4f03f460433/ami-identity-6aff45ba6826c95e5afdc3c920161f18-2024-12-12T16-27-03.700Z_cropped.png/486x486bb.png",
       "link": "https://www.youtube.com/@TrooperSalute/releases"
+    },
+    {
+      "name": "kessoku band",
+      "art": "https://lh3.googleusercontent.com/JQIgeDQZjVs4Jgj5QgptQU3gBQ9H-RkLyqNU-5s1_zxNS5qn6mWG--I4TlChdGt319elzvllUrnWpGs=w544-h544-p-l90-rj",
+      "link": "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
     }
   ]
 }
