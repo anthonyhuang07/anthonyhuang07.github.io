@@ -1,7 +1,7 @@
 {
   "1": {
     "title": "Who am I?",
-    "subtitle": "Anthony Huang, 18, Chinese-Canadian",
+    "subtitle": "Anthony Huang, 18, Uni Student 🇨🇦⚜️🇨🇳",
     "description": "Hey! I'm Anthony Huang, a 18-year-old Chinese-Canadian 🇨🇦⚜️🇨🇳 university student based in Ottawa.\n\n        <br><br>I'm passionate about all things tech 💻, whether it's geeking out over computer history and cool modern tech, hunting for vintage hardware, repairing devices, or solving problems through software and code.\n\n        <br><br>Outside of tech, I'm into geography and geopolitics 🌎, languages 💬, anime 🎥, listening & singing to J-Pop 🎵, vlogging and editing 🎬, mobile photography 📸, sports ⚽️🏒, and travelling ✈️.",
     "link": "#",
     "icon": "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
@@ -23,39 +23,46 @@
   "4": {
     "title": "Languages",
     "subtitle": "English, French, Chinese, Japanese, Korean",
-    "description": "I speak English 🇬🇧, French 🇫🇷, Mandarin 🇨🇳, Japanese 🇯🇵, Learning Korean 🇰🇷.\n\n        <br><br>I was born and raised in Québec, where I regularly spoke both English and French. I then moved to Ontario, where English became my primary language. Although I continued studying French at school, my fluency gradually declined due to a lack of regular exposure. However, in Grade 12, my passion for the language reignited. I currently hold a DELF B2 certificate.\n        \n        <br><br>My interest in Japanese began in 2023, sparked by Anime, J-Pop and a trip to Japan. I currently hold a JLPT N5 certificate. I have taken the JLPT N3 (results pending).<br><br>I am currently learning Korean in University 🎓 as an elective.",
+    "description": "I speak English 🇬🇧, French 🇫🇷, Mandarin 🇨🇳, Japanese 🇯🇵, Learning Korean 🇰🇷.\n\n        <br><br>I was born and raised in Québec in a Chinese household. I lived in a primarily Anglophone community, but still used a lot of French (mainly at school). I then moved to Ontario, where English became my primary language, but I continued to take French classes at school. English 🇬🇧 is my mother tongue, and I hold a DELF B2 certificate in French 🇫🇷.<br><br>I can speak fluent conversational Mandarin 🇨🇳 as I primarily use it at home. I cannot read Chinese that well, however I've gotten better thanks to my studies in Japanese.<br><br>My interest in Japanese 🇯🇵 began in 2023, sparked by Anime, J-Pop and a trip to Japan. I currently hold a JLPT N5 certificate. I have taken the JLPT N3 (results pending). I continue to study the language as I consume Japanese media every single day.<br><br>I am currently learning Korean 🇰🇷 in University as an elective.",
     "link": "#",
     "icon": "https://play-lh.googleusercontent.com/0IH4L3pX-jqQXKYCDmxTM5t3Tvak2cb_zUuIs9nKCHPeOqkaRJ_bRTq1qKawsSvunw"
   },
   "5": {
     "title": "Entertainment",
-    "subtitle": "60+ Days of Anime Watchtime, J-Pop & Hololive Fan",
+    "subtitle": "60+ Days of Anime Watchtime, J-Pop & Hololive Fan ☄️",
     "description": "I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!<br><br>I love J-Pop, and it is mainly the only genre I listen to. I enjoy listening to mainly Reiwa-era female artists (e.g. Ado, Lilas Ikuta). You can learn more about my favorites in the Music app.<br><br>I got into Hololive to improve my Japanese listening skills. I watch both HoloJP and HoloEN. ☄️",
     "link": "https://myanimelist.net/profile/FHDHGNGN",
     "icon": "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
   },
   "6": {
-    "title": "Sports",
-    "subtitle": "Montréal Canadiens, CF Montréal",
-    "description": "My favorite sports are Football ⚽️ and Hockey 🏒. In football, I am a fan of CF Montréal ⚜️, my boyhood club. In hockey, I support the Montréal Canadiens.",
-    "link": "https://www.youtube.com/watch?v=qgIOXoHwOeM",
-    "icon": "https://play-lh.googleusercontent.com/BoCbco5x4p64e2fc0XkGEpgvsH42gReh4OzKYeoYnFpUfmKD96clplFFKk7JpxVmMNM"
+    "title": "Travel",
+    "subtitle": "7/195 Countries Visited",
+    "description": "I hope to travel the world in the future. So far, I've been to 7 countries 🇨🇦🇺🇸🇧🇸🇨🇺🇨🇳🇯🇵🇰🇷. You can see where I've been & where I want to go by clicking Open on this app!<br><br>Canada 🇨🇦 - Lived in Montréal, Toronto, Ottawa. Favorite places: Montréal, Vancouver.<br><br>USA 🇺🇸 - Been to New York, Florida, Nevada, California, Texas. Favorite places: Las Vegas, Silicon Valley.<br><br>Bahamas 🇧🇸 - I've been to Nassau on a cruise trip. I don't remember much about it because I was very young.<br><br>Cuba 🇨🇺 - Stayed at a resort in Varadero & went on a day trip to Havana.<br><br>China 🇨🇳 - Been to Shenzhen, Hong Kong, Macau, Shanghai, Hangzhou, Changzhou, Beijing. My favorite city is Shenzhen.<br><br>Japan 🇯🇵 - Been to Tokyo, Chiba, Osaka, Kyoto, Kanagawa, Yamanashi. My favorite city in the world is Tokyo.<br><br>South Korea 🇰🇷 - Only been in Incheon Airport for an overnight layover.",
+    "link": "https://share.skratch.world/dZ5tGqB3hy/",
+    "icon": "https://play-lh.googleusercontent.com/0njlgLQI1EqA7qzzIeuwvUqgOgzIdk4cz8F7qtQ4IyIpttMmPvPRvj89Zug8RBlulg=w240-h480-rw"
   },
   "7": {
     "title": "Transit",
     "subtitle": "Urban Rail Enthusiast & Avgeek",
-    "description": "I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.\n\n        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵, Montréal Metro 🇨🇦, and Ottawa O-Train 🇨🇦.\n\n        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). My favorite aircraft is the Boeing 747, especially the Air China livery.",
+    "description": "I enjoy riding and learning about urban rail systems 🚉 (metros, light rails, etc.) around the world. I also love commercial aviation ✈️, which is the backbone of global travel.\n\n        <br><br>My favorite rail systems include the Tokyo Metro 🇯🇵, Montréal Metro & REM 🇨🇦, and Ottawa O-Train 🇨🇦.\n\n        <br><br>I've flown ~70,000 km (~100 hours) on 15 flights since 2023. My favorite airports include Incheon 🇰🇷 (ICN), Vancouver 🇨🇦 (YVR), and Shenzhen Bao'an 🇨🇳 (SZX). My favorite aircraft is the Boeing 747, especially the Air China livery.",
     "link": "#",
     "icon": "https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png"
   },
   "8": {
+    "title": "Sports",
+    "subtitle": "Montréal Canadiens, CF Montréal",
+    "description": "My favorite sports are Football ⚽️ and Hockey 🏒. In football, I follow my boyhood club CF Montréal ⚜️. In hockey, I support the Montréal Canadiens 🔵⚪️🔴.",
+    "link": "https://www.youtube.com/watch?v=qgIOXoHwOeM",
+    "icon": "https://play-lh.googleusercontent.com/BoCbco5x4p64e2fc0XkGEpgvsH42gReh4OzKYeoYnFpUfmKD96clplFFKk7JpxVmMNM"
+  },
+  "9": {
     "title": "Setup",
     "subtitle": "M4 MacBook Air, Keychron Q1",
     "description": "I care very much about my desk setup and tech. My main machine is an M4 MacBook Air (16GB RAM, 512GB SSD)\n\n        <br><br>I am also a mechanical keyboard enthusiast. My current build is a Keychron Q1 V2 (Knob) with Gateron Milky Yellows (lubed w/ Krytox 205g0) and Keychron Binary Cherry Dye-Sub PBT keycaps. I use stock stabilizers (factory pre-lubed) and I use a foam + PE foam mod using the Keychron Q1 Acoustic upgrade kit.\n\n        <br><br>Other parts of my setup include my monitor - Acer EK241Y Gbi (24\", 1080p, 120Hz), my headphones - AKG K240 Studio (55Ω), my mouse - Razer Basilisk V3, and my microphone - Blue Snowball iCE.",
     "link": "#",
     "icon": "https://cdn.jim-nielsen.com/ios/512/amazon-shopping-2021-03-02.png?rf=1024"
   },
-  "9": {
+  "10": {
     "title": "Games",
     "subtitle": "A Variety of Games",
     "description": "I occasionally play games. The game I have the most playtime on is Geometry Dash, with over 1000 hours on Steam, and 63 <a href=\"https://docs.google.com/spreadsheets/d/1yMG_bfNijhOFoA28eDFQneuVe2sNq_K7p3913CDdIX8/edit?gid=0#gid=0\" target=\"_blank\">Demons</a> completed. My hardest is Future Funk (Hard Demon) and I had a 72% PB on Acu (Extreme Demon). I also play <a href=\"https://rocketleague.tracker.network/rocket-league/profile/epic/fhdhgngn/\" target=\"_blank\">Rocket League</a> (Diamond I 💎)<br><br>I also consider myself decent at <a href=\"https://ch.tetr.io/u/fhdhgngn\">Tetris</a>, and quite good at <a href=\"https://minesweeper.online/player/12600262\">Minesweeper</a> and <a href=\"https://geotastic.net/home\">Geotastic</a>.",
