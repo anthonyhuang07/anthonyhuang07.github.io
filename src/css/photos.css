@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "SFSB";
+  src: url("/assets/fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFR";
+  src: url("/assets/fonts/SF-Pro-Display-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFL";
+  src: url("/assets/fonts/SF-Pro-Display-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+.photos {
+  overflow: auto;
+  color: white;
+}
+.photos > header {
+  background-color: #121212;
+  border-bottom: #272727 1px solid;
+  padding: 0.8rem 0 1rem 0;
+  margin-bottom: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.photos > header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0088ff;
+  margin: 1.655rem 0 1.125rem 1rem;
+  cursor: pointer;
+}
+.photos > header div:active {
+  color: #055090;
+}
+.photos > header div i {
+  font-size: 1.55em;
+}
+.photos > header p {
+  margin-left: 0.5rem;
+  font-size: 1.25em;
+  letter-spacing: 0.8px;
+  font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.photos > header h1 {
+  letter-spacing: 1.05px;
+  font-size: 2.5em;
+  padding-left: 3.5rem;
+  color: white;
+  font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.photos main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.6rem 1rem 3.5rem 1.6rem;
+}
+.photos main a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-drag: none;
+  color: red;
+  cursor: pointer;
+  font-size: 1.25em;
+}/*# sourceMappingURL=photos.css.map */

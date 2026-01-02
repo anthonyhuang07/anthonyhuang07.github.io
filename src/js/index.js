@@ -4,6 +4,7 @@ const aboutme = document.querySelector(".aboutme")
 const projects = document.querySelector(".projects")
 const contacts = document.querySelector(".contacts")
 const music = document.querySelector(".music")
+const photos = document.querySelector(".photos")
 const appView = document.querySelector(".appView")
 
 window.onkeydown = (e) => {
@@ -42,11 +43,14 @@ function appOpen(app) {
   } else if (app === 4) {
     document.querySelector('.menu.music').style.visibility = 'visible';
     document.querySelector('.menu.music').style.opacity = '1';
+  } else if (app === 5) {
+    document.querySelector('.menu.photos').style.visibility = 'visible';
+    document.querySelector('.menu.photos').style.opacity = '1';
   }
 }
 
 function returnHome(){
-    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = "hidden";
+    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = photos.style.visibility = "hidden";
     inApp.style.opacity = menu.style.opacity = appView.style.opacity = "0";
 }
 

@@ -1,0 +1,62 @@
+@import 'variables';
+
+.photos {
+  overflow: auto;
+  color: white;
+
+  >header {
+    background-color: #121212;
+    border-bottom: #272727 1px solid;
+    padding: 0.8rem 0 1rem 0;
+    margin-bottom: 1rem;
+    user-select: none;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $appleBlue;
+      margin: 1.655rem 0 1.125rem 1rem;
+      cursor: pointer;
+
+      &:active {
+        color: #055090;
+      }
+
+      i {
+        font-size: 1.55em;
+      }
+    }
+
+    p {
+      margin-left: 0.5rem;
+      font-size: 1.25em;
+      letter-spacing: 0.8px;
+      font-family: $SFL;
+    }
+
+    h1 {
+      letter-spacing: 1.05px;
+      font-size: 2.5em;
+      padding-left: 3.5rem;
+      color: white;
+      font-family: $SFSB;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem 1rem 3.5rem 1.6rem;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      -webkit-user-drag: none;
+      color: red;
+      cursor: pointer;
+      font-size: 1.25em;
+    }
+
+  }
+}
