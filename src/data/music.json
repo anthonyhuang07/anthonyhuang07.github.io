@@ -1,10 +1,10 @@
 {
   "favoriteSong": {
-    "favoriteDate": "DEC 30, 2025",
-    "title": "Hikari",
-    "artist": "Lilas",
-    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/35/77/ed357790-d63f-1a33-e5b0-363285cbe396/195497767748.jpg/1200x630bb.jpg",
-    "link": "https://www.youtube.com/watch?v=gFFizVn7P1M"
+    "favoriteDate": "JAN 4, 2026",
+    "title": "Bluerose",
+    "artist": "Hoshimachi Suisei",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/59/60/e2596046-5607-5d75-a45d-9be933d20308/4580625828389_art.png/600x600bf-60.jpg",
+    "link": "https://www.youtube.com/watch?v=ZfDYRy17CBY"
   },
   "featuredSongs": [
     {
@@ -56,16 +56,10 @@
       "link": "https://www.youtube.com/watch?v=NI8KqzCvFsc"
     },
     {
-      "title": "Sakura Biyori and Time Machine",
-      "artist": "Ado & Hatsune Miku",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=nIWZfhpnq6M"
-    },
-    {
-      "title": "The Story of the Wind and I",
-      "artist": "Ado",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
-      "link": "https://www.youtube.com/watch?v=oAuKa5NOzWE"
+      "title": "Hikari",
+      "artist": "Lilas",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/35/77/ed357790-d63f-1a33-e5b0-363285cbe396/195497767748.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=gFFizVn7P1M"
     },
     {
       "title": "The Last Frontier",
@@ -74,10 +68,16 @@
       "link": "https://www.youtube.com/watch?v=-9wUbw5qevU"
     },
     {
-      "title": "Saitei Kaiwai",
-      "artist": "tuki.",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/4f/9c/8d4f9c88-6734-55ee-f2b7-4f545c71e645/4547366770599.jpg/1200x630bb.jpg",
-      "link": "https://www.youtube.com/watch?v=UAsdgWVwXlc"
+      "title": "The Story of the Wind and I",
+      "artist": "Ado",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=oAuKa5NOzWE"
+    },
+    {
+      "title": "Sakura Biyori and Time Machine",
+      "artist": "Ado & Hatsune Miku",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=nIWZfhpnq6M"
     }
   ],
   "favoriteArtists": [
