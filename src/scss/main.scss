@@ -359,10 +359,17 @@ body>main {
 
       >div {
         margin-right: 1.825rem;
+        max-width: 60px;
+        align-content: center;
+
+        &:nth-child(4) {
+          margin-right: 0;
+        }
 
         p {
           margin-top: 0.25rem;
           font-size: 0.75em;
+          white-space: nowrap;
         }
 
         img {
@@ -388,7 +395,7 @@ body>main {
       overflow-y: visible;
 
       .infoCluster {
-        width: 96%; 
+        width: 96%;
 
         .infoBox {
           height: 4rem;

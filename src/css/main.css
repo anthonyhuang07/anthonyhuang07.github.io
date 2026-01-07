@@ -442,10 +442,17 @@ body > main div > div img:active {
   }
   body > main div > div {
     margin-right: 1.825rem;
+    max-width: 60px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body > main div > div:nth-child(4) {
+    margin-right: 0;
   }
   body > main div > div p {
     margin-top: 0.25rem;
     font-size: 0.75em;
+    white-space: nowrap;
   }
   body > main div > div img {
     width: 60px;
