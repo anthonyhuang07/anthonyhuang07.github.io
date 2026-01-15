@@ -103,15 +103,12 @@ body > main {
 }
 body > main div {
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 75px);
+  gap: 0 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 body > main div > div {
   display: -webkit-box;
@@ -128,10 +125,6 @@ body > main div > div {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-right: 3rem;
-}
-body > main div > div:nth-child(5) {
-  margin-right: 0;
 }
 body > main div > div .home-appIcon {
   background: none;
@@ -425,7 +418,7 @@ body > main div > div img:active {
     bottom: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
   }
@@ -438,7 +431,6 @@ body > main div > div img:active {
     margin-top: 2.25rem;
   }
   body > main div {
-    display: grid;
     grid-template-columns: repeat(4, clamp(50px, 16vw, 70px));
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

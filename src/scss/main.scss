@@ -68,20 +68,16 @@ body>main {
 
   div {
     margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    gap: 0 3rem;
+    justify-content: center;
 
     >div {
       display: flex;
       flex-direction: column;
       align-items: center;
       user-select: none;
-      margin-right: 3rem;
-
-      &:nth-child(5) {
-        margin-right: 0;
-      }
 
       .home-appIcon {
         background: none;
@@ -271,7 +267,7 @@ body>main {
 }
 
 // Mobile Optimization
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { // Tablets
   .contacts {
     flex-direction: column;
     height: 100%;
@@ -340,7 +336,7 @@ body>main {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) { // Phones
   body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
   }
@@ -357,7 +353,6 @@ body>main {
     margin-top: 2.25rem;
 
     div {
-      display: grid;
       grid-template-columns: repeat(4, $iconSize);
       justify-content: space-between;
       gap: 1.05rem 0;
