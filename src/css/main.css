@@ -431,31 +431,35 @@ body > main div > div img:active {
   }
   #name {
     font-size: 2.35em;
-    letter-spacing: 0.7px;
+    letter-spacing: 1px;
   }
   body > main {
-    width: 90%;
-    margin: 0.25rem 0rem 0 1rem;
+    width: 85%;
+    margin-top: 2.25rem;
   }
   body > main div {
-    margin-top: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(4, clamp(50px, 16vw, 70px));
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.05rem 0;
+    margin-top: 2rem;
   }
   body > main div > div {
-    margin-right: 1.825rem;
+    gap: 0;
+    margin: 0;
     max-width: 60px;
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  body > main div > div:nth-child(4) {
-    margin-right: 0;
-  }
   body > main div > div p {
-    margin-top: 0.25rem;
+    margin-top: 0.3rem;
     font-size: 0.75em;
     white-space: nowrap;
   }
   body > main div > div img {
-    width: 60px;
+    width: clamp(50px, 16vw, 70px);
   }
   #inApp,
   .menu {
