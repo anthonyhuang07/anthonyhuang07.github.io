@@ -24,29 +24,13 @@ dynamicIsland.addEventListener('click', (e) => {
   if (dynamicIsland.classList.contains('playing')) {
     e.preventDefault();
     dynamicIsland.classList.toggle('expanded');
-    if (dynamicIsland.classList.contains('expanded')) {
-      playContainerAnimation('dynamicIslandExpand');
-    } else {
-      playContainerAnimation('dynamicIslandCollapse');
-    }
   }
 });
 
 document.addEventListener('click', (e) => {
   if (!dynamicIsland.contains(e.target) && dynamicIsland.classList.contains('expanded')) {
     dynamicIsland.classList.remove('expanded');
-    playContainerAnimation('dynamicIslandCollapse');
   }
-});
-
-dynamicIsland.addEventListener('mouseenter', () => {
-  if (!dynamicIsland.classList.contains('playing')) return;
-  playContainerAnimation('dynamicIslandExpand');
-});
-
-dynamicIsland.addEventListener('mouseleave', () => {
-  if (!dynamicIsland.classList.contains('playing')) return;
-  playContainerAnimation('dynamicIslandCollapse');
 });
 
 function nowPlaying() {
@@ -139,8 +123,6 @@ function nowPlaying() {
         dynamicIsland.classList.remove('playing');
         dynamicIsland.classList.remove('paused');
         dynamicIsland.classList.remove('ready');
-        dynamicIsland.style.animation = '';
-        dynamicIsland.style.animationDelay = '';
         frozenPlayback = null;
         frozenSessionId = null;
         currentAlbumArtUrl = null;
