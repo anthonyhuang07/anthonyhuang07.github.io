@@ -5,9 +5,12 @@
   color: white;
 
   >header {
-    background-color: #121212;
-    border-bottom: #272727 1px solid;
-    padding: 0.8rem 0 1rem 0;
+    /* Bottom border */
+    background-image: linear-gradient(to right, transparent 3.45rem, $appleDarkGrayAlt 3.45rem);
+    background-size: 100% 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 0.8rem 0 0.55rem 0;
     margin-bottom: 1rem;
     user-select: none;
 
@@ -16,7 +19,7 @@
       flex-direction: row;
       align-items: center;
       color: $appleBlue;
-      margin: 1.655rem 0 1.125rem 1rem;
+      margin: 1.655rem 0 0.9rem 1.9rem;
       cursor: pointer;
 
       &:active {
@@ -37,26 +40,50 @@
 
     h1 {
       letter-spacing: 1.05px;
-      font-size: 2.5em;
-      padding-left: 3.5rem;
+      font-size: 2.25em;
+      padding-left: 3.45rem;
       color: white;
       font-family: $SFSB;
     }
   }
 
   main {
-    display: flex;
-    flex-direction: column;
-    margin: 0.6rem 1rem 3.5rem 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 2rem;
+    margin: 0.6rem 3.4rem 0 3.45rem;
 
-    a {
+    .album {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 0.4rem;
       text-decoration: none;
-      display: flex;
+      display: grid;
       -webkit-user-drag: none;
-      color: red;
+      color: white;
       cursor: pointer;
-      font-size: 1.25em;
+      font-family: $SFL, -apple-system, BlinkMacSystemFont, sans-serif;
+      letter-spacing: 0.4px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+
+      &:active {
+        transform: scale(0.98);
+        opacity: 0.85;
+      }
     }
 
+    img {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 0.4rem;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 0.6rem;
+      font-size: 1.05em;
+    }
   }
 }
+
+/*Original w/h: 11.2rem for imgs*/

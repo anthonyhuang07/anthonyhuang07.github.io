@@ -51,7 +51,10 @@ function nowPlaying() {
       let musicPlaying = false;
       if (data.status.type === "LISTENING") {
         musicPlaying = true;
-        let imageUrl = data.status.assets.largeImage;
+        let imageUrl = data.status?.assets?.largeImage;
+        if (typeof imageUrl !== 'string' || imageUrl.length === 0) {
+          imageUrl = '/assets/icons/defaultMusic.webp';
+        }
         let songName = data.status.details;
         let artistName = data.status.state;
         let startTime = new Date(data.status.timestamps.start).getTime();

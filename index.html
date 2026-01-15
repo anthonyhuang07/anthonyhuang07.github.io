@@ -37,7 +37,7 @@ permalink: /
   <div id="bg"></div>
   <div id="dynamicIsland">
     <div id="island-closed">
-      <img src="" class="island-albumArt closed" alt="Dynamic Island Music Album Art"/>
+      <img src="" class="island-albumArt closed" alt="Dynamic Island Music Album Art" />
       <div class="island-audioPreview closed">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -100,7 +100,7 @@ permalink: /
         <button type="button" class="home-appIcon" onclick="appOpen(5)" aria-labelledby="app-label-photos">
           <img src="/assets/icons/photos.webp" alt="Photos Icon">
         </button>
-        <p id="app-label-photos">Photos (WIP)</p>
+        <p id="app-label-photos">Photos</p>
       </div>
       <div>
         <button type="button" class="home-appIcon" onclick="appOpen(4)" aria-labelledby="app-label-music">
@@ -180,6 +180,32 @@ permalink: /
       </div>
       <div id="contactInfo"><!-- Contacts list rendered dynamically by contacts.js --></div>
     </div>
+    <!-- Photos -->
+    <div class="menu photos">
+      <!-- <img src="/assets/dev/photosd.png" style="z-index: 9999; position: absolute; height: 100%; opacity:70%; top: 62px;"> -->
+      <!-- <img src="/assets/dev/photosmobile.png" style="z-index: 9999; position: absolute; height: 100%; opacity:50%; top: -18.5px;"> -->
+      <header>
+        <div onclick="returnHome()">
+          <i class="fa-solid fa-chevron-left"></i>
+          <p>Home</p>
+        </div>
+        <h1>Photos</h1>
+      </header>
+      <main>
+        <a class="album" href="https://photos.app.goo.gl/79GnaL5mbzU2uUdKA" target="_blank">
+          <img src="https://lh3.googleusercontent.com/pw/AP1GczNnR8Ece_ZJ8sudszlllL10uQd5-_Gfe7zse78aw2SxBm7Bf4_ZBxOe53-Y4FJl289Cl9J-rvIszBm66LwCGRpF0mHYMLQqwmoTT2dmw8gAUN9QBCs_z-bmGMqMZRwZSKswL2t49v_tUYZWpmEEla3A=w1137-h853-s-no?authuser=0" alt="Japan 2025 cover image">
+          <h2>Japan 2025</h2>
+        </a>
+        <a class="album" href="https://photos.app.goo.gl/DyFtWRE2DCjcyNdX6" target="_blank">
+          <img src="https://lh3.googleusercontent.com/pw/AP1GczOLr4ftQn0UP98gge_YCJJWgkdQSDYoV0zr6f6Q-SQZQRe-FQ-K5foUIj5rn1awsM8d2oDE0mCavNqTlF1eqIf7gq_MY1HZ81YvZ4qHWmC-0cE0-GUJUeLthmK4ziJAXuOaMbrvsM4SKtaH5_kdGKLc=w1137-h853-s-no?authuser=0" alt="China 2025 cover image">
+          <h2>China 2025</h2>
+        </a>
+        <a class="album" href="https://photos.app.goo.gl/rMpXrRtZWxoTkQ4e8" target="_blank">
+          <img src="https://lh3.googleusercontent.com/pw/AP1GczNjfoYtV3wLEimn-hurXGqzgNKYapGfyEEhEDXfEmDLyVzRLoUyIeev6BIZ1y-vx9fq1hgyi9QqVz7ImlSPujhwn3EJ4bfCIH7D95RNZPTMwWfrdxd6YT3yS5sF0Cg50buEIodMgQZrDUE5BwD5OhuK=w1137-h853-s-no?authuser=0" alt="Ottawa O-Train Line 1 cover image">
+          <h2>Ottawa O-Train Line 1</h2>
+        </a>
+      </main>
+    </div>
     <!-- Music -->
     <div class="menu music">
       <!-- <img src="/assets/kill.png" style="z-index: 9999; position: absolute; height: 100%; opacity:100%;"> -->
@@ -211,21 +237,6 @@ permalink: /
           </div>
         </div>
       </div>
-    </div>
-    <!-- Photos -->
-    <div class="menu photos">
-      <header>
-        <div onclick="returnHome()">
-          <i class="fa-solid fa-chevron-left"></i>
-          <p>Home</p>
-        </div>
-        <h1>Photos</h1>
-      </header>
-      <main>
-        <a href="https://photos.app.goo.gl/79GnaL5mbzU2uUdKA" target="_blank">Japan 2025</a>
-        <a href="https://photos.app.goo.gl/DyFtWRE2DCjcyNdX6" target="_blank">China 2025</a>
-        <a href="https://photos.app.goo.gl/rMpXrRtZWxoTkQ4e8" target="_blank">Ottawa O-Train Line 1</a>
-      </main>
     </div>
   </div>
   <script src="/src/js/index.js"></script>

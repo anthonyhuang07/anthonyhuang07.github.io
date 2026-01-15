@@ -258,7 +258,7 @@
   background-color: #252527;
   border-radius: 100rem;
   overflow: hidden;
-  margin-right: 0.425rem;
+  margin: 0 0.425rem 0 0.425rem;
 }
 #dynamicIsland.playing:hover #island-open #timeline .progress-bar .progress, #dynamicIsland.playing:active #island-open #timeline .progress-bar .progress {
   height: 100%;
