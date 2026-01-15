@@ -128,7 +128,7 @@
   -webkit-animation: hideIslandOpen 0.6s forwards;
           animation: hideIslandOpen 0.6s forwards;
 }
-#dynamicIsland.playing:hover, #dynamicIsland.playing:active {
+#dynamicIsland.playing:hover, #dynamicIsland.playing:active, #dynamicIsland.playing.expanded {
   background-color: rgb(0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,7 +145,7 @@
   -webkit-animation: dynamicIslandExpand 0.75s ease-in-out forwards;
           animation: dynamicIslandExpand 0.75s ease-in-out forwards;
 }
-#dynamicIsland.playing:hover #island-closed, #dynamicIsland.playing:active #island-closed {
+#dynamicIsland.playing:hover #island-closed, #dynamicIsland.playing:active #island-closed, #dynamicIsland.playing.expanded #island-closed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -153,7 +153,7 @@
   -webkit-animation: hideIslandClosed 0.6s forwards;
           animation: hideIslandClosed 0.6s forwards;
 }
-#dynamicIsland.playing:hover #island-open, #dynamicIsland.playing:active #island-open {
+#dynamicIsland.playing:hover #island-open, #dynamicIsland.playing:active #island-open, #dynamicIsland.playing.expanded #island-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,7 @@
   -webkit-animation: showIslandOpen 0.6s forwards;
           animation: showIslandOpen 0.6s forwards;
 }
-#dynamicIsland.playing:hover #island-open #island-main, #dynamicIsland.playing:active #island-open #island-main {
+#dynamicIsland.playing:hover #island-open #island-main, #dynamicIsland.playing:active #island-open #island-main, #dynamicIsland.playing.expanded #island-open #island-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@
           justify-content: space-between;
   width: 100%;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left, #dynamicIsland.playing:active #island-open #island-main #island-main-left {
+#dynamicIsland.playing:hover #island-open #island-main #island-main-left, #dynamicIsland.playing:active #island-open #island-main #island-main-left, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,26 +188,26 @@
           align-items: center;
   min-width: 0;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing:active #island-open #island-main #island-main-left .island-albumArt.open {
+#dynamicIsland.playing:hover #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing:active #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left .island-albumArt.open {
   height: 67.5px;
   margin-left: 0;
   border-radius: 0.8rem;
   -webkit-user-drag: none;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo {
+#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo {
   margin-left: 1.175rem;
   font-size: 1.05em;
   min-width: 0;
   overflow: hidden;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo #songName {
+#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo #songName {
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo #artistName {
+#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo #artistName {
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   max-width: 100%;
@@ -216,7 +216,7 @@
   text-overflow: ellipsis;
   display: block;
 }
-#dynamicIsland.playing:hover #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing:active #island-open #island-main .island-audioPreview.open {
+#dynamicIsland.playing:hover #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing:active #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing.expanded #island-open #island-main .island-audioPreview.open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +227,7 @@
   margin-bottom: 0.9rem;
   gap: 2.7px;
 }
-#dynamicIsland.playing:hover #island-open #timeline, #dynamicIsland.playing:active #island-open #timeline {
+#dynamicIsland.playing:hover #island-open #timeline, #dynamicIsland.playing:active #island-open #timeline, #dynamicIsland.playing.expanded #island-open #timeline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +244,7 @@
   width: 100%;
   margin-top: 1.175rem;
 }
-#dynamicIsland.playing:hover #island-open #timeline span, #dynamicIsland.playing:active #island-open #timeline span {
+#dynamicIsland.playing:hover #island-open #timeline span, #dynamicIsland.playing:active #island-open #timeline span, #dynamicIsland.playing.expanded #island-open #timeline span {
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.75em;
@@ -252,7 +252,7 @@
   width: 30px;
   text-align: center;
 }
-#dynamicIsland.playing:hover #island-open #timeline .progress-bar, #dynamicIsland.playing:active #island-open #timeline .progress-bar {
+#dynamicIsland.playing:hover #island-open #timeline .progress-bar, #dynamicIsland.playing:active #island-open #timeline .progress-bar, #dynamicIsland.playing.expanded #island-open #timeline .progress-bar {
   width: 250px;
   height: 7px;
   background-color: #252527;
@@ -260,11 +260,11 @@
   overflow: hidden;
   margin: 0 0.425rem 0 0.425rem;
 }
-#dynamicIsland.playing:hover #island-open #timeline .progress-bar .progress, #dynamicIsland.playing:active #island-open #timeline .progress-bar .progress {
+#dynamicIsland.playing:hover #island-open #timeline .progress-bar .progress, #dynamicIsland.playing:active #island-open #timeline .progress-bar .progress, #dynamicIsland.playing.expanded #island-open #timeline .progress-bar .progress {
   height: 100%;
   background-color: #8D8D93;
 }
-#dynamicIsland.playing:hover #island-open #mediaControls, #dynamicIsland.playing:active #island-open #mediaControls {
+#dynamicIsland.playing:hover #island-open #mediaControls, #dynamicIsland.playing:active #island-open #mediaControls, #dynamicIsland.playing.expanded #island-open #mediaControls {
   width: 19rem;
   margin-top: 1.1rem;
 }

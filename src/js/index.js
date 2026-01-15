@@ -52,6 +52,7 @@ function appOpen(app) {
 function returnHome(){
     inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = photos.style.visibility = "hidden";
     inApp.style.opacity = menu.style.opacity = appView.style.opacity = "0";
+    document.activeElement.blur();
 }
 
 function hideAppView(){
