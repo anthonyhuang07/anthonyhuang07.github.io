@@ -1,0 +1,378 @@
+@import 'variables';
+
+#dynamicIsland {
+  position: absolute;
+  top: 0.7rem;
+  background-color: black;
+  height: 40px;
+  width: 130px;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #island-closed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .island-albumArt.closed {
+      height: 22.5px;
+      margin-left: 0.625rem;
+      border-radius: 0.3rem;
+      -webkit-user-drag: none;
+    }
+
+    .island-audioPreview {
+      margin-right: 0.75rem;
+      align-items: center;
+      gap: 1.6px;
+    }
+  }
+
+  #island-open {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+    #timeline {
+      width: 0%;
+      transition: width 0.4s;
+
+      span {
+        font-size: 0;
+        transition: font-size 0.4s;
+      }
+    }
+
+    #songInfo {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      letter-spacing: 0.5px;
+      font-family: $SFR;
+      font-size: 0;
+    }
+  }
+
+  .island-audioPreview {
+    .bar {
+      width: 2px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 100rem;
+      animation: wave 0.75s infinite ease-in-out;
+
+      &:nth-child(1) { animation-delay: 0.4s; }
+      &:nth-child(2) { animation-delay: 0.2s; }
+      &:nth-child(3) { animation-delay: -0.4s; }
+      &:nth-child(4) { animation-delay: 0.2s; }
+      &:nth-child(5) { animation-delay: 0.6s; }
+      &:nth-child(6) { animation-delay: -0.6s; }
+    }
+  }
+
+  .island-albumArt,
+  .island-audioPreview {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &.ready {
+    .island-albumArt,
+    .island-audioPreview {
+      opacity: 1;
+    }
+  }
+
+  &.paused {
+    #island-closed {
+      .island-albumArt.closed {
+        filter: brightness(0.7);
+        transform: scale(0.9);
+      }
+    }
+
+    .island-audioPreview {
+      .bar {
+        animation: none;
+        height: 2px;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &.expanded {
+      #island-open {
+        #island-main {
+          #island-main-left {
+            .island-albumArt.open {
+              filter: brightness(0.6);
+              transform: scale(0.8);
+              transition: transform 300ms ease;
+              transition: filter 300ms ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.playing {
+    width: 190px;
+    animation: dynamicIslandCollapse 0.75s ease-in-out forwards;
+
+    #island-closed {
+      animation: showIslandClosed 0.6s forwards;
+    }
+
+    #island-open {
+      animation: hideIslandOpen 0.6s forwards;
+    }
+
+    // OPEN DYNAMIC ISLAND (COMMENT OUT TO TEST)
+    &:hover,
+    &:active,
+    &.expanded {
+      background-color: rgba(0, 0, 0, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: dynamicIslandExpand 0.75s ease-in-out forwards;
+
+      #island-closed {
+        align-items: center;
+        height: 100%;
+        animation: hideIslandClosed 0.6s forwards;
+      }
+
+      #island-open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.4rem;
+        filter: blur(20px);
+        animation: showIslandOpen 0.6s forwards;
+        
+        #island-main {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          #island-main-left {
+            display: flex;
+            align-items: center;
+            min-width: 0; // allow text to shrink for ellipsis
+
+            .island-albumArt.open {
+              height: 67.5px;
+              margin-left: 0;
+              border-radius: 0.8rem;
+              -webkit-user-drag: none;
+            }
+
+            #songInfo {
+              margin-left: 1.175rem;
+              font-size: 1.05em;
+              min-width: 0; // allow song info to shrink
+              overflow: hidden; // required for ellipsis on children
+
+              #songName {
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+              }
+
+              #artistName {
+                color: $appleGray;
+                font-family: $SFL;
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+              }
+            }
+          }
+
+          .island-audioPreview.open {
+            display: flex;
+            align-items: center;
+            margin-right: 0.45rem;
+            margin-bottom: 0.9rem;
+            gap: 2.7px;
+          }
+        }
+
+        #timeline {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin-top: 1.175rem;
+
+          span {
+            color: $appleGray;
+            font-family: $SFL;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            width: 30px;
+            text-align: center;
+          }
+
+          .progress-bar {
+            width: 250px;
+            height: 7px;
+            background-color: $appleDarkGray;
+            border-radius: 100rem;
+            overflow: hidden;
+            margin: 0 0.425rem 0 0.425rem;
+
+            .progress {
+              height: 100%;
+              background-color: $appleGray;
+            }
+          }
+        }
+
+        #mediaControls {
+          width: 19rem;
+          margin-top: 1.1rem;
+        }
+      }
+    }
+  }
+} // Comment this out to test
+
+@keyframes wave { // Audio Preview Bars Animation
+  0% {
+    height: 2px;
+  }
+
+  50% {
+    height: 22px;
+  }
+
+  100% {
+    height: 2px;
+  }
+}
+
+@keyframes dynamicIslandExpand { // Expand Dynamic Island
+  0% {
+    width: 190px;
+    height: 40px;
+    border-radius: 100rem;
+  }
+
+  27% {
+    transform: scale(1.05);
+    width: 190px;
+    height: 40px;
+    border-radius: 2.75rem;
+  }
+
+  67% {
+    transform: scale(1.025);
+    width: 372.5px;
+    height: 202.5px;
+    border-radius: 2.75rem;
+  }
+
+  100% {
+    transform: scale(1);
+    width: 372.5px;
+    height: 202.5px;
+    border-radius: 2.75rem;
+  }
+}
+
+@keyframes dynamicIslandCollapse { // Collapse Dynamic Island
+  0% {
+    transform: scale(1);
+    width: 372.5px;
+    height: 202.5px;
+    border-radius: 2.75rem;
+  }
+
+  43% {
+    width: 130px;
+    height: 40px;
+    border-radius: 2.75rem;
+  }
+
+  100% {
+    transform: scale(1);
+    width: 190px;
+    height: 40px;
+    border-radius: 100rem;
+  }
+}
+
+@keyframes hideIslandClosed {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
+
+@keyframes showIslandClosed {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes showIslandOpen {
+  0% {
+    opacity: 0;
+  }
+
+  63% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes hideIslandOpen {
+  0% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
