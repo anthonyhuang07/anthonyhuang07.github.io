@@ -35,7 +35,7 @@
       h1 {
         letter-spacing: 1px;
         font-size: 2.25em;
-        padding-left: 3.35rem;
+        margin-left: 3.35rem;
         color: white;
         font-family: $SFSB;
       }
@@ -386,12 +386,19 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {  // Mobile Optimization
+
   .music {
 
     header {
-      h1 {
-        padding-left: 1.25rem;
+      .music-header-title {
+        h1 {
+          margin-left: 1.25rem;
+        }
+
+        a {
+          margin-right: 1.25rem;
+        }
       }
     }
 
@@ -431,6 +438,11 @@
         h2 {
           font-size: 1.45em;
           letter-spacing: 0.6px;
+        }
+
+        .featuredSongs-grid {
+            grid-auto-columns: 22rem;
+            grid-template-rows: repeat(4, 3.75rem);
         }
       }
     }

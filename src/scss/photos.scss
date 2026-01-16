@@ -53,9 +53,11 @@
     gap: 2rem;
     margin: 0.6rem 3.4rem 0 3.45rem;
 
+    $albumSize: 15rem;
+
     .album {
-      width: 15rem;
-      height: 15rem;
+      width: $albumSize;
+      height: $albumSize;
       border-radius: 0.4rem;
       text-decoration: none;
       display: grid;
@@ -73,8 +75,8 @@
     }
 
     img {
-      width: 15rem;
-      height: 15rem;
+      width: $albumSize;
+      height: $albumSize;
       border-radius: 0.4rem;
       object-fit: cover;
     }
@@ -87,3 +89,25 @@
 }
 
 /*Original w/h: 11.2rem for imgs*/
+
+@media screen and (max-width: 600px) {
+  .photos {
+    main {
+      grid-template-columns: repeat(2, max-content);
+      gap: 3rem 2rem;
+      justify-content: center;
+
+      $albumSize: 10rem;
+
+      .album {
+        width: $albumSize;
+        height: $albumSize;
+      }
+
+      img {
+        width: $albumSize;
+        height: $albumSize;
+      }
+    }
+  }
+}
