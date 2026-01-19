@@ -66,7 +66,7 @@ function renderFeaturedSongs(songs = []) {
     .join('');
 
   container.innerHTML = `
-    <h2>Featured Songs</h2>
+    <h2>Now Listening</h2>
     <div class="featuredSongs-grid">
       ${gridHtml}
     </div>

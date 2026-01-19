@@ -8,18 +8,6 @@
   },
   "featuredSongs": [
     {
-      "title": "Show",
-      "artist": "Ado",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/e8/82/80e8826c-f877-9a74-0e7b-a142108feda0/23UMGIM92958.rgb.jpg/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=pgXpM4l_MwI"
-    },
-    {
-      "title": "AWAKE",
-      "artist": "Hoshimachi Suisei",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/02/ed/af02ede0-cf69-ed76-65fd-7f969a30a409/HoshimachiSuisei_AWAKE_JKT.png/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=K9YGGOd63yc"
-    },
-    {
       "title": "Aimoraimo",
       "artist": "tuki.",
       "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/0f/2c/290f2ce9-6af3-4ace-e5f7-d9c9df751c0e/4582649322263.jpg/600x600bf-60.jpg",
@@ -32,10 +20,16 @@
       "link": "https://www.youtube.com/watch?v=whTcBozYrOo"
     },
     {
-      "title": "BALALAIKA",
-      "artist": "9Lana",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e1/bc/68/e1bc68eb-3ba5-6da9-953f-e1800a4fcd38/197190970227.jpg/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=S2Xu6_XWy4M"
+      "title": "Hikari",
+      "artist": "Lilas",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/35/77/ed357790-d63f-1a33-e5b0-363285cbe396/195497767748.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=gFFizVn7P1M"
+    },
+    {
+      "title": "IRIS OUT",
+      "artist": "Kenshi Yonezu",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/f9/f1/e0f9f1f3-a088-b28d-6760-a28accabc705/4547366775181.jpg/1200x630bb.jpg",
+      "link": "https://www.youtube.com/watch?v=LmZD-TU96q4"
     },
     {
       "title": "Only Way",
@@ -44,22 +38,10 @@
       "link": "https://www.youtube.com/watch?v=TGowEYYtKII"
     },
     {
-      "title": "I I I",
-      "artist": "Houshou Marine & Kobo Kanaeru",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/8a/54/b18a54c6-28e7-7630-bcfe-954e08867c66/4582729914913_art.jpg/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=lUDPjyfmJrs"
-    },
-    {
       "title": "Moonlightspeed",
       "artist": "Midnight Grand Orchestra",
       "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/6e/90/3b/6e903bf1-6e90-f504-fb89-4cf1fac9eb5d/TFDS-00819WW.jpg/600x600bf-60.jpg",
       "link": "https://www.youtube.com/watch?v=NI8KqzCvFsc"
-    },
-    {
-      "title": "Hikari",
-      "artist": "Lilas",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/35/77/ed357790-d63f-1a33-e5b0-363285cbe396/195497767748.jpg/1200x630bb.jpg",
-      "link": "https://www.youtube.com/watch?v=gFFizVn7P1M"
     },
     {
       "title": "The Last Frontier",
@@ -68,16 +50,34 @@
       "link": "https://www.youtube.com/watch?v=-9wUbw5qevU"
     },
     {
-      "title": "The Story of the Wind and I",
-      "artist": "Ado",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/4f/e9/8f4fe91a-4783-7799-d5ac-af8b1a57422e/25UM1IM34698.rgb.jpg/1200x630bb.jpg",
-      "link": "https://www.youtube.com/watch?v=oAuKa5NOzWE"
+      "title": "灼熱にて純情(wii-wii-woo)",
+      "artist": "Hoshimachi Suisei",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1d/48/26/1d4826d9-8855-afae-33b8-33872750279b/4582622506314_art.png/486x486bb.png",
+      "link": "https://www.youtube.com/watch?v=r1ZVPTCOCSQ"
     },
     {
-      "title": "Sakura Biyori and Time Machine",
-      "artist": "Ado & Hatsune Miku",
-      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/1d/a2/0c1da2a4-1e6f-271b-5761-15a7c3373eec/24UM1IM03248.rgb.jpg/600x600bf-60.jpg",
-      "link": "https://www.youtube.com/watch?v=nIWZfhpnq6M"
+      "title": "cocoon and heart",
+      "artist": "Hoshimachi Suisei",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/8a/cd/338acd51-fd74-ca01-474c-128f2575b753/4571696527127.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=3cQakZcvBBg"
+    },
+    {
+      "title": "Charles",
+      "artist": "Ado",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e7/02/9e/e7029eaf-9141-fda1-7f5f-fb4f5d67bc91/25UMGIM44235.rgb.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=trIiMhTDKxo"
+    },
+    {
+      "title": "Run",
+      "artist": "Hoshimachi Suisei",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/20/3f/5a/203f5a3d-9568-8a97-543c-cb6b9d98c245/4580625828594_art.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=IqT6cHCT1TE"
+    },
+    {
+      "title": "I I I",
+      "artist": "Houshou Marine & Kobo Kanaeru",
+      "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/8a/54/b18a54c6-28e7-7630-bcfe-954e08867c66/4582729914913_art.jpg/600x600bf-60.jpg",
+      "link": "https://www.youtube.com/watch?v=lUDPjyfmJrs"
     }
   ],
   "favoriteArtists": [
