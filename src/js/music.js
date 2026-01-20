@@ -44,7 +44,7 @@ async function resolveAlbumArt(title, artist) {
 
   const query = encodeURIComponent(`${title} ${artist}`);
   const res = await fetch(
-    `https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=50`
+    `https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=10`
   );
 
   if (!res.ok) return null;
