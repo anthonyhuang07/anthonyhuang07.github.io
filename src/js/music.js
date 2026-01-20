@@ -120,6 +120,8 @@ async function renderFavoriteSong(details) {
           <p>${details.title}</p>
           <h5>${details.artist}</h5>
         </div>
+
+        <a href="${details.link}" target="_blank" rel="noopener noreferrer">Open</a>
       </div>
     </div>
   `;
