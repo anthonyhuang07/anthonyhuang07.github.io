@@ -147,8 +147,9 @@ function nowPlaying() {
         const playingBadge = document.querySelector('.music-nowPlaying img.playingControlsBadge');
         if (playingBadge) playingBadge.remove();
       } else {
+        const isPaused = data.online === false;
         dynamicIsland.classList.add('playing');
-        if (data.online === false) {
+        if (isPaused) {
           dynamicIsland.classList.add('paused');
           if (mediaControls) {
             mediaControls.src = '/assets/elements/dynamicIslandControlsPaused.png';
@@ -163,9 +164,21 @@ function nowPlaying() {
         audioPreview.forEach(preview => preview.style.display = 'flex');
 
         const badge = document.querySelector('.music-nowPlaying img.notPlayingBadge');
-        if (badge) badge.remove();
+        const playingBadge = document.querySelector('.music-nowPlaying img.playingControlsBadge');
+        if (isPaused) {
+          if (playingBadge) playingBadge.remove();
+          if (nowPlayingBar && !nowPlayingBar.querySelector('img.notPlayingBadge')) {
+            const pausedBadge = document.createElement('img');
+            pausedBadge.className = 'notPlayingBadge';
+            pausedBadge.src = '/assets/elements/notPlaying.png';
+            pausedBadge.alt = 'Not Playing';
+            nowPlayingBar.appendChild(pausedBadge);
+          }
+        } else if (badge) {
+          badge.remove();
+        }
 
-        if (nowPlayingBar && !nowPlayingBar.querySelector('img.playingControlsBadge')) {
+        if (!isPaused && nowPlayingBar && !nowPlayingBar.querySelector('img.playingControlsBadge')) {
           const controls = document.createElement('img');
           controls.className = 'playingControlsBadge';
           controls.src = '/assets/elements/playingControls.png';
