@@ -9,7 +9,6 @@ const nowPlayingArt = document.querySelector('.music-nowPlaying img');
 const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
 const progressBar = dynamicIsland.querySelector('.progress-bar .progress');
 const mediaControls = dynamicIsland.querySelector('#mediaControls');
-const apiUrl = 'https://anthonyhuang.net/api/status';
 let frozenPlayback = null;
 let frozenSessionId = null;
 let currentAlbumArtUrl = null;
@@ -34,7 +33,7 @@ document.addEventListener('click', (e) => {
 });
 
 function nowPlaying() {
-  fetch(apiUrl)
+  fetch("https://anthonyhuang.net/api/status")
     .then(response => response.json())
     .then(data => {
       let musicPlaying = false;
