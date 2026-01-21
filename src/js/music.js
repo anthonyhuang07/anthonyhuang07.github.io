@@ -44,7 +44,7 @@ async function resolveAlbumArt(title, artist) {
 
   const query = encodeURIComponent(`${title} ${artist}`);
   const res = await fetch(
-    `https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=10`
+    `https://anthonyhuang.net/api/applemusic?term=${query}&limit=10`
   );
 
   if (!res.ok) return null;
@@ -59,7 +59,7 @@ async function resolveAlbumArt(title, artist) {
     const t = norm(r.trackName);
 
     const artistMatch = a === qArtist || a.includes(qArtist) || qArtist.includes(a);
-    const titleMatch  = t === qTitle;
+    const titleMatch = t === qTitle;
 
     return artistMatch && (titleMatch || t.includes(qTitle));
   });

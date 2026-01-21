@@ -7,11 +7,6 @@
   },
   "featuredSongs": [
     {
-      "title": "Aimoraimo",
-      "artist": "tuki.",
-      "link": "https://www.youtube.com/watch?v=urh7DZp59WU"
-    },
-    {
       "title": "Let me battle",
       "artist": "9Lana",
       "link": "https://www.youtube.com/watch?v=whTcBozYrOo"
@@ -30,6 +25,11 @@
       "title": "Only Way",
       "artist": "9Lana",
       "link": "https://www.youtube.com/watch?v=TGowEYYtKII"
+    },
+    {
+      "title": "Never Ending Midnights",
+      "artist": "Midnight Grand Orchestra",
+      "link": ""
     },
     {
       "title": "Moonlightspeed",
@@ -52,19 +52,19 @@
       "link": "https://www.youtube.com/watch?v=3cQakZcvBBg"
     },
     {
-      "title": "Sign",
-      "artist": "Lilas",
-      "link": "https://www.youtube.com/watch?v=wwv0H5acMK4"
+      "title": "I'll Wait For The Night",
+      "artist": "Midnight Grand Orchestra",
+      "link": "https://www.youtube.com/watch?v=urh7DZp59WU"
+    },
+    {
+      "title": "Intersection",
+      "artist": "AZKi",
+      "link": ""
     },
     {
       "title": "Run",
       "artist": "Hoshimachi Suisei",
       "link": "https://www.youtube.com/watch?v=IqT6cHCT1TE"
-    },
-    {
-      "title": "I I I",
-      "artist": "Houshou Marine & Kobo Kanaeru",
-      "link": "https://www.youtube.com/watch?v=lUDPjyfmJrs"
     }
   ],
   "favoriteArtists": [
