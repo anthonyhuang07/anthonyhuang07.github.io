@@ -188,11 +188,36 @@ function renderFavoriteArtists(artists = []) {
 
 // #endregion
 
+// #region Playlists
+
+function renderPlaylists(playlists = []) {
+  const container = document.querySelector('.music-playlists');
+
+  const gridHtml = playlists
+    .map(playlist => `
+      <a class="playlist" href="${playlist.link}" target="_blank" rel="noopener noreferrer" aria-label="Open playlist ${playlist.name}">
+        <img src="${playlist.art}" alt="Playlist art for ${playlist.name}" />
+        <div class="meta">
+          <p class="playlist-name">${playlist.name}</p>
+        </div>
+      </a>
+    `)
+    .join('');
+
+  container.innerHTML = `
+    <h2>Playlists</h2>
+    <div class="playlists-row">${gridHtml}</div>
+  `;
+}
+
+// #endregion
+
 document.addEventListener("DOMContentLoaded", () => {
   loadMusicData()
     .then((data) => {
       renderFavoriteSong(data.favoriteSong);
       renderFeaturedSongs(data.featuredSongs);
       renderFavoriteArtists(data.favoriteArtists);
+      renderPlaylists(data.playlists);
     })
 });

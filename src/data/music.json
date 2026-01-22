@@ -104,14 +104,41 @@
       "link": "https://www.youtube.com/@fantasticyouth3913/releases"
     },
     {
-      "name": "Trooper Salute",
-      "art": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/6b/36/20/6b3620ba-b377-8678-d090-c4f03f460433/ami-identity-6aff45ba6826c95e5afdc3c920161f18-2024-12-12T16-27-03.700Z_cropped.png/486x486bb.png",
-      "link": "https://www.youtube.com/@TrooperSalute/releases"
-    },
-    {
       "name": "kessoku band",
       "art": "https://lh3.googleusercontent.com/JQIgeDQZjVs4Jgj5QgptQU3gBQ9H-RkLyqNU-5s1_zxNS5qn6mWG--I4TlChdGt319elzvllUrnWpGs=w544-h544-p-l90-rj",
       "link": "https://www.youtube.com/channel/UC6IhDHJbJUoRJGUPnlh5GRQ"
+    },
+    {
+      "name": "Trooper Salute",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/6b/36/20/6b3620ba-b377-8678-d090-c4f03f460433/ami-identity-6aff45ba6826c95e5afdc3c920161f18-2024-12-12T16-27-03.700Z_cropped.png/486x486bb.png",
+      "link": "https://www.youtube.com/@TrooperSalute/releases"
+    }
+  ],
+  "playlists": [
+    {
+      "name": "Revolute-Meteor",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-001-Image000001/v4/56/79/4c/56794c56-2de6-47b4-45aa-b486d0e90ad8/image/500x500cc.webp",
+      "link": "https://music.apple.com/ca/playlist/revolute-meteor/pl.u-MDAWv86tAyvvyv0"
+    },
+    {
+      "name": "All-Time Favorites",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/gen/500x500AM.PDCXS04.webp?c1=EFE8E8&c2=ECE2D9&c3=FFB16B&c4=553A32&signature=b0583e6c3f6417c31ce4dcc72c64dac3a117fbcd668d6690fce4c729371fc726&t=QWxsLVRpbWUgRmF2b3JpdGVz&tc=FFFFFF&vkey=1",
+      "link": "https://music.apple.com/ca/playlist/all-time-favorites/pl.u-qxyllaBF3z11z1V"
+    },
+    {
+      "name": "2026 Favorites",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/gen/500x500AM.PDCXS08.webp?c1=F2EC0C&c2=C3D300&c3=1B4000&c4=102601&signature=0cedc1cca1c1923c0c1efa1e77c8e30e8f47515c87f64139e921584948c3712d&t=MjAyNiBGYXZvcml0ZXM%3D&tc=FFFFFF&vkey=1",
+      "link": "https://music.apple.com/ca/playlist/2026-favorites/pl.u-06oxvJxFYdNNdNE"
+    },
+    {
+      "name": "2025 Favorites",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/gen/500x500AM.PDCXS08.webp?c1=B6BDDB&c2=788CD2&c3=484141&c4=0F1629&signature=bb899434626e673a4dcefa256805aa3422a2d7ed9ce6d0eab85105e2c0ee5a11&t=MjAyNSBGYXZvcml0ZXM%3D&tc=FFFFFF&vkey=1",
+      "link": "https://music.apple.com/ca/playlist/2025-favorites/pl.u-06oxvJxFYdNNdNE"
+    },
+    {
+      "name": "2024 Favorites",
+      "art": "https://is1-ssl.mzstatic.com/image/thumb/gen/500x500AM.PDCXS08.webp?c1=D08712&c2=BA730E&c3=48483E&c4=2F2B19&signature=cf521a1353ad7f598d64b9107275f6b260aa7bf37cb80854bdda6808ca0a0b5b&t=MjAyNCBGYXZvcml0ZXM%3D&tc=FFFFFF&vkey=1",
+      "link": "https://music.apple.com/ca/playlist/2024-favorites/pl.u-pMyl1rlfW8vv8vr"
     }
   ]
 }
