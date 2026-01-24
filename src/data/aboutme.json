@@ -1,8 +1,8 @@
 {
   "1": {
     "title": "Who am I?",
-    "subtitle": "Anthony Huang, 18, Uni Student 🇨🇦⚜️🇨🇳",
-    "description": "Hey! I'm Anthony Huang, a 18-year-old Chinese-Canadian 🇨🇦⚜️🇨🇳 university student based in Ottawa.\n\n        <br><br>I'm passionate about all things tech 💻, whether it's geeking out over computer history and cool modern tech, hunting for vintage hardware (I collect Apple products), repairing devices, or solving problems through software and code.\n\n        <br><br>Outside of tech, I'm into geography 🌎, languages 💬, anime 🎥, listening & singing to J-Pop 🎵, vlogging and editing 🎬, mobile photography 📸, sports ⚽️🏒, and travelling ✈️.",
+    "subtitle": "Anthony Huang, 18, Student 🇨🇦⚜️🇨🇳",
+    "description": "Hey! I'm Anthony Huang, a 18-year-old Chinese-Canadian 🇨🇦⚜️🇨🇳 university student based in Ottawa.\n\n        <br><br>I'm passionate about all things tech 💻, whether it's geeking out over computer history and cool modern tech, hunting for vintage hardware (I collect Apple products), repairing devices, or solving problems through software and code. <br><br>Outside of tech, I'm into geography 🌎, languages 💬, Reiwa-era Japanese media 🎌, vlogging and editing 🎬, mobile photography 📸, sports ⚽️🏒, and travelling ✈️.",
     "link": "#",
     "icon": "https://cdn.iconscout.com/icon/free/png-256/free-find-my-icon-download-in-svg-png-gif-file-formats--iphone-ios-13-ios13-ipad-os-14-pack-user-interface-icons-1575949.png?f=webp&w=256"
   },
@@ -15,8 +15,8 @@
   },
   "3": {
     "title": "Programming",
-    "subtitle": "Front-End Specialist, 2x Hackathon Winner",
-    "description": "I currently specialize in Front-End Web Development 🌐. I am familiar with HTML, CSS/SCSS, JavaScript/TypeScript, Python, and a bit of C.\n\n        <br><br>Almost everything I know in this field is self-taught. I started programming at 8 years old when I stumbled across the p5.js course on Khan Academy. \n        \n        <br><br>I've participated in 5 Hackathons, winning 🏆 in 2 of them.",
+    "subtitle": "Web Development, 2x Hackathon Winner",
+    "description": "I currently specialize in Web Development 🌐. I primarily work with a simple stack consisting of Vanilla HTML/SCSS/JavaScript, Node/Express and Linux.\n\n        <br><br>Almost everything I know in this field is self-taught. I started programming at 8 years old when I stumbled across the p5.js course on Khan Academy. <br><br>I've participated in 6 Hackathons, winning 🏆 in 2 of them.",
     "link": "https://github.com/anthonyhuang07",
     "icon": "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
   },
@@ -30,7 +30,7 @@
   "5": {
     "title": "Entertainment",
     "subtitle": "60+ Days of Anime Watched, J-Pop & Hololive ☄️",
-    "description": "I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!<br><br>I love J-Pop, and it is mainly the only genre I listen to. I enjoy listening to mainly Reiwa-era female artists (e.g. Ado, Lilas Ikuta). You can learn more about my favorites in the Music app.<br><br>I got into Hololive to improve my Japanese listening skills. ☄️⚒️🐻🍃",
+    "description": "I watch a lot of anime, mainly new releases & recent romcoms. Click the Open button to check out my MAL profile to see what I watch and my favorites!<br><br>I love J-Pop, and it is mainly the only genre I listen to. I enjoy listening to mainly Reiwa-era female artists (e.g. Ado, Lilas Ikuta). You can learn more about my favorites in the Music app.<br><br>I got into Hololive to improve my Japanese listening skills. 最推し → ☄️",
     "link": "https://myanimelist.net/profile/FHDHGNGN",
     "icon": "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw"
   },
