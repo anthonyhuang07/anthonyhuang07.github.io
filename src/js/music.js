@@ -1,4 +1,4 @@
-const MUSIC_DATA_URL = '/src/data/music.json';
+const MUSIC_DATA_URL = 'https://anthonyhuang.net/api/music';
 let musicData = null;
 let musicDataPromise = null;
 
