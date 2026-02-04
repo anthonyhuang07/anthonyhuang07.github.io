@@ -18,11 +18,11 @@ const ctx = canvas.getContext('2d');
 
 let intervalId;
 
-// Dynamic Island mobile tap handling
+// Dynamic Island click handling: open Music app
 dynamicIsland.addEventListener('click', (e) => {
-  if (dynamicIsland.classList.contains('playing')) {
-    e.preventDefault();
-    dynamicIsland.classList.toggle('expanded');
+  e.preventDefault();
+  if (typeof appOpen === 'function') {
+    appOpen(4);
   }
 });
 

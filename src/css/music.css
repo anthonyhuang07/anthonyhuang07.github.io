@@ -32,6 +32,7 @@
           user-select: none;
 }
 .music header .music-backButton {
+  width: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

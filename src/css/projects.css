@@ -42,6 +42,7 @@
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .projects header div {
+  width: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
