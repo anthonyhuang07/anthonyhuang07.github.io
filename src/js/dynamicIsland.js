@@ -21,6 +21,10 @@ let intervalId;
 // Dynamic Island click handling: open Music app
 dynamicIsland.addEventListener('click', (e) => {
   e.preventDefault();
+  const isMobile = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  if (isMobile) {
+    return;
+  }
   if (typeof appOpen === 'function') {
     appOpen(4);
   }
