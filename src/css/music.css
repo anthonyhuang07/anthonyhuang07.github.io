@@ -333,6 +333,7 @@
      object-fit: cover;
 }
 .music .music-favoriteArtists .artists-row .artist .artist-name {
+  width: 151.7px;
   margin-top: 0.35rem;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
