@@ -585,6 +585,15 @@
     width: 110px;
     height: 110px;
   }
+  .music .music-favoriteArtists .artists-row .artist .artist-name {
+    width: 110px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
   .music .music-playlists {
     margin: 0 0 5.835rem 1.25rem;
   }
