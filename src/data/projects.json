@@ -5,6 +5,11 @@
       "link": "http://ibconverter.com/",
       "icon": "https://www.ibschoolsofontario.ca/wp-content/uploads/2018/12/IB-world-shools-1.png"
     },
+    "Rail Sound Atlas": {
+      "description": "An interactive atlas for sounds of rail systems across the world!",
+      "link": "railsoundatlas.org",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Translinkexpo.svg/960px-Translinkexpo.svg.png"
+    },
     "PomodoPro": {
       "description": "A minimalistic and customizable Pomodoro experience. Began as a solo Hackathon project.",
       "link": "https://pomodopro.app/",
