@@ -153,16 +153,16 @@
 }
 #dynamicIsland.playing {
   width: 190px;
-  -webkit-animation: dynamicIslandCollapse 0.75s ease-in-out forwards;
-          animation: dynamicIslandCollapse 0.75s ease-in-out forwards;
+  -webkit-animation: dynamicIslandCollapse 0.65s ease-in-out forwards;
+          animation: dynamicIslandCollapse 0.65s ease-in-out forwards;
 }
 #dynamicIsland.playing #island-closed {
-  -webkit-animation: showIslandClosed 0.6s forwards;
-          animation: showIslandClosed 0.6s forwards;
+  -webkit-animation: showIslandClosed 0.5s forwards;
+          animation: showIslandClosed 0.5s forwards;
 }
 #dynamicIsland.playing #island-open {
-  -webkit-animation: hideIslandOpen 0.6s forwards;
-          animation: hideIslandOpen 0.6s forwards;
+  -webkit-animation: hideIslandOpen 0.5s forwards;
+          animation: hideIslandOpen 0.5s forwards;
 }
 #dynamicIsland.playing:hover, #dynamicIsland.playing:active, #dynamicIsland.playing.expanded {
   background-color: rgb(0, 0, 0);
@@ -178,16 +178,16 @@
           align-items: center;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  -webkit-animation: dynamicIslandExpand 0.75s ease-in-out forwards;
-          animation: dynamicIslandExpand 0.75s ease-in-out forwards;
+  -webkit-animation: dynamicIslandExpand 0.7s ease-in-out forwards;
+          animation: dynamicIslandExpand 0.7s ease-in-out forwards;
 }
 #dynamicIsland.playing:hover #island-closed, #dynamicIsland.playing:active #island-closed, #dynamicIsland.playing.expanded #island-closed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  -webkit-animation: hideIslandClosed 0.6s forwards;
-          animation: hideIslandClosed 0.6s forwards;
+  -webkit-animation: hideIslandClosed 0.55s forwards;
+          animation: hideIslandClosed 0.55s forwards;
 }
 #dynamicIsland.playing:hover #island-open, #dynamicIsland.playing:active #island-open, #dynamicIsland.playing.expanded #island-open {
   display: -webkit-box;
@@ -203,8 +203,8 @@
   padding: 1.4rem;
   -webkit-filter: blur(20px);
           filter: blur(20px);
-  -webkit-animation: showIslandOpen 0.6s forwards;
-          animation: showIslandOpen 0.6s forwards;
+  -webkit-animation: showIslandOpen 0.55s forwards;
+          animation: showIslandOpen 0.55s forwards;
 }
 #dynamicIsland.playing:hover #island-open #island-main, #dynamicIsland.playing:active #island-open #island-main, #dynamicIsland.playing.expanded #island-open #island-main {
   display: -webkit-box;

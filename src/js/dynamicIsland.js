@@ -17,6 +17,27 @@ const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
 
 let intervalId;
+let hoverUnlockTimer = null;
+
+function unlockDynamicIslandHover() {
+  clearTimeout(hoverUnlockTimer);
+  hoverUnlockTimer = null;
+  dynamicIsland.style.pointerEvents = '';
+}
+
+dynamicIsland.addEventListener('mouseleave', () => {
+  if (!dynamicIsland.classList.contains('playing')) return;
+
+  dynamicIsland.style.pointerEvents = 'none';
+  clearTimeout(hoverUnlockTimer);
+  hoverUnlockTimer = setTimeout(unlockDynamicIslandHover, 800);
+});
+
+dynamicIsland.addEventListener('animationend', (event) => {
+  if (event.target === dynamicIsland && event.animationName === 'dynamicIslandCollapse') {
+    unlockDynamicIslandHover();
+  }
+});
 
 // Dynamic Island click handling: open Music app
 dynamicIsland.addEventListener('click', (e) => {
