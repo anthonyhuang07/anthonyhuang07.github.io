@@ -67,7 +67,7 @@
 .aboutme #apps {
   display: grid;
   grid-template-columns: 44.5% 44.5%;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
   grid-auto-flow: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -98,7 +98,7 @@
   height: 1px;
   bottom: 0;
 }
-.aboutme .app:nth-child(5)::after, .aboutme .app:nth-child(10)::after {
+.aboutme .app:nth-child(3)::after, .aboutme .app:nth-child(6)::after {
   height: 0;
 }
 .aboutme .app > div {
@@ -368,7 +368,7 @@
   .aboutme .app {
     width: 92.5%;
   }
-  .aboutme .app:nth-child(5)::after {
+  .aboutme .app:nth-child(3)::after {
     height: 1px;
   }
 }

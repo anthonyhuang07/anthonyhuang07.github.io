@@ -308,10 +308,12 @@
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-bottom: 0.2rem;
 }
 .music .music-favoriteArtists .artists-row::-webkit-scrollbar {
   display: none;
+}
+.music .music-favoriteArtists .artists-row {
+  padding-bottom: 0.2rem;
 }
 .music .music-favoriteArtists .artists-row .artist {
   display: -webkit-box;
@@ -368,10 +370,12 @@
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-bottom: 0.2rem;
 }
 .music .music-playlists .playlists-row::-webkit-scrollbar {
   display: none;
+}
+.music .music-playlists .playlists-row {
+  padding-bottom: 0.2rem;
 }
 .music .music-playlists .playlists-row .playlist {
   display: -webkit-box;

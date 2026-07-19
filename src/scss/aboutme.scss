@@ -47,7 +47,7 @@
   #apps {
     display: grid;
     grid-template-columns: 44.5% 44.5%;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat($AboutMeRows, auto);
     grid-auto-flow: column;
     justify-content: space-evenly;
   }
@@ -71,8 +71,8 @@
       bottom: 0;
     }
 
-    &:nth-child(5)::after,
-    &:nth-child(10)::after {
+    &:nth-child(#{$AboutMeRows})::after,
+    &:nth-child(#{$AboutMeRows * 2})::after {
       height: 0;
     }
 
@@ -307,7 +307,7 @@
     .app {
       width: 92.5%;
 
-      &:nth-child(5)::after {
+      &:nth-child(#{$AboutMeRows})::after {
         height: 1px;
       }
     }
