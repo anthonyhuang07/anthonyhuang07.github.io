@@ -4,7 +4,6 @@ const aboutme = document.querySelector(".aboutme")
 const projects = document.querySelector(".projects")
 const contacts = document.querySelector(".contacts")
 const music = document.querySelector(".music")
-const photos = document.querySelector(".photos")
 const appView = document.querySelector(".appView")
 
 window.onkeydown = (e) => {
@@ -30,7 +29,6 @@ function appOpen(app) {
     document.querySelector('.menu.aboutme').style.opacity = '1';
 
     createApp();
-    attachAppListeners();
   } else if (app === 2) {
     document.querySelector('.menu.projects').style.visibility = 'visible';
     document.querySelector('.menu.projects').style.opacity = '1';
@@ -43,14 +41,11 @@ function appOpen(app) {
   } else if (app === 4) {
     document.querySelector('.menu.music').style.visibility = 'visible';
     document.querySelector('.menu.music').style.opacity = '1';
-  } else if (app === 5) {
-    document.querySelector('.menu.photos').style.visibility = 'visible';
-    document.querySelector('.menu.photos').style.opacity = '1';
   }
 }
 
 function returnHome(){
-    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = photos.style.visibility = "hidden";
+    inApp.style.visibility = aboutme.style.visibility = appView.style.visibility = projects.style.visibility = contacts.style.visibility = music.style.visibility = "hidden";
     inApp.style.opacity = menu.style.opacity = appView.style.opacity = "0";
     document.activeElement.blur();
 }
@@ -82,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "/assets/backgrounds/0.webp",
     "/assets/backgrounds/1.webp",
     "/assets/backgrounds/2.webp",
+    "/assets/backgrounds/3.webp",
   ];
   const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
   const bgDiv = document.getElementById("bg");

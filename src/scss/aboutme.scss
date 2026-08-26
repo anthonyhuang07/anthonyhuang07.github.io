@@ -1,7 +1,11 @@
-@import 'variables';
+@use 'variables' as *;
 
 .aboutme {
   overflow: auto;
+
+  &.app-view-open {
+    overflow: hidden;
+  }
 
   >header {
     background-color: #121212;
@@ -46,42 +50,35 @@
 
   #apps {
     display: grid;
-    grid-template-columns: 44.5% 44.5%;
-    grid-template-rows: repeat($AboutMeRows, auto);
-    grid-auto-flow: column;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row;
+    gap: 1.5rem 2rem;
+    padding: 0 3.5rem;
   }
 
   .app {
     width: 100%;
-    height: 6rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     position: relative;
     cursor: pointer;
 
-    &::after {
-      content: "";
-      background: #272727;
-      position: absolute;
-      width: calc(100% - 7.275rem);
-      left: 7.275rem;
-      height: 1px;
-      bottom: 0;
-    }
-
-    &:nth-child(#{$AboutMeRows})::after,
-    &:nth-child(#{$AboutMeRows * 2})::after {
-      height: 0;
-    }
-
-    >div {
+    .aboutme-app-main {
+      width: 100%;
+      height: 6rem;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
     }
 
-    img {
+    .aboutme-app-info {
+      display: flex;
+      flex-direction: row;
+      min-width: 0;
+    }
+
+    .aboutme-app-info>img {
       width: 70px;
       height: 70px;
       margin: 0.7rem 0 0.5rem 0;
@@ -89,27 +86,13 @@
       user-select: none;
     }
 
-    >div>div {
+    .aboutme-app-info-child {
       margin-right: 1.05rem;
       display: flex;
-      margin-left: 0.75rem;
+      margin-left: 1rem;
       flex-direction: column;
       justify-content: center;
-    }
-
-    >div>div>div {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .rank {
-      min-width: auto;
-      margin-right: 1.05rem;
-      font-size: 1.25em;
-      user-select: none;
-      color: white;
-      font-family: $SFSB;
+      min-width: 0;
     }
 
     .name {
@@ -119,24 +102,20 @@
       color: white;
     }
 
-    .descMargin {
-      min-width: auto;
-      margin-right: 1.05rem;
-      font-size: 1.25em;
-      visibility: hidden;
-    }
-
     .desc {
       font-family: $SFL;
       margin-top: 0.25rem;
       letter-spacing: 0.65px;
       color: #8E8D92;
-      display: -webkit-box;
-      line-clamp: 2;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    .aboutme-app-viewButton {
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 0;
     }
 
     .appStore-viewButton {
@@ -162,9 +141,47 @@
         color: #055090;
       }
     }
+
+    .aboutme-app-images {
+      display: grid;
+      height: 15rem;
+      gap: 0.75rem;
+      margin: 0.25rem 0 1.5rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 15rem;
+        margin: 0;
+        border-radius: 0.65rem;
+        object-fit: cover;
+        user-select: none;
+      }
+
+      &.images-1 {
+        grid-template-columns: 1fr;
+      }
+
+      &.images-2,
+      &.images-3 {
+        grid-template-columns: repeat(var(--image-count), minmax(0, 1fr));
+      }
+
+      &.images-2 {
+        --image-count: 2;
+      }
+
+      &.images-3 {
+        --image-count: 3;
+      }
+    }
   }
 
   .appView {
+    position: fixed;
+    inset: 0;
+    overscroll-behavior: contain;
+
     .backButton {
       display: flex;
       flex-direction: row;
@@ -295,21 +312,15 @@
     }
   }
 
-  @media screen and (max-width: 900px) {
-
-    // Tablets
+  @media screen and (max-width: 1200px) {
     #apps {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+  }
 
-    .app {
-      width: 92.5%;
-
-      &:nth-child(#{$AboutMeRows})::after {
-        height: 1px;
-      }
+  @media screen and (max-width: 760px) {
+    #apps {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 
@@ -368,14 +379,15 @@
     }
 
     #apps {
+      padding: 0 1.25rem;
       margin-bottom: 1rem;
     }
 
     .app {
-      width: 90%;
-      height: 5.1rem;
+      width: 100%;
+      min-height: 5.1rem;
 
-      img {
+      .aboutme-app-info>img {
         width: 60px;
         height: 60px;
         margin: 1rem 0 0.5rem 0;

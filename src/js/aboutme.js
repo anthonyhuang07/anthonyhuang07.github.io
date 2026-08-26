@@ -14,12 +14,12 @@ function fetchAppDetails() {
             })
             .then((data) => {
                 appDetails = data;
-                return data;
+                return appDetails;
             })
             .catch((error) => {
                 console.error('Error loading about me data:', error);
                 appDetailsPromise = null;
-                return {};
+                return [];
             });
     }
     return appDetailsPromise;
@@ -29,36 +29,38 @@ async function createApp() {
     const appsContainer = document.getElementById("apps");
     if (!appsContainer) return;
 
-    const apps = Object.entries(await fetchAppDetails());
+    const apps = await fetchAppDetails();
 
-    appsContainer.innerHTML = apps
-        .map(([rank, details]) => {
-            if (!details) return '';
-            return `
-            <div class="app">
-              <div>
-                <img src="${details.icon}" alt="${details.title}">
-                <div>
-                  <div>
-                    <p class="rank">${rank}</p>
-                    <p class="name">${details.title}</p>
-                  </div>
-                  <div>
-                    <p class="descMargin">${rank}</p>
-                    <p class="desc">${details.subtitle}</p>
-                  </div>
+    const cards = apps.map((details) => {
+        const images = Array.isArray(details.images) ? details.images.slice(0, 3) : [];
+        const card = document.createElement("div");
+        card.className = "app";
+        card.innerHTML = `
+                <div class="aboutme-app-main">
+                    <div class="aboutme-app-info">
+                        <img src="${details.icon}" alt="${details.title}">
+                        <div class="aboutme-app-info-child">
+                            <p class="name">${details.title}</p>
+                            <p class="desc">${details.subtitle}</p>
+                        </div>
+                    </div>
+                    <div class="aboutme-app-viewButton">
+                        <p class="appStore-viewButton">View</p>
+                    </div>
                 </div>
-              </div>
-              <div>
-                <p class="appStore-viewButton">View</p>
-              </div>
-            </div>`;
-        })
-        .join("");
+                ${images.length ? `
+                    <div class="aboutme-app-images images-${images.length}">
+                        ${images.map((image) => `<img src="${image}" alt="${details.title} preview">`).join("")}
+                    </div>
+                ` : ""}`;
+        card.addEventListener("click", () => openAppView(details));
+        return card;
+    });
+
+    appsContainer.replaceChildren(...cards);
 }
 
-function openAppView(rank) {
-    const details = appDetails?.[rank];
+function openAppView(details) {
     if (!details) return;
     document.querySelector(".appView header h1").innerText = details.title;
     document.querySelector(".appView header h2").innerText = details.subtitle;
@@ -74,6 +76,8 @@ function openAppView(rank) {
     document.querySelector(".appView header img").src = details.icon;
     const appView = document.querySelector(".appView");
     if (appView) {
+        appView.closest(".aboutme")?.classList.add("app-view-open");
+        appView.scrollTop = 0;
         appView.style.visibility = "visible";
         appView.style.opacity = "1";
         appView.style.overflow = "auto";
@@ -86,6 +90,7 @@ function openAppView(rank) {
 function hideAppView() {
     const appView = document.querySelector(".appView");
     if (appView) {
+        appView.closest(".aboutme")?.classList.remove("app-view-open");
         appView.style.visibility = "hidden";
         appView.style.opacity = "0";
 
@@ -93,15 +98,4 @@ function hideAppView() {
     if (window.innerWidth <= 480) {
         document.querySelector('#apps').style.display = 'flex';
     }
-}
-
-function attachAppListeners() {
-    const appsElement = document.getElementById("apps");
-    if (!appsElement) return;
-    appsElement.addEventListener("click", (event) => {
-        const card = event.target.closest(".app");
-        if (!card) return;
-        const rank = card.querySelector(".rank")?.textContent.trim();
-        if (rank) openAppView(rank);
-    });
 }

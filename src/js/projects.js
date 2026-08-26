@@ -4,6 +4,7 @@ let projectDataPromise = null;
 
 let currentProjectsMap = {};
 let currentProjectsView = 'featured'; // 'featured' | 'archived' | 'nontech'
+let projectListenersAttached = false;
 
 function loadProjectsData() {
   if (projectData) {
@@ -105,6 +106,8 @@ function createProject() {
 }
 
 function attachProjectListeners() {
+  if (projectListenersAttached) return;
+
   const projectsContainer = document.querySelector('.menu.projects main');
   if (projectsContainer) {
     projectsContainer.addEventListener('click', (event) => {
@@ -138,4 +141,6 @@ function attachProjectListeners() {
       if (currentProjectsView !== 'nontech') showNonTechProjects();
     });
   }
+
+  projectListenersAttached = true;
 }
