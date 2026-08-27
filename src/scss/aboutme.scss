@@ -381,16 +381,25 @@
     #apps {
       padding: 0 1.25rem;
       margin-bottom: 1rem;
+      gap: 1rem;
     }
 
     .app {
       width: 100%;
       min-height: 5.1rem;
 
+      .aboutme-app-info {
+        align-items: center;
+      }
+
       .aboutme-app-info>img {
         width: 60px;
         height: 60px;
-        margin: 1rem 0 0.5rem 0;
+        margin: 0;
+      }
+
+      .aboutme-app-images {
+        margin: 0;
       }
 
       .name {

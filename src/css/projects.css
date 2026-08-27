@@ -24,7 +24,10 @@
   background-color: #121212;
   border-bottom: #272727 1px solid;
   padding: 0.8rem 0 1rem 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .projects header h1 {
   letter-spacing: 1.05px;
@@ -40,9 +43,16 @@
 }
 .projects header div {
   width: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #0088ff;
   margin: 1.5rem 0 1.125rem 1.2rem;
   cursor: pointer;
@@ -54,11 +64,18 @@
   color: #055090;
 }
 .projects main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0.6rem 1rem 3.5rem 1.6rem;
 }
 .projects main .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding-top: 0.55rem;
@@ -66,9 +83,16 @@
   cursor: pointer;
 }
 .projects main .project > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 0.85rem;
 }
 .projects main .project img {
@@ -108,15 +132,28 @@
   background-color: rgba(37, 37, 37, 0.75);
   position: fixed;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   backdrop-filter: blur(12px);
 }
 .projects footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 3rem 0 3rem;
   cursor: pointer;
 }
@@ -147,6 +184,4 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-
-/*# sourceMappingURL=projects.css.map */
+}/*# sourceMappingURL=projects.css.map */

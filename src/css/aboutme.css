@@ -27,13 +27,23 @@
   border-bottom: #272727 1px solid;
   padding: 0.8rem 0 1rem 0;
   margin-bottom: 1rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aboutme > header div {
   width: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #0088ff;
   margin: 1.655rem 0 1.125rem 1rem;
   cursor: pointer;
@@ -66,22 +76,39 @@
 }
 .aboutme .app {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   cursor: pointer;
 }
 .aboutme .app .aboutme-app-main {
   width: 100%;
   height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 1rem;
 }
 .aboutme .app .aboutme-app-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   min-width: 0;
 }
 .aboutme .app .aboutme-app-info > img {
@@ -89,14 +116,24 @@
   height: 70px;
   margin: 0.7rem 0 0.5rem 0;
   border-radius: 1rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aboutme .app .aboutme-app-info-child {
   margin-right: 1.05rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 1rem;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 0;
 }
 .aboutme .app .name {
@@ -115,14 +152,26 @@
   text-overflow: ellipsis;
 }
 .aboutme .app .aboutme-app-viewButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .aboutme .app .appStore-viewButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin: 1.8rem 0 1.85rem 0;
   font-size: 1.2em;
@@ -132,9 +181,13 @@
   color: #0088ff;
   width: 5.45rem;
   border-radius: 100rem;
+  -webkit-transition: background-color 0.25s, color 0.25s linear;
   transition: background-color 0.25s, color 0.25s linear;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .aboutme .app .appStore-viewButton:active {
@@ -153,8 +206,12 @@
   height: 15rem;
   margin: 0;
   border-radius: 0.65rem;
-  object-fit: cover;
-  user-select: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .aboutme .app .aboutme-app-images.images-1 {
   grid-template-columns: 1fr;
@@ -171,12 +228,20 @@
 .aboutme .appView {
   position: fixed;
   inset: 0;
-  overscroll-behavior: contain;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: contain;
 }
 .aboutme .appView .backButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #0088ff;
   margin: 2.5rem 0 1rem 1rem;
   cursor: pointer;
@@ -195,8 +260,13 @@
 }
 .aboutme .appView header {
   margin: 0 3.5rem 2.5rem 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
 }
 .aboutme .appView header img {
@@ -205,8 +275,13 @@
   border-radius: 2rem;
 }
 .aboutme .appView header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 2rem;
 }
 .aboutme .appView header > div h1 {
@@ -225,9 +300,15 @@
   color: #8E8D92;
 }
 .aboutme .appView header > div .appStore-openButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background-color: #0088ff;
   width: 5.3rem;
@@ -235,7 +316,11 @@
   font-size: 1.2em;
   border-radius: 100rem;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color 0.25s, color 0.25s linear;
   transition: background-color 0.25s, color 0.25s linear;
   color: white;
   font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -310,6 +395,8 @@
     margin-bottom: 2em;
   }
   .aboutme .appView .appStore-appView-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
     margin: 0 1.75rem 0 1.75rem;
@@ -338,15 +425,24 @@
   .aboutme #apps {
     padding: 0 1.25rem;
     margin-bottom: 1rem;
+    gap: 1rem;
   }
   .aboutme .app {
     width: 100%;
     min-height: 5.1rem;
   }
+  .aboutme .app .aboutme-app-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .aboutme .app .aboutme-app-info > img {
     width: 60px;
     height: 60px;
-    margin: 1rem 0 0.5rem 0;
+    margin: 0;
+  }
+  .aboutme .app .aboutme-app-images {
+    margin: 0;
   }
   .aboutme .app .name {
     font-size: 1.1em;
@@ -355,9 +451,15 @@
     font-size: 0.85em;
   }
   .aboutme .app .appStore-viewButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     margin: 1.8rem 0 1.85rem 0;
     font-size: 1em;
@@ -368,6 +470,4 @@
     width: 4.6rem;
     height: 2rem;
   }
-}
-
-/*# sourceMappingURL=aboutme.css.map */
+}/*# sourceMappingURL=aboutme.css.map */

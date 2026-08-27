@@ -82,9 +82,6 @@ function openAppView(details) {
         appView.style.opacity = "1";
         appView.style.overflow = "auto";
     }
-    if (window.innerWidth <= 480) {
-        document.querySelector('#apps').style.display = 'none';
-    }
 }
 
 function hideAppView() {
@@ -94,8 +91,5 @@ function hideAppView() {
         appView.style.visibility = "hidden";
         appView.style.opacity = "0";
 
-    }
-    if (window.innerWidth <= 480) {
-        document.querySelector('#apps').style.display = 'flex';
     }
 }
