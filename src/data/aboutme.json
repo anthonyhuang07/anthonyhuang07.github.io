@@ -29,7 +29,8 @@
     "icon": "/assets/icons/maps.png",
         "images": [
       "/assets/aboutme/OpticsValley.jpg",
-      "/assets/aboutme/liziba.png"
+      "/assets/aboutme/MTR.jpg",
+      "/assets/aboutme/Liziba.jpg"
     ]
   },
   {
@@ -40,7 +41,6 @@
     "icon": "https://play-lh.googleusercontent.com/zVwzSU7ozKU0x78V7zYWDw2XFjgGsBBJA_qIJQXAFnS1R3VemFbpdaV9Bm3zOTTHvXw",
         "images": [
       "/assets/aboutme/sui.png",
-      "/assets/aboutme/kiminosei.jpg",
       "/assets/aboutme/peko.png"
     ]
   },
