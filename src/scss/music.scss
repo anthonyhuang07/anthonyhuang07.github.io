@@ -181,6 +181,13 @@
         .song {
           display: flex;
           align-items: center;
+          width: 100%;
+          padding: 0;
+          border: 0;
+          background: none;
+          color: inherit;
+          font: inherit;
+          text-align: left;
           cursor: pointer;
           scroll-snap-align: start;
 
@@ -199,7 +206,7 @@
             height: 100%;
             width: 100%;
             justify-content: space-between;
-            border-top: 1px solid $appleDarkGray;
+            border-top: 1px solid $appleDarkGray !important;
             margin-right: 1.35rem;
 
             .title {

@@ -144,15 +144,15 @@ async function renderFeaturedSongs(songs = []) {
   );
 
   const gridHtml = resolvedSongs
-    .map((song) => `
-      <a class="song" href="${song.link}" target="_blank" rel="noopener noreferrer">
+    .map((song, index) => `
+      <button class="song" type="button" data-song-index="${index}">
         <img src="${song.albumArt}"
              alt="Album art for ${song.title} by ${song.artist}" />
         <div class="meta">
           <p class="title">${song.title}</p>
           <p class="artist">${song.artist}</p>
         </div>
-      </a>
+      </button>
     `)
     .join('');
 
@@ -162,6 +162,12 @@ async function renderFeaturedSongs(songs = []) {
       ${gridHtml}
     </div>
   `;
+
+  container.querySelectorAll('.song').forEach((button) => {
+    button.addEventListener('click', () => {
+      window.open(resolvedSongs[button.dataset.songIndex].link, '_blank', 'noopener,noreferrer');
+    });
+  });
 }
 
 // #endregion
