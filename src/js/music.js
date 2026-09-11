@@ -1,6 +1,9 @@
 const MUSIC_DATA_URL = 'https://anthonyhuang.net/api/music';
 let musicData = null;
 let musicDataPromise = null;
+const youtubeMusicSearchUrl = (title, artist) =>
+  `https://music.youtube.com/search?q=${encodeURIComponent(`${title} ${artist}`)}`;
+const songUrl = (song) => song.link?.trim() || youtubeMusicSearchUrl(song.title, song.artist);
 
 function loadMusicData() {
   if (musicData) {
@@ -110,8 +113,8 @@ async function renderFavoriteSong(details) {
     (await resolveAlbumArt(details.title, details.artist));
 
   container.innerHTML = `
-    <h2>Favorite Song</h2>
-    <a href="${details.link}" target="_blank" rel="noopener noreferrer" aria-label="Open ${details.title} by ${details.artist}">
+    <h2>Current Obsession</h2>
+    <a href="${songUrl(details)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${details.title} by ${details.artist}">
       <img src="${albumArt ?? '/img/placeholder.png'}" />
       <div>
         <div>
@@ -164,7 +167,8 @@ async function renderFeaturedSongs(songs = []) {
 
   container.querySelectorAll('.song').forEach((button) => {
     button.addEventListener('click', () => {
-      window.open(resolvedSongs[button.dataset.songIndex].link, '_blank', 'noopener,noreferrer');
+      const song = resolvedSongs[button.dataset.songIndex];
+      window.open(songUrl(song), '_blank', 'noopener,noreferrer');
     });
   });
 }
