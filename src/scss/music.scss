@@ -76,10 +76,12 @@
         margin-bottom: 0.7rem;
       }
 
-      >div {
+      >a {
         display: flex;
         flex-direction: row;
         min-width: 23rem;
+        color: inherit;
+        cursor: pointer;
 
         img {
           width: 172px;
@@ -125,7 +127,7 @@
             }
           }
 
-          a {
+          .open {
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
@@ -373,6 +375,7 @@
   .music-nowPlaying {
     display: flex;
     justify-content: space-between;
+    cursor: default;
     width: calc(100% - 2.75*2rem);
     border-radius: 0.8rem;
     height: 4.185rem;
@@ -381,6 +384,10 @@
     bottom: 0;
     margin: 0 2.75rem 1.6rem 2.75rem;
     backdrop-filter: blur(12px);
+
+    &.searchable {
+      cursor: pointer;
+    }
 
     img.notPlayingBadge {
       margin-right: 1.55rem;

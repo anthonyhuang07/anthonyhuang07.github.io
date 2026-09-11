@@ -5,8 +5,6 @@ const songNameElement = dynamicIsland.querySelector('#songName');
 const artistNameElement = dynamicIsland.querySelector('#artistName');
 const currentTimeElement = dynamicIsland.querySelector('#currentTime');
 const timeLeft = dynamicIsland.querySelector('#timeLeft');
-const nowPlayingArt = document.querySelector('.music-nowPlaying img');
-const nowPlayingTextContainer = document.querySelector('.music-nowPlaying > div > div');
 const progressBar = dynamicIsland.querySelector('.progress-bar .progress');
 const mediaControls = dynamicIsland.querySelector('#mediaControls');
 let frozenPlayback = null;
@@ -16,19 +14,18 @@ let currentAlbumArtUrl = null;
 const canvas = document.createElement('canvas');
 const ctx = canvas.getContext('2d');
 
-let intervalId;
 let hoverUnlockTimer = null;
 
 function unlockDynamicIslandHover() {
   clearTimeout(hoverUnlockTimer);
   hoverUnlockTimer = null;
-  dynamicIsland.style.pointerEvents = '';
+  dynamicIsland.classList.remove('hover-locked');
 }
 
 dynamicIsland.addEventListener('mouseleave', () => {
   if (!dynamicIsland.classList.contains('playing')) return;
 
-  dynamicIsland.style.pointerEvents = 'none';
+  dynamicIsland.classList.add('hover-locked');
   clearTimeout(hoverUnlockTimer);
   hoverUnlockTimer = setTimeout(unlockDynamicIslandHover, 800);
 });
@@ -57,10 +54,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-function nowPlaying() {
-  fetch("https://anthonyhuang.net/api/status")
-    .then(response => response.json())
-    .then(data => {
+function updateDynamicIsland(data) {
       let musicPlaying = false;
       const isOnline = data.online !== false;
       if (data.status && data.status.type === "LISTENING") {
@@ -113,7 +107,6 @@ function nowPlaying() {
           img.onerror = () => {
             console.error('Error loading album art image');
             img.src = '/assets/icons/defaultMusic.webp';
-            nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
             img.onload = () => {
               const bars = document.querySelectorAll('.bar');
               bars.forEach(bar => {
@@ -125,12 +118,6 @@ function nowPlaying() {
           };
         });
 
-        nowPlayingArt.src = imageUrl;
-        nowPlayingTextContainer.innerHTML = `
-          <p class="music-nowPlaying-song">${songName}</p>
-          <p class="music-nowPlaying-artist">${artistName}</p>
-        `;
-
         songNameElement.textContent = songName;
         artistNameElement.textContent = artistName;
 
@@ -140,8 +127,6 @@ function nowPlaying() {
           progressBar.style.width = `${(elapsed / duration) * 100}%`;
         }
       }
-
-      const nowPlayingBar = document.querySelector('.music-nowPlaying');
 
       if (!musicPlaying) {
         dynamicIsland.classList.remove('playing');
@@ -156,21 +141,6 @@ function nowPlaying() {
           mediaControls.src = '/assets/elements/dynamicIslandControls.png';
         }
 
-        nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
-        nowPlayingTextContainer.innerHTML = `
-          <p>Not Playing</p>
-        `;
-
-        if (nowPlayingBar && !nowPlayingBar.querySelector('img.notPlayingBadge')) {
-          const badge = document.createElement('img');
-          badge.className = 'notPlayingBadge';
-          badge.src = '/assets/elements/notPlaying.png';
-          badge.alt = 'Not Playing';
-          nowPlayingBar.appendChild(badge);
-        }
-
-        const playingBadge = document.querySelector('.music-nowPlaying img.playingControlsBadge');
-        if (playingBadge) playingBadge.remove();
       } else {
         const isPaused = data.online === false;
         dynamicIsland.classList.add('playing');
@@ -188,33 +158,8 @@ function nowPlaying() {
         albumArt.forEach(img => img.style.display = 'block');
         audioPreview.forEach(preview => preview.style.display = 'flex');
 
-        const badge = document.querySelector('.music-nowPlaying img.notPlayingBadge');
-        const playingBadge = document.querySelector('.music-nowPlaying img.playingControlsBadge');
-        if (isPaused) {
-          if (playingBadge) playingBadge.remove();
-          if (nowPlayingBar && !nowPlayingBar.querySelector('img.notPlayingBadge')) {
-            const pausedBadge = document.createElement('img');
-            pausedBadge.className = 'notPlayingBadge';
-            pausedBadge.src = '/assets/elements/notPlaying.png';
-            pausedBadge.alt = 'Not Playing';
-            nowPlayingBar.appendChild(pausedBadge);
-          }
-        } else if (badge) {
-          badge.remove();
-        }
-
-        if (!isPaused && nowPlayingBar && !nowPlayingBar.querySelector('img.playingControlsBadge')) {
-          const controls = document.createElement('img');
-          controls.className = 'playingControlsBadge';
-          controls.src = '/assets/elements/playingControls.png';
-          controls.alt = 'Playback Controls';
-          nowPlayingBar.appendChild(controls);
-        }
       }
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
+
 }
 
 function formatTime(ms) {
@@ -264,7 +209,4 @@ function colorBars(imgElement) { // Fill in bars with blurred album art
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  nowPlaying();
-  intervalId = setInterval(nowPlaying, 1000);
-});
+document.addEventListener('musicstatuschange', event => updateDynamicIsland(event.detail));

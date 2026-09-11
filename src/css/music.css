@@ -82,31 +82,33 @@
   letter-spacing: 0.01px;
   margin-bottom: 0.7rem;
 }
-.music article .music-favoriteSong > div {
+.music article .music-favoriteSong > a {
   display: flex;
   flex-direction: row;
   min-width: 23rem;
+  color: inherit;
+  cursor: pointer;
 }
-.music article .music-favoriteSong > div img {
+.music article .music-favoriteSong > a img {
   width: 172px;
   border-radius: 0.6rem;
 }
-.music article .music-favoriteSong > div > div {
+.music article .music-favoriteSong > a > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 1rem;
 }
-.music article .music-favoriteSong > div > div > div {
+.music article .music-favoriteSong > a > div > div {
   margin-top: 1.95rem;
 }
-.music article .music-favoriteSong > div > div > div h6 {
+.music article .music-favoriteSong > a > div > div h6 {
   font-size: 0.8em;
   letter-spacing: 0.3px;
   font-family: "SFSB", -apple-system, BlinkMacSystemFont, sans-serif;
   color: #8D8D93;
 }
-.music article .music-favoriteSong > div > div > div p {
+.music article .music-favoriteSong > a > div > div p {
   margin-top: 0.075rem;
   font-size: 1.15em;
   letter-spacing: 0.7px;
@@ -118,14 +120,14 @@
   display: block;
   max-width: 100%;
 }
-.music article .music-favoriteSong > div > div > div h5 {
+.music article .music-favoriteSong > a > div > div h5 {
   margin-top: 0.05rem;
   font-size: 1em;
   letter-spacing: 0.75px;
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-.music article .music-favoriteSong > div > div a {
+.music article .music-favoriteSong > a > div .open {
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -337,6 +339,7 @@
 .music .music-nowPlaying {
   display: flex;
   justify-content: space-between;
+  cursor: default;
   width: calc(100% - 5.5rem);
   border-radius: 0.8rem;
   height: 4.185rem;
@@ -345,6 +348,9 @@
   bottom: 0;
   margin: 0 2.75rem 1.6rem 2.75rem;
   backdrop-filter: blur(12px);
+}
+.music .music-nowPlaying.searchable {
+  cursor: pointer;
 }
 .music .music-nowPlaying img.notPlayingBadge {
   margin-right: 1.55rem;

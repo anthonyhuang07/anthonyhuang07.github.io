@@ -1,6 +1,11 @@
 @use 'variables' as *;
 
 #dynamicIsland {
+  &,
+  * {
+    cursor: pointer !important;
+  }
+
   position: absolute;
   top: 0.7rem;
   background-color: black;
@@ -10,7 +15,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 
   #island-closed {
     width: 100%;
@@ -101,8 +105,8 @@
       }
     }
 
-    &:hover,
-    &:active,
+    &:not(.hover-locked):hover,
+    &:not(.hover-locked):active,
     &.expanded {
       #island-open {
         #island-main {
@@ -132,8 +136,8 @@
     }
 
     // OPEN DYNAMIC ISLAND (COMMENT OUT TO TEST)
-    &:hover,
-    &:active,
+    &:not(.hover-locked):hover,
+    &:not(.hover-locked):active,
     &.expanded {
       background-color: rgba(0, 0, 0, 1);
       display: flex;

@@ -16,6 +16,10 @@
   font-weight: 300;
   font-display: swap;
 }
+#dynamicIsland,
+#dynamicIsland * {
+  cursor: pointer !important;
+}
 #dynamicIsland {
   position: absolute;
   top: 0.7rem;
@@ -32,7 +36,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
 }
 #dynamicIsland #island-closed {
   width: 100%;
@@ -137,7 +140,7 @@
           animation: none;
   height: 2px;
 }
-#dynamicIsland.paused:hover #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.paused:active #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.paused.expanded #island-open #island-main #island-main-left .island-albumArt.open {
+#dynamicIsland.paused:not(.hover-locked):hover #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.paused:not(.hover-locked):active #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.paused.expanded #island-open #island-main #island-main-left .island-albumArt.open {
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
   -webkit-transform: scale(0.8);
@@ -164,7 +167,7 @@
   -webkit-animation: hideIslandOpen 0.5s forwards;
           animation: hideIslandOpen 0.5s forwards;
 }
-#dynamicIsland.playing:hover, #dynamicIsland.playing:active, #dynamicIsland.playing.expanded {
+#dynamicIsland.playing:not(.hover-locked):hover, #dynamicIsland.playing:not(.hover-locked):active, #dynamicIsland.playing.expanded {
   background-color: rgb(0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +184,7 @@
   -webkit-animation: dynamicIslandExpand 0.7s ease-in-out forwards;
           animation: dynamicIslandExpand 0.7s ease-in-out forwards;
 }
-#dynamicIsland.playing:hover #island-closed, #dynamicIsland.playing:active #island-closed, #dynamicIsland.playing.expanded #island-closed {
+#dynamicIsland.playing:not(.hover-locked):hover #island-closed, #dynamicIsland.playing:not(.hover-locked):active #island-closed, #dynamicIsland.playing.expanded #island-closed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -189,7 +192,7 @@
   -webkit-animation: hideIslandClosed 0.55s forwards;
           animation: hideIslandClosed 0.55s forwards;
 }
-#dynamicIsland.playing:hover #island-open, #dynamicIsland.playing:active #island-open, #dynamicIsland.playing.expanded #island-open {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open, #dynamicIsland.playing:not(.hover-locked):active #island-open, #dynamicIsland.playing.expanded #island-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +209,7 @@
   -webkit-animation: showIslandOpen 0.55s forwards;
           animation: showIslandOpen 0.55s forwards;
 }
-#dynamicIsland.playing:hover #island-open #island-main, #dynamicIsland.playing:active #island-open #island-main, #dynamicIsland.playing.expanded #island-open #island-main {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main, #dynamicIsland.playing.expanded #island-open #island-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +218,7 @@
           justify-content: space-between;
   width: 100%;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left, #dynamicIsland.playing:active #island-open #island-main #island-main-left, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main #island-main-left, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main #island-main-left, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,26 +227,26 @@
           align-items: center;
   min-width: 0;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing:active #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left .island-albumArt.open {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main #island-main-left .island-albumArt.open, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left .island-albumArt.open {
   height: 67.5px;
   margin-left: 0;
   border-radius: 0.8rem;
   -webkit-user-drag: none;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main #island-main-left #songInfo, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo {
   margin-left: 1.175rem;
   font-size: 1.05em;
   min-width: 0;
   overflow: hidden;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo #songName {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main #island-main-left #songInfo #songName, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo #songName {
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
 }
-#dynamicIsland.playing:hover #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:active #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo #artistName {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main #island-main-left #songInfo #artistName, #dynamicIsland.playing.expanded #island-open #island-main #island-main-left #songInfo #artistName {
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   max-width: 100%;
@@ -252,7 +255,7 @@
   text-overflow: ellipsis;
   display: block;
 }
-#dynamicIsland.playing:hover #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing:active #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing.expanded #island-open #island-main .island-audioPreview.open {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing:not(.hover-locked):active #island-open #island-main .island-audioPreview.open, #dynamicIsland.playing.expanded #island-open #island-main .island-audioPreview.open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +266,7 @@
   margin-bottom: 0.9rem;
   gap: 2.7px;
 }
-#dynamicIsland.playing:hover #island-open #timeline, #dynamicIsland.playing:active #island-open #timeline, #dynamicIsland.playing.expanded #island-open #timeline {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #timeline, #dynamicIsland.playing:not(.hover-locked):active #island-open #timeline, #dynamicIsland.playing.expanded #island-open #timeline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +283,7 @@
   width: 100%;
   margin-top: 1.175rem;
 }
-#dynamicIsland.playing:hover #island-open #timeline span, #dynamicIsland.playing:active #island-open #timeline span, #dynamicIsland.playing.expanded #island-open #timeline span {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #timeline span, #dynamicIsland.playing:not(.hover-locked):active #island-open #timeline span, #dynamicIsland.playing.expanded #island-open #timeline span {
   color: #8D8D93;
   font-family: "SFL", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.75em;
@@ -288,7 +291,7 @@
   width: 30px;
   text-align: center;
 }
-#dynamicIsland.playing:hover #island-open #timeline .progress-bar, #dynamicIsland.playing:active #island-open #timeline .progress-bar, #dynamicIsland.playing.expanded #island-open #timeline .progress-bar {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #timeline .progress-bar, #dynamicIsland.playing:not(.hover-locked):active #island-open #timeline .progress-bar, #dynamicIsland.playing.expanded #island-open #timeline .progress-bar {
   width: 250px;
   height: 7px;
   background-color: #252527;
@@ -296,11 +299,11 @@
   overflow: hidden;
   margin: 0 0.425rem 0 0.425rem;
 }
-#dynamicIsland.playing:hover #island-open #timeline .progress-bar .progress, #dynamicIsland.playing:active #island-open #timeline .progress-bar .progress, #dynamicIsland.playing.expanded #island-open #timeline .progress-bar .progress {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #timeline .progress-bar .progress, #dynamicIsland.playing:not(.hover-locked):active #island-open #timeline .progress-bar .progress, #dynamicIsland.playing.expanded #island-open #timeline .progress-bar .progress {
   height: 100%;
   background-color: #8D8D93;
 }
-#dynamicIsland.playing:hover #island-open #mediaControls, #dynamicIsland.playing:active #island-open #mediaControls, #dynamicIsland.playing.expanded #island-open #mediaControls {
+#dynamicIsland.playing:not(.hover-locked):hover #island-open #mediaControls, #dynamicIsland.playing:not(.hover-locked):active #island-open #mediaControls, #dynamicIsland.playing.expanded #island-open #mediaControls {
   width: 19rem;
   margin-top: 1.1rem;
 }

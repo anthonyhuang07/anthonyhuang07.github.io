@@ -100,7 +100,6 @@ async function resolveAlbumArt(title, artist) {
 
 // #endregion
 
-
 // #region Favorite Song
 
 async function renderFavoriteSong(details) {
@@ -112,7 +111,7 @@ async function renderFavoriteSong(details) {
 
   container.innerHTML = `
     <h2>Favorite Song</h2>
-    <div>
+    <a href="${details.link}" target="_blank" rel="noopener noreferrer" aria-label="Open ${details.title} by ${details.artist}">
       <img src="${albumArt ?? '/img/placeholder.png'}" />
       <div>
         <div>
@@ -121,9 +120,9 @@ async function renderFavoriteSong(details) {
           <h5>${details.artist}</h5>
         </div>
 
-        <a href="${details.link}" target="_blank" rel="noopener noreferrer">Open</a>
+        <span class="open">Open</span>
       </div>
-    </div>
+    </a>
   `;
 }
 
@@ -218,7 +217,98 @@ function renderPlaylists(playlists = []) {
 
 // #endregion
 
+// #region Now Playing
+
+const nowPlayingBar = document.querySelector('.music-nowPlaying');
+const nowPlayingArt = nowPlayingBar.querySelector('img');
+const nowPlayingText = nowPlayingBar.querySelector(':scope > div > div');
+let currentNowPlaying = null;
+let currentNowPlayingKey = null;
+
+nowPlayingBar.addEventListener('click', () => {
+  if (!nowPlayingBar.classList.contains('searchable')) return;
+
+  window.open(
+    `https://music.youtube.com/search?q=${encodeURIComponent(`${currentNowPlaying.song} ${currentNowPlaying.artist}`)}`,
+    '_blank',
+    'noopener,noreferrer'
+  );
+});
+
+function renderNowPlaying(data) {
+  const status = data.status;
+  let playback = { playing: false };
+
+  if (status?.type === 'LISTENING') {
+    let imageUrl = status.assets?.largeImage || '/assets/icons/defaultMusic.webp';
+    if (imageUrl.startsWith('mp:external/')) {
+      imageUrl = `https://${imageUrl.split('/https/').pop()}`;
+    }
+
+    playback = {
+      playing: true,
+      paused: data.online === false,
+      imageUrl,
+      song: status.details,
+      artist: status.state
+    };
+  }
+
+  const stateKey = JSON.stringify(playback);
+  if (stateKey === currentNowPlayingKey) return;
+
+  currentNowPlaying = playback;
+  currentNowPlayingKey = stateKey;
+  nowPlayingBar.classList.remove('searchable');
+  nowPlayingBar.querySelectorAll('.notPlayingBadge, .playingControlsBadge').forEach(badge => badge.remove());
+
+  if (!playback.playing) {
+    nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
+    nowPlayingText.innerHTML = '<p>Not Playing</p>';
+  } else {
+    nowPlayingText.innerHTML = `
+      <p class="music-nowPlaying-song"></p>
+      <p class="music-nowPlaying-artist"></p>
+    `;
+    nowPlayingText.querySelector('.music-nowPlaying-song').textContent = playback.song;
+    nowPlayingText.querySelector('.music-nowPlaying-artist').textContent = playback.artist;
+
+    const usesDefaultArt = new URL(playback.imageUrl, window.location.href).pathname === '/assets/icons/defaultMusic.webp';
+    nowPlayingArt.onload = () => {
+      if (!usesDefaultArt && currentNowPlayingKey === stateKey) {
+        nowPlayingBar.classList.add('searchable');
+      }
+    };
+    nowPlayingArt.onerror = () => {
+      nowPlayingBar.classList.remove('searchable');
+      nowPlayingArt.src = '/assets/icons/defaultMusic.webp';
+    };
+    nowPlayingArt.src = playback.imageUrl;
+  }
+
+  const badge = document.createElement('img');
+  const showNotPlaying = !playback.playing || playback.paused;
+  badge.className = showNotPlaying ? 'notPlayingBadge' : 'playingControlsBadge';
+  badge.src = showNotPlaying ? '/assets/elements/notPlaying.png' : '/assets/elements/playingControls.png';
+  badge.alt = showNotPlaying ? 'Not Playing' : 'Playback Controls';
+  nowPlayingBar.appendChild(badge);
+}
+
+document.addEventListener('musicstatuschange', event => renderNowPlaying(event.detail));
+
+function loadPlaybackStatus() {
+  fetch('https://anthonyhuang.net/api/status')
+    .then(response => response.json())
+    .then(data => document.dispatchEvent(new CustomEvent('musicstatuschange', { detail: data })))
+    .catch(error => console.error('Error fetching playback status:', error));
+}
+
+// #endregion
+
 document.addEventListener("DOMContentLoaded", () => {
+  loadPlaybackStatus();
+  setInterval(loadPlaybackStatus, 1000);
+
   loadMusicData()
     .then((data) => {
       renderFavoriteSong(data.favoriteSong);
